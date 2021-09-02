@@ -22,7 +22,8 @@ export default function Header({ refs }) {
                         <Navbar.Brand onClick={scrollToLogo}><img src="/postacılar-life-log.png" /></Navbar.Brand>
                     </div>
                     <Nav className="me-auto header">
-                        <Nav.Link onClick={scrollToFlats} >Daire Tipleri</Nav.Link>
+                        <Nav.Link >Hakkımızda</Nav.Link>
+                        <Nav.Link onClick={scrollToFlats} >Projeler</Nav.Link>
                         <Nav.Link onClick={scrollToContact}>İletişim</Nav.Link>
                     </Nav>
                 </div>

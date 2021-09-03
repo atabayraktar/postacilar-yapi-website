@@ -16,8 +16,10 @@ body{
   font-family: 'Source Sans Pro', sans-serif;
   color: #bdbec2;
   font-size: larger;
+  padding-right: 3vw;
 }
 .header-logo{
+  padding-left: 3vw;
   img{
     max-width: 257px;
     height: auto;
@@ -30,15 +32,36 @@ body{
   }
 }
 .big-logo{
-  max-width: 1320px;
+  object-fit: contain;
   display: flex;
   justify-content: center;
+  position: relative;
   img{
-    @extend .component-container;
     @extend .big-logo;
     width: 100%;
     height: auto;
   }
+}
+.logo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.about-us{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #bdbec2;
+  &-title{
+    @extend .about-us;
+    font-size: 40px;
+  }
+  &-description{
+    @extend .about-us;
+    font-size: 30px;
+    padding: 20px 0px 0px 20px;
+  }
+  
 }
 .flat-types{
   font-family: 'Source Sans Pro', sans-serif;

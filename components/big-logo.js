@@ -1,9 +1,10 @@
 export default function BigLogo() {
     return (
         <>
-            <div className="container">
-                <div className="big-logo">
-                    <img src="/big-logo.png" />
+            <div className="big-logo">
+                <img src="/big-logo.jpg" />
+                <div className="logo">
+                    <img src="/postacılar-life-log.png" />
                 </div>
             </div>
         </>

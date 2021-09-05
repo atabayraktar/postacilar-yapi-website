@@ -18,7 +18,7 @@ export default function Header({ refs }) {
         <>
             <Navbar sticky="top" bg="dark" variant="dark">
                 <div className="header-logo">
-                    <Navbar.Brand onClick={scrollToLogo}><img src="/postacılar-life-log.png" /></Navbar.Brand>
+                    <Navbar.Brand onClick={scrollToLogo}><img src="/logo.png" /></Navbar.Brand>
                 </div>
                 <Nav className="ms-auto header">
                     <Nav.Link >Hakkımızda</Nav.Link>

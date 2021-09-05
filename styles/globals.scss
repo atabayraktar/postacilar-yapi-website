@@ -49,6 +49,32 @@ body{
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+.icons{
+  display: flex;
+  align-items: flex-end;
+  &-icons-description{
+    display: flex;
+    align-items: flex-start;
+  }
+  &-centered{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.about-us-logo{
+  max-width: 150px;
+  &-description{
+    font-size: 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #bdbec2;
+  }
+    img{
+      @extend .about-us-logo;
+      width: 100%;
+      height: auto;
+    }
+}
 .about-us{
     font-family: 'Source Sans Pro', sans-serif;
     color: #bdbec2;
@@ -113,6 +139,14 @@ body{
       width: 100%;
       height: auto;
     }
+}
+.flat-types-img-container2{
+  max-width: 500px;
+  img{
+    @extend .flat-types-img-container;
+    width: 100%;
+    height: auto;
+  }
 }
 .flat-types-img-container1{
   max-width: 800px;

@@ -4,7 +4,7 @@ export default function BigLogo() {
             <div className="big-logo">
                 <img src="/big-logo.jpg" />
                 <div className="logo">
-                    <img src="/postacılar-life-log.png" />
+                    <img src="/logo.png" />
                 </div>
             </div>
         </>

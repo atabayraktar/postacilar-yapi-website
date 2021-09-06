@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div >
       <Head>
-        <title>Postacılar Life</title>
+        <title>POSTACILAR | YAPI</title>
         <meta name="description" content="Postacılar Life yapı projesi." />
         <link rel="icon" href="/favicon.ico" />
       </Head>

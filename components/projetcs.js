@@ -20,7 +20,7 @@ export default function Projects({ projectsRef }) {
                         </div>
                     </div>
                     <div className="view-more-button">
-                        <Button variant="dark">Daha Fazla Göster</Button>
+                        <Button variant="dark" size="lg">Daha Fazla Göster</Button>
                     </div>
                 </div>
             </div>

@@ -124,7 +124,7 @@ body{
   
 }
 .img-container{
-    max-width: 800px;
+    max-width: 880px;
     img{
       @extend .img-container;
       width: 100%;
@@ -133,7 +133,7 @@ body{
 }
 .img-container-projects{
   img{
-    max-height: 215px;
+    max-height: 235px;
     max-width: 100%;
   }
   &-bottom{

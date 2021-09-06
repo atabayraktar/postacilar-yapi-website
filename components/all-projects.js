@@ -1,13 +1,9 @@
-import { useRouter } from 'next/router'
-import { Button } from 'react-bootstrap';
-
-export default function Projects({ projectsRef }) {
-    const router = useRouter();
+export default function AllProjects() {
     return (
         <>
-            <div ref={projectsRef} className="container">
+            <div className="container">
                 <div className="desktop-components">
-                    <div className="component-container">
+                    <div className="component-container-last-item">
                         <div className="about-us-title">
                             Projelerimiz
                         </div>
@@ -24,13 +20,24 @@ export default function Projects({ projectsRef }) {
                                 </div>
                             </div>
                         </div>
-                        <div className="view-more-button">
-                            <Button onClick={() => router.push("/projelerimiz")} variant="dark" size="lg">Diğer Projelerimiz</Button>
+                        <div className="row">
+                            <div className="col-3 img-container fadding-photo">
+                                <img src="/1.jpg" />
+                            </div>
+                            <div className="col-3 img-container fadding-photo">
+                                <img src="/1.jpg" />
+                            </div>
+                            <div className="col-3 img-container fadding-photo">
+                                <img src="/1.jpg" />
+                            </div>
+                            <div className="col-3 img-container fadding-photo">
+                                <img src="/1.jpg" />
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div className="mobile-components">
-                    <div className="component-container">
+                    <div className="component-container-last-item">
                         <div className="about-us-title">
                             Projelerimiz
                         </div>
@@ -45,12 +52,24 @@ export default function Projects({ projectsRef }) {
                                 <img src="/1.jpg" />
                             </div>
                         </div>
-                        <div className="view-more-button">
-                            <Button onClick={() => router.push("/projelerimiz")} variant="dark" size="lg">Diğer Projelerimiz</Button>
+                        <div className="row">
+                            <div className="col-6 img-container-projects fadding-photo">
+                                <img src="/1.jpg" />
+                            </div>
+                            <div className="col-6 img-container-projects fadding-photo">
+                                <img src="/1.jpg" />
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-6 img-container-projects fadding-photo">
+                                <img src="/1.jpg" />
+                            </div>
+                            <div className="col-6 img-container-projects fadding-photo">
+                                <img src="/1.jpg" />
+                            </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </>
     )

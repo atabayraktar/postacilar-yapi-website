@@ -1,7 +1,8 @@
-import {
-    Navbar, Nav
-} from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
+import { useRouter } from 'next/router'
+
 export default function Header({ refs }) {
+    const router = useRouter();
     let [projectsRef, contactRef, aboutUsRef, logoRef] = refs;
     const scrollToAboutUs = () => {
         aboutUsRef.current.scrollIntoView();
@@ -13,6 +14,7 @@ export default function Header({ refs }) {
         contactRef.current.scrollIntoView();
     }
     const scrollToLogo = () => {
+        router.push("/")
         window.scrollTo({
             top: 0,
         });

@@ -62,6 +62,7 @@ body{
   }
 }
 .logo{
+  width: 85%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -81,14 +82,14 @@ body{
   }
 }
 .about-us-logo{
-  max-width: 150px;
+  max-width: 100px;
   img{
     @extend .about-us-logo;
     width: 100%;
     height: auto;
   }
   &-description{
-    font-size: 25px;
+    font-size: 22px;
     font-family: 'Source Sans Pro', sans-serif;
     color: #bdbec2;
     text-align: center;
@@ -124,6 +125,7 @@ body{
   
 }
 .img-container{
+  padding-bottom: 15px;
     max-width: 880px;
     img{
       @extend .img-container;
@@ -131,7 +133,13 @@ body{
       height: auto;
     }
 }
+.fadding-photo:hover {
+  transition: .5s ease;
+  cursor: pointer;
+  opacity: 0.4;
+}
 .img-container-projects{
+  padding-bottom: 15px;
   img{
     max-height: 235px;
     max-width: 100%;
@@ -181,7 +189,6 @@ body{
   cursor: pointer;
 }
 .view-more-button{
-  padding: 20px 0 0 0;
   display: flex;
   justify-content: center;
   font-family: 'Source Sans Pro', sans-serif;

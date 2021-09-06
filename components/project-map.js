@@ -17,7 +17,10 @@ export default function ProjectMap({ contactRef }) {
                                     İletişim
                                 </div>
                                 <div className="about-us-description">
-                                    "Lorem dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                    Cep Telefonu: +90 (532) 272 04 15
+                                </div>
+                                <div className="about-us-description">
+                                    Şirket Telefonu: 0286 213 50 55
                                 </div>
                             </div>
                         </div>
@@ -35,7 +38,10 @@ export default function ProjectMap({ contactRef }) {
                             İletişim
                         </div>
                         <div className="about-us-description">
-                            "Lorem dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                            Cep Telefonu: +90 (532) 272 04 15
+                        </div>
+                        <div className="about-us-description">
+                            Şirket Telefonu: 0286 213 50 55
                         </div>
                     </div>
                 </div>

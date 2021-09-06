@@ -1,8 +1,8 @@
-export default function Icons({ contactRef }) {
+export default function Icons() {
 
     return (
         <>
-            <div ref={contactRef} className="container">
+            <div className="container">
                 <div className="component-container">
                     <div className="row icons">
                         <div className="col-3 icons-centered">

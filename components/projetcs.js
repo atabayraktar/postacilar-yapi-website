@@ -1,24 +1,26 @@
-export default function Projects() {
+import { Button } from 'react-bootstrap';
 
+export default function Projects({ projectsRef }) {
     return (
         <>
-            <div className="container">
+            <div ref={projectsRef} className="container">
                 <div className="component-container">
                     <div className="about-us-title">
                         Projelerimiz
                     </div>
                     <div className="row">
-                        <div className="col-9 flat-types-img-container">
+                        <div className="col-8 img-container">
                             <img src="/1.jpg" />
                         </div>
-                        <div className="col-3 ">
-                            <div className="flat-types-img-container2">
-                                <img src="/1.jpg" />
-                            </div>
-                            <div className="flat-types-img-container2">
+                        <div className="col-4 img-container-projects">
+                            <img src="/1.jpg" />
+                            <div className="img-container-projects-bottom">
                                 <img src="/1.jpg" />
                             </div>
                         </div>
+                    </div>
+                    <div className="view-more-button">
+                        <Button variant="dark">Daha Fazla Göster</Button>
                     </div>
                 </div>
             </div>

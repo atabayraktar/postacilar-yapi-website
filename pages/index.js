@@ -4,10 +4,12 @@ import BigLogo from '../components/big-logo'
 import AboutUs from '../components/about-us'
 import Icons from '../components/icons'
 import Projects from '../components/projetcs'
+import ProjectMap from '../components/project-map'
 import { useRef } from 'react'
 export default function Home() {
-  const flatSectionRef = useRef(null);
+  const projectsSectionRef = useRef(null);
   const contactSectionRef = useRef(null);
+  const aboutUsSectionRef = useRef(null)
   const logoRef = useRef(null);
 
   return (
@@ -17,11 +19,12 @@ export default function Home() {
         <meta name="description" content="Postacılar Life yapı projesi." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header refs={[flatSectionRef, contactSectionRef]} />
+      <Header refs={[projectsSectionRef, contactSectionRef, aboutUsSectionRef]} />
       <BigLogo />
       <Icons />
-      <AboutUs />
-      <Projects />
+      <AboutUs aboutUsRef={aboutUsSectionRef}/>
+      <Projects projectsRef={projectsSectionRef} />
+      <ProjectMap contactRef={contactSectionRef} />
     </div>
   )
 }

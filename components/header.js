@@ -2,9 +2,12 @@ import {
     Navbar, Nav
 } from 'react-bootstrap';
 export default function Header({ refs }) {
-    let [flatRef, contactRef, logoRef] = refs;
-    const scrollToFlats = () => {
-        flatRef.current.scrollIntoView();
+    let [projectsRef, contactRef, aboutUsRef, logoRef] = refs;
+    const scrollToAboutUs = () => {
+        aboutUsRef.current.scrollIntoView();
+    }
+    const scrollToProjects = () => {
+        projectsRef.current.scrollIntoView();
     }
     const scrollToContact = () => {
         contactRef.current.scrollIntoView();
@@ -21,8 +24,8 @@ export default function Header({ refs }) {
                     <Navbar.Brand onClick={scrollToLogo}><img src="/logo.png" /></Navbar.Brand>
                 </div>
                 <Nav className="ms-auto header">
-                    <Nav.Link >Hakkımızda</Nav.Link>
-                    <Nav.Link onClick={scrollToFlats} >Projeler</Nav.Link>
+                    <Nav.Link onClick={scrollToAboutUs}>Hakkımızda</Nav.Link>
+                    <Nav.Link onClick={scrollToProjects}>Projeler</Nav.Link>
                     <Nav.Link onClick={scrollToContact}>İletişim</Nav.Link>
                 </Nav>
             </Navbar>

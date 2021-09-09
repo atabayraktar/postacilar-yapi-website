@@ -44,13 +44,11 @@ export default function AllProjects() {
                         <div className="img-container fadding-photo">
                             <img src="/1.jpg" />
                         </div>
-                        <div className="row">
-                            <div className="col-6 img-container-projects fadding-photo">
-                                <img src="/1.jpg" />
-                            </div>
-                            <div className="col-6 img-container-projects fadding-photo">
-                                <img src="/1.jpg" />
-                            </div>
+                        <div className="img-container fadding-photo">
+                            <img src="/1.jpg" />
+                        </div>
+                        <div className="img-container fadding-photo">
+                            <img src="/1.jpg" />
                         </div>
                         <div className="row">
                             <div className="col-6 img-container-projects fadding-photo">

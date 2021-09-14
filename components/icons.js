@@ -29,22 +29,22 @@ export default function Icons() {
                     <div className="row icons-description">
                         <div className="col-3 icons-centered">
                             <div className="about-us-logo-description">
-                                10 yılı aşkın tecrübe
+                                postacılar <br/>güvencesiyle
                             </div>
                         </div>
                         <div className="col-3 icons-centered">
                             <div className="about-us-logo-description">
-                                güvenilir iş ortakları
+                                güvenilir iş <br/>ortakları
                             </div>
                         </div>
                         <div className="col-3 icons-centered">
                             <div className="about-us-logo-description">
-                                temiz işçilik
+                                birinci sınıf<br/> malzeme <br/> ve işcilik
                             </div>
                         </div>
                         <div className="col-3 icons-centered">
                             <div className="about-us-logo-description">
-                                eşsiz ve zamansız mekanlar
+                                fonksiyonel <br/> mekanlar
                             </div>
                         </div>
                     </div>

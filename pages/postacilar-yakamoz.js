@@ -9,7 +9,7 @@ export default function () {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Header />
-            <div className="container-fluid yakamoz-container">
+            <div className="container-fluid detail-container">
                 <div className="row">
                     <div className="col-5">
                         <div className="row">

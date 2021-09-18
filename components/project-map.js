@@ -30,11 +30,11 @@ export default function ProjectMap({ contactRef }) {
                                 <div className="about-us-description">
                                     Şirket Telefonu: 0286 213 50 55
                                 </div>
-                                <br/>
+                                <br />
                                 <div className="about-us-description">
                                     Şirket Adresi:<br />
-                        Namık Kemal Mah. Sakızlı Çeşme Sokak no:68 Çanakkale/ Merkez
-                        </div>
+                                    Namık Kemal Mah. Sakızlı Çeşme Sokak No: 68 Çanakkale / Merkez
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -57,7 +57,7 @@ export default function ProjectMap({ contactRef }) {
                         </div>
                         <div className="about-us-description">
                             Şirket Adresi:<br />
-                        Namık Kemal mah. sakızlı çeşme sokak no:68 çanakkale/ merkez
+                            Namık Kemal mah. sakızlı çeşme sokak no:68 çanakkale/ merkez
                         </div>
                     </div>
                 </div>

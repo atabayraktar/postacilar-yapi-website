@@ -1,5 +1,3 @@
-import { useEffect } from "react"
-
 export default function ZoomModal({ zoomRef, imageSrc }) {
     return (
         <div className="modal">

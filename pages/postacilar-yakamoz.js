@@ -1,8 +1,16 @@
 import Head from 'next/head'
 import Header from '../components/detail-header'
+import ZoomModal from '../components/zoom-modal'
+import { useState, useRef, useEffect } from 'react';
+
 export default function () {
+    const [modalSrc, setModalSrc] = useState("");
+    const [showModal, setShowModal] = useState(false);
+    const refx = useRef(null);
+    useOutsideAlerter(refx);
     return (
         <>
+            {showModal && <ZoomModal zoomRef={refx} imageSrc={modalSrc} />}
             <Head>
                 <title>POSTACILAR | YAKAMOZ</title>
                 <meta name="description" content="" />
@@ -14,23 +22,23 @@ export default function () {
                     <div className="col-12 col-md-5">
                         <div className="row">
                             <div className="detail-title">
-                                postacılar <span className="detail-title-stick"><div>|</div></span> YAKAMOZ
+                                POSTACILAR <span className="detail-title-stick"><div>|</div></span> YAKAMOZ
                             </div>
                             <div className="col-12 col-md-7 yakamoz-right-col yakamoz-img-component-mobile">
                                 <div className="row">
                                     <div className="col-6 yakamoz-img-1">
-                                        <img width="80%" height="auto" src="/yakamoz/yakamoz2.jpg" />
+                                        <img onClick={() => { setShowModal(true); setModalSrc("/yakamoz/yakamoz2.jpg") }}  width="80%" height="auto" src="/yakamoz/yakamoz2.jpg" />
                                     </div>
                                     <div className="col-6 yakamoz-img-2">
-                                        <img width="100%" height="auto" src="/yakamoz/yakamoz1.jpg" />
+                                        <img onClick={() => { setShowModal(true); setModalSrc("/yakamoz/yakamoz1.jpg") }} width="100%" height="auto" src="/yakamoz/yakamoz1.jpg" />
                                     </div>
                                 </div>
                                 <div className="row">
                                     <div className="col-6 yakamoz-img-3">
-                                        <img width="90%" height="auto" src="/yakamoz/yakamoz4.jpg" />
+                                        <img onClick={() => { setShowModal(true); setModalSrc("/yakamoz/yakamoz4.jpg") }} width="90%" height="auto" src="/yakamoz/yakamoz4.jpg" />
                                     </div>
                                     <div className="col-6 yakamoz-img-4">
-                                        <img width="85%" height="auto" src="/yakamoz/yakamoz3.jpg" />
+                                        <img onClick={() => { setShowModal(true); setModalSrc("/yakamoz/yakamoz3.jpg") }} width="85%" height="auto" src="/yakamoz/yakamoz3.jpg" />
                                     </div>
                                 </div>
                             </div>
@@ -54,18 +62,18 @@ export default function () {
                     <div className="col-12 col-md-7 yakamoz-right-col yakamoz-img-component-desktop">
                         <div className="row">
                             <div className="col-6 yakamoz-img-1">
-                                <img width="75%" height="auto" src="/yakamoz/yakamoz2.jpg" />
+                                <img onClick={() => { setShowModal(true); setModalSrc("/yakamoz/yakamoz2.jpg") }} width="75%" height="auto" src="/yakamoz/yakamoz2.jpg" />
                             </div>
                             <div className="col-6 yakamoz-img-2">
-                                <img width="100%" height="auto" src="/yakamoz/yakamoz1.jpg" />
+                                <img onClick={() => { setShowModal(true); setModalSrc("/yakamoz/yakamoz1.jpg") }} width="100%" height="auto" src="/yakamoz/yakamoz1.jpg" />
                             </div>
                         </div>
                         <div className="row">
                             <div className="col-6 yakamoz-img-3">
-                                <img width="90%" height="auto" src="/yakamoz/yakamoz4.jpg" />
+                                <img onClick={() => { setShowModal(true); setModalSrc("/yakamoz/yakamoz4.jpg") }} width="90%" height="auto" src="/yakamoz/yakamoz4.jpg" />
                             </div>
                             <div className="col-6 yakamoz-img-4">
-                                <img width="85%" height="auto" src="/yakamoz/yakamoz3.jpg" />
+                                <img onClick={() => { setShowModal(true); setModalSrc("/yakamoz/yakamoz3.jpg") }} width="85%" height="auto" src="/yakamoz/yakamoz3.jpg" />
                             </div>
                         </div>
                     </div>
@@ -73,4 +81,23 @@ export default function () {
             </div>
         </>
     )
+    function useOutsideAlerter(ref) {
+        useEffect(() => {
+            /**
+             * Alert if clicked on outside of element
+             */
+            function handleClickOutside(event) {
+                if (ref.current && !ref.current.contains(event.target)) {
+                    setShowModal(false);
+                }
+            }
+
+            // Bind the event listener
+            document.addEventListener("mousedown", handleClickOutside);
+            return () => {
+                // Unbind the event listener on clean up
+                document.removeEventListener("mousedown", handleClickOutside);
+            };
+        }, [ref]);
+    }
 }

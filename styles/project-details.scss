@@ -1,7 +1,7 @@
 .detail-container {
-    padding: 40px 100px;
+    padding: 30px 100px;
     @media only screen and (max-width: 768px) {
-        padding: 40px 30px;
+        padding: 15px 30px;
     }
 }
 .detail-title {
@@ -21,7 +21,7 @@
         }
     }
     @media only screen and (max-width: 768px) {
-        font-size: 30px;
+        font-size: 28px;
         justify-content: center;
     }
 }

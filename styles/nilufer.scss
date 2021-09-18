@@ -19,12 +19,17 @@
     }
 }
 .nilufer-left-image{
+    cursor: zoom-in;
     display: flex;
     justify-content: end;
     align-items: center;
 }
 .nilufer-right-top-image{
+    cursor: zoom-in;
     margin-bottom: 24px;
+}
+.nilufer-right-bottom-image{
+    cursor: zoom-in;
 }
 .pl-40{
     padding-left: 80px;

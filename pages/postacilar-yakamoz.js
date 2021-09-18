@@ -14,10 +14,10 @@ export default function () {
                     <div className="col-5">
                         <div className="row">
                             <div className="detail-title">
-                                postacılar <span className="detail-title-stick"><div>|</div></span> yakamoz
+                                postacılar <span className="detail-title-stick"><div>|</div></span> YAKAMOZ
                             </div>
                             <div className="detail-sub-title">
-                                YAKAMOZ<span className="detail-sub-title-stick"><div>|</div></span>hakkında
+                                YAKAMOZ<span className="detail-sub-title-stick"><div>|</div></span>Hakkında
                             </div>
                             <div className="detail-paragraph">
                                 Barbaros Mahallesi 100. yıl caddesinde yer alani Çanakkale'nin göz bebeği yeni kordona ve şehir merkezine yürüyüş mesafesinde, enfes boğaz manzarasına sahip, kendisine ait açık otoparkı bulunanprojemiz 3 adet 3+1 daire, 1 adet 4+1 dublex daire ve 1 dükkandan oluşmaktadır.

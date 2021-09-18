@@ -1,7 +1,11 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Header from '../components/detail-header'
+import { useRef } from 'react'
+
 export default function () {
+    const projectsSectionRef = useRef(null);
+    const contactSectionRef = useRef(null);
+    const aboutUsSectionRef = useRef(null)
     return (
         <>
             <Head>
@@ -9,7 +13,7 @@ export default function () {
                 <meta name="description" content="" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Header />
+            <Header refs={[projectsSectionRef, contactSectionRef, aboutUsSectionRef]} />
             <div className="container-fluid detail-container">
                 <div className="row">
                     <div className="col-12 col-md-5">
@@ -25,7 +29,7 @@ export default function () {
                                 ve yeşil alanları bulunan bir projedir. Özenle tasarlanmış ferah daireleri aranılan konforun adresi olmuştur.
                             </div>
                             <div className="detail-sub-title">
-                            NİLÜFER <span className="detail-sub-title-stick"><div>|</div></span> Proje detayları
+                                NİLÜFER <span className="detail-sub-title-stick"><div>|</div></span> Proje detayları
                             </div>
                             <div className="detail-paragraph">
                                 Daire Sayısı: 36 <br />

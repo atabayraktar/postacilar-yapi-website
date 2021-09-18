@@ -10,7 +10,6 @@ export default function Home() {
   const projectsSectionRef = useRef(null);
   const contactSectionRef = useRef(null);
   const aboutUsSectionRef = useRef(null)
-  const logoRef = useRef(null);
 
   return (
     <div >

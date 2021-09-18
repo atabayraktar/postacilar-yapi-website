@@ -5,12 +5,15 @@ export default function Header({ refs }) {
     const router = useRouter();
     let [projectsRef, contactRef, aboutUsRef, logoRef] = refs;
     const scrollToAboutUs = () => {
+        router.push("/")
         aboutUsRef.current.scrollIntoView();
     }
     const scrollToProjects = () => {
+        router.push("/")
         projectsRef.current.scrollIntoView();
     }
     const scrollToContact = () => {
+        router.push("/")
         contactRef.current.scrollIntoView();
     }
     const scrollToLogo = () => {

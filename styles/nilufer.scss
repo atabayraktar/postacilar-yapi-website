@@ -1,7 +1,21 @@
 .nilufer-right-col{
     margin-top: 110px;
     @media only screen and (max-width: 768px) {
-        margin-top: 40px;
+        margin-top: 10px;
+    }
+}
+.nilufer-img-component-desktop {
+    display: block;
+    padding-top: 15px;
+    @media only screen and (max-width: 991px) {
+        display: none;
+    }
+}
+.nilufer-img-component-mobile {
+    display: none;
+    @media only screen and (max-width: 991px) {
+        display: block;
+        padding-top: 15px;
     }
 }
 .nilufer-left-image{

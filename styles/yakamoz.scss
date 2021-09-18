@@ -1,9 +1,24 @@
 .yakamoz-right-col {
     margin-top: 100px;
     @media only screen and (max-width: 768px) {
-        margin-top: 40px;
+        margin-top: 10px;
     }
 }
+.yakamoz-img-component-desktop {
+    display: block;
+    padding-top: 15px;
+    @media only screen and (max-width: 991px) {
+        display: none;
+    }
+}
+.yakamoz-img-component-mobile {
+    display: none;
+    @media only screen and (max-width: 991px) {
+        display: block;
+        padding-top: 15px;
+    }
+}
+
 .yakamoz-img-1 {
     cursor: zoom-in;
     display: flex;

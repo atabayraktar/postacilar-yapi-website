@@ -16,6 +16,24 @@ export default function () {
                             <div className="detail-title">
                                 postacılar <span className="detail-title-stick"><div>|</div></span> YAKAMOZ
                             </div>
+                            <div className="col-12 col-md-7 yakamoz-right-col yakamoz-img-component-mobile">
+                                <div className="row">
+                                    <div className="col-6 yakamoz-img-1">
+                                        <img width="80%" height="auto" src="/yakamoz/yakamoz2.jpg" />
+                                    </div>
+                                    <div className="col-6 yakamoz-img-2">
+                                        <img width="100%" height="auto" src="/yakamoz/yakamoz1.jpg" />
+                                    </div>
+                                </div>
+                                <div className="row">
+                                    <div className="col-6 yakamoz-img-3">
+                                        <img width="90%" height="auto" src="/yakamoz/yakamoz4.jpg" />
+                                    </div>
+                                    <div className="col-6 yakamoz-img-4">
+                                        <img width="85%" height="auto" src="/yakamoz/yakamoz3.jpg" />
+                                    </div>
+                                </div>
+                            </div>
                             <div className="detail-sub-title">
                                 YAKAMOZ<span className="detail-sub-title-stick"><div>|</div></span>Hakkında
                             </div>
@@ -33,7 +51,7 @@ export default function () {
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 col-md-7 yakamoz-right-col">
+                    <div className="col-12 col-md-7 yakamoz-right-col yakamoz-img-component-desktop">
                         <div className="row">
                             <div className="col-6 yakamoz-img-1">
                                 <img width="75%" height="auto" src="/yakamoz/yakamoz2.jpg" />

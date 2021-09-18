@@ -15,7 +15,7 @@ export default function () {
                     <div className="col-12 col-md-5">
                         <div className="row">
                             <div className="detail-title">
-                                postacılar <span className="detail-title-stick"><div>|</div></span> nilüfer evleri
+                                postacılar <span className="detail-title-stick"><div>|</div></span> NİLÜFER
                             </div>
                             <div className="detail-sub-title">
                                 NİLÜFER<span className="detail-sub-title-stick"><div>|</div></span>Hakkında
@@ -30,8 +30,7 @@ export default function () {
                             <div className="detail-paragraph">
                                 Daire Sayısı: 36 <br />
                                 Daire Tipleri: 24 Adet 3+1 & 12 Adet 2+1 <br />
-                                Adres: Esenler Mahallesi Okulyolu <br />
-                                sokak Merkez / ÇANAKKALE
+                                Adres: Esenler Mah. Okulyolu Sokak Merkez / Çanakkale
                             </div>
                         </div>
                     </div>

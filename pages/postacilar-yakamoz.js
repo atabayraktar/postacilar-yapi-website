@@ -11,7 +11,7 @@ export default function () {
             <Header />
             <div className="container-fluid detail-container">
                 <div className="row">
-                    <div className="col-5">
+                    <div className="col-12 col-md-5">
                         <div className="row">
                             <div className="detail-title">
                                 postacılar <span className="detail-title-stick"><div>|</div></span> YAKAMOZ
@@ -33,21 +33,21 @@ export default function () {
                             </div>
                         </div>
                     </div>
-                    <div className="col-7 yakamoz-right-col">
+                    <div className="col-12 col-md-7 yakamoz-right-col">
                         <div className="row">
                             <div className="col-6 yakamoz-img-1">
-                                <img src="/yakamoz/yakamoz2.jpg" />
+                                <img width="75%" height="auto" src="/yakamoz/yakamoz2.jpg" />
                             </div>
                             <div className="col-6 yakamoz-img-2">
-                                <img src="/yakamoz/yakamoz1.jpg" />
+                                <img width="100%" height="auto" src="/yakamoz/yakamoz1.jpg" />
                             </div>
                         </div>
                         <div className="row">
-                        <div className="col-6 yakamoz-img-3">
-                                <img src="/yakamoz/yakamoz4.jpg" />
+                            <div className="col-6 yakamoz-img-3">
+                                <img width="90%" height="auto" src="/yakamoz/yakamoz4.jpg" />
                             </div>
                             <div className="col-6 yakamoz-img-4">
-                                <img src="/yakamoz/yakamoz3.jpg" />
+                                <img width="85%" height="auto" src="/yakamoz/yakamoz3.jpg" />
                             </div>
                         </div>
                     </div>

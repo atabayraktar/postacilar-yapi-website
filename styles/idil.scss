@@ -1,0 +1,41 @@
+.idil-right-col {
+    margin-top: 100px;
+    padding-left: 50px;
+    @media only screen and (max-width: 768px) {
+        margin-top: 10px;
+        padding-left: 0;
+    }
+}
+.idil-img-component-desktop {
+    display: block;
+    padding-top: 15px;
+    @media only screen and (max-width: 991px) {
+        display: none;
+    }
+}
+.idil-img-component-mobile {
+    display: none;
+    @media only screen and (max-width: 991px) {
+        display: block;
+        padding-top: 15px;
+    }
+}
+
+.idil-img-1 {
+    cursor: zoom-in;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.idil-img-2 {
+    padding-top: 100px;
+    padding-left: 0;
+    cursor: zoom-in;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    @media only screen and (max-width: 991px) {
+        display: block;
+        padding-top: 40px;
+    }
+}

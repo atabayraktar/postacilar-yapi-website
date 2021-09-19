@@ -5,7 +5,7 @@ export default function Projects({ projectsRef }) {
     const router = useRouter();
     return (
         <>
-            <div ref={projectsRef} className="container">
+            <div id="projeler" ref={projectsRef} className="container">
                 <div className="desktop-components">
                     <div className="component-container">
                         <div className="about-us-title">

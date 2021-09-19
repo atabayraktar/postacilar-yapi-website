@@ -7,7 +7,7 @@ export default function ProjectMap({ contactRef }) {
     )
     return (
         <>
-            <div ref={contactRef} className="container">
+            <div id="iletisim" ref={contactRef} className="container">
                 <div className="desktop-components">
                     <div className="component-container-last-item">
                         <div className="row">

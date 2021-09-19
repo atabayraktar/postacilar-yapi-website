@@ -1,6 +1,6 @@
 import { Navbar, Nav } from 'react-bootstrap';
 import { useRouter } from 'next/router'
-
+import Link from 'next/Link';
 export default function Header() {
     const router = useRouter();
     return (
@@ -10,9 +10,9 @@ export default function Header() {
                     <Navbar.Brand><img src="/logo.png" /></Navbar.Brand>
                 </div>
                 <Nav className="ms-auto header">
-                    <Nav.Link>Hakkımızda</Nav.Link>
-                    <Nav.Link >Projeler</Nav.Link>
-                    <Nav.Link>İletişim</Nav.Link>
+                    <Nav.Link href="/#hakkimizda">Hakkımızda</Nav.Link>
+                    <Nav.Link href="/#projeler">Projeler</Nav.Link>
+                    <Nav.Link href="/#iletisim">İletişim</Nav.Link>
                 </Nav>
             </Navbar>
         </>

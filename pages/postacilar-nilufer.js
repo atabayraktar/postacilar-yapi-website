@@ -3,7 +3,7 @@ import Header from '../components/detail-header'
 import ZoomModal from '../components/zoom-modal'
 import { useState, useRef, useEffect } from 'react';
 
-export default function () {
+export default function PostacilarNilufer() {
     const [modalSrc, setModalSrc] = useState("");
     const [showModal, setShowModal] = useState(false);
     const refx = useRef(null);

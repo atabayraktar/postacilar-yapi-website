@@ -1,0 +1,11 @@
+.prestige-bottom-part-second-row{
+    padding: calc(var(--bs-gutter-x) * .5 * 2) 0% 0px 0%;
+
+}
+.prestige-img-component-desktop{
+    display: block;
+    @media only screen and (max-width: 991px) {
+        display: none;
+        padding-top: 15px;
+    }
+}

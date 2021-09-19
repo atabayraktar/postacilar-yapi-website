@@ -3,6 +3,9 @@
 @import "./nilufer.scss";
 @import "./yakamoz.scss";
 @import "./idil.scss";
+@import "./nova.scss";
+@import "./prestige.scss";
+
 body {
   background-color: #36373b;
 }
@@ -160,6 +163,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  &.modal-35{
+    .modal-content{
+      width:35vw;
+    }
+    img{
+      width:30vw;
+    }
+  }
 }
 .modal-content {
   width: 62vw;

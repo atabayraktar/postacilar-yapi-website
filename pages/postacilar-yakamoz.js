@@ -27,7 +27,7 @@ export default function () {
                             <div className="col-12 col-md-7 yakamoz-right-col yakamoz-img-component-mobile">
                                 <div className="row">
                                     <div className="col-6 yakamoz-img-1">
-                                        <img onClick={() => { setShowModal(true); setModalSrc("/yakamoz/yakamoz2.jpg") }}  width="80%" height="auto" src="/yakamoz/yakamoz2.jpg" />
+                                        <img onClick={() => { setShowModal(true); setModalSrc("/yakamoz/yakamoz2.jpg") }}  width="85%" height="auto" src="/yakamoz/yakamoz2.jpg" />
                                     </div>
                                     <div className="col-6 yakamoz-img-2">
                                         <img onClick={() => { setShowModal(true); setModalSrc("/yakamoz/yakamoz1.jpg") }} width="100%" height="auto" src="/yakamoz/yakamoz1.jpg" />
@@ -35,7 +35,7 @@ export default function () {
                                 </div>
                                 <div className="row">
                                     <div className="col-6 yakamoz-img-3">
-                                        <img onClick={() => { setShowModal(true); setModalSrc("/yakamoz/yakamoz4.jpg") }} width="90%" height="auto" src="/yakamoz/yakamoz4.jpg" />
+                                        <img onClick={() => { setShowModal(true); setModalSrc("/yakamoz/yakamoz4.jpg") }} width="100%" height="auto" src="/yakamoz/yakamoz4.jpg" />
                                     </div>
                                     <div className="col-6 yakamoz-img-4">
                                         <img onClick={() => { setShowModal(true); setModalSrc("/yakamoz/yakamoz3.jpg") }} width="85%" height="auto" src="/yakamoz/yakamoz3.jpg" />

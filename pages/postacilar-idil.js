@@ -11,7 +11,7 @@ export default function () {
 
     return (
         <>
-            {showModal && <ZoomModal zoomRef={refx} imageSrc={modalSrc} />}
+            {showModal && <ZoomModal zoomRef={refx} verticalImage={true} imageSrc={modalSrc} />}
             <Head>
                 <title>POSTACILAR | İDİL</title>
                 <meta name="description" content="" />
@@ -31,7 +31,7 @@ export default function () {
                                         <img onClick={() => { setShowModal(true); setModalSrc("/idil/idil1.jpg") }} width="100%" height="auto" src="/idil/idil1.jpg" />
                                     </div>
                                     <div className="col-6 idil-img-2">
-                                        <img onClick={() => { setShowModal(true); setModalSrc("/idil/idil2.jpg") }} width="80%" height="auto" src="/idil/idil2.jpg" />
+                                        <img onClick={() => { setShowModal(true); setModalSrc("/idil/idil2.jpg") }} width="100%" height="auto" src="/idil/idil2.jpg" />
                                     </div>
                                 </div>
                             </div>

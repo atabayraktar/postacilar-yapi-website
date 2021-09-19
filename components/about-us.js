@@ -2,7 +2,7 @@ export default function AboutUs({ aboutUsRef }) {
 
     return (
         <>
-            <div ref={aboutUsRef} className="container">
+            <div id="hakkimizda" ref={aboutUsRef} className="container">
                 <div className="desktop-components">
                     <div className="component-container">
                         <div className="row">

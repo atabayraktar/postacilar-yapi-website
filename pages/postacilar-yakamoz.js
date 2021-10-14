@@ -13,8 +13,8 @@ export default function () {
             {showModal && <ZoomModal zoomRef={refx} imageSrc={modalSrc} />}
             <Head>
                 <title>POSTACILAR | YAKAMOZ</title>
-                <meta name="description" content="" />
-                <link rel="icon" href="/favicon.ico" />
+                <meta name="description" content="Postacılar Yapı | Yakamoz Evleri" />
+                <link rel="icon" href="/meta-logo.png" />
             </Head>
             <Header />
             <div className="container-fluid detail-container">
@@ -27,7 +27,7 @@ export default function () {
                             <div className="col-12 col-md-7 yakamoz-right-col yakamoz-img-component-mobile">
                                 <div className="row">
                                     <div className="col-6 yakamoz-img-1">
-                                        <img onClick={() => { setShowModal(true); setModalSrc("/yakamoz/yakamoz2.jpg") }}  width="85%" height="auto" src="/yakamoz/yakamoz2.jpg" />
+                                        <img onClick={() => { setShowModal(true); setModalSrc("/yakamoz/yakamoz2.jpg") }} width="85%" height="auto" src="/yakamoz/yakamoz2.jpg" />
                                     </div>
                                     <div className="col-6 yakamoz-img-2">
                                         <img onClick={() => { setShowModal(true); setModalSrc("/yakamoz/yakamoz1.jpg") }} width="100%" height="auto" src="/yakamoz/yakamoz1.jpg" />
@@ -46,16 +46,18 @@ export default function () {
                                 YAKAMOZ<span className="detail-sub-title-stick"><div>|</div></span>Hakkında
                             </div>
                             <div className="detail-paragraph">
-                                Barbaros Mahallesi 100. yıl caddesinde yer alani Çanakkale'nin göz bebeği yeni kordona ve şehir merkezine yürüyüş mesafesinde, enfes boğaz manzarasına sahip, kendisine ait açık otoparkı bulunanprojemiz 3 adet 3+1 daire, 1 adet 4+1 dublex daire ve 1 dükkandan oluşmaktadır.
+                                Barbaros mahallesi 100. yıl caddesinde konumlanan proje çanakkalenin göz bebeği yeni kordona bakmakta,
+                                göz kamaştıran bir boğaz manzarası sunmaktadır. Dairelere tanımlı açık otopark alanı bulunan projemiz modern
+                                ve yalın bir tasarıma sahiptir.
                             </div>
                             <div className="detail-sub-title">
                                 YAKAMOZ<span className="detail-sub-title-stick"><div>|</div></span>Proje Detayları
                             </div>
                             <div className="detail-paragraph">
-                                Daire Sayısı: 4 Daire - 1 Dükkan <br />
-                                Daire Tipleri: 3 Adet 3+1 - 1 Adet 4+1 Dublex <br />
-                                Manzara: Deniz Manzarası <br />
-                                Adres: Barbaros Mah. 100. Yıl Cad. No: 5 Merkez / Çanakkale
+                                Yakamoz evleri katta bir daire konumlamam geniş m2 lere sahip bir projedir.<br/>
+                                3 adet 3+1<br/>
+                                1 adet 4+1 dubleks<br/>
+                                1 adet iş yeri<br/>
                             </div>
                         </div>
                     </div>

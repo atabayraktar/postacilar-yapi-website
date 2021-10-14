@@ -18,8 +18,8 @@ export default function PostacilarPrestige() {
             {showModal && <ZoomModal zoomRef={refx} imageSrc={modalSrc} />}
             <Head>
                 <title>POSTACILAR | PRESTIGE</title>
-                <meta name="description" content="" />
-                <link rel="icon" href="/favicon.ico" />
+                <meta name="description" content="Postacılar Yapı | Prestige Evleri" />
+                <link rel="icon" href="/meta-logo.png" />
             </Head>
             <Header refs={[projectsSectionRef, contactSectionRef, aboutUsSectionRef]} />
             <div className="container-fluid detail-container mt-5">
@@ -27,7 +27,9 @@ export default function PostacilarPrestige() {
                     <div className="col-12 col-md-6">
                         <div className="row">
                             <div className="detail-title">
-                                PRESTIGE
+                                <div className="prestige-logo-big">
+                                    <img src="/prestige.png" />
+                                </div>
                             </div>
                             <div className="col-12 col-md-7 nova-right-col nova-img-component-mobile">
                                 <div className="row">
@@ -37,7 +39,11 @@ export default function PostacilarPrestige() {
                                 </div>
                             </div>
                             <div className="detail-sub-title">
-                                PRESTIGE <span className="detail-sub-title-stick"><div>|</div></span>Hakkında
+                                <div className="detail-title">
+                                    <div className="prestige-logo">
+                                        <img src="/prestige.png" />
+                                    </div>
+                                </div> <span className="detail-sub-title-stick"><div>|</div></span>Hakkında
                             </div>
                             <div className="detail-paragraph">
                                 Prestige şehrin karmaşasından uzak, bir o kadar da şehrin tam kalbinde sıra dışı ayrıntıları konforlu ve güvenli yaşam alanlarıyla tasarlanmış bir proje. Muhteşem deniz manzarası, çocuk oyun alanları, dinlenme alanları, açık kapalı otopark, yeşil bahçe, önemli merkezlere yakınlık, yenilikçi teknoloji ve çevre dostu oluşuyla dikkat çeken bir proje.
@@ -55,24 +61,29 @@ export default function PostacilarPrestige() {
                 <div className="row">
                     <div className="col-12 col-md-4">
                         <div className="detail-sub-title">
-                            PRESTIGE <span className="detail-sub-title-stick"><div>|</div></span> Proje detayları
-                            </div>
+                            <div className="detail-title">
+                                <div className="prestige-logo">
+                                    <img src="/prestige.png" />
+                                </div>
+                            </div>  <span className="detail-sub-title-stick"><div>|</div></span> Proje detayları
+                        </div>
                         <div className="detail-paragraph">
                             Daire Sayısı: 28 <br />
-                                Daire Tipİ: 3+1 <br />
-                                İşyeri Sayısı: 3 <br />
-                                Manzara: Deniz Manzarası <br />
-                                Doğa Manzarası, Şehir Manzarası <br />
-                                Adres: Boğazkent Mah. Seyit Onbaşı <br />Cad. No:19 Kepez / Çanakkale
-                            </div>
-                        <div className="detail-sub-title">
-                            PRESTIGE <span className="detail-sub-title-stick"><div>|</div></span> Proje Alanı
-                            </div>
+                            Daire Tipİ: 3+1 <br />
+                            İşyeri Sayısı: 3 <br />
+                            Manzara: Deniz Manzarası <br />
+                            Doğa Manzarası, Şehir Manzarası <br />
+                            Adres: Boğazkent Mah. Seyit Onbaşı <br />Cad. No:19 Kepez / Çanakkale
+                        </div>
                     </div>
                     <div className="col-12 col-md-8">
                         <div className="detail-sub-title">
-                            PRESTIGE <span className="detail-sub-title-stick"><div>|</div></span>iç tasarım
-                            </div>
+                            <div className="detail-title">
+                                <div className="prestige-logo">
+                                    <img src="/prestige.png" />
+                                </div>
+                            </div>  <span className="detail-sub-title-stick"><div>|</div></span>iç tasarım
+                        </div>
                         <div className="images">
                             <div className="row align-items-end">
                                 <div className="col-12 col-md-5">

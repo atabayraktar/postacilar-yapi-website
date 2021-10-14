@@ -14,8 +14,8 @@ export default function () {
             {showModal && <ZoomModal zoomRef={refx} verticalImage={true} imageSrc={modalSrc} />}
             <Head>
                 <title>POSTACILAR | İDİL</title>
-                <meta name="description" content="" />
-                <link rel="icon" href="/favicon.ico" />
+                <meta name="description" content="Postacılar Yapı | İdil Evleri" />
+                <link rel="icon" href="/meta-logo.png" />
             </Head>
             <Header />
             <div className="container-fluid detail-container">
@@ -39,16 +39,16 @@ export default function () {
                                 İDİL<span className="detail-sub-title-stick"><div>|</div></span>Hakkında
                             </div>
                             <div className="detail-paragraph">
-                                İdil Evleri, Esenler Mahallesinde nezih bir konuma sahip, toplam 10 daireden oluşmaktadır. 6 adet 1+1 daire tipi, 4 adet 2+1 daire tipi şeklinde tasarlanmış olup şehir merkezi, okul, park, hastanelere yakın bir konuma sahiptir.
+                                Esenler mahallesinde bulunan idil evleri 10 daireden oluşan bir apartman projesi olup
+                                şehir merkezi, okul, park ve hastanelere yakın bir konuma sahiptir.
                             </div>
                             <div className="detail-sub-title">
                                 İDİL<span className="detail-sub-title-stick"><div>|</div></span>Proje Detayları
                             </div>
                             <div className="detail-paragraph">
-                                Daire Sayısı: 10 <br />
-                                Daire Tipleri: 6 Adet 1+1 - 4 Adet 2+1 <br />
-                                Manzara: Şehir Manzarası - Doğa Manzarası <br />
-                                Adres: Esenler Mah. Çamlık Sokak Merkez / Çanakkale
+                                İdil evleri bölgenin talepleri doğrultusunda tasarlanmıştır.<br />
+                                6 adet 1+1<br />
+                                4 adet 2+1<br />
                             </div>
                         </div>
                     </div>

@@ -1,5 +1,5 @@
 .detail-container {
-    padding: 5px 100px;
+    padding: 20px 100px;
     @media only screen and (max-width: 768px) {
         padding: 15px 30px;
     }
@@ -12,6 +12,18 @@
     font-size: 36px;
     font-weight: 300;
     color: white;
+    .prestige-logo-big{
+        img{
+            width: 204px;
+            height: 78px;
+        }
+    }
+    .prestige-logo{
+        img{
+            width: 102px;
+            height: 39px;
+        }
+    }
     &-stick {
         @extend .detail-title;
         font-size: 100px;

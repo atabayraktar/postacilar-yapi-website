@@ -11,8 +11,8 @@ export default function Home() {
     <div >
       <Head>
         <title>POSTACILAR | YAPI Projelerimiz</title>
-        <meta name="description" content="" />
-        <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="Postacılar Yapı | Projelerimiz" />
+        <link rel="icon" href="/meta-logo.png" />
       </Head>
       <Header refs={[projectsSectionRef, contactSectionRef, aboutUsSectionRef]} />
       <AllProjects />

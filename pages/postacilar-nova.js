@@ -18,8 +18,8 @@ export default function PostacilarNova() {
             {showModal && <ZoomModal zoomRef={refx} imageSrc={modalSrc} />}
             <Head>
                 <title>POSTACILAR | NOVA</title>
-                <meta name="description" content="" />
-                <link rel="icon" href="/favicon.ico" />
+                <meta name="description" content="Postacılar Yapı | Nova Evleri" />
+                <link rel="icon" href="/meta-logo.png" />
             </Head>
             <Header refs={[projectsSectionRef, contactSectionRef, aboutUsSectionRef]} />
             <div className="container-fluid detail-container">
@@ -57,13 +57,20 @@ export default function PostacilarNova() {
                                 NOVA<span className="detail-sub-title-stick"><div>|</div></span>Hakkında
                             </div>
                             <div className="detail-paragraph">
-                                Birinci Sınıf Malzeme İle Donatılan Eşsiz Mimariye Sahip Projemizde 2 Adet İşyeri, 2 Adet 3+2 Dubleks, 2 Adet 4+2 Dubleks, 9 Adet 2+1, 3 Adet 3+1 ve 4 Adet 1+1 Dairemiz Bulunmaktadır.
+                                Postacılar yapının bölgedeki üçüncü projesi olan nova gelişen şehrin ilerleyişi doğrultusunda konumlanmış,
+                                firma ilkelerimizden olan konforlu ve güvenli yaşam alanları tasarlama prensibimize sahip aynı zamanda
+                                deniz manzarası ve yakınındaki parklar ile şehir ve doğa ilişkisini sevenlere hitabeden bir apartman projesidir.
                             </div>
                             <div className="detail-sub-title">
                                 NOVA <span className="detail-sub-title-stick"><div>|</div></span> Proje detayları
                             </div>
                             <div className="detail-paragraph">
-                                Postacılar Nova Farklı Tiplerdeki Daireleriyle Yaşam ve İhtiyaçlarınıza Hitap Eden Özel Mimari Çözümler Sunmaktadır.
+                                Postacılar nova  çeşitli daire tiplerine sahip bir projedir.<br/>
+                                2 adet 3+2 dubleks<br/>
+                                2 adet 4+2 dubleks<br/>
+                                9 adet 2+1<br/>
+                                3 adet 3+1<br/>
+                                4 adet 1+1<br/>
                             </div>
                         </div>
                     </div>

@@ -18,8 +18,8 @@ export default function PostacilarNilufer() {
             {showModal && <ZoomModal zoomRef={refx} imageSrc={modalSrc} />}
             <Head>
                 <title>POSTACILAR | NİLÜFER</title>
-                <meta name="description" content="" />
-                <link rel="icon" href="/favicon.ico" />
+                <meta name="description" content="Postacılar Yapı | Nilüfer Evleri" />
+                <link rel="icon" href="/meta-logo.png" />
             </Head>
             <Header refs={[projectsSectionRef, contactSectionRef, aboutUsSectionRef]} />
             <div className="container-fluid detail-container">
@@ -48,16 +48,18 @@ export default function PostacilarNilufer() {
                                 NİLÜFER<span className="detail-sub-title-stick"><div>|</div></span>Hakkında
                             </div>
                             <div className="detail-paragraph">
-                                Çanakkale Esenler Mahallesinde Huzur, Konfor ve Rahatlığı sizlerle buluşturan bir proje. Toplam 2 bloktan oluşan, 36 daire, otopark, çocuk oyun parkı
-                                ve yeşil alanları bulunan bir projedir. Özenle tasarlanmış ferah daireleri aranılan konforun adresi olmuştur.
+                                Esenler mahallesinde konumlanan ve ilk projemiz olan nilüfer evleri bulunduğu çevrede kendini farklılaştıran,
+                                firma prensiplerimiz doğrultusunda sizlere huzur, konfor ve rahatlığı sunan bir projedir. Açık otopark, çocuk
+                                oyun parkı ve yeşil alanlar bulunduran proje ferah daire çözümleriylede dikkat çekmektedir.
+
                             </div>
                             <div className="detail-sub-title">
                                 NİLÜFER <span className="detail-sub-title-stick"><div>|</div></span> Proje detayları
                             </div>
                             <div className="detail-paragraph">
-                                Daire Sayısı: 36 <br />
-                                Daire Tipleri: 24 Adet 3+1 & 12 Adet 2+1 <br />
-                                Adres: Esenler Mah. Okulyolu Sokak Merkez / Çanakkale
+                                Nilüfer evleri iki blok ve toplam 36 daireden oluşmaktadır.<br/>
+                                24 adet 3+1<br/>
+                                12 adet 2+1<br/>
                             </div>
                         </div>
                     </div>

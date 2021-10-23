@@ -25,7 +25,7 @@ const Mapx = () => {
                 animate={true}
             >
                 <Popup>
-                    Postacılar Prestij
+                    Postacılar Prestige
         </Popup>
             </Marker>
             <Marker

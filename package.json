@@ -20,7 +20,7 @@
     "react-leaflet": "^3.2.1",
     "react-modal-image": "^2.5.0",
     "sass": "^1.38.1",
-    "swiper": "^7.0.1"
+    "swiper": "^7.0.6"
   },
   "devDependencies": {
     "eslint": "7.32.0",

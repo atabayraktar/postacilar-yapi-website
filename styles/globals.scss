@@ -207,3 +207,8 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   color: #bdbec2;
 }
+.zoomable-img{
+  img{
+    cursor:zoom-in
+  }
+}

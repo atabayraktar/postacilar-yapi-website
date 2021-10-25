@@ -24,7 +24,7 @@ export default function PostacilarPrestige() {
     return (
         <>
             {showVModal && <ZoomModal verticalImage={true} zoomRef={refx} imageSrc={modalSrc} />}
-            {showModal && <ZoomModal zoomRef={refx}  imageSrc={modalSrc} />}
+            {showModal && <ZoomModal zoomRef={refx} imageSrc={modalSrc} />}
             <Head>
                 <title>POSTACILAR | PRESTIGE</title>
                 <meta name="description" content="Postacılar Yapı | Prestige Evleri" />
@@ -36,6 +36,7 @@ export default function PostacilarPrestige() {
                     <div className="col-12 col-md-6">
                         <div className="row">
                             <div className="detail-title">
+                                POSTACILAR <span className="detail-title-stick"><div>|</div></span>
                                 <div className="prestige-logo-big">
                                     <img src="/prestige.png" />
                                 </div>

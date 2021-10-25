@@ -108,23 +108,6 @@ export default function PostacilarNova() {
                                     </Swiper>
                                 </div>
                             </div>
-                            <div className="row nova-detail-image-row">
-                                <div className="col-4">
-                                    <div className="nova-detail-image">
-                                        <img onClick={() => { setShowVModal(true); setModalSrc("/nova/nova2.jpg") }} width="100%" height="auto" src="/nova/nova2.jpg" />
-                                    </div>
-                                </div>
-                                <div className="col-4">
-                                    <div className="nova-detail-image">
-                                        <img onClick={() => { setShowVModal(true); setModalSrc("/nova/nova1.jpg") }} width="100%" height="auto" src="/nova/nova1.jpg" />
-                                    </div>
-                                </div>
-                                <div className="col-4">
-                                    <div className="nova-detail-image">
-                                        <img onClick={() => { setShowVModal(true); setModalSrc("/nova/nova3.jpg") }} width="100%" height="auto" src="/nova/nova3.jpg" />
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                         <div className="row nova-main-image align-items-end justify-content-end">
                             <div className="col-5">

@@ -9,10 +9,11 @@
     align-items: center;
     letter-spacing: 4px;
     font-family: "Source Sans Pro", sans-serif;
-    font-size: 36px;
+    font-size: 40px;
     font-weight: 300;
     color: white;
     .prestige-logo-big{
+        padding-top: 15px;
         img{
             width: 204px;
             height: 78px;
@@ -40,7 +41,7 @@
 .detail-sub-title {
     display: flex;
     align-items: center;
-    font-size: 16px;
+    font-size: 30px;
     font-weight: 200;
     letter-spacing: 4px;
     font-family: "Source Sans Pro", sans-serif;
@@ -53,7 +54,7 @@
 }
 .detail-paragraph {
     font-family: "Source Sans Pro", sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 200;
     color: white;
 }

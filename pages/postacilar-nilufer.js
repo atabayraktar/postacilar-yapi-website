@@ -6,6 +6,8 @@ import { useState, useRef, useEffect } from 'react';
 export default function PostacilarNilufer() {
     const [modalSrc, setModalSrc] = useState("");
     const [showModal, setShowModal] = useState(false);
+    const [showVModal, setShowVModal] = useState(false);
+
     const refx = useRef(null);
     useOutsideAlerter(refx);
 
@@ -16,6 +18,8 @@ export default function PostacilarNilufer() {
     return (
         <>
             {showModal && <ZoomModal zoomRef={refx} imageSrc={modalSrc} />}
+            {showVModal && <ZoomModal zoomRef={refx} verticalImage={true} imageSrc={modalSrc} />}
+
             <Head>
                 <title>POSTACILAR | NİLÜFER</title>
                 <meta name="description" content="Postacılar Yapı | Nilüfer Evleri" />
@@ -73,7 +77,7 @@ export default function PostacilarNilufer() {
                                     <img onClick={() => { setShowModal(true); setModalSrc("/nilufer/nilufer1.jpg") }} width="90%" height="auto" src="/nilufer/nilufer1.jpg" />
                                 </div>
                                 <div className="nilufer-right-bottom-image">
-                                    <img onClick={() => { setShowModal(true); setModalSrc("/nilufer/nilufer3.jpg") }} width="70%" height="auto" src="/nilufer/nilufer3.jpg" />
+                                    <img onClick={() => { setShowVModal(true); setModalSrc("/nilufer/nilufer3.jpg") }} width="70%" height="auto" src="/nilufer/nilufer3.jpg" />
                                 </div>
                             </div>
                         </div>
@@ -90,6 +94,7 @@ export default function PostacilarNilufer() {
             function handleClickOutside(event) {
                 if (ref.current && !ref.current.contains(event.target)) {
                     setShowModal(false);
+                    setShowVModal(false);
                 }
             }
 

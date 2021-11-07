@@ -6,6 +6,8 @@ import Icons from '../components/icons'
 import Projects from '../components/projetcs'
 import ProjectMap from '../components/project-map'
 import { useRef } from 'react'
+import ProjectsCountUp from '../components/projects-count-up'
+
 export default function Home() {
   const projectsSectionRef = useRef(null);
   const contactSectionRef = useRef(null);
@@ -23,6 +25,7 @@ export default function Home() {
       <Icons />
       <AboutUs aboutUsRef={aboutUsSectionRef}/>
       <Projects projectsRef={projectsSectionRef} />
+      <ProjectsCountUp/>
       <ProjectMap contactRef={contactSectionRef} />
     </div>
   )

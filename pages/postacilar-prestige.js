@@ -49,7 +49,7 @@ export default function PostacilarPrestige() {
                                             navigation
                                             spaceBetween={50}
                                             initialSlide={1}
-                                            slidesPerView={1.6}
+                                            slidesPerView={1}
                                             centeredSlides={true}
                                             onSlideChange={() => console.log('slide change')}
                                             onSwiper={(swiper) => console.log(swiper)}
@@ -87,7 +87,7 @@ export default function PostacilarPrestige() {
                                     navigation
                                     spaceBetween={50}
                                     initialSlide={1}
-                                    slidesPerView={1.6}
+                                    slidesPerView={1}
                                     centeredSlides={true}
                                     onSlideChange={() => console.log('slide change')}
                                     onSwiper={(swiper) => console.log(swiper)}
@@ -96,8 +96,8 @@ export default function PostacilarPrestige() {
                                     </SwiperSlide>
                                     <SwiperSlide><img onClick={() => { setShowVModal(true); setModalSrc("/prestige/prestige_slide_2.JPG") }} width="100%" height="auto" src="/prestige/prestige_slide_2.JPG" />
                                     </SwiperSlide>
-                                    <SwiperSlide><img onClick={() => { setShowVModal(true); setModalSrc("/prestige/prestige_slide_3.JPG") }} width="100%" height="auto" src="/prestige/prestige_slide_3.JPG" />
-                                    </SwiperSlide>
+                                    {/* <SwiperSlide><img onClick={() => { setShowVModal(true); setModalSrc("/prestige/prestige_slide_3.JPG") }} width="100%" height="auto" src="/prestige/prestige_slide_3.JPG" />
+                                    </SwiperSlide> */}
                                     <SwiperSlide><img onClick={() => { setShowVModal(true); setModalSrc("/prestige/prestige_slide_4.JPG") }} width="100%" height="auto" src="/prestige/prestige_slide_4.JPG" />
                                     </SwiperSlide>
                                 </Swiper>

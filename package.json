@@ -16,9 +16,11 @@
     "next": "11.1.0",
     "react": "17.0.2",
     "react-bootstrap": "^2.0.0-beta.6",
+    "react-countup": "^6.0.0",
     "react-dom": "17.0.2",
     "react-leaflet": "^3.2.1",
     "react-modal-image": "^2.5.0",
+    "react-visibility-sensor": "^5.1.1",
     "sass": "^1.38.1",
     "swiper": "^7.0.6"
   },

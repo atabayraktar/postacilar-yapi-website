@@ -1,0 +1,39 @@
+.count-up{
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    @media only screen and (max-width: 991px) {
+        flex-direction: column;
+        padding:24px;
+        gap:20px
+    }
+    &-item{
+        display: flex;
+        justify-content: space-between;
+        gap:10px;
+        @media only screen and (max-width: 991px) {
+            justify-content: start;
+            gap: 24px;
+        }
+    }
+    &-number{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @media only screen and (max-width: 991px) {
+            justify-content: start;
+            align-items: start;
+        }
+        &-title{
+            font-size: 12px;
+            margin-bottom: 0px;
+            color:white
+        }
+        &-value{
+            font-size: 30px;
+            color:white
+        }
+    }
+}

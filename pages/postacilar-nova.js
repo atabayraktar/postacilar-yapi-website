@@ -43,7 +43,7 @@ export default function PostacilarNova() {
                                             navigation
                                             spaceBetween={50}
                                             initialSlide={1}
-                                            slidesPerView={1.6}
+                                            slidesPerView={1}
                                             centeredSlides={true}
                                             onSlideChange={() => console.log('slide change')}
                                             onSwiper={(swiper) => console.log(swiper)}
@@ -56,6 +56,15 @@ export default function PostacilarNova() {
                                             </SwiperSlide>
                                             <SwiperSlide>
                                                 <img onClick={() => { setShowModal(true); setModalSrc("/nova/nova_slide_3.jpg") }} width="100%" height="auto" src="/nova/nova_slide_3.jpg" />
+                                            </SwiperSlide>
+                                            <SwiperSlide>
+                                                <img onClick={() => { setShowVModal(true); setModalSrc("/nova/nova1.jpg") }} width="100%" height="auto" src="/nova/nova1.jpg" />
+                                            </SwiperSlide>
+                                            <SwiperSlide>
+                                                <img onClick={() => { setShowVModal(true); setModalSrc("/nova/nova2.jpg") }} width="100%" height="auto" src="/nova/nova2.jpg" />
+                                            </SwiperSlide>
+                                            <SwiperSlide>
+                                                <img onClick={() => { setShowVModal(true); setModalSrc("/nova/nova3.jpg") }} width="100%" height="auto" src="/nova/nova3.jpg" />
                                             </SwiperSlide>
                                         </Swiper>
                                     </div>
@@ -91,7 +100,7 @@ export default function PostacilarNova() {
                                         navigation
                                         spaceBetween={50}
                                         initialSlide={1}
-                                        slidesPerView={1.6}
+                                        slidesPerView={1}
                                         centeredSlides={true}
                                         onSlideChange={() => console.log('slide change')}
                                         onSwiper={(swiper) => console.log(swiper)}
@@ -104,6 +113,15 @@ export default function PostacilarNova() {
                                         </SwiperSlide>
                                         <SwiperSlide>
                                             <img onClick={() => { setShowVModal(true); setModalSrc("/nova/nova_slide_3.jpg") }} width="100%" height="auto" src="/nova/nova_slide_3.jpg" />
+                                        </SwiperSlide>
+                                        <SwiperSlide>
+                                            <img onClick={() => { setShowVModal(true); setModalSrc("/nova/nova1.jpg") }} width="100%" height="auto" src="/nova/nova1.jpg" />
+                                        </SwiperSlide>
+                                        <SwiperSlide>
+                                            <img onClick={() => { setShowVModal(true); setModalSrc("/nova/nova2.jpg") }} width="100%" height="auto" src="/nova/nova2.jpg" />
+                                        </SwiperSlide>
+                                        <SwiperSlide>
+                                            <img onClick={() => { setShowVModal(true); setModalSrc("/nova/nova3.jpg") }} width="100%" height="auto" src="/nova/nova3.jpg" />
                                         </SwiperSlide>
                                     </Swiper>
                                 </div>

@@ -10,6 +10,8 @@ export default function PostacilarNova() {
     const [modalSrc, setModalSrc] = useState("");
     const [showModal, setShowModal] = useState(false);
     const [showVModal, setShowVModal] = useState(false);
+    const [showMediumModal, setShowMediumModal] = useState(false);
+
     const refx = useRef(null);
     useOutsideAlerter(refx);
 
@@ -19,7 +21,8 @@ export default function PostacilarNova() {
 
     return (
         <>
-            {showVModal && <ZoomModal verticalImage={true} zoomRef={refx} imageSrc={modalSrc} />}
+            {showMediumModal && <ZoomModal size="modal-43" zoomRef={refx} imageSrc={modalSrc} />}
+            {showVModal && <ZoomModal size="modal-35" zoomRef={refx} imageSrc={modalSrc} />}
             {showModal && <ZoomModal zoomRef={refx} imageSrc={modalSrc} />}
 
             <Head>
@@ -103,19 +106,19 @@ export default function PostacilarNova() {
                                         onSwiper={(swiper) => console.log(swiper)}
                                     >
                                         <SwiperSlide>
-                                            <img onClick={() => { setShowVModal(true); setModalSrc("/nova/nova_slide_1.jpg") }} width="100%" height="auto" src="/nova/nova_slide_1.jpg" />
+                                            <img onClick={() => { setShowMediumModal(true); setModalSrc("/nova/nova_slide_1.jpg") }} width="100%" height="auto" src="/nova/nova_slide_1.jpg" />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <img onClick={() => { setShowVModal(true); setModalSrc("/nova/nova_slide_2.jpg") }} width="100%" height="auto" src="/nova/nova_slide_2.jpg" />
+                                            <img onClick={() => { setShowMediumModal(true); setModalSrc("/nova/nova_slide_2.jpg") }} width="100%" height="auto" src="/nova/nova_slide_2.jpg" />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <img onClick={() => { setShowVModal(true); setModalSrc("/nova/nova_slide_3.jpg") }} width="100%" height="auto" src="/nova/nova_slide_3.jpg" />
+                                            <img onClick={() => { setShowMediumModal(true); setModalSrc("/nova/nova_slide_3.jpg") }} width="100%" height="auto" src="/nova/nova_slide_3.jpg" />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <img onClick={() => { setShowVModal(true); setModalSrc("/nova/nova1.jpg") }} width="100%" height="auto" src="/nova/nova1.jpg" />
+                                            <img onClick={() => { setShowMediumModal(true); setModalSrc("/nova/nova1.jpg") }} width="100%" height="auto" src="/nova/nova1.jpg" />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <img onClick={() => { setShowVModal(true); setModalSrc("/nova/nova2.jpg") }} width="100%" height="auto" src="/nova/nova2.jpg" />
+                                            <img onClick={() => { setShowMediumModal(true); setModalSrc("/nova/nova2.jpg") }} width="100%" height="auto" src="/nova/nova2.jpg" />
                                         </SwiperSlide>
                                     </Swiper>
                                 </div>
@@ -159,6 +162,7 @@ export default function PostacilarNova() {
                 if (ref.current && !ref.current.contains(event.target)) {
                     setShowModal(false);
                     setShowVModal(false);
+                    setShowMediumModal(false);
                 }
             }
 

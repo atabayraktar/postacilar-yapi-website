@@ -18,7 +18,7 @@ export default function PostacilarNilufer() {
     return (
         <>
             {showModal && <ZoomModal zoomRef={refx} imageSrc={modalSrc} />}
-            {showVModal && <ZoomModal zoomRef={refx} verticalImage={true} imageSrc={modalSrc} />}
+            {showVModal && <ZoomModal zoomRef={refx} size="modal-35" imageSrc={modalSrc} />}
 
             <Head>
                 <title>POSTACILAR | NİLÜFER</title>

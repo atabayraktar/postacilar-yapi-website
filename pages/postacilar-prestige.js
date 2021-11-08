@@ -31,7 +31,7 @@ export default function PostacilarPrestige() {
                 <link rel="icon" href="/meta-logo.png" />
             </Head>
             <Header refs={[projectsSectionRef, contactSectionRef, aboutUsSectionRef]} />
-            <div className="container-fluid detail-container mt-5">
+            <div className="container-fluid detail-container">
                 <div className="row">
                     <div className="col-12 col-md-6">
                         <div className="row">
@@ -80,8 +80,8 @@ export default function PostacilarPrestige() {
                         </div>
                     </div>
                     <div className="col-12 col-md-6 nova-right-col prestige-img-component-desktop">
-                        <div className="row">
-                            <div className="col-12 nova-main-image">
+                        <div className="row" style={{ justifyContent: "center" }}>
+                            <div className="col-12 nova-main-image" style={{ width: "450px"}}>
                                 <Swiper
                                     modules={[Navigation]}
                                     navigation
@@ -96,8 +96,8 @@ export default function PostacilarPrestige() {
                                     </SwiperSlide>
                                     <SwiperSlide><img onClick={() => { setShowVModal(true); setModalSrc("/prestige/prestige_slide_2.JPG") }} width="100%" height="auto" src="/prestige/prestige_slide_2.JPG" />
                                     </SwiperSlide>
-                                    {/* <SwiperSlide><img onClick={() => { setShowVModal(true); setModalSrc("/prestige/prestige_slide_3.JPG") }} width="100%" height="auto" src="/prestige/prestige_slide_3.JPG" />
-                                    </SwiperSlide> */}
+                                    <SwiperSlide><img onClick={() => { setShowVModal(true); setModalSrc("/prestige/prestige_slide_3.JPG") }} width="100%" height="auto" src="/prestige/prestige_slide_3.JPG" />
+                                    </SwiperSlide>
                                     <SwiperSlide><img onClick={() => { setShowVModal(true); setModalSrc("/prestige/prestige_slide_4.JPG") }} width="100%" height="auto" src="/prestige/prestige_slide_4.JPG" />
                                     </SwiperSlide>
                                 </Swiper>
@@ -138,29 +138,20 @@ export default function PostacilarPrestige() {
                                 </div>
                                 <div className="col-6 mt-3 mt-md-0 col-md-4">
                                     <img onClick={() => { setShowModal(true); setModalSrc("/prestige/pres2.jpg") }} width="100%" height="auto" src="/prestige/pres2.jpg" />
-
                                 </div>
                                 <div className="col-5 mt-3 mt-md-0 col-md-3">
                                     <img onClick={() => { setShowModal(true); setModalSrc("/prestige/pres3.jpg") }} width="100%" height="auto" src="/prestige/pres3.jpg" />
-
                                 </div>
                             </div>
-                            <div className="row prestige-bottom-part-second-row mb-5">
+                            <div className="row prestige-bottom-part-second-row mb-5" style={{ justifyContent: "flex-end" }}>
                                 <div className="col-7 col-md-3">
                                     <img onClick={() => { setShowModal(true); setModalSrc("/prestige/pres4.jpg") }} width="100%" height="auto" src="/prestige/pres4.jpg" />
-
-                                </div>
-                                <div className="col-5 col-md-2">
-                                    <img onClick={() => { setShowModal(true); setModalSrc("/prestige/pres5.jpg") }} width="100%" height="auto" src="/prestige/pres5.jpg" />
-
                                 </div>
                                 <div className="col-5 mt-3 mt-md-0 col-md-2">
                                     <img onClick={() => { setShowModal(true); setModalSrc("/prestige/pres5.jpg") }} width="100%" height="auto" src="/prestige/pres5.jpg" />
-
                                 </div>
                                 <div className="col-7 mt-3 mt-md-0 col-md-5">
                                     <img onClick={() => { setShowModal(true); setModalSrc("/prestige/pres6.jpg") }} width="100%" height="auto" src="/prestige/pres6.jpg" />
-
                                 </div>
                             </div>
                         </div>

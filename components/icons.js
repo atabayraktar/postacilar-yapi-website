@@ -29,22 +29,22 @@ export default function Icons() {
                     <div className="row icons-description">
                         <div className="col-3 icons-centered">
                             <div className="about-us-logo-description">
-                                postacılar <br/>güvencesiyle
+                                POSTACILAR <br/>GÜVENCESİYLE
                             </div>
                         </div>
                         <div className="col-3 icons-centered">
                             <div className="about-us-logo-description">
-                                güvenilir iş <br/>ortakları
+                                GÜVENİLİR İŞ <br/>ORTAKLARI
                             </div>
                         </div>
                         <div className="col-3 icons-centered">
                             <div className="about-us-logo-description">
-                                birinci sınıf<br/> malzeme <br/> ve işcilik
+                                BİRİNCİ SINIF<br/> MALZEME VE İŞCİLİK
                             </div>
                         </div>
                         <div className="col-3 icons-centered">
                             <div className="about-us-logo-description">
-                                fonksiyonel <br/> mekanlar
+                                FONKSİYONEL <br/> MEKANLAR
                             </div>
                         </div>
                     </div>

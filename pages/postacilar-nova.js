@@ -63,9 +63,6 @@ export default function PostacilarNova() {
                                             <SwiperSlide>
                                                 <img onClick={() => { setShowVModal(true); setModalSrc("/nova/nova2.jpg") }} width="100%" height="auto" src="/nova/nova2.jpg" />
                                             </SwiperSlide>
-                                            <SwiperSlide>
-                                                <img onClick={() => { setShowVModal(true); setModalSrc("/nova/nova3.jpg") }} width="100%" height="auto" src="/nova/nova3.jpg" />
-                                            </SwiperSlide>
                                         </Swiper>
                                     </div>
                                 </div>
@@ -93,8 +90,8 @@ export default function PostacilarNova() {
                     </div>
                     <div className="col-12 col-md-7 nova-right-col nova-img-component-desktop">
                         <div className="d-none d-md-block">
-                            <div className="row">
-                                <div className="col-12 nova-main-image">
+                            <div className="row" style={{ justifyContent: "center" }}>
+                                <div className="col-12 nova-main-image" style={{ width: "450px"}}>
                                     <Swiper
                                         modules={[Navigation]}
                                         navigation
@@ -120,9 +117,6 @@ export default function PostacilarNova() {
                                         <SwiperSlide>
                                             <img onClick={() => { setShowVModal(true); setModalSrc("/nova/nova2.jpg") }} width="100%" height="auto" src="/nova/nova2.jpg" />
                                         </SwiperSlide>
-                                        <SwiperSlide>
-                                            <img onClick={() => { setShowVModal(true); setModalSrc("/nova/nova3.jpg") }} width="100%" height="auto" src="/nova/nova3.jpg" />
-                                        </SwiperSlide>
                                     </Swiper>
                                 </div>
                             </div>
@@ -133,7 +127,7 @@ export default function PostacilarNova() {
                                     <img onClick={() => { setShowModal(true); setModalSrc("/nova/detay4.jpg") }} width="100%" height="auto" src="/nova/detay4.jpg" />
                                 </div>
                             </div>
-                            <div className="col-7">
+                            <div className="col-7" style={{ paddingRight: "0px" }}>
                                 <div className="nova-detail-image-bottom-2">
                                     <img onClick={() => { setShowModal(true); setModalSrc("/nova/detay3.jpg") }} width="100%" height="auto" src="/nova/detay3.jpg" />
                                 </div>

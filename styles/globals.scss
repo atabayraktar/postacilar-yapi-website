@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap");
 @import "./project-details.scss";
 @import "./nilufer.scss";
 @import "./yakamoz.scss";
@@ -7,9 +7,10 @@
 @import "./prestige.scss";
 @import "./count-up.scss";
 @import "./about-us.scss";
+@import "./life.scss";
 body {
   background-color: #36373b;
-  font-weight:300;
+  font-weight: 300;
 }
 .navbar-brand {
   cursor: pointer;
@@ -145,11 +146,112 @@ body {
   cursor: pointer;
   opacity: 0.4;
 }
-.img-container-projects {
+
+.rowe {
+  display: flex;
+  gap:15px;
+  .img-container-main-project {
+    padding-bottom: 15px;
+    max-width: 990px;
+    @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+      max-width: 855px;
+    }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      max-height: 720px;
+    }
+    img {
+      @extend .img-container-main-project;
+      width: 100%;
+      height: auto;
+    }
+  }
+  .img-container-projects-top{
+    padding-bottom: 15px;
+    img {
+      max-width: 100%;
+      max-height: 271px;
+      @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+        max-height: 233px;
+      }
+      @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        max-height: 270px;
+      }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        max-height: 336px;
+      }
+    }
+    &-bottom {
+      margin: 13px 0 0 0;
+    }
+  }
+  .img-container-projects{
+    padding-bottom: 15px;
+    img {
+      max-width: 100%;
+      max-height: 308px;
+      @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+        max-height: 264px;
+      }
+      @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        max-height: 223px;
+      }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        max-height: 336px;
+      }
+    }
+    &-bottom {
+      margin: 13px 0 0 0;
+    }
+  }
+}
+.img-container-main-project {
+  padding-bottom: 15px;
+  max-width: 990px;
+  @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    max-width: 855px;
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    max-height: 720px;
+  }
+  img {
+    @extend .img-container-main-project;
+    width: 100%;
+    height: auto;
+  }
+}
+.img-container-projects-top{
   padding-bottom: 15px;
   img {
-    max-height: 235px;
     max-width: 100%;
+    max-height: 265px;
+    @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+      max-height: 227px;
+    }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      max-height: 190px;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      max-height: 336px;
+    }
+  }
+  &-bottom {
+    margin: 13px 0 0 0;
+  }
+}
+.img-container-projects{
+  padding-bottom: 15px;
+  img {
+    max-width: 100%;
+    max-height: 265px;
+    @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+      max-height: 227px;
+    }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      max-height: 190px;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      max-height: 336px;
+    }
   }
   &-bottom {
     margin: 13px 0 0 0;
@@ -165,25 +267,25 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  &.modal-35{
-    .modal-content{
-      width:35vw;
+  &.modal-35 {
+    .modal-content {
+      width: 35vw;
     }
-    img{
-      width:30vw;
+    img {
+      width: 30vw;
     }
   }
-  &.modal-43{
-    .modal-content{
-      width:43vw;
+  &.modal-43 {
+    .modal-content {
+      width: 43vw;
     }
-    img{
-      width:43vw;
+    img {
+      width: 43vw;
     }
   }
 }
 .modal-content {
-  border:none!important;
+  border: none !important;
   width: 62vw;
   background-color: rgba(255, 255, 255, 0);
   position: relative;
@@ -216,11 +318,12 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   color: #bdbec2;
 }
-.zoomable-img{
-  img{
-    cursor:zoom-in
+.zoomable-img {
+  img {
+    cursor: zoom-in;
   }
 }
-.swiper-button-next,.swiper-button-prev{
-  color:white!important
+.swiper-button-next,
+.swiper-button-prev {
+  color: white !important;
 }

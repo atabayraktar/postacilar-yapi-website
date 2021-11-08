@@ -12,15 +12,15 @@ export default function Projects({ projectsRef }) {
                             Projelerimiz
                         </div>
                         <div className="row">
-                            <div className="col-8 img-container fadding-photo">
+                            <div className="col-9 img-container-main-project fadding-photo">
                                 <img src="/1.jpg" />
                             </div>
-                            <div className="col-4 img-container-projects">
+                            <div className="col-3 img-container-projects">
                                 <div className="fadding-photo">
-                                    <img src="/1.jpg" />
+                                    <img onClick={() => router.push("/postacilar-nova")} src="/nova/nova_slide_1.jpg" />
                                 </div>
                                 <div className="img-container-projects-bottom fadding-photo">
-                                    <img src="/1.jpg" />
+                                    <img onClick={() => router.push("/postacilar-prestige")} src="/prestige/prestige_slide_2.JPG" />
                                 </div>
                             </div>
                         </div>
@@ -39,10 +39,10 @@ export default function Projects({ projectsRef }) {
                         </div>
                         <div className="row">
                             <div className="col-6 img-container-projects fadding-photo">
-                                <img src="/1.jpg" />
+                                <img onClick={() => router.push("/postacilar-nova")} src="/nova/nova_slide_1.jpg" />
                             </div>
                             <div className="col-6 img-container-projects fadding-photo">
-                                <img src="/1.jpg" />
+                                <img onClick={() => router.push("/postacilar-prestige")} src="/prestige/prestige_slide_2.JPG" />
                             </div>
                         </div>
                         <div className="view-more-button">

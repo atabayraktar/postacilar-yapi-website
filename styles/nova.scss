@@ -1,10 +1,10 @@
 .nova-main-image{
     display: flex;
     justify-content: center;
-    padding: 5% 10% 0px 10%;
+    padding-top : 5%;
     cursor:zoom-in;
     @media only screen and (max-width: 991px) {
-        padding: 5% 0% 0px 0%;
+        padding-top: 5%;
     }
 }
 .nova-detail-image{

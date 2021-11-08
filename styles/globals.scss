@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
 @import "./project-details.scss";
 @import "./nilufer.scss";
 @import "./yakamoz.scss";
@@ -9,6 +9,7 @@
 @import "./about-us.scss";
 body {
   background-color: #36373b;
+  font-weight:300;
 }
 .navbar-brand {
   cursor: pointer;
@@ -170,6 +171,14 @@ body {
     }
     img{
       width:30vw;
+    }
+  }
+  &.modal-43{
+    .modal-content{
+      width:43vw;
+    }
+    img{
+      width:43vw;
     }
   }
 }

@@ -13,6 +13,7 @@ export default function PostacilarPrestige() {
     const [modalSrc, setModalSrc] = useState("");
     const [showModal, setShowModal] = useState(false);
     const [showVModal, setShowVModal] = useState(false);
+    const [showMediumModal, setShowMediumModal] = useState(false);
 
     const refx = useRef(null);
     useOutsideAlerter(refx);
@@ -23,7 +24,8 @@ export default function PostacilarPrestige() {
 
     return (
         <>
-            {showVModal && <ZoomModal verticalImage={true} zoomRef={refx} imageSrc={modalSrc} />}
+            {showMediumModal && <ZoomModal size="modal-43" zoomRef={refx} imageSrc={modalSrc} />}
+            {showVModal && <ZoomModal size="modal-35" zoomRef={refx} imageSrc={modalSrc} />}
             {showModal && <ZoomModal zoomRef={refx} imageSrc={modalSrc} />}
             <Head>
                 <title>POSTACILAR | PRESTIGE</title>
@@ -92,13 +94,13 @@ export default function PostacilarPrestige() {
                                     onSlideChange={() => console.log('slide change')}
                                     onSwiper={(swiper) => console.log(swiper)}
                                 >
-                                    <SwiperSlide><img onClick={() => { setShowVModal(true); setModalSrc("/prestige/prestige_slide_1.JPG") }} width="100%" height="auto" src="/prestige/prestige_slide_1.JPG" />
+                                    <SwiperSlide><img onClick={() => { setShowMediumModal(true); setModalSrc("/prestige/prestige_slide_1.JPG") }} width="100%" height="auto" src="/prestige/prestige_slide_1.JPG" />
                                     </SwiperSlide>
-                                    <SwiperSlide><img onClick={() => { setShowVModal(true); setModalSrc("/prestige/prestige_slide_2.JPG") }} width="100%" height="auto" src="/prestige/prestige_slide_2.JPG" />
+                                    <SwiperSlide><img onClick={() => { setShowMediumModal(true); setModalSrc("/prestige/prestige_slide_2.JPG") }} width="100%" height="auto" src="/prestige/prestige_slide_2.JPG" />
                                     </SwiperSlide>
-                                    <SwiperSlide><img onClick={() => { setShowVModal(true); setModalSrc("/prestige/prestige_slide_3.JPG") }} width="100%" height="auto" src="/prestige/prestige_slide_3.JPG" />
+                                    <SwiperSlide><img onClick={() => { setShowMediumModal(true); setModalSrc("/prestige/prestige_slide_3.JPG") }} width="100%" height="auto" src="/prestige/prestige_slide_3.JPG" />
                                     </SwiperSlide>
-                                    <SwiperSlide><img onClick={() => { setShowVModal(true); setModalSrc("/prestige/prestige_slide_4.JPG") }} width="100%" height="auto" src="/prestige/prestige_slide_4.JPG" />
+                                    <SwiperSlide><img onClick={() => { setShowMediumModal(true); setModalSrc("/prestige/prestige_slide_4.JPG") }} width="100%" height="auto" src="/prestige/prestige_slide_4.JPG" />
                                     </SwiperSlide>
                                 </Swiper>
                             </div>
@@ -170,7 +172,7 @@ export default function PostacilarPrestige() {
                 if (ref.current && !ref.current.contains(event.target)) {
                     setShowModal(false);
                     setShowVModal(false);
-
+                    setShowMediumModal(false);
                 }
             }
 

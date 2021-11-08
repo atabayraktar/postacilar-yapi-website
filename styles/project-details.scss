@@ -25,6 +25,14 @@
             height: 39px;
         }
     }
+    .postacilar-life-logo{
+        img{
+            width: 500px;
+            @media only screen and (max-width: 768px) {
+                width: 365px;
+            }
+        }
+    }
     &-stick {
         @extend .detail-title;
         font-size: 100px;
@@ -50,6 +58,9 @@
         @extend .detail-title;
         font-size: 80px;
         margin-bottom: 10px;
+    }
+    &.flat{
+        margin-top: 15px;
     }
 }
 .detail-paragraph {

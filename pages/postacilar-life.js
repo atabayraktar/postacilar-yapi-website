@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide, } from 'swiper/react';
 import { Navigation } from 'swiper';
 import 'swiper/css';
 
-export default function PostacilarPrestige() {
+export default function PostacilarLife() {
     const [modalSrc, setModalSrc] = useState("");
     const [showModal, setShowModal] = useState(false);
     const [showVModal, setShowVModal] = useState(false);
@@ -35,9 +35,8 @@ export default function PostacilarPrestige() {
                     <div className="col-12 col-md-6">
                         <div className="row">
                             <div className="detail-title">
-                                POSTACILAR <span className="detail-title-stick"><div>|</div></span>
-                                <div className="prestige-logo-big">
-                                    <img src="/prestige.png" />
+                                <div className="postacilar-life-logo">
+                                    <img src="/life/postacılar-life-logo.png" />
                                 </div>
                             </div>
                             <div className="col-12 col-md-7 nova-right-col nova-img-component-mobile">
@@ -53,14 +52,21 @@ export default function PostacilarPrestige() {
                                             onSlideChange={() => console.log('slide change')}
                                             onSwiper={(swiper) => console.log(swiper)}
                                         >
-
-                                            <SwiperSlide><img onClick={() => { setShowModal(true); setModalSrc("/prestige/prestige_slide_1.JPG") }} width="100%" height="auto" src="/prestige/prestige_slide_1.JPG" />
+                                            <SwiperSlide><img onClick={() => { setShowMediumModal(true); setModalSrc("/life/1.jpg") }} width="100%" height="auto" src="/life/1.jpg" />
                                             </SwiperSlide>
-                                            <SwiperSlide><img onClick={() => { setShowModal(true); setModalSrc("/prestige/prestige_slide_2.JPG") }} width="100%" height="auto" src="/prestige/prestige_slide_2.JPG" />
+                                            <SwiperSlide><img onClick={() => { setShowMediumModal(true); setModalSrc("/life/2.jpg") }} width="100%" height="auto" src="/life/2.jpg" />
                                             </SwiperSlide>
-                                            <SwiperSlide><img onClick={() => { setShowModal(true); setModalSrc("/prestige/prestige_slide_3.JPG") }} width="100%" height="auto" src="/prestige/prestige_slide_3.JPG" />
+                                            <SwiperSlide><img onClick={() => { setShowMediumModal(true); setModalSrc("/life/3.jpg") }} width="100%" height="auto" src="/life/3.jpg" />
                                             </SwiperSlide>
-                                            <SwiperSlide><img onClick={() => { setShowModal(true); setModalSrc("/prestige/prestige_slide_4.JPG") }} width="100%" height="auto" src="/prestige/prestige_slide_4.JPG" />
+                                            <SwiperSlide><img onClick={() => { setShowMediumModal(true); setModalSrc("/life/4.jpg") }} width="100%" height="auto" src="/life/4.jpg" />
+                                            </SwiperSlide>
+                                            <SwiperSlide><img onClick={() => { setShowMediumModal(true); setModalSrc("/life/5.jpg") }} width="100%" height="auto" src="/life/5.jpg" />
+                                            </SwiperSlide>
+                                            <SwiperSlide><img onClick={() => { setShowMediumModal(true); setModalSrc("/life/6.jpg") }} width="100%" height="auto" src="/life/6.jpg" />
+                                            </SwiperSlide>
+                                            <SwiperSlide><img onClick={() => { setShowMediumModal(true); setModalSrc("/life/7.jpg") }} width="100%" height="auto" src="/life/7.jpg" />
+                                            </SwiperSlide>
+                                            <SwiperSlide><img onClick={() => { setShowMediumModal(true); setModalSrc("/life/8.jpg") }} width="100%" height="auto" src="/life/8.jpg" />
                                             </SwiperSlide>
                                         </Swiper>
                                     </div>
@@ -69,18 +75,18 @@ export default function PostacilarPrestige() {
                             <div className="detail-sub-title">
                                 <div className="detail-title">
                                     <div className="prestige-logo">
-                                        <img src="/prestige.png" />
+                                        <img src="/life/life-logo.png" />
                                     </div>
                                 </div> <span className="detail-sub-title-stick"><div>|</div></span>Hakkında
                             </div>
                             <div className="detail-paragraph">
-                                Prestige şehrin karmaşasından uzak, bir o kadar da şehrin tam kalbinde sıra dışı ayrıntıları konforlu ve güvenli yaşam alanlarıyla tasarlanmış bir proje. Muhteşem deniz manzarası, çocuk oyun alanları, dinlenme alanları, açık kapalı otopark, yeşil bahçe, önemli merkezlere yakınlık, yenilikçi teknoloji ve çevre dostu oluşuyla dikkat çeken bir proje.
+                                "Lorem dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                             </div>
                         </div>
                     </div>
                     <div className="col-12 col-md-6 nova-right-col prestige-img-component-desktop">
                         <div className="row" style={{ justifyContent: "center" }}>
-                            <div className="col-12 nova-main-image" style={{ width: "450px"}}>
+                            <div className="col-12 nova-main-image" style={{ width: "650px" }}>
                                 <Swiper
                                     modules={[Navigation]}
                                     navigation
@@ -91,14 +97,23 @@ export default function PostacilarPrestige() {
                                     onSlideChange={() => console.log('slide change')}
                                     onSwiper={(swiper) => console.log(swiper)}
                                 >
-                                    <SwiperSlide><img onClick={() => { setShowMediumModal(true); setModalSrc("/prestige/prestige_slide_1.JPG") }} width="100%" height="auto" src="/prestige/prestige_slide_1.JPG" />
+                                    <SwiperSlide><img onClick={() => { setShowMediumModal(true); setModalSrc("/life/1.jpg") }} width="100%" height="auto" src="/life/1.jpg" />
                                     </SwiperSlide>
-                                    <SwiperSlide><img onClick={() => { setShowMediumModal(true); setModalSrc("/prestige/prestige_slide_2.JPG") }} width="100%" height="auto" src="/prestige/prestige_slide_2.JPG" />
+                                    <SwiperSlide><img onClick={() => { setShowMediumModal(true); setModalSrc("/life/2.jpg") }} width="100%" height="auto" src="/life/2.jpg" />
                                     </SwiperSlide>
-                                    <SwiperSlide><img onClick={() => { setShowMediumModal(true); setModalSrc("/prestige/prestige_slide_3.JPG") }} width="100%" height="auto" src="/prestige/prestige_slide_3.JPG" />
+                                    <SwiperSlide><img onClick={() => { setShowMediumModal(true); setModalSrc("/life/3.jpg") }} width="100%" height="auto" src="/life/3.jpg" />
                                     </SwiperSlide>
-                                    <SwiperSlide><img onClick={() => { setShowMediumModal(true); setModalSrc("/prestige/prestige_slide_4.JPG") }} width="100%" height="auto" src="/prestige/prestige_slide_4.JPG" />
+                                    <SwiperSlide><img onClick={() => { setShowMediumModal(true); setModalSrc("/life/4.jpg") }} width="100%" height="auto" src="/life/4.jpg" />
                                     </SwiperSlide>
+                                    <SwiperSlide><img onClick={() => { setShowMediumModal(true); setModalSrc("/life/5.jpg") }} width="100%" height="auto" src="/life/5.jpg" />
+                                    </SwiperSlide>
+                                    <SwiperSlide><img onClick={() => { setShowMediumModal(true); setModalSrc("/life/6.jpg") }} width="100%" height="auto" src="/life/6.jpg" />
+                                    </SwiperSlide>
+                                    <SwiperSlide><img onClick={() => { setShowMediumModal(true); setModalSrc("/life/7.jpg") }} width="100%" height="auto" src="/life/7.jpg" />
+                                    </SwiperSlide>
+                                    <SwiperSlide><img onClick={() => { setShowMediumModal(true); setModalSrc("/life/8.jpg") }} width="100%" height="auto" src="/life/8.jpg" />
+                                    </SwiperSlide>
+
                                 </Swiper>
                             </div>
                         </div>
@@ -109,48 +124,62 @@ export default function PostacilarPrestige() {
                         <div className="detail-sub-title">
                             <div className="detail-title">
                                 <div className="prestige-logo">
-                                    <img src="/prestige.png" />
+                                    <img src="/life/life-logo.png" />
                                 </div>
                             </div>  <span className="detail-sub-title-stick"><div>|</div></span> Proje detayları
                         </div>
                         <div className="detail-paragraph">
-                            Daire Sayısı: 28 <br />
-                            Daire Tipİ: 3+1 <br />
+                            Daire Sayısı: 42 adet <br />
+                            Daire Tipi: 3+1 <br />
                             İşyeri Sayısı: 3 <br />
-                            Manzara: Deniz Manzarası <br />
-                            Doğa Manzarası, Şehir Manzarası <br />
-                            Adres: Boğazkent Mah. Seyit Onbaşı <br />Cad. No:19 Kepez / Çanakkale
+                            Adres: Esenler Mahallesi, Şehit Ömer <br />
+                            Halis Demir Caddesi, No: 18/2, Çanakkale/Merkez<br />
+                        </div>
+                        <div className="detail-sub-title flat">
+                            <div className="detail-title">
+                                <div className="prestige-logo">
+                                    <img src="/life/life-logo.png" />
+                                </div>
+                            </div>  <span className="detail-sub-title-stick"><div>|</div></span> Daire Tipleri
+                        </div>
+                        <div className="flat-types">
+                            <div className="corner">
+                                <img onClick={() => { setShowModal(true); setModalSrc("/life/3+1-ara.png") }} src="/life/3+1-ara.png" />
+                            </div>
+                            <div className="middle">
+                                <img onClick={() => { setShowModal(true); setModalSrc("/life/3+1-köse.png") }} src="/life/3+1-köse.png" />
+                            </div>
                         </div>
                     </div>
                     <div className="col-12 col-md-8">
                         <div className="detail-sub-title">
                             <div className="detail-title">
                                 <div className="prestige-logo">
-                                    <img src="/prestige.png" />
+                                    <img src="/life/life-logo.png" />
                                 </div>
                             </div>  <span className="detail-sub-title-stick"><div>|</div></span>İç tasarım
                         </div>
                         <div className="images zoomable-img">
                             <div className="row align-items-end">
-                                <div className="col-12 col-md-5">
-                                    <img onClick={() => { setShowModal(true); setModalSrc("/prestige/pres1.jpg") }} width="100%" height="auto" src="/prestige/pres1.jpg" />
+                                <div className="col-12 col-md-4">
+                                    <img onClick={() => { setShowModal(true); setModalSrc("/prestige/pres1.jpg") }} width="100%" height="auto" src="/life/1-mutfak.jpg" />
                                 </div>
-                                <div className="col-6 mt-3 mt-md-0 col-md-4">
-                                    <img onClick={() => { setShowModal(true); setModalSrc("/prestige/pres2.jpg") }} width="100%" height="auto" src="/prestige/pres2.jpg" />
+                                <div className="col-6 mt-3 mt-md-0 col-md-5">
+                                    <img onClick={() => { setShowModal(true); setModalSrc("/prestige/pres2.jpg") }} width="100%" height="auto" src="/life/2-yatak-odası.jpg" />
                                 </div>
                                 <div className="col-5 mt-3 mt-md-0 col-md-3">
-                                    <img onClick={() => { setShowModal(true); setModalSrc("/prestige/pres3.jpg") }} width="100%" height="auto" src="/prestige/pres3.jpg" />
+                                    <img onClick={() => { setShowModal(true); setModalSrc("/prestige/pres3.jpg") }} width="100%" height="auto" src="/life/3-mutfak.jpg" />
                                 </div>
                             </div>
                             <div className="row prestige-bottom-part-second-row mb-5" style={{ justifyContent: "flex-end" }}>
-                                <div className="col-7 col-md-3">
-                                    <img onClick={() => { setShowModal(true); setModalSrc("/prestige/pres4.jpg") }} width="100%" height="auto" src="/prestige/pres4.jpg" />
+                                <div className="col-7 col-md-4">
+                                    <img onClick={() => { setShowModal(true); setModalSrc("/prestige/pres4.jpg") }} width="100%" height="auto" src="/life/4-cocuk-odası.jpg" />
                                 </div>
-                                <div className="col-5 mt-3 mt-md-0 col-md-2">
-                                    <img onClick={() => { setShowModal(true); setModalSrc("/prestige/pres5.jpg") }} width="100%" height="auto" src="/prestige/pres5.jpg" />
+                                <div className="col-5 mt-3 mt-md-0 col-md-3">
+                                    <img onClick={() => { setShowModal(true); setModalSrc("/prestige/pres5.jpg") }} width="100%" height="auto" src="/life/5-banyo.jpg" />
                                 </div>
-                                <div className="col-7 mt-3 mt-md-0 col-md-5">
-                                    <img onClick={() => { setShowModal(true); setModalSrc("/prestige/pres6.jpg") }} width="100%" height="auto" src="/prestige/pres6.jpg" />
+                                <div className="col-7 mt-3 mt-md-0 col-md-4">
+                                    <img onClick={() => { setShowModal(true); setModalSrc("/prestige/pres6.jpg") }} width="100%" height="auto" src="/life/6-antre.jpg" />
                                 </div>
                             </div>
                         </div>

@@ -15,7 +15,11 @@ export default function AllProjects() {
                         </div>
                         <div className="rowe">
                             <div className="img-container-main-project fadding-photo">
-                                <img src="/1.jpg" />
+                                <Link href="/postacilar-life">
+                                    <a>
+                                        <img src="/1.jpg" />
+                                    </a>
+                                </Link>
                             </div>
                             <div className="img-container-projects-top">
                                 <div className="fadding-photo">

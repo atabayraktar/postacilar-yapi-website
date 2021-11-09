@@ -11,7 +11,7 @@ export default function () {
 
     return (
         <>
-            {showModal && <ZoomModal zoomRef={refx} verticalImage={true} imageSrc={modalSrc} />}
+            {showModal && <ZoomModal size="modal-35" zoomRef={refx} verticalImage={true} imageSrc={modalSrc} />}
             <Head>
                 <title>POSTACILAR | İDİL</title>
                 <meta name="description" content="Postacılar Yapı | İdil Evleri" />

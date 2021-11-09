@@ -144,7 +144,7 @@ export default function PostacilarLife() {
                         </div>
                         <div className="flat-types">
                             <div className="corner">
-                                <img onClick={() => { setShowModal(true); setModalSrc("/life/3+1-ara.png") }} src="/life/3+1-ara.png" />
+                                <img onClick={() => { setShowVModal(true); setModalSrc("/life/3+1-ara.png") }} src="/life/3+1-ara.png" />
                             </div>
                             <div className="middle">
                                 <img onClick={() => { setShowModal(true); setModalSrc("/life/3+1-köse.png") }} src="/life/3+1-köse.png" />
@@ -162,24 +162,24 @@ export default function PostacilarLife() {
                         <div className="images zoomable-img">
                             <div className="row align-items-end">
                                 <div className="col-12 col-md-4">
-                                    <img onClick={() => { setShowModal(true); setModalSrc("/prestige/pres1.jpg") }} width="100%" height="auto" src="/life/1-mutfak.jpg" />
+                                    <img onClick={() => { setShowModal(true); setModalSrc("/life/1-mutfak.jpg") }} width="100%" height="auto" src="/life/1-mutfak.jpg" />
                                 </div>
                                 <div className="col-6 mt-3 mt-md-0 col-md-5">
-                                    <img onClick={() => { setShowModal(true); setModalSrc("/prestige/pres2.jpg") }} width="100%" height="auto" src="/life/2-yatak-odası.jpg" />
+                                    <img onClick={() => { setShowModal(true); setModalSrc("/life/2-yatak-odası.jpg") }} width="100%" height="auto" src="/life/2-yatak-odası.jpg" />
                                 </div>
-                                <div className="col-5 mt-3 mt-md-0 col-md-3">
-                                    <img onClick={() => { setShowModal(true); setModalSrc("/prestige/pres3.jpg") }} width="100%" height="auto" src="/life/3-mutfak.jpg" />
+                                <div className="col-6 mt-3 mt-md-0 col-md-3">
+                                    <img onClick={() => { setShowModal(true); setModalSrc("/life/3-mutfak.jpg") }} width="100%" height="auto" src="/life/3-mutfak.jpg" />
                                 </div>
                             </div>
                             <div className="row prestige-bottom-part-second-row mb-5" style={{ justifyContent: "flex-end" }}>
-                                <div className="col-7 col-md-4">
-                                    <img onClick={() => { setShowModal(true); setModalSrc("/prestige/pres4.jpg") }} width="100%" height="auto" src="/life/4-cocuk-odası.jpg" />
+                                <div className="col-6 mt-3 mt-md-0 col-md-4">
+                                    <img onClick={() => { setShowModal(true); setModalSrc("/life/4-cocuk-odası.jpg") }} width="100%" height="auto" src="/life/4-cocuk-odası.jpg" />
                                 </div>
-                                <div className="col-5 mt-3 mt-md-0 col-md-3">
-                                    <img onClick={() => { setShowModal(true); setModalSrc("/prestige/pres5.jpg") }} width="100%" height="auto" src="/life/5-banyo.jpg" />
+                                <div className="col-6 mt-3 mt-md-0 col-md-3">
+                                    <img onClick={() => { setShowModal(true); setModalSrc("/life/5-banyo.jpg") }} width="100%" height="auto" src="/life/5-banyo.jpg" />
                                 </div>
-                                <div className="col-7 mt-3 mt-md-0 col-md-4">
-                                    <img onClick={() => { setShowModal(true); setModalSrc("/prestige/pres6.jpg") }} width="100%" height="auto" src="/life/6-antre.jpg" />
+                                <div className="col-6 mt-3 mt-md-0 col-md-4">
+                                    <img onClick={() => { setShowModal(true); setModalSrc("/life/6-antre.jpg") }} width="100%" height="auto" src="/life/6-antre.jpg" />
                                 </div>
                             </div>
                         </div>

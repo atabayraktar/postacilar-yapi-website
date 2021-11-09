@@ -20,26 +20,47 @@ export default function AllProjects() {
                             <div className="img-container-projects-top">
                                 <div className="fadding-photo">
                                     <Link href="/postacilar-nova">
-                                        <img src="/nova/nova_slide_1.jpg" />
+                                        <a><img src="/nova/nova_slide_1.jpg" /></a>
                                     </Link>
                                 </div>
                                 <div className="img-container-projects-bottom fadding-photo">
-                                    <img onClick={() => router.push("/postacilar-prestige")} src="/prestige/prestige_slide_2.JPG" />
+                                    <Link href="/postacilar-prestige">
+                                        <a>
+                                            <img src="/prestige/prestige_slide_2.JPG" />
+                                        </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
                         <div className="rowe">
                             <div className=" img-container-projects fadding-photo">
-                                <img onClick={() => router.push("/postacilar-yakamoz")} src="/yakamoz1.jpg" />
+                                <Link href="/postacilar-yakamoz">
+                                    <a>
+                                        <img src="/yakamoz1.jpg" />
+                                    </a>
+                                </Link>
                             </div>
                             <div className=" img-container-projects fadding-photo">
-                                <img onClick={() => router.push("/postacilar-idil")} src="/idil1.jpg" />
+                                <Link href="/postacilar-idil">
+                                    <a>
+                                        <img src="/idil1.jpg" />
+
+                                    </a>
+                                </Link>
                             </div>
                             <div className=" img-container-projects fadding-photo">
-                                <img onClick={() => router.push("/postacilar-nilufer")} src="/nilufer3.jpg" />
+                                <Link href="/postacilar-nilufer">
+                                    <a>
+                                        <img src="/nilufer3.jpg" />
+                                    </a>
+                                </Link>
                             </div>
                             <div className=" img-container-projects fadding-photo">
-                                <img onClick={() => router.push("/postacilar-nilufer")} src="/nilufer3.jpg" />
+                                <Link href="/postacilar-nilufer">
+                                    <a>
+                                        <img src="/nilufer3.jpg" />
+                                    </a>
+                                </Link>
                             </div>
                         </div>
                     </div>

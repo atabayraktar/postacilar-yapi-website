@@ -138,18 +138,18 @@ export default function PostacilarPrestige() {
                                 <div className="col-6 mt-3 mt-md-0 col-md-4">
                                     <img onClick={() => { setShowModal(true); setModalSrc("/prestige/pres2.jpg") }} width="100%" height="auto" src="/prestige/pres2.jpg" />
                                 </div>
-                                <div className="col-5 mt-3 mt-md-0 col-md-3">
+                                <div className="col-6 mt-3 mt-md-0 col-md-3">
                                     <img onClick={() => { setShowModal(true); setModalSrc("/prestige/pres3.jpg") }} width="100%" height="auto" src="/prestige/pres3.jpg" />
                                 </div>
                             </div>
                             <div className="row prestige-bottom-part-second-row mb-5" style={{ justifyContent: "flex-end" }}>
-                                <div className="col-7 col-md-3">
+                                <div className="col-6 mt-3 mt-md-0 col-md-3">
                                     <img onClick={() => { setShowModal(true); setModalSrc("/prestige/pres4.jpg") }} width="100%" height="auto" src="/prestige/pres4.jpg" />
                                 </div>
-                                <div className="col-5 mt-3 mt-md-0 col-md-2">
+                                <div className="col-6 mt-3 mt-md-0 col-md-2">
                                     <img onClick={() => { setShowModal(true); setModalSrc("/prestige/pres5.jpg") }} width="100%" height="auto" src="/prestige/pres5.jpg" />
                                 </div>
-                                <div className="col-7 mt-3 mt-md-0 col-md-5">
+                                <div className="col-6 mt-3 mt-md-0 col-md-5">
                                     <img onClick={() => { setShowModal(true); setModalSrc("/prestige/pres6.jpg") }} width="100%" height="auto" src="/prestige/pres6.jpg" />
                                 </div>
                             </div>

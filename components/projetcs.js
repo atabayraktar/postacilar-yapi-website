@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 import { Button } from 'react-bootstrap';
-
+import Link from 'next/link';
 export default function Projects({ projectsRef }) {
     const router = useRouter();
     return (
@@ -17,15 +17,27 @@ export default function Projects({ projectsRef }) {
                             </div>
                             <div className="col-3 img-container-projects">
                                 <div className="fadding-photo">
-                                    <img onClick={() => router.push("/postacilar-nova")} src="/nova/nova_slide_1.jpg" />
+                                    <Link href="/postacilar-nova">
+                                        <a>
+                                            <img src="/nova/nova_slide_1.jpg" />
+                                        </a>
+                                    </Link>
                                 </div>
                                 <div className="img-container-projects-bottom fadding-photo">
-                                    <img onClick={() => router.push("/postacilar-prestige")} src="/prestige/prestige_slide_2.JPG" />
+                                    <Link href="/postacilar-prestige">
+                                        <a>
+                                            <img src="/prestige/prestige_slide_2.JPG" />
+                                        </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
                         <div className="view-more-button">
-                            <Button onClick={() => router.push("/projelerimiz")} variant="dark" size="lg">Diğer Projelerimiz</Button>
+                            <Link href="/projelerimiz">
+                                <a>
+                                    <Button variant="dark" size="lg">Diğer Projelerimiz</Button>
+                                </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

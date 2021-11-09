@@ -13,7 +13,11 @@ export default function Projects({ projectsRef }) {
                         </div>
                         <div className="row">
                             <div className="col-9 img-container-main-project fadding-photo">
-                                <img src="/1.jpg" />
+                                <Link href="/postacilar-life">
+                                    <a>
+                                        <img src="/1.jpg" />
+                                    </a>
+                                </Link>
                             </div>
                             <div className="col-3 img-container-projects">
                                 <div className="fadding-photo">

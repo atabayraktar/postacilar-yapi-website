@@ -1,17 +1,32 @@
+import Head from 'next/head'
+import Header from '../components/header'
+import BigLogo from '../components/big-logo'
+import AboutUs from '../components/about-us'
+import Icons from '../components/icons'
+import Projects from '../components/projetcs'
+import ProjectMap from '../components/project-map'
 import { useRef } from 'react'
+import ProjectsCountUp from '../components/projects-count-up'
 
 export default function Home() {
-  const rightSide = useRef(null);
-  const leftSide = useRef(null);
+  const projectsSectionRef = useRef(null);
+  const contactSectionRef = useRef(null);
+  const aboutUsSectionRef = useRef(null)
 
   return (
     <div >
       <Head>
-        <title>POSTACILAR | PAREKENDE</title>
-        <meta name="description" content="Postacılar Parekende web sitesi" />
+        <title>POSTACILAR | YAPI</title>
+        <meta name="description" content="Postacılar Yapı web sitesi" />
         <link rel="icon" href="/meta-logo.png" />
       </Head>
-      asdjgsadhasd
+      <Header refs={[projectsSectionRef, contactSectionRef, aboutUsSectionRef]} />
+      <BigLogo />
+      <Icons />
+      <AboutUs aboutUsRef={aboutUsSectionRef}/>
+      <Projects projectsRef={projectsSectionRef} />
+      <ProjectsCountUp/>
+      <ProjectMap contactRef={contactSectionRef} />
     </div>
   )
 }

@@ -46,6 +46,9 @@ export default function ProjectMap({ contactRef }) {
                                 Proje Alanlarımız
                             </div>
                         </div>
+                        <div id="map" style={{ height: "400px" }}>
+                            <Map />
+                        </div>
                         <div className="about-us-title">
                             İletişim
                         </div>

@@ -39,7 +39,7 @@ export default function Projects({ projectsRef }) {
                         <div className="view-more-button">
                             <Link href="/projelerimiz">
                                 <a>
-                                    <Button variant="dark" size="lg">Diğer Projelerimiz</Button>
+                                    <Button className='color-nav' variant="dark" size="lg">Diğer Projelerimiz</Button>
                                 </a>
                             </Link>
                         </div>

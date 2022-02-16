@@ -3,7 +3,7 @@ import { Navbar, Nav } from 'react-bootstrap';
 export default function Header() {
     return (
         <>
-            <Navbar sticky="top" bg="dark" variant="dark">
+            <Navbar sticky="top" className='color-nav' variant="dark">
                 <div className="header-logo">
                     <Navbar.Brand href="/"><img src="/logo.png" /></Navbar.Brand>
                 </div>

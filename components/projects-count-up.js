@@ -7,32 +7,32 @@ export default function ProjectsCountUp() {
             {({ isVisible }) => (
                 <div style={{ minHeight: 100 }}>
                     {isVisible ? <>
-                        <div className="w-100" style={{ backgroundColor: "#212529", margin: "50px 0px 0px 0px" }}>
+                        <div className="w-100" style={{ backgroundColor: "#1f1e1e", margin: "50px 0px 0px 0px" }}>
                             <div className="container count-up">
                                 <div className="count-up-item">
                                     <img src="/count-up/etap.png" width="64" height="64" alt="" />
                                     <div className="count-up-number">
-                                        <CountUp className="count-up-number-value" start={0} delay={0.5} duration={5} end={7} />
+                                        <CountUp className="count-up-number-value" start={0} delay={0.5} duration={5} end={8} />
                                         <p className="count-up-number-title">PROJE</p>
                                     </div>
                                 </div>
                                 <div className="count-up-item">
                                     <img src="/count-up/m2.png" width="64" height="64" alt="" />
                                     <div className="count-up-number">
-                                        <CountUp className="count-up-number-value" start={0} delay={0.5} duration={5} end={67824} />
+                                        <CountUp className="count-up-number-value" start={0} delay={0.5} duration={5} end={75256} />
                                         <p className="count-up-number-title">METREKARE</p>
                                     </div>
                                 </div>
                                 <div className="count-up-item">
                                     <img src="/count-up/daire.png" width="64" height="64" alt="" />
                                     <div className="count-up-number">
-                                        <CountUp className="count-up-number-value" start={0} delay={0.5} duration={5} end={156} />
+                                        <CountUp className="count-up-number-value" start={0} delay={0.5} duration={5} end={200} />
                                         <p className="count-up-number-title">DAİRE</p>
                                     </div>                            </div>
                                 <div className="count-up-item">
                                     <img src="/count-up/kullanici.png" width="64" height="64" alt="" />
                                     <div className="count-up-number">
-                                        <CountUp className="count-up-number-value" start={0} delay={0.5} duration={5} end={592} />
+                                        <CountUp className="count-up-number-value" start={0} delay={0.5} duration={5} end={718} />
                                         <p className="count-up-number-title">KULLANICI</p>
                                     </div>
                                 </div>

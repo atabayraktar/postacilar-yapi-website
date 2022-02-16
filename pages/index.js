@@ -12,7 +12,7 @@ export default function Home() {
   const projectsSectionRef = useRef(null);
   const contactSectionRef = useRef(null);
   const aboutUsSectionRef = useRef(null)
-
+  //ata
   return (
     <div >
       <Head>

@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Header from '../components/header'
 import AllProjects from '../components/all-projects'
 import { useRef } from 'react'
+
 export default function Home() {
   const projectsSectionRef = useRef(null);
   const contactSectionRef = useRef(null);

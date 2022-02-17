@@ -3,6 +3,7 @@ import 'leaflet/dist/leaflet.css'
 import "leaflet/dist/leaflet.css";
 import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
 import "leaflet-defaulticon-compatibility";
+
 const Mapx = () => {
     return (
         <MapContainer center={[40.13490802902217, 26.405510194048688]} zoom={12} scrollWheelZoom={false} style={{ height: "100%", width: "100%" }}>

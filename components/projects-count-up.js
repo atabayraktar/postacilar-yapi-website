@@ -1,6 +1,6 @@
 import VisibilitySensor from 'react-visibility-sensor';
 import CountUp from 'react-countup';
-import { useState } from 'react'
+
 export default function ProjectsCountUp() {
     return (
         <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>

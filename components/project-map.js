@@ -1,5 +1,6 @@
 import React from 'react'
 import dynamic from 'next/dynamic'
+
 export default function ProjectMap({ contactRef }) {
     const Map = dynamic(
         () => import('./map'), // replace '@components/map' with your component's location

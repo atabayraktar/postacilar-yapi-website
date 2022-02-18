@@ -43,7 +43,9 @@ export default function AboutUs({ aboutUsRef }) {
                                     Hakkımızda
                                 </div>
                                 <div className="about-us-description">
-                                    "Lorem dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                    Postacılar Yapı, Çanakkale’de 30 yılı aşkın ticari geçmişi olan Postacılar firmasının inşaat markasıdır. 2011 yılından bu yana inşaat faaliyetlerine devam etmekte olan Postacılar Yapı, Çanakkale’de yeni ve büyük projelere imza atmaya devam etmektedir.
+                                    <br />
+                                    Gerçekleştirdiği projelerde kullanıcı odaklı ve doğa dostu yapılar üretmeyi amaçlayan firma aynı zamanda ürettiği yapıların kullanıcıları için her zaman en iyisi olmasını amaçlamaktadır. İnşaat kalitesi, işçiliği, proje bazında sunduğu imkanları, inşaat alanlarının seçiminde gösterdiği özen ve projelendirme aşamasına verdiği önem ile güvenilir projelere imza atmaktadır.
                                 </div>
                             </div>
                         </div>
@@ -55,7 +57,9 @@ export default function AboutUs({ aboutUsRef }) {
                             Hakkımızda
                         </div>
                         <div className="about-us-description">
-                            "Lorem dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                            Postacılar Yapı, Çanakkale’de 30 yılı aşkın ticari geçmişi olan Postacılar firmasının inşaat markasıdır. 2011 yılından bu yana inşaat faaliyetlerine devam etmekte olan Postacılar Yapı, Çanakkale’de yeni ve büyük projelere imza atmaya devam etmektedir.
+                            <br />
+                            Gerçekleştirdiği projelerde kullanıcı odaklı ve doğa dostu yapılar üretmeyi amaçlayan firma aynı zamanda ürettiği yapıların kullanıcıları için her zaman en iyisi olmasını amaçlamaktadır. İnşaat kalitesi, işçiliği, proje bazında sunduğu imkanları, inşaat alanlarının seçiminde gösterdiği özen ve projelendirme aşamasına verdiği önem ile güvenilir projelere imza atmaktadır.
                         </div>
                     </div>
                 </div>

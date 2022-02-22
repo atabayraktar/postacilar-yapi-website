@@ -60,9 +60,9 @@ export default function AllProjects() {
                                 </Link>
                             </div>
                             <div className=" img-container-projects fadding-photo">
-                                <Link href="/postacilar-nilufer">
+                                <Link href="/postacilar-lotus">
                                     <a>
-                                        <img src="/nilufer3.jpg" />
+                                        <img src="/lotus/lotus2.jpg" />
                                     </a>
                                 </Link>
                             </div>
@@ -75,7 +75,7 @@ export default function AllProjects() {
                             Projelerimiz
                         </div>
                         <div className="img-container fadding-photo">
-                            <img src="/1.jpg" />
+                            <img onClick={() => router.push("/postacilar-life")} src="/1.jpg" />
                         </div>
                         <div className="row">
                             <div className="col-6 img-container-main-project fadding-photo">
@@ -98,7 +98,7 @@ export default function AllProjects() {
                                 <img onClick={() => router.push("/postacilar-nilufer")} src="/nilufer3.jpg" />
                             </div>
                             <div className="col-6 img-container-projects fadding-photo">
-                                <img onClick={() => router.push("/postacilar-nilufer")} src="/nilufer3.jpg" />
+                                <img onClick={() => router.push("/postacilar-lotus")} src="/lotus/lotus2.jpg" />
                             </div>
                         </div>
                     </div>

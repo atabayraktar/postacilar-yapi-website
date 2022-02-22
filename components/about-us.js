@@ -59,6 +59,7 @@ export default function AboutUs({ aboutUsRef }) {
                         <div className="about-us-description">
                             Postacılar Yapı, Çanakkale’de 30 yılı aşkın ticari geçmişi olan Postacılar firmasının inşaat markasıdır. 2011 yılından bu yana inşaat faaliyetlerine devam etmekte olan Postacılar Yapı, Çanakkale’de yeni ve büyük projelere imza atmaya devam etmektedir.
                             <br />
+                            <br />
                             Gerçekleştirdiği projelerde kullanıcı odaklı ve doğa dostu yapılar üretmeyi amaçlayan firma aynı zamanda ürettiği yapıların kullanıcıları için her zaman en iyisi olmasını amaçlamaktadır. İnşaat kalitesi, işçiliği, proje bazında sunduğu imkanları, inşaat alanlarının seçiminde gösterdiği özen ve projelendirme aşamasına verdiği önem ile güvenilir projelere imza atmaktadır.
                         </div>
                     </div>

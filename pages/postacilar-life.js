@@ -52,21 +52,21 @@ export default function PostacilarLife() {
                                             onSlideChange={() => console.log('slide change')}
                                             onSwiper={(swiper) => console.log(swiper)}
                                         >
-                                            <SwiperSlide><img onClick={() => { setShowMediumModal(true); setModalSrc("/life/1.jpg") }} width="100%" height="auto" src="/life/1.jpg" />
+                                            <SwiperSlide><img onClick={() => { setShowModal(true); setModalSrc("/life/1.jpg") }} width="100%" height="auto" src="/life/1.jpg" />
                                             </SwiperSlide>
-                                            <SwiperSlide><img onClick={() => { setShowMediumModal(true); setModalSrc("/life/2.jpg") }} width="100%" height="auto" src="/life/2.jpg" />
+                                            <SwiperSlide><img onClick={() => { setShowModal(true); setModalSrc("/life/2.jpg") }} width="100%" height="auto" src="/life/2.jpg" />
                                             </SwiperSlide>
-                                            <SwiperSlide><img onClick={() => { setShowMediumModal(true); setModalSrc("/life/3.jpg") }} width="100%" height="auto" src="/life/3.jpg" />
+                                            <SwiperSlide><img onClick={() => { setShowModal(true); setModalSrc("/life/3.jpg") }} width="100%" height="auto" src="/life/3.jpg" />
                                             </SwiperSlide>
-                                            <SwiperSlide><img onClick={() => { setShowMediumModal(true); setModalSrc("/life/4.jpg") }} width="100%" height="auto" src="/life/4.jpg" />
+                                            <SwiperSlide><img onClick={() => { setShowModal(true); setModalSrc("/life/4.jpg") }} width="100%" height="auto" src="/life/4.jpg" />
                                             </SwiperSlide>
-                                            <SwiperSlide><img onClick={() => { setShowMediumModal(true); setModalSrc("/life/5.jpg") }} width="100%" height="auto" src="/life/5.jpg" />
+                                            <SwiperSlide><img onClick={() => { setShowModal(true); setModalSrc("/life/5.jpg") }} width="100%" height="auto" src="/life/5.jpg" />
                                             </SwiperSlide>
-                                            <SwiperSlide><img onClick={() => { setShowMediumModal(true); setModalSrc("/life/6.jpg") }} width="100%" height="auto" src="/life/6.jpg" />
+                                            <SwiperSlide><img onClick={() => { setShowModal(true); setModalSrc("/life/6.jpg") }} width="100%" height="auto" src="/life/6.jpg" />
                                             </SwiperSlide>
-                                            <SwiperSlide><img onClick={() => { setShowMediumModal(true); setModalSrc("/life/7.jpg") }} width="100%" height="auto" src="/life/7.jpg" />
+                                            <SwiperSlide><img onClick={() => { setShowModal(true); setModalSrc("/life/7.jpg") }} width="100%" height="auto" src="/life/7.jpg" />
                                             </SwiperSlide>
-                                            <SwiperSlide><img onClick={() => { setShowMediumModal(true); setModalSrc("/life/8.jpg") }} width="100%" height="auto" src="/life/8.jpg" />
+                                            <SwiperSlide><img onClick={() => { setShowModal(true); setModalSrc("/life/8.jpg") }} width="100%" height="auto" src="/life/8.jpg" />
                                             </SwiperSlide>
                                         </Swiper>
                                     </div>
@@ -144,7 +144,7 @@ export default function PostacilarLife() {
                         </div>
                         <div className="flat-types">
                             <div className="corner">
-                                <img onClick={() => { setShowVModal(true); setModalSrc("/life/3+1-ara.png") }} src="/life/3+1-ara.png" />
+                                <img onClick={() => { setShowModal(true); setModalSrc("/life/3+1-ara.png") }} src="/life/3+1-ara.png" />
                             </div>
                             <div className="middle">
                                 <img onClick={() => { setShowModal(true); setModalSrc("/life/3+1-köse.png") }} src="/life/3+1-köse.png" />

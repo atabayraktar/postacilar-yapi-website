@@ -6,12 +6,15 @@ import { useState, useRef, useEffect } from 'react';
 export default function () {
     const [modalSrc, setModalSrc] = useState("");
     const [showModal, setShowModal] = useState(false);
+    const [showVModal, setShowVModal] = useState(false);
+
     const refx = useRef(null);
     useOutsideAlerter(refx);
 
     return (
         <>
             {showModal && <ZoomModal size="modal-35" zoomRef={refx} verticalImage={true} imageSrc={modalSrc} />}
+            {showVModal && <ZoomModal size="modal" zoomRef={refx} imageSrc={modalSrc} />}
             <Head>
                 <title>POSTACILAR | İDİL</title>
                 <meta name="description" content="Postacılar Yapı | İdil Evleri" />
@@ -28,10 +31,10 @@ export default function () {
                             <div className="col-12 idil-right-col idil-img-component-mobile ">
                                 <div className="row">
                                     <div className="col-6 idil-img-1">
-                                        <img onClick={() => { setShowModal(true); setModalSrc("/idil/idil1.jpg") }} width="100%" height="auto" src="/idil/idil1.jpg" />
+                                        <img onClick={() => { setShowVModal(true); setModalSrc("/idil/idil1.jpg") }} width="100%" height="auto" src="/idil/idil1.jpg" />
                                     </div>
                                     <div className="col-6 idil-img-2">
-                                        <img onClick={() => { setShowModal(true); setModalSrc("/idil/idil2.jpg") }} width="100%" height="auto" src="/idil/idil2.jpg" />
+                                        <img onClick={() => { setShowVModal(true); setModalSrc("/idil/idil2.jpg") }} width="100%" height="auto" src="/idil/idil2.jpg" />
                                     </div>
                                 </div>
                             </div>
@@ -74,6 +77,7 @@ export default function () {
             function handleClickOutside(event) {
                 if (ref.current && !ref.current.contains(event.target)) {
                     setShowModal(false);
+                    setShowVModal(false);
                 }
             }
 

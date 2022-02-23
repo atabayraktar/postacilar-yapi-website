@@ -52,7 +52,7 @@ export default function Projects({ projectsRef }) {
                             Projelerimiz
                         </div>
                         <div className="img-container fadding-photo">
-                            <img src="/1.jpg" />
+                            <img onClick={() => router.push("/postacilar-life")} src="/1.jpg" />
                         </div>
                         <div className="row">
                             <div className="col-6 img-container-projects fadding-photo">

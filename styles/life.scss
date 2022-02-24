@@ -4,6 +4,9 @@
     justify-content: center;
     flex-wrap: wrap-reverse;
     .corner {
+        @media only screen and (max-width: 768px) {
+            display: none;
+        }
         img {
             width: 150px;
         }
@@ -11,6 +14,12 @@
     .middle {
         img {
             width: 345px;
+        }
+    }
+    .responsive{
+        display: none;
+        @media only screen and (max-width: 768px) {
+            display: block;
         }
     }
 }

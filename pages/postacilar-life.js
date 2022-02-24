@@ -21,7 +21,7 @@ export default function PostacilarLife() {
 
     return (
         <>
-            {showMediumModal && <ZoomModal size="modal-43" zoomRef={refx} imageSrc={modalSrc} />}
+            {showMediumModal && <ZoomModal size="modal" zoomRef={refx} imageSrc={modalSrc} />}
             {showVModal && <ZoomModal size="modal-35" zoomRef={refx} imageSrc={modalSrc} />}
             {showModal && <ZoomModal zoomRef={refx} imageSrc={modalSrc} />}
             <Head>
@@ -144,6 +144,9 @@ export default function PostacilarLife() {
                         </div>
                         <div className="flat-types">
                             <div className="corner">
+                                <img onClick={() => { setShowVModal(true); setModalSrc("/life/3+1-ara.png") }} src="/life/3+1-ara.png" />
+                            </div>
+                            <div className="corner responsive">
                                 <img onClick={() => { setShowModal(true); setModalSrc("/life/3+1-ara.png") }} src="/life/3+1-ara.png" />
                             </div>
                             <div className="middle">

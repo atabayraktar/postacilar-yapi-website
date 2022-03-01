@@ -8,7 +8,7 @@
     display: flex;
     align-items: center;
     letter-spacing: 4px;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 40px;
     font-weight: 300;
     color: white;
@@ -52,7 +52,7 @@
     font-size: 30px;
     font-weight: 200;
     letter-spacing: 4px;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: white;
     &-stick {
         @extend .detail-title;
@@ -64,7 +64,7 @@
     }
 }
 .detail-paragraph {
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: 200;
     color: white;

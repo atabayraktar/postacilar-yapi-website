@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,600&display=swap');
 @import "./project-details.scss";
 @import "./nilufer.scss";
 @import "./yakamoz.scss";
@@ -19,7 +19,7 @@ body {
   background-color: #1f1e1e;
 }
 .component-container {
-  padding: 30px 0 0 0;
+  padding: 70px 0 0 0;
   &-last-item {
     padding: 50px 0 55px 0;
   }
@@ -37,7 +37,7 @@ body {
   }
 }
 .header {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #bdbec2;
   font-size: larger;
   padding-right: 3vw;
@@ -105,12 +105,12 @@ body {
   }
   &-description {
     font-size: 22px;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #bdbec2;
     text-align: center;
     @media only screen and (max-width: 991px) {
       font-size: 15px;
-      font-family: "Source Sans Pro", sans-serif;
+      font-family: 'Montserrat', sans-serif;
       color: #bdbec2;
       text-align: center;
     }
@@ -123,7 +123,7 @@ body {
   }
 }
 .about-us {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #bdbec2;
   &-title {
     @extend .about-us;
@@ -132,7 +132,7 @@ body {
   }
   &-description {
     @extend .about-us;
-    font-size: 30px;
+    font-size: 20px;
     @media only screen and (max-width: 991px) {
       font-size: 15px;
     }
@@ -321,7 +321,7 @@ body {
 .view-more-button {
   display: flex;
   justify-content: center;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #bdbec2;
 }
 .zoomable-img {

@@ -7,13 +7,12 @@
     }
     &-description {
       font-size: 22px;
-      font-family: "Source Sans Pro";
-      font-weight:600;
+      font-family: 'Montserrat', sans-serif;
       color: #bdbec2;
       text-align: center;
       @media only screen and (max-width: 991px) {
         font-size: 15px;
-        font-family: "Source Sans Pro", sans-serif;
+        font-family: 'Montserrat', sans-serif;
         color: #bdbec2;
         text-align: center;
       }

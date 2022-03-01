@@ -219,10 +219,18 @@ body {
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
     max-height: 720px;
   }
+  overflow: hidden;
+  color: #FFFFFF;
+  background:linear-gradient(to top, #3a3746ba, #99999ccc) no-repeat top center;
+  background-clip: content-box;
   img {
-    @extend .img-container-main-project;
+    // @extend .img-container-main-project;
+    overflow: hidden;
     width: 100%;
-    height: auto;
+    height: 100%;
+    z-index: 2;
+
+    opacity: 60%;
   }
 }
 .img-container-projects-top {
@@ -245,10 +253,12 @@ body {
   }
 }
 .img-container-projects {
-  padding-bottom: 15px;
+  padding-bottom:  calc(var(--bs-gutter-x) * 1);;
+  background: #484848;
+  background-clip: content-box;
   img {
     max-width: 100%;
-    max-height: 265px;
+    max-height: 416x;
     @media only screen and (min-width: 1200px) and (max-width: 1399px) {
       max-height: 227px;
     }
@@ -332,4 +342,9 @@ body {
 .swiper-button-next,
 .swiper-button-prev {
   color: white !important;
+}
+
+.empty-image{
+  width: 100%;
+  height: auto;
 }

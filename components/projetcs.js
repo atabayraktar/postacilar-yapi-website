@@ -43,7 +43,7 @@ export default function Projects({ projectsRef }) {
                                 <div className="fadding-photo">
                                     <Link href="/postacilar-nova">
                                         <a>
-                                            <img src="/nova/nova_slide_1.jpg" />
+                                            <img src="/nova/nova_slides_1.jpg" />
                                         </a>
                                     </Link>
                                 </div>

@@ -12,14 +12,14 @@ export default function Projects({ projectsRef }) {
             <div className="about-us-title">Projelerimiz</div>
             <div className="row">
               <div className="col-3 img-container-main-project fadding-photo">
-                <Link href="/hpostacilar-life">
+                <Link href="/postacilar-life">
                   <a>
                     <img src="/homepage-rectangle-images/life-1.jpg" />
                   </a>
                 </Link>
               </div>
               <div className="col-3 img-container-main-project fadding-photo">
-                <Link href="/postacilar-life">
+                <Link href="/postacilar-life2">
                   <a>
                     <img src="/homepage-rectangle-images/life-2.jpg" />
                   </a>

@@ -25,8 +25,8 @@ export default function PostacilarLife() {
             {showVModal && <ZoomModal size="modal-35" zoomRef={refx} imageSrc={modalSrc} />}
             {showModal && <ZoomModal zoomRef={refx} imageSrc={modalSrc} />}
             <Head>
-                <title>POSTACILAR | PRESTIGE</title>
-                <meta name="description" content="Postacılar Yapı | Prestige Evleri" />
+                <title>POSTACILAR | LIFE</title>
+                <meta name="description" content="Postacılar Yapı | Life Evleri" />
                 <link rel="icon" href="/meta-logo.png" />
             </Head>
             <Header refs={[projectsSectionRef, contactSectionRef, aboutUsSectionRef]} />

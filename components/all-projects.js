@@ -23,7 +23,7 @@ export default function AllProjects() {
                             <div className="img-container-projects-top">
                                 <div className="fadding-photo">
                                     <Link href="/postacilar-nova">
-                                        <a><img src="/nova/nova_slide_1.jpg" /></a>
+                                        <a><img src="/nova/nova_slides_1.jpg" /></a>
                                     </Link>
                                 </div>
                                 <div className="img-container-projects-bottom fadding-photo">
@@ -82,7 +82,7 @@ export default function AllProjects() {
               <div className="col-md-4 col-6 img-container-projects fadding-photo">
                 <img
                   onClick={() => router.push("/postacilar-nova")}
-                  src="/nova/nova_slide_1.jpg"
+                  src="/nova/nova_slides_1.jpg"
                 />
               </div>
               <div className="col-md-4 col-6 img-container-projects fadding-photo">

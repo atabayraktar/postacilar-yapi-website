@@ -52,13 +52,13 @@ export default function PostacilarNova() {
                                             onSwiper={(swiper) => console.log(swiper)}
                                         >
                                             <SwiperSlide>
-                                                <img onClick={() => { setShowModal(true); setModalSrc("/nova/nova_slide_1.jpg") }} width="100%" height="auto" src="/nova/nova_slide_1.jpg" />
+                                                <img onClick={() => { setShowModal(true); setModalSrc("/nova/nova_slides_1.jpg") }} width="100%" height="auto" src="/nova/nova_slides_1.jpg" />
                                             </SwiperSlide>
                                             <SwiperSlide>
-                                                <img onClick={() => { setShowModal(true); setModalSrc("/nova/nova_slide_2.jpg") }} width="100%" height="auto" src="/nova/nova_slide_2.jpg" />
+                                                <img onClick={() => { setShowModal(true); setModalSrc("/nova/nova_slides_2.jpg") }} width="100%" height="auto" src="/nova/nova_slides_2.jpg" />
                                             </SwiperSlide>
                                             <SwiperSlide>
-                                                <img onClick={() => { setShowModal(true); setModalSrc("/nova/nova_slide_3.jpg") }} width="100%" height="auto" src="/nova/nova_slide_3.jpg" />
+                                                <img onClick={() => { setShowModal(true); setModalSrc("/nova/nova_slides_3.jpg") }} width="100%" height="auto" src="/nova/nova_slides_3.jpg" />
                                             </SwiperSlide>
                                             <SwiperSlide>
                                                 <img onClick={() => { setShowModal(true); setModalSrc("/nova/nova1.jpg") }} width="100%" height="auto" src="/nova/nova1.jpg" />
@@ -106,13 +106,13 @@ export default function PostacilarNova() {
                                         onSwiper={(swiper) => console.log(swiper)}
                                     >
                                         <SwiperSlide>
-                                            <img onClick={() => { setShowMediumModal(true); setModalSrc("/nova/nova_slide_1.jpg") }} width="100%" height="auto" src="/nova/nova_slide_1.jpg" />
+                                            <img onClick={() => { setShowMediumModal(true); setModalSrc("/nova/nova_slides_1.jpg") }} width="100%" height="auto" src="/nova/nova_slides_1.jpg" />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <img onClick={() => { setShowMediumModal(true); setModalSrc("/nova/nova_slide_2.jpg") }} width="100%" height="auto" src="/nova/nova_slide_2.jpg" />
+                                            <img onClick={() => { setShowMediumModal(true); setModalSrc("/nova/nova_slides_2.jpg") }} width="100%" height="auto" src="/nova/nova_slides_2.jpg" />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <img onClick={() => { setShowMediumModal(true); setModalSrc("/nova/nova_slide_3.jpg") }} width="100%" height="auto" src="/nova/nova_slide_3.jpg" />
+                                            <img onClick={() => { setShowMediumModal(true); setModalSrc("/nova/nova_slides_3.jpg") }} width="100%" height="auto" src="/nova/nova_slides_3.jpg" />
                                         </SwiperSlide>
                                         <SwiperSlide>
                                             <img onClick={() => { setShowMediumModal(true); setModalSrc("/nova/nova1.jpg") }} width="100%" height="auto" src="/nova/nova1.jpg" />

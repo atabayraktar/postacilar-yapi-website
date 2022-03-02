@@ -73,6 +73,12 @@ export default function AllProjects() {
           <div className="component-container-last-item">
             <div className="about-us-title">Projelerimiz</div>
             <div className="row">
+            <div className="col-md-4 col-6 img-container-projects fadding-photo">
+                <img
+                  onClick={() => router.push("/postacilar-life2")}
+                  src="/life2/outside/1-square.jpg"
+                />
+              </div>
               <div className="col-md-4 col-6 img-container-projects fadding-photo">
                 <img
                   onClick={() => router.push("/postacilar-life")}
@@ -114,9 +120,6 @@ export default function AllProjects() {
                   onClick={() => router.push("/postacilar-lotus")}
                   src="/lotus/lotus2.jpg"
                 />
-              </div>
-              <div className="col-md-4 col-6 img-container-projects fadding-photo">
-                <div className="empty-image"></div>
               </div>
               <div className="col-md-4 col-6 img-container-projects fadding-photo">
                 <div className="empty-image"></div>

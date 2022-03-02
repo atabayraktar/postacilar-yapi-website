@@ -16,7 +16,7 @@
             width: 345px;
         }
     }
-    .responsive{
+    .responsive {
         display: none;
         @media only screen and (max-width: 768px) {
             display: block;
@@ -24,8 +24,29 @@
     }
 }
 @media only screen and (max-width: 768px) {
-    .prestige-bottom-part-second-row{
+    .prestige-bottom-part-second-row {
         padding: 0;
     }
 }
+.life2-container-mobile {
+    display: flex;
+    @media only screen and (max-width: 820px) {
+        display: none;
+    }
+}
+.life2-container-desktop {
+    display: none;
+    @media only screen and (max-width: 820px) {
+        display: block;
+    }
+}
 
+.life2-swiper-desktop {
+    margin-left: 50px;
+    width: 345px;
+    cursor: zoom-in;
+    @media only screen and (max-width: 820px) {
+        margin-left: 0;
+        width: 325px;
+    }
+}

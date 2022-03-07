@@ -36,7 +36,7 @@ export default function PostacilarLife() {
                         <div className="row">
                             <div className="detail-title">
                                 <div className="postacilar-life-logo">
-                                    <img src="/life/postacılar-life-logo.png" />
+                                    <img src="/life2/postacilar-life2-logo.png" />
                                 </div>
                             </div>
                             <div className="col-12 col-md-7 nova-right-col nova-img-component-mobile">
@@ -73,12 +73,12 @@ export default function PostacilarLife() {
                             <div className="detail-sub-title">
                                 <div className="detail-title">
                                     <div className="prestige-logo">
-                                        <img src="/life/life-logo.png" />
+                                        <img src="/life2/life2-logo.png" />
                                     </div>
                                 </div> <span className="detail-sub-title-stick"><div>|</div></span>Hakkında
                             </div>
                             <div className="detail-paragraph">
-                                "Lorem dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                Esenler mahallesinin Gazi Meclis Caddesinde konumlanan projemiz Postacılar Life projelerinin ikinci etabıdır. Çanakkale Belediyesi’nin şehir planında bulunan park alanının yanında konumlanan yapı, kendine ait geniş peyzaj alanına sahiptir. Kullanıcılarına en iyisini vermeyi amaçlayan projede modern mimari ve iç tasarımın yanı sıra her dairenin kendine ait kapalı otopark alanı bulunmaktadır.
                             </div>
                         </div>
                     </div>
@@ -119,7 +119,7 @@ export default function PostacilarLife() {
                         <div className="detail-sub-title">
                             <div className="detail-title">
                                 <div className="prestige-logo">
-                                    <img src="/life/life-logo.png" />
+                                    <img src="/life2/life2-logo.png" />
                                 </div>
                             </div>  <span className="detail-sub-title-stick"><div>|</div></span> Proje detayları
                         </div>
@@ -135,7 +135,7 @@ export default function PostacilarLife() {
                             <div className="detail-sub-title">
                                 <div className="detail-title">
                                     <div className="prestige-logo">
-                                        <img src="/life/life-logo.png" />
+                                        <img src="/life2/life2-logo.png" />
                                     </div>
                                 </div>  <span className="detail-sub-title-stick"><div>|</div></span>İç tasarım
                             </div>
@@ -181,7 +181,7 @@ export default function PostacilarLife() {
                             <div className="detail-sub-title">
                                 <div className="detail-title">
                                     <div className="prestige-logo">
-                                        <img src="/life/life-logo.png" />
+                                        <img src="/life2/life2-logo.png" />
                                     </div>
                                 </div>  <span className="detail-sub-title-stick"><div>|</div></span>İç tasarım
                             </div>

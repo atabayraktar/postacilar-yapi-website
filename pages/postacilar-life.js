@@ -80,7 +80,7 @@ export default function PostacilarLife() {
                                 </div> <span className="detail-sub-title-stick"><div>|</div></span>Hakkında
                             </div>
                             <div className="detail-paragraph">
-                                "Lorem dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                Postacılar Life esenler mahallesinde konumlanan projemizdir. Postacılar Life 60 metrelik yol olarak adlandırılan bölgede şirketimiz bünyesinde gerçekleştirilen ilk projesidir. Kullanıcılarına en iyisini vermeyi amaçlayan projede modern mimari ve iç tasarımın yanı sıra her dairenin kendine ait kapalı otopark alanı bulunmaktadır.
                             </div>
                         </div>
                     </div>

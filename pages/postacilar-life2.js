@@ -127,7 +127,7 @@ export default function PostacilarLife() {
                             Daire Sayısı: 42 adet <br />
                             Daire Tipler: 14 adet 3+1, 14 adet 2+1 kapalı mutfak, 14 adet 2+1 açık mutfak  <br />
                             İşyeri Sayısı: 2 <br />
-                            Adres:
+                            Adres: Esenler Mahallesi, Gazi Meclis Caddesi, No: 12 Esenler Çanakkale/Merkez
                         </div>
                     </div>
                     <div className="col-12 col-md-8">

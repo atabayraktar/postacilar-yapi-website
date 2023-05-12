@@ -26,7 +26,7 @@ export default function ProjectMap({ contactRef }) {
                                     İletişim
                                 </div>
                                 <div className="about-us-description">
-                                    Cep Telefonu: +90 (532) 272 04 15
+                                    Cep Telefonu: +90 (531) 656 29 09
                                 </div>
                                 <div className="about-us-description">
                                     Şirket Telefonu: 0286 213 50 55
@@ -54,7 +54,7 @@ export default function ProjectMap({ contactRef }) {
                             İletişim
                         </div>
                         <div className="about-us-description">
-                            Cep Telefonu: +90 (532) 272 04 15
+                            Cep Telefonu: +90 (531) 656 29 09
                         </div>
                         <div className="about-us-description">
                             Şirket Telefonu: 0286 213 50 55

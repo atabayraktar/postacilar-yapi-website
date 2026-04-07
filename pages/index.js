@@ -24,19 +24,19 @@ export default function Home() {
       </Head>
       <Header refs={[projectsSectionRef, contactSectionRef, aboutUsSectionRef]} />
       <BigLogo />
-      <section className="sec-icons">
+      <section className="sec-icons" data-animate>
         <Icons />
       </section>
-      <section className="sec-about">
+      <section className="sec-about" data-animate>
         <AboutUs aboutUsRef={aboutUsSectionRef}/>
       </section>
-      <section className="sec-projects">
+      <section className="sec-projects" data-animate>
         <Projects projectsRef={projectsSectionRef} />
       </section>
-      <section className="sec-stats">
+      <section className="sec-stats" data-animate>
         <ProjectsCountUp/>
       </section>
-      <section className="sec-contact">
+      <section className="sec-contact" data-animate>
         <ProjectMap contactRef={contactSectionRef} />
       </section>
       <Footer />

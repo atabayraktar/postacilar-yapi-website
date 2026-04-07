@@ -23,5 +23,47 @@
     "msgPlaceholder": "Your Message",
     "submit": "Send via WhatsApp"
   },
-  "popup": { "greeting": "Hello! 👋", "text": "Would you like to learn more about our projects?", "cta": "Contact Us" }
+  "popup": { "greeting": "Hello! 👋", "text": "Would you like to learn more about our projects?", "cta": "Contact Us" },
+  "details": {
+    "sections": {
+      "about": "About",
+      "projectDetails": "Project Details",
+      "interiorDesign": "Interior Design",
+      "visuals": "Visuals",
+      "flatTypes": "Apartment Types",
+      "viewCatalog": "View Catalog"
+    },
+    "life": {
+      "about": "Postacılar Life is our project located in Esenler neighbourhood. It is the first project carried out by our company in the area known as the 60-metre road. The project, which aims to provide the best for its residents, features modern architecture and interior design, as well as a private enclosed parking space for each apartment.",
+      "details": "Number of Apartments: 42\nApartment Type: 3+1\nNumber of Commercial Units: 3\nAddress: Esenler Mahallesi, Şehit Ömer Halis Demir Caddesi, No: 18/2, Çanakkale/Merkez"
+    },
+    "life2": {
+      "about": "Our project located on Gazi Meclis Avenue in Esenler neighbourhood is the second phase of the Postacılar Life projects. Situated next to a park area in the Çanakkale Municipality's city plan, the building features a spacious private landscape area. The project aims to provide the best for its residents, offering modern architecture, interior design, and a private enclosed parking space for each apartment.",
+      "details": "Number of Apartments: 42\nApartment Types: 14 units 3+1, 14 units 2+1 closed kitchen, 14 units 2+1 open kitchen\nNumber of Commercial Units: 2\nAddress: Esenler Mahallesi, Gazi Meclis Caddesi, No: 12, Çanakkale/Merkez"
+    },
+    "nova": {
+      "about": "Nova, the third project of Postacılar Yapı in the region, is positioned in line with the city's growth. It embodies our firm principle of designing comfortable and safe living spaces, while also appealing to those who love the balance between city and nature, thanks to its sea views and nearby parks.",
+      "details": "Postacılar Nova is a project with various apartment types.\n2 units 3+2 duplex\n2 units 4+2 duplex\n9 units 2+1\n3 units 3+1\n4 units 1+1"
+    },
+    "prestige": {
+      "about": "Prestige is a project designed with comfortable and safe living spaces featuring extraordinary details, situated far from the city's chaos yet right at its heart. It draws attention with its magnificent sea view, children's playgrounds, recreation areas, open and enclosed parking, green garden, proximity to key centres, innovative technology, and eco-friendly design.",
+      "details": "Number of Apartments: 28\nApartment Type: 3+1\nNumber of Commercial Units: 3\nView: Sea View, Nature View, City View\nAddress: Boğazkent Mah. Seyit Onbaşı Cad. No:19, Kepez / Çanakkale"
+    },
+    "yakamoz": {
+      "about": "Located on 100th Year Avenue in Barbaros neighbourhood, the project overlooks Çanakkale's beloved new waterfront and offers a breathtaking strait view. Our project, with its open parking area assigned to each apartment, features a modern and minimalist design.",
+      "details": "Yakamoz Residences is a project with spacious floor areas, featuring one apartment per floor.\n3 units 3+1\n1 unit 4+1 duplex\n1 commercial unit"
+    },
+    "idil": {
+      "about": "İdil Residences, located in Esenler neighbourhood, is a 10-apartment building project situated close to the city centre, schools, parks, and hospitals.",
+      "details": "İdil Residences was designed in line with the demands of the region.\n6 units 1+1\n4 units 2+1"
+    },
+    "nilufer": {
+      "about": "Nilüfer Residences, our first project, is located in Esenler neighbourhood and sets itself apart from its surroundings. The project offers peace, comfort, and ease in line with our firm's principles. It also stands out with its open parking area, children's playground, green spaces, and spacious apartment layouts.",
+      "details": "Nilüfer Residences consists of two blocks and a total of 36 apartments.\n24 units 3+1\n12 units 2+1"
+    },
+    "lotus": {
+      "about": "Postacılar Lotus, located in the Kepez district, is a 16-apartment building project within walking distance of the Kepez seafront and offering views of the Çanakkale Strait.",
+      "details": "3 commercial units\n12 units 3+1\n4 units 5+2 duplex"
+    }
+  }
 }

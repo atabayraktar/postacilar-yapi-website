@@ -4,6 +4,7 @@ import ZoomModal from "../components/zoom-modal";
 import StickyButtons from "../components/sticky-buttons";
 import Footer from "../components/footer";
 import { useState, useCallback } from "react";
+import { useApp } from "../context/AppContext";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper";
 import "swiper/css";
@@ -22,6 +23,7 @@ export default function PostacilarNova() {
   const [modalIndex, setModalIndex] = useState(0);
   const [showModal, setShowModal] = useState(false);
 
+  const { t } = useApp();
   const openModal = (images, index) => {
     setModalImages(images);
     setModalIndex(index);
@@ -68,15 +70,9 @@ export default function PostacilarNova() {
         <div className="row life-about-row">
           <div className="col-12">
             <div className="detail-sub-title">
-              NOVA <span className="detail-sub-title-stick">|</span> Hakkında
+              NOVA <span className="detail-sub-title-stick">|</span> {t('details.sections.about')}
             </div>
-            <div className="detail-paragraph">
-              Postacılar yapının bölgedeki üçüncü projesi olan Nova, gelişen şehrin
-              ilerleyişi doğrultusunda konumlanmış, firma ilkelerimizden olan konforlu
-              ve güvenli yaşam alanları tasarlama prensibimize sahip; aynı zamanda
-              deniz manzarası ve yakınındaki parklar ile şehir ve doğa ilişkisini
-              sevenlere hitap eden bir apartman projesidir.
-            </div>
+            <div className="detail-paragraph">{t('details.nova.about')}</div>
           </div>
         </div>
 
@@ -84,16 +80,9 @@ export default function PostacilarNova() {
         <div className="row life-about-row">
           <div className="col-12">
             <div className="detail-sub-title">
-              NOVA <span className="detail-sub-title-stick">|</span> Proje Detayları
+              NOVA <span className="detail-sub-title-stick">|</span> {t('details.sections.projectDetails')}
             </div>
-            <div className="detail-paragraph">
-              Postacılar Nova çeşitli daire tiplerine sahip bir projedir.<br />
-              2 adet 3+2 dubleks<br />
-              2 adet 4+2 dubleks<br />
-              9 adet 2+1<br />
-              3 adet 3+1<br />
-              4 adet 1+1
-            </div>
+            <div className="detail-paragraph" dangerouslySetInnerHTML={{ __html: t('details.nova.details').replace(/\n/g, '<br/>') }} />
           </div>
         </div>
 
@@ -130,9 +119,18 @@ export default function PostacilarNova() {
         {/* ── DETAY GÖRSELLERİ ── */}
         <div className="life-interior-section">
           <div className="detail-sub-title">
-            NOVA <span className="detail-sub-title-stick">|</span> İç Tasarım
+            NOVA <span className="detail-sub-title-stick">|</span> {t('details.sections.interiorDesign')}
           </div>
-          <div className="images zoomable-img">
+          <div className="detail-swiper-mobile">
+            <Swiper modules={[Navigation, Autoplay]} navigation loop={true} autoplay={{ delay: 2800, disableOnInteraction: false }} speed={800} spaceBetween={8} slidesPerView={1} onSlideNextTransitionStart={handleNextStart} onTransitionEnd={handleTransitionEnd}>
+              {detailImages.map((src, i) => (
+                <SwiperSlide key={i}>
+                  <img onClick={() => openModal(detailImages, i)} src={src} />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+          <div className="detail-mosaic-desktop images zoomable-img">
             <div className="row align-items-end g-1">
               <div className="col-7">
                 <img onClick={() => openModal(detailImages, 0)} width="100%" height="auto" src="/nova/detay4.webp" style={{cursor:"zoom-in", display:"block"}} />

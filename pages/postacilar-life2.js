@@ -4,6 +4,7 @@ import ZoomModal from "../components/zoom-modal";
 import StickyButtons from "../components/sticky-buttons";
 import Footer from "../components/footer";
 import { useState, useCallback } from "react";
+import { useApp } from "../context/AppContext";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper";
 import "swiper/css";
@@ -26,6 +27,7 @@ export default function PostacilarLife2() {
   const [modalIndex, setModalIndex] = useState(0);
   const [showModal, setShowModal] = useState(false);
 
+  const { t } = useApp();
   const openModal = (images, index) => {
     setModalImages(images);
     setModalIndex(index);
@@ -78,16 +80,9 @@ export default function PostacilarLife2() {
                 <div className="prestige-logo"><img src="/life2/life2-logo.webp" /></div>
               </div>
               <span className="detail-sub-title-stick"><div>|</div></span>
-              Hakkında
+              {t('details.sections.about')}
             </div>
-            <div className="detail-paragraph">
-              Esenler mahallesinin Gazi Meclis Caddesinde konumlanan projemiz
-              Postacılar Life projelerinin ikinci etabıdır. Çanakkale Belediyesi'nin
-              şehir planında bulunan park alanının yanında konumlanan yapı, kendine
-              ait geniş peyzaj alanına sahiptir. Kullanıcılarına en iyisini vermeyi
-              amaçlayan projede modern mimari ve iç tasarımın yanı sıra her dairenin
-              kendine ait kapalı otopark alanı bulunmaktadır.
-            </div>
+            <div className="detail-paragraph">{t('details.life2.about')}</div>
           </div>
         </div>
 
@@ -99,16 +94,11 @@ export default function PostacilarLife2() {
                 <div className="prestige-logo"><img src="/life2/life2-logo.webp" /></div>
               </div>
               <span className="detail-sub-title-stick"><div>|</div></span>
-              Proje Detayları
+              {t('details.sections.projectDetails')}
             </div>
-            <div className="detail-paragraph">
-              Daire Sayısı: 42 adet <br />
-              Daire Tipleri: 14 adet 3+1, 14 adet 2+1 kapalı mutfak, 14 adet 2+1 açık mutfak <br />
-              İşyeri Sayısı: 2 <br />
-              Adres: Esenler Mahallesi, Gazi Meclis Caddesi, No: 12, Çanakkale/Merkez
-            </div>
+            <div className="detail-paragraph" dangerouslySetInnerHTML={{ __html: t('details.life2.details').replace(/\n/g, '<br/>') }} />
             <a href="/catalogs/life2-katalog.pdf" target="_blank" rel="noopener noreferrer" className="catalog-btn">
-              Kataloğu Görüntüle
+              {t('details.sections.viewCatalog')}
             </a>
           </div>
         </div>
@@ -150,9 +140,18 @@ export default function PostacilarLife2() {
               <div className="prestige-logo"><img src="/life2/life2-logo.webp" /></div>
             </div>
             <span className="detail-sub-title-stick"><div>|</div></span>
-            İç Tasarım
+            {t('details.sections.interiorDesign')}
           </div>
-          <div className="images zoomable-img">
+          <div className="detail-swiper-mobile">
+            <Swiper modules={[Navigation, Autoplay]} navigation loop={true} autoplay={{ delay: 2800, disableOnInteraction: false }} speed={800} spaceBetween={8} slidesPerView={1} onSlideNextTransitionStart={handleNextStart} onTransitionEnd={handleTransitionEnd}>
+              {interiorImages.map((src, i) => (
+                <SwiperSlide key={i}>
+                  <img onClick={() => openModal(interiorImages, i)} src={src} />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+          <div className="detail-mosaic-desktop images zoomable-img">
             {/* Grup 1: resimler 1-6 */}
             <div className="interior-group">
               <div className="row align-items-end g-1">

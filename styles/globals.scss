@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,600&display=swap");
 
 // ─── CSS Variables: theme tokens ───────────────────────────────────────
 :root {
@@ -10,7 +10,7 @@
   --text-primary: #bdbec2;
   --text-secondary: #888;
   --text-title: #e8e8e8;
-  --border-subtle: rgba(255,255,255,0.05);
+  --border-subtle: rgba(255, 255, 255, 0.05);
   --border-strong: #2a2a2a;
   --infobar-link: #888;
 }
@@ -24,34 +24,52 @@
   --text-primary: #2a2d34;
   --text-secondary: #666;
   --text-title: #1e2025;
-  --border-subtle: rgba(0,0,0,0.07);
-  --border-strong: rgba(0,0,0,0.12);
+  --border-subtle: rgba(0, 0, 0, 0.07);
+  --border-strong: rgba(0, 0, 0, 0.12);
   --infobar-link: #666;
 }
 
 // Light mode overrides
 [data-theme="light"] {
-  .header-logo img { filter: invert(1); }
+  .header-logo img {
+    filter: invert(1);
+  }
 
   .count-up-number-value,
-  .count-up-number-title { color: #1e2025 !important; }
+  .count-up-number-title {
+    color: #1e2025 !important;
+  }
 
-  .contact-map-form-btn:hover { background-color: var(--bg-main) !important; }
-  .view-more-button .btn:hover { background-color: var(--bg-main) !important; }
-  .scroll-to-top:hover { background-color: var(--bg-main) !important; }
-  .sticky-contact:hover { background-color: var(--bg-main) !important; }
-  .contact-modal button[type="submit"]:hover { background-color: var(--bg-main) !important; }
+  .contact-map-form-btn:hover {
+    background-color: var(--bg-main) !important;
+  }
+  .view-more-button .btn:hover {
+    background-color: var(--bg-main) !important;
+  }
+  .scroll-to-top:hover {
+    background-color: var(--bg-main) !important;
+  }
+  .sticky-contact:hover {
+    background-color: var(--bg-main) !important;
+  }
+  .contact-modal button[type="submit"]:hover {
+    background-color: var(--bg-main) !important;
+  }
 
   // Detail pages
   .detail-title,
   .detail-title-stick,
   .detail-sub-title,
   .detail-sub-title-stick,
-  .detail-paragraph { color: #1e2025 !important; }
+  .detail-paragraph {
+    color: #1e2025 !important;
+  }
 
   .postacilar-life-logo img,
   .prestige-logo img,
-  .prestige-logo-big img { filter: invert(1); }
+  .prestige-logo-big img {
+    filter: invert(1);
+  }
 }
 
 @import "./project-details.scss";
@@ -73,14 +91,21 @@
   color: inherit;
   margin-bottom: 10px;
 
-  svg { flex-shrink: 0; opacity: 0.8; width: 20px; height: 20px; }
+  svg {
+    flex-shrink: 0;
+    opacity: 0.8;
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .contact-map-tel {
   color: inherit;
   text-decoration: none;
   transition: color 0.2s;
-  &:hover { color: #b8977e; }
+  &:hover {
+    color: #b8977e;
+  }
 }
 
 .contact-map-socials {
@@ -100,10 +125,12 @@
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.05em;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-decoration: none;
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 
   &:hover {
     background-color: transparent;
@@ -111,7 +138,9 @@
   }
 }
 
-[data-theme="light"] .catalog-btn:hover { background-color: var(--bg-main) !important; }
+[data-theme="light"] .catalog-btn:hover {
+  background-color: var(--bg-main) !important;
+}
 
 .contact-map-form-btn {
   margin-top: 28px;
@@ -124,14 +153,19 @@
   font-weight: 700;
   letter-spacing: 0.05em;
   cursor: pointer;
-  transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
 
   &:hover {
     background: transparent;
     color: #b8977e;
     border-color: #b8977e;
   }
-  &:active { opacity: 0.85; }
+  &:active {
+    opacity: 0.85;
+  }
 }
 
 .contact-map-social-link {
@@ -140,8 +174,13 @@
   align-items: center;
   text-decoration: none;
   transition: color 0.2s;
-  svg { width: 22px; height: 22px; }
-  &:hover { color: #b8977e; }
+  svg {
+    width: 22px;
+    height: 22px;
+  }
+  &:hover {
+    color: #b8977e;
+  }
 }
 
 // Sticky header wrapper
@@ -185,7 +224,12 @@
     padding: 0 32px;
   }
 
-  &-spacer { flex: 1; }
+  &-spacer {
+    flex: 1;
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+  }
 
   &-icons {
     flex: 0 0 auto;
@@ -212,17 +256,25 @@
       border: none;
       cursor: pointer;
       font-size: 11px;
-      font-family: 'Montserrat', sans-serif;
+      font-family: "Montserrat", sans-serif;
       letter-spacing: 0.08em;
       color: var(--infobar-link);
       padding: 0;
       transition: color 0.2s;
 
-      &.active { color: #b8977e; font-weight: 600; }
-      &:hover { color: #b8977e; }
+      &.active {
+        color: #b8977e;
+        font-weight: 600;
+      }
+      &:hover {
+        color: #b8977e;
+      }
     }
 
-    &-sep { color: var(--border-strong); font-size: 11px; }
+    &-sep {
+      color: var(--border-strong);
+      font-size: 11px;
+    }
   }
 
   &-theme-btn {
@@ -234,7 +286,9 @@
     display: flex;
     align-items: center;
     transition: color 0.2s;
-    &:hover { color: #b8977e; }
+    &:hover {
+      color: #b8977e;
+    }
   }
 
   &-link {
@@ -243,7 +297,9 @@
     align-items: center;
     text-decoration: none;
     transition: color 0.2s;
-    &:hover { color: #b8977e; }
+    &:hover {
+      color: #b8977e;
+    }
   }
 }
 
@@ -276,7 +332,29 @@
     letter-spacing: 0.04em;
   }
 
-  &-right { flex: 1; }
+  &-right {
+    flex: 1;
+  }
+
+  @media only screen and (max-width: 768px) {
+    padding: 20px 20px;
+    &-inner {
+      flex-direction: column;
+      gap: 14px;
+      text-align: center;
+    }
+    &-icons {
+      justify-content: center;
+      flex: unset;
+    }
+    &-copy {
+      flex: unset;
+      font-size: 12px;
+    }
+    &-right {
+      display: none;
+    }
+  }
 }
 
 .footer-link {
@@ -285,7 +363,9 @@
   align-items: center;
   text-decoration: none;
   transition: color 0.2s;
-  &:hover { color: #b8977e; }
+  &:hover {
+    color: #b8977e;
+  }
 }
 
 ::selection {
@@ -295,11 +375,26 @@
 
 html {
   scroll-padding-top: 120px;
+  overflow-x: clip;
+  max-width: 100%;
 }
 
 body {
   background-color: var(--bg-main);
   font-weight: 300;
+  overflow-x: clip;
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .row {
+    --bs-gutter-x: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  * {
+    max-width: 100%;
+  }
 }
 .navbar-brand {
   cursor: pointer;
@@ -312,6 +407,12 @@ body {
   &-last-item {
     padding: 100px 0;
   }
+  @media only screen and (max-width: 768px) {
+    padding: 40px 0;
+    &-last-item {
+      padding: 40px 0;
+    }
+  }
 }
 
 // Section backgrounds — use CSS variable tokens
@@ -321,8 +422,12 @@ body {
 
 .sec-about {
   background: var(--bg-main);
-  .about-us-title { color: var(--text-title); }
-  .about-us-description { color: var(--text-primary); }
+  .about-us-title {
+    color: var(--text-title);
+  }
+  .about-us-description {
+    color: var(--text-primary);
+  }
 }
 
 .sec-projects {
@@ -335,12 +440,36 @@ body {
 
 .sec-contact {
   background: var(--bg-main);
-  .about-us-title { color: var(--text-title); }
-  .about-us-description { color: var(--text-primary); }
-  .contact-map-row { color: var(--text-primary); }
-  .contact-map-tel { color: var(--text-primary); &:hover { color: #b8977e; } }
-  .contact-map-social-link { color: var(--text-secondary); &:hover { color: #b8977e; } }
-  .contact-map-form-btn { background: #b8977e; color: #1a1a1a; border: 2px solid #b8977e; &:hover { background: transparent; color: #b8977e; } }
+  .about-us-title {
+    color: var(--text-title);
+  }
+  .about-us-description {
+    color: var(--text-primary);
+  }
+  .contact-map-row {
+    color: var(--text-primary);
+  }
+  .contact-map-tel {
+    color: var(--text-primary);
+    &:hover {
+      color: #b8977e;
+    }
+  }
+  .contact-map-social-link {
+    color: var(--text-secondary);
+    &:hover {
+      color: #b8977e;
+    }
+  }
+  .contact-map-form-btn {
+    background: #b8977e;
+    color: #1a1a1a;
+    border: 2px solid #b8977e;
+    &:hover {
+      background: transparent;
+      color: #b8977e;
+    }
+  }
 }
 .mobile-components {
   display: none;
@@ -355,7 +484,7 @@ body {
   }
 }
 .header {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: var(--text-primary);
   font-size: larger;
   padding-right: 3vw;
@@ -367,14 +496,17 @@ body {
     letter-spacing: 0.04em;
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       bottom: 4px;
       left: 50%;
       right: 50%;
       height: 1px;
       background: #b8977e;
-      transition: left 0.25s ease, right 0.25s ease, opacity 0.25s ease;
+      transition:
+        left 0.25s ease,
+        right 0.25s ease,
+        opacity 0.25s ease;
       opacity: 0;
     }
 
@@ -389,7 +521,8 @@ body {
   }
 
   @media only screen and (max-width: 991px) {
-    font-size: 12px;
+    font-size: 14px;
+    padding-right: 16px;
     img {
       max-width: 120px;
       height: auto;
@@ -404,8 +537,9 @@ body {
     padding: 14px 0;
   }
   @media only screen and (max-width: 991px) {
+    padding-left: 0;
     img {
-      max-width: 120px;
+      max-width: 160px;
       height: auto;
       padding: 10px 0;
     }
@@ -457,12 +591,12 @@ body {
   }
   &-description {
     font-size: 22px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: var(--text-primary);
     text-align: center;
     @media only screen and (max-width: 991px) {
       font-size: 15px;
-      font-family: 'Montserrat', sans-serif;
+      font-family: "Montserrat", sans-serif;
       color: var(--text-primary);
       text-align: center;
     }
@@ -475,7 +609,7 @@ body {
   }
 }
 .about-us {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: var(--text-primary);
   &-title {
     @extend .about-us;
@@ -511,13 +645,13 @@ body {
   }
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 12px;
     right: 12px;
     bottom: var(--bs-gutter-x, 24px);
-    background: rgba(0,0,0,0.35);
+    background: rgba(0, 0, 0, 0.35);
     opacity: 0;
     transition: opacity 0.3s ease;
     pointer-events: none;
@@ -604,8 +738,8 @@ body {
     max-height: 720px;
   }
   overflow: hidden;
-  color: #FFFFFF;
-  background:linear-gradient(to top, #3a3746ba, #99999ccc) no-repeat top center;
+  color: #ffffff;
+  background: linear-gradient(to top, #3a3746ba, #99999ccc) no-repeat top center;
   background-clip: content-box;
   img {
     // @extend .img-container-main-project;
@@ -637,7 +771,7 @@ body {
   }
 }
 .img-container-projects {
-  padding-bottom:  calc(var(--bs-gutter-x) * 1);;
+  padding-bottom: calc(var(--bs-gutter-x) * 1);
   background: #484848;
   background-clip: content-box;
   img {
@@ -669,15 +803,24 @@ body {
   z-index: 1050;
   animation: modalFadeIn 0.25s ease;
 
-  &.modal-35, &.modal-43 {
-    .modal-content { width: auto; }
-    img { max-width: 55vw; }
+  &.modal-35,
+  &.modal-43 {
+    .modal-content {
+      width: auto;
+    }
+    img {
+      max-width: 55vw;
+    }
   }
 }
 
 @keyframes modalFadeIn {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .modal-content {
@@ -708,7 +851,7 @@ body {
   height: auto;
   object-fit: contain;
   border-radius: 4px;
-  box-shadow: 0 25px 60px rgba(0,0,0,0.6);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
 
   @media only screen and (max-width: 991px) {
     max-width: 92vw;
@@ -720,8 +863,8 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(255,255,255,0.12);
-  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   color: #fff;
   width: 44px;
   height: 44px;
@@ -736,19 +879,35 @@ body {
   transition: background 0.2s;
   user-select: none;
 
-  &:hover { background: rgba(255,255,255,0.25); }
-  &-prev { left: -60px; }
-  &-next { right: -60px; }
+  &:hover {
+    background: rgba(255, 255, 255, 0.25);
+  }
+  &-prev {
+    left: -60px;
+  }
+  &-next {
+    right: -60px;
+  }
 
   @media only screen and (max-width: 768px) {
-    &-prev { left: -44px; }
-    &-next { right: -44px; }
+    &-prev {
+      left: -2px;
+    }
+    &-next {
+      right: -2px;
+    }
+    background: rgba(20, 20, 20, 0.75);
+    border-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    &:hover {
+      background: rgba(20, 20, 20, 0.92);
+    }
   }
 }
 
 .modal-counter {
   text-align: center;
-  color: rgba(255,255,255,0.6);
+  color: rgba(255, 255, 255, 0.6);
   font-size: 13px;
   margin-top: 12px;
   letter-spacing: 0.05em;
@@ -762,8 +921,8 @@ body {
   z-index: 99;
   cursor: pointer;
   color: #fff;
-  background: rgba(30,30,30,0.85);
-  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(30, 30, 30, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   width: 30px;
   height: 30px;
@@ -774,12 +933,14 @@ body {
   justify-content: center;
   transition: background 0.2s;
 
-  &:hover { background: rgba(60,60,60,0.95); }
+  &:hover {
+    background: rgba(60, 60, 60, 0.95);
+  }
 }
 .view-more-button {
   display: flex;
   justify-content: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #bdbec2;
   margin-top: 32px;
 
@@ -792,14 +953,17 @@ body {
     font-weight: 700;
     letter-spacing: 0.05em;
     padding: 12px 36px;
-    transition: background-color 0.3s ease, color 0.3s ease !important;
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease !important;
     box-shadow: none !important;
 
     &:hover {
       background-color: transparent !important;
       color: #b8977e !important;
     }
-    &:active, &:focus {
+    &:active,
+    &:focus {
       background-color: transparent !important;
       color: #b8977e !important;
       box-shadow: none !important;
@@ -824,20 +988,33 @@ body {
   z-index: 10;
   background: linear-gradient(135deg, #b8977e, #b8977e);
   color: #2a2218;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 9px;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   padding: 7px 20px 7px 14px;
   pointer-events: none;
-  clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 50%, calc(100% - 12px) 100%, 0 100%);
-  box-shadow: 3px 4px 12px rgba(0,0,0,0.55);
-  transition: filter 0.2s ease, transform 0.2s ease;
+  clip-path: polygon(
+    0 0,
+    calc(100% - 12px) 0,
+    100% 50%,
+    calc(100% - 12px) 100%,
+    0 100%
+  );
+  box-shadow: 3px 4px 12px rgba(0, 0, 0, 0.55);
+  transition:
+    filter 0.2s ease,
+    transform 0.2s ease;
   cursor: default;
+  @media only screen and (max-width: 768px) {
+    font-size: 11px;
+    padding: 8px 24px 8px 16px;
+    top: 14px;
+  }
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -5px;
     left: 0;
@@ -854,13 +1031,15 @@ body {
   overflow: hidden;
   cursor: zoom-in;
 
-  img { transition: transform 0.35s ease; }
+  img {
+    transition: transform 0.35s ease;
+  }
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.28)
+    background: rgba(0, 0, 0, 0.28)
       url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3'/%3E%3C/svg%3E")
       no-repeat center center;
     opacity: 0;
@@ -868,8 +1047,12 @@ body {
     pointer-events: none;
   }
 
-  &:hover::after { opacity: 1; }
-  &:hover img { transform: scale(1.02); }
+  &:hover::after {
+    opacity: 1;
+  }
+  &:hover img {
+    transform: scale(1.02);
+  }
 }
 
 // Contact popup
@@ -883,11 +1066,13 @@ body {
   border: 2px solid #b8977e;
   border-radius: 0;
   padding: 18px 20px 16px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
   opacity: 0;
   transform: translateY(12px);
   pointer-events: none;
-  transition: opacity 0.35s ease, transform 0.35s ease;
+  transition:
+    opacity 0.35s ease,
+    transform 0.35s ease;
 
   &.visible {
     opacity: 1;
@@ -906,7 +1091,9 @@ body {
     cursor: pointer;
     padding: 0;
     line-height: 1;
-    &:hover { color: #fff; }
+    &:hover {
+      color: #fff;
+    }
   }
 
   &-title {
@@ -934,7 +1121,9 @@ body {
     font-weight: 700;
     cursor: pointer;
     transition: background 0.2s;
-    &:hover { background: #cba992; }
+    &:hover {
+      background: #cba992;
+    }
   }
 }
 
@@ -947,6 +1136,10 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  @media only screen and (max-width: 768px) {
+    right: 10px;
+    bottom: 20px;
+  }
 }
 
 .sticky-btn {
@@ -957,7 +1150,7 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.4);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
   position: relative;
 }
 
@@ -966,7 +1159,9 @@ body {
   color: #fff;
   text-decoration: none;
   border: 2px solid #25d366;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 
   &:hover {
     background-color: transparent;
@@ -978,7 +1173,9 @@ body {
   background-color: #b8977e;
   color: #1a1a1a;
   border: 2px solid #b8977e;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 
   &:hover {
     background-color: transparent;
@@ -1000,10 +1197,12 @@ body {
   font-size: 13px;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.25s ease, transform 0.25s ease;
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     right: -7px;
     top: 50%;
@@ -1024,7 +1223,7 @@ body {
 .contact-modal-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.65);
+  background: rgba(0, 0, 0, 0.65);
   z-index: 1040;
   display: flex;
   align-items: center;
@@ -1049,7 +1248,7 @@ body.modal-open {
   width: 100%;
   max-width: 480px;
   position: relative;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
 
   h3 {
     color: var(--text-title);
@@ -1071,7 +1270,8 @@ body.modal-open {
     gap: 16px;
   }
 
-  input, textarea {
+  input,
+  textarea {
     background: transparent;
     border: 1px solid #3a3a3a;
     border-radius: 0;
@@ -1083,9 +1283,16 @@ body.modal-open {
     transition: border-color 0.25s;
     resize: none;
 
-    &::placeholder { color: var(--text-secondary); opacity: 0.6; }
-    &:focus { border-color: #b8977e; }
-    &.error { border-color: #8b1a1a; }
+    &::placeholder {
+      color: var(--text-secondary);
+      opacity: 0.6;
+    }
+    &:focus {
+      border-color: #b8977e;
+    }
+    &.error {
+      border-color: #8b1a1a;
+    }
   }
 
   button[type="submit"] {
@@ -1099,13 +1306,17 @@ body.modal-open {
     letter-spacing: 0.04em;
     cursor: pointer;
     margin-top: 6px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease;
 
     &:hover {
       background-color: transparent;
       color: #b8977e;
     }
-    &:active { opacity: 0.85; }
+    &:active {
+      opacity: 0.85;
+    }
   }
 }
 
@@ -1120,13 +1331,19 @@ body.modal-open {
   cursor: pointer;
   transition: color 0.2s;
 
-  &:hover { color: #b8977e; }
+  &:hover {
+    color: #b8977e;
+  }
 }
 
 .scroll-to-top {
   position: fixed;
   bottom: 32px;
   left: 32px;
+  @media only screen and (max-width: 768px) {
+    left: 10px;
+    bottom: 20px;
+  }
   z-index: 999;
   width: 46px;
   height: 46px;
@@ -1140,11 +1357,15 @@ body.modal-open {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   opacity: 0;
   transform: translateY(12px);
   pointer-events: none;
-  transition: opacity 0.35s ease, transform 0.35s ease, background-color 0.3s ease, color 0.3s ease;
+  transition:
+    opacity 0.35s ease,
+    transform 0.35s ease,
+    background-color 0.3s ease,
+    color 0.3s ease;
 
   &.visible {
     opacity: 1;
@@ -1166,7 +1387,7 @@ body.modal-open {
   }
 }
 
-.empty-image{
+.empty-image {
   width: 100%;
   height: auto;
 }

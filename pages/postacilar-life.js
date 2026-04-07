@@ -4,6 +4,7 @@ import ZoomModal from "../components/zoom-modal";
 import StickyButtons from "../components/sticky-buttons";
 import Footer from '../components/footer';
 import { useState, useCallback } from "react";
+import { useApp } from "../context/AppContext";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper";
 import "swiper/css";
@@ -29,6 +30,7 @@ export default function PostacilarLife() {
     swiper.slides.forEach(s => s.classList.remove('slide-entering'));
   }, []);
 
+  const { t } = useApp();
   const openModal = (images, index) => {
     setModalImages(images);
     setModalIndex(index);
@@ -71,16 +73,9 @@ export default function PostacilarLife() {
                 <div className="prestige-logo"><img src="/life/life-logo.webp" /></div>
               </div>
               <span className="detail-sub-title-stick"><div>|</div></span>
-              Hakkında
+              {t('details.sections.about')}
             </div>
-            <div className="detail-paragraph">
-              Postacılar Life esenler mahallesinde konumlanan projemizdir.
-              Postacılar Life 60 metrelik yol olarak adlandırılan bölgede
-              şirketimiz bünyesinde gerçekleştirilen ilk projesidir.
-              Kullanıcılarına en iyisini vermeyi amaçlayan projede modern
-              mimari ve iç tasarımın yanı sıra her dairenin kendine ait kapalı
-              otopark alanı bulunmaktadır.
-            </div>
+            <div className="detail-paragraph">{t('details.life.about')}</div>
           </div>
         </div>
 
@@ -92,17 +87,11 @@ export default function PostacilarLife() {
                 <div className="prestige-logo"><img src="/life/life-logo.webp" /></div>
               </div>
               <span className="detail-sub-title-stick"><div>|</div></span>
-              Proje Detayları
+              {t('details.sections.projectDetails')}
             </div>
-            <div className="detail-paragraph">
-              Daire Sayısı: 42 adet <br />
-              Daire Tipi: 3+1 <br />
-              İşyeri Sayısı: 3 <br />
-              Adres: Esenler Mahallesi, Şehit Ömer <br />
-              Halis Demir Caddesi, No: 18/2, Çanakkale/Merkez
-            </div>
+            <div className="detail-paragraph" dangerouslySetInnerHTML={{ __html: t('details.life.details').replace(/\n/g, '<br/>') }} />
             <a href="/catalogs/life-katalog.pdf" target="_blank" rel="noopener noreferrer" className="catalog-btn">
-              Kataloğu Görüntüle
+              {t('details.sections.viewCatalog')}
             </a>
           </div>
           <div className="col-12 col-md-6 life-floor-col">
@@ -111,7 +100,7 @@ export default function PostacilarLife() {
                 <div className="prestige-logo"><img src="/life/life-logo.webp" /></div>
               </div>
               <span className="detail-sub-title-stick"><div>|</div></span>
-              Daire Tipleri
+              {t('details.sections.flatTypes')}
             </div>
             <div className="flat-types-inline">
               <div className="flat-inline-item">
@@ -161,9 +150,18 @@ export default function PostacilarLife() {
               <div className="prestige-logo"><img src="/life/life-logo.webp" /></div>
             </div>
             <span className="detail-sub-title-stick"><div>|</div></span>
-            İç Tasarım
+            {t('details.sections.interiorDesign')}
           </div>
-          <div className="images zoomable-img">
+          <div className="detail-swiper-mobile">
+            <Swiper modules={[Navigation, Autoplay]} navigation loop={true} autoplay={{ delay: 2800, disableOnInteraction: false }} speed={800} spaceBetween={8} slidesPerView={1} onSlideNextTransitionStart={handleNextStart} onTransitionEnd={handleTransitionEnd}>
+              {interiorImages.map((src, i) => (
+                <SwiperSlide key={i}>
+                  <img onClick={() => openModal(interiorImages, i)} src={src} />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+          <div className="detail-mosaic-desktop images zoomable-img">
             <div className="row align-items-end g-1">
               <div className="col-5">
                 <img onClick={() => openModal(interiorImages, 0)} width="100%" height="auto" src="/1-mutfak.webp" style={{cursor:"zoom-in", display:"block"}} />

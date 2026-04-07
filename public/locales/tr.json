@@ -23,5 +23,47 @@
     "msgPlaceholder": "Mesajınız",
     "submit": "WhatsApp ile Gönder"
   },
-  "popup": { "greeting": "Merhaba! 👋", "text": "Projelerimiz hakkında bilgi almak ister misiniz?", "cta": "Bize Ulaşın" }
+  "popup": { "greeting": "Merhaba! 👋", "text": "Projelerimiz hakkında bilgi almak ister misiniz?", "cta": "Bize Ulaşın" },
+  "details": {
+    "sections": {
+      "about": "Hakkında",
+      "projectDetails": "Proje Detayları",
+      "interiorDesign": "İç Tasarım",
+      "visuals": "Görseller",
+      "flatTypes": "Daire Tipleri",
+      "viewCatalog": "Kataloğu Görüntüle"
+    },
+    "life": {
+      "about": "Postacılar Life esenler mahallesinde konumlanan projemizdir. Postacılar Life 60 metrelik yol olarak adlandırılan bölgede şirketimiz bünyesinde gerçekleştirilen ilk projesidir. Kullanıcılarına en iyisini vermeyi amaçlayan projede modern mimari ve iç tasarımın yanı sıra her dairenin kendine ait kapalı otopark alanı bulunmaktadır.",
+      "details": "Daire Sayısı: 42 adet\nDaire Tipi: 3+1\nİşyeri Sayısı: 3\nAdres: Esenler Mahallesi, Şehit Ömer Halis Demir Caddesi, No: 18/2, Çanakkale/Merkez"
+    },
+    "life2": {
+      "about": "Esenler mahallesinin Gazi Meclis Caddesinde konumlanan projemiz Postacılar Life projelerinin ikinci etabıdır. Çanakkale Belediyesi'nin şehir planında bulunan park alanının yanında konumlanan yapı, kendine ait geniş peyzaj alanına sahiptir. Kullanıcılarına en iyisini vermeyi amaçlayan projede modern mimari ve iç tasarımın yanı sıra her dairenin kendine ait kapalı otopark alanı bulunmaktadır.",
+      "details": "Daire Sayısı: 42 adet\nDaire Tipleri: 14 adet 3+1, 14 adet 2+1 kapalı mutfak, 14 adet 2+1 açık mutfak\nİşyeri Sayısı: 2\nAdres: Esenler Mahallesi, Gazi Meclis Caddesi, No: 12, Çanakkale/Merkez"
+    },
+    "nova": {
+      "about": "Postacılar yapının bölgedeki üçüncü projesi olan Nova, gelişen şehrin ilerleyişi doğrultusunda konumlanmış, firma ilkelerimizden olan konforlu ve güvenli yaşam alanları tasarlama prensibimize sahip; aynı zamanda deniz manzarası ve yakınındaki parklar ile şehir ve doğa ilişkisini sevenlere hitap eden bir apartman projesidir.",
+      "details": "Postacılar Nova çeşitli daire tiplerine sahip bir projedir.\n2 adet 3+2 dubleks\n2 adet 4+2 dubleks\n9 adet 2+1\n3 adet 3+1\n4 adet 1+1"
+    },
+    "prestige": {
+      "about": "Prestige şehrin karmaşasından uzak, bir o kadar da şehrin tam kalbinde sıra dışı ayrıntıları konforlu ve güvenli yaşam alanlarıyla tasarlanmış bir proje. Muhteşem deniz manzarası, çocuk oyun alanları, dinlenme alanları, açık kapalı otopark, yeşil bahçe, önemli merkezlere yakınlık, yenilikçi teknoloji ve çevre dostu oluşuyla dikkat çeken bir proje.",
+      "details": "Daire Sayısı: 28\nDaire Tipi: 3+1\nİşyeri Sayısı: 3\nManzara: Deniz Manzarası, Doğa Manzarası, Şehir Manzarası\nAdres: Boğazkent Mah. Seyit Onbaşı Cad. No:19, Kepez / Çanakkale"
+    },
+    "yakamoz": {
+      "about": "Barbaros mahallesi 100. yıl caddesinde konumlanan proje Çanakkalenin göz bebeği yeni kordona bakmakta, göz kamaştıran bir boğaz manzarası sunmaktadır. Dairelere tanımlı açık otopark alanı bulunan projemiz modern ve yalın bir tasarıma sahiptir.",
+      "details": "Yakamoz evleri katta bir daire konumlamasıyla geniş metrekarelere sahip bir projedir.\n3 adet 3+1\n1 adet 4+1 dubleks\n1 adet iş yeri"
+    },
+    "idil": {
+      "about": "Esenler mahallesinde bulunan İdil Evleri 10 daireden oluşan bir apartman projesi olup şehir merkezi, okul, park ve hastanelere yakın bir konuma sahiptir.",
+      "details": "İdil Evleri bölgenin talepleri doğrultusunda tasarlanmıştır.\n6 adet 1+1\n4 adet 2+1"
+    },
+    "nilufer": {
+      "about": "Esenler mahallesinde konumlanan ve ilk projemiz olan Nilüfer Evleri bulunduğu çevrede kendini farklılaştıran, firma prensiplerimiz doğrultusunda sizlere huzur, konfor ve rahatlığı sunan bir projedir. Açık otopark, çocuk oyun parkı ve yeşil alanlar bulunduran proje ferah daire çözümleriyle de dikkat çekmektedir.",
+      "details": "Nilüfer Evleri iki blok ve toplam 36 daireden oluşmaktadır.\n24 adet 3+1\n12 adet 2+1"
+    },
+    "lotus": {
+      "about": "Kepez bölgesinde bulunan Postacılar Lotus, Kepez sahile yürüme mesafesinde olup aynı zamanda Çanakkale Boğazı manzarasına sahip 16 daireli bir apartman projesidir.",
+      "details": "3 adet iş yeri\n12 adet 3+1\n4 adet 5+2 dubleks"
+    }
+  }
 }

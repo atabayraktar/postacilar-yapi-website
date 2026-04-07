@@ -4,6 +4,7 @@ import ZoomModal from "../components/zoom-modal";
 import StickyButtons from "../components/sticky-buttons";
 import Footer from "../components/footer";
 import { useState, useCallback } from "react";
+import { useApp } from "../context/AppContext";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper";
 import "swiper/css";
@@ -24,6 +25,7 @@ export default function PostacilarPrestige() {
   const [modalIndex, setModalIndex] = useState(0);
   const [showModal, setShowModal] = useState(false);
 
+  const { t } = useApp();
   const openModal = (images, index) => {
     setModalImages(images);
     setModalIndex(index);
@@ -77,15 +79,9 @@ export default function PostacilarPrestige() {
                 <div className="prestige-logo"><img src="/prestige.webp" /></div>
               </div>
               <span className="detail-sub-title-stick"><div>|</div></span>
-              Hakkında
+              {t('details.sections.about')}
             </div>
-            <div className="detail-paragraph">
-              Prestige şehrin karmaşasından uzak, bir o kadar da şehrin tam kalbinde
-              sıra dışı ayrıntıları konforlu ve güvenli yaşam alanlarıyla tasarlanmış
-              bir proje. Muhteşem deniz manzarası, çocuk oyun alanları, dinlenme
-              alanları, açık kapalı otopark, yeşil bahçe, önemli merkezlere yakınlık,
-              yenilikçi teknoloji ve çevre dostu oluşuyla dikkat çeken bir proje.
-            </div>
+            <div className="detail-paragraph">{t('details.prestige.about')}</div>
           </div>
         </div>
 
@@ -97,15 +93,9 @@ export default function PostacilarPrestige() {
                 <div className="prestige-logo"><img src="/prestige.webp" /></div>
               </div>
               <span className="detail-sub-title-stick"><div>|</div></span>
-              Proje Detayları
+              {t('details.sections.projectDetails')}
             </div>
-            <div className="detail-paragraph">
-              Daire Sayısı: 28 <br />
-              Daire Tipi: 3+1 <br />
-              İşyeri Sayısı: 3 <br />
-              Manzara: Deniz Manzarası, Doğa Manzarası, Şehir Manzarası <br />
-              Adres: Boğazkent Mah. Seyit Onbaşı Cad. No:19, Kepez / Çanakkale
-            </div>
+            <div className="detail-paragraph" dangerouslySetInnerHTML={{ __html: t('details.prestige.details').replace(/\n/g, '<br/>') }} />
           </div>
         </div>
 
@@ -146,9 +136,18 @@ export default function PostacilarPrestige() {
               <div className="prestige-logo"><img src="/prestige.webp" /></div>
             </div>
             <span className="detail-sub-title-stick"><div>|</div></span>
-            İç Tasarım
+            {t('details.sections.interiorDesign')}
           </div>
-          <div className="images zoomable-img">
+          <div className="detail-swiper-mobile">
+            <Swiper modules={[Navigation, Autoplay]} navigation loop={true} autoplay={{ delay: 2800, disableOnInteraction: false }} speed={800} spaceBetween={8} slidesPerView={1} onSlideNextTransitionStart={handleNextStart} onTransitionEnd={handleTransitionEnd}>
+              {interiorImages.map((src, i) => (
+                <SwiperSlide key={i}>
+                  <img onClick={() => openModal(interiorImages, i)} src={src} />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+          <div className="detail-mosaic-desktop images zoomable-img">
             <div className="row align-items-end g-1">
               <div className="col-5">
                 <img onClick={() => openModal(interiorImages, 0)} width="100%" height="auto" src="/prestige/pres1.webp" style={{cursor:"zoom-in", display:"block"}} />

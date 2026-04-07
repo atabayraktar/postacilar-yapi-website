@@ -3,7 +3,11 @@ import Header from "../components/detail-header";
 import ZoomModal from "../components/zoom-modal";
 import StickyButtons from "../components/sticky-buttons";
 import Footer from "../components/footer";
-import { useState } from "react";
+import { useState, useCallback } from "react";
+import { useApp } from "../context/AppContext";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay } from "swiper";
+import "swiper/css";
 
 const images = [
   "/yakamoz/yakamoz2.webp",
@@ -16,6 +20,18 @@ export default function PostacilarYakamoz() {
   const [modalImages, setModalImages] = useState([]);
   const [modalIndex, setModalIndex] = useState(0);
   const [showModal, setShowModal] = useState(false);
+
+  const { t } = useApp();
+
+  const handleNextStart = useCallback((swiper) => {
+    swiper.slides.forEach(s => s.classList.remove("slide-entering"));
+    const enterSlide = swiper.slides[swiper.activeIndex + 1];
+    if (enterSlide) enterSlide.classList.add("slide-entering");
+  }, []);
+
+  const handleTransitionEnd = useCallback((swiper) => {
+    swiper.slides.forEach(s => s.classList.remove("slide-entering"));
+  }, []);
 
   const openModal = (index) => {
     setModalImages(images);
@@ -52,14 +68,9 @@ export default function PostacilarYakamoz() {
         <div className="row life-about-row">
           <div className="col-12">
             <div className="detail-sub-title">
-              YAKAMOZ <span className="detail-sub-title-stick">|</span> Hakkında
+              YAKAMOZ <span className="detail-sub-title-stick">|</span> {t('details.sections.about')}
             </div>
-            <div className="detail-paragraph">
-              Barbaros mahallesi 100. yıl caddesinde konumlanan proje Çanakkalenin
-              göz bebeği yeni kordona bakmakta, göz kamaştıran bir boğaz manzarası
-              sunmaktadır. Dairelere tanımlı açık otopark alanı bulunan projemiz
-              modern ve yalın bir tasarıma sahiptir.
-            </div>
+            <div className="detail-paragraph">{t('details.yakamoz.about')}</div>
           </div>
         </div>
 
@@ -67,23 +78,27 @@ export default function PostacilarYakamoz() {
         <div className="row life-about-row">
           <div className="col-12">
             <div className="detail-sub-title">
-              YAKAMOZ <span className="detail-sub-title-stick">|</span> Proje Detayları
+              YAKAMOZ <span className="detail-sub-title-stick">|</span> {t('details.sections.projectDetails')}
             </div>
-            <div className="detail-paragraph">
-              Yakamoz evleri katta bir daire konumlamasıyla geniş metrekarelere sahip bir projedir.<br />
-              3 adet 3+1<br />
-              1 adet 4+1 dubleks<br />
-              1 adet iş yeri
-            </div>
+            <div className="detail-paragraph" dangerouslySetInnerHTML={{ __html: t('details.yakamoz.details').replace(/\n/g, '<br/>') }} />
           </div>
         </div>
 
         {/* ── GÖRSELLER ── */}
         <div className="life-interior-section">
           <div className="detail-sub-title">
-            YAKAMOZ <span className="detail-sub-title-stick">|</span> Görseller
+            YAKAMOZ <span className="detail-sub-title-stick">|</span> {t('details.sections.visuals')}
           </div>
-          <div className="images zoomable-img">
+          <div className="detail-swiper-mobile">
+            <Swiper modules={[Navigation, Autoplay]} navigation loop={true} autoplay={{ delay: 2800, disableOnInteraction: false }} speed={800} spaceBetween={8} slidesPerView={1} onSlideNextTransitionStart={handleNextStart} onTransitionEnd={handleTransitionEnd}>
+              {images.map((src, i) => (
+                <SwiperSlide key={i}>
+                  <img onClick={() => openModal(i)} src={src} />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+          <div className="detail-mosaic-desktop images zoomable-img">
             <div className="row align-items-end g-1">
               <div className="col-7">
                 <img onClick={() => openModal(0)} width="100%" height="auto" src="/yakamoz/yakamoz2.webp" style={{cursor:"zoom-in", display:"block"}} />

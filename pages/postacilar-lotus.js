@@ -1,92 +1,100 @@
-import Head from 'next/head'
-import Header from '../components/detail-header'
-import ZoomModal from '../components/zoom-modal'
-import { useState, useRef, useEffect } from 'react';
+import Head from "next/head";
+import Header from "../components/detail-header";
+import ZoomModal from "../components/zoom-modal";
+import StickyButtons from "../components/sticky-buttons";
+import Footer from "../components/footer";
+import { useState } from "react";
 
-export default function () {
-    const [modalSrc, setModalSrc] = useState("");
-    const [showModal, setShowModal] = useState(false);
-    const [showMobileModal, setShowMobileModal] = useState(false);
+const images = [
+  "/lotus/lotus2.webp",
+  "/lotus/lotus1.webp",
+];
 
-    const refx = useRef(null);
-    useOutsideAlerter(refx);
+export default function PostacilarLotus() {
+  const [modalImages, setModalImages] = useState([]);
+  const [modalIndex, setModalIndex] = useState(0);
+  const [showModal, setShowModal] = useState(false);
 
-    return (
-        <>
-            {showMobileModal && <ZoomModal size="modal" zoomRef={refx} verticalImage={true} imageSrc={modalSrc} />}
-            {showModal && <ZoomModal size="modal-43" zoomRef={refx} verticalImage={true} imageSrc={modalSrc} />}
-            <Head>
-                <title>POSTACILAR | LOTUS</title>
-                <meta name="description" content="Postacılar Yapı | Lotus Evleri" />
-                <link rel="icon" href="/meta-logo.png" />
-            </Head>
-            <Header />
-            <div className="container-fluid detail-container">
-                <div className="row">
-                    <div className="col-12 col-md-5">
-                        <div className="row">
-                            <div className="detail-title">
-                                POSTACILAR <span className="detail-title-stick"><div>|</div></span> LOTUS
-                            </div>
-                            <div className="col-12 idil-right-col idil-img-component-mobile ">
-                                <div className="row">
-                                    <div className="col-6 idil-img-1">
-                                        <img onClick={() => { setShowMobileModal(true); setModalSrc("/lotus/lotus2.jpg") }} width="100%" height="auto" src="/lotus/lotus2.jpg" />
-                                    </div>
-                                    <div className="col-6 idil-img-2">
-                                        <img onClick={() => { setShowMobileModal(true); setModalSrc("/lotus/lotus1.jpg") }} width="100%" height="auto" src="/lotus/lotus1.jpg" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="detail-sub-title">
-                                LOTUS<span className="detail-sub-title-stick"><div>|</div></span>Hakkında
-                            </div>
-                            <div className="detail-paragraph">
-                                Kepez bölgesinde bulunan postacılar lotus kepez sahile yürüme mesafesinde olup aynı zamandada
-                                çanakkale boğazı manzarasına sahip 16 daireli bir apartman projesidir.
-                            </div>
-                            <div className="detail-sub-title">
-                                LOTUS<span className="detail-sub-title-stick"><div>|</div></span>Proje Detayları
-                            </div>
-                            <div className="detail-paragraph">
-                                3 iş yeri <br />
-                                12 adet 3+1 <br />
-                                4 adet 5+2 dubleks <br />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-12 col-md-7 idil-right-col idil-img-component-desktop">
-                        <div className="row">
-                            <div className="col-6 idil-img-1">
-                                <img onClick={() => { setShowModal(true); setModalSrc("/lotus/lotus2.jpg") }} width="100%" height="auto" src="/lotus/lotus2.jpg" />
-                            </div>
-                            <div className="col-6 idil-img-2">
-                                <img onClick={() => { setShowModal(true); setModalSrc("/lotus/lotus1.jpg") }} width="100%" height="auto" src="/lotus/lotus1.jpg" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  const openModal = (index) => {
+    setModalImages(images);
+    setModalIndex(index);
+    setShowModal(true);
+  };
+
+  return (
+    <>
+      {showModal && (
+        <ZoomModal
+          images={modalImages}
+          startIndex={modalIndex}
+          onClose={() => setShowModal(false)}
+        />
+      )}
+      <Head>
+        <title>POSTACILAR | LOTUS</title>
+        <meta name="description" content="Postacılar Yapı | Lotus Evleri" />
+        <link rel="icon" href="/meta-logo.webp" />
+      </Head>
+      <Header />
+
+      <div className="container-fluid detail-container">
+
+        {/* ── BAŞLIK ── */}
+        <div className="life-logo-section">
+          <div className="detail-title">
+            POSTACILAR <span className="detail-title-stick">|</span> LOTUS
+          </div>
+        </div>
+
+        {/* ── ROW 1: HAKKINDA ── */}
+        <div className="row life-about-row">
+          <div className="col-12">
+            <div className="detail-sub-title">
+              LOTUS <span className="detail-sub-title-stick">|</span> Hakkında
             </div>
-        </>
-    )
-    function useOutsideAlerter(ref) {
-        useEffect(() => {
-            /**
-             * Alert if clicked on outside of element
-             */
-            function handleClickOutside(event) {
-                if (ref.current && !ref.current.contains(event.target)) {
-                    setShowModal(false);
-                    setShowMobileModal(false);
-                }
-            }
+            <div className="detail-paragraph">
+              Kepez bölgesinde bulunan Postacılar Lotus, Kepez sahile yürüme
+              mesafesinde olup aynı zamanda Çanakkale Boğazı manzarasına sahip
+              16 daireli bir apartman projesidir.
+            </div>
+          </div>
+        </div>
 
-            // Bind the event listener
-            document.addEventListener("mousedown", handleClickOutside);
-            return () => {
-                // Unbind the event listener on clean up
-                document.removeEventListener("mousedown", handleClickOutside);
-            };
-        }, [ref]);
-    }
+        {/* ── ROW 2: PROJE DETAYLARI ── */}
+        <div className="row life-about-row">
+          <div className="col-12">
+            <div className="detail-sub-title">
+              LOTUS <span className="detail-sub-title-stick">|</span> Proje Detayları
+            </div>
+            <div className="detail-paragraph">
+              3 adet iş yeri<br />
+              12 adet 3+1<br />
+              4 adet 5+2 dubleks
+            </div>
+          </div>
+        </div>
+
+        {/* ── GÖRSELLER ── */}
+        <div className="life-interior-section">
+          <div className="detail-sub-title">
+            LOTUS <span className="detail-sub-title-stick">|</span> Görseller
+          </div>
+          <div className="images zoomable-img">
+            <div className="row align-items-end g-1">
+              <div className="col-5">
+                <img onClick={() => openModal(0)} width="100%" height="auto" src="/lotus/lotus2.webp" style={{cursor:"zoom-in", display:"block"}} />
+              </div>
+              <div className="col-4">
+                <img onClick={() => openModal(1)} width="100%" height="auto" src="/lotus/lotus1.webp" style={{cursor:"zoom-in", display:"block"}} />
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <Footer />
+      <StickyButtons />
+    </>
+  );
 }

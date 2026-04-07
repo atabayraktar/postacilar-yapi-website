@@ -1,39 +1,41 @@
 import VisibilitySensor from 'react-visibility-sensor';
 import CountUp from 'react-countup';
+import { useApp } from '../context/AppContext';
 
 export default function ProjectsCountUp() {
+    const { t } = useApp();
     return (
         <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
             {({ isVisible }) => (
                 <div style={{ minHeight: 100 }}>
                     {isVisible ? <>
-                        <div className="w-100" style={{ backgroundColor: "#1f1e1e", margin: "50px 0px 0px 0px" }}>
+                        <div className="w-100">
                             <div className="container count-up">
                                 <div className="count-up-item">
-                                    <img src="/count-up/etap.png" width="64" height="64" alt="" />
+                                    <img src="/count-up/etap.webp" width="64" height="64" alt="" />
                                     <div className="count-up-number">
                                         <CountUp className="count-up-number-value" start={0} delay={0.5} duration={5} end={8} />
-                                        <p className="count-up-number-title">PROJE</p>
+                                        <p className="count-up-number-title">{t('counter.projects')}</p>
                                     </div>
                                 </div>
                                 <div className="count-up-item">
-                                    <img src="/count-up/m2.png" width="64" height="64" alt="" />
+                                    <img src="/count-up/m2.webp" width="64" height="64" alt="" />
                                     <div className="count-up-number">
                                         <CountUp className="count-up-number-value" start={0} delay={0.5} duration={5} end={75256} />
-                                        <p className="count-up-number-title">METREKARE</p>
+                                        <p className="count-up-number-title">{t('counter.sqm')}</p>
                                     </div>
                                 </div>
                                 <div className="count-up-item">
-                                    <img src="/count-up/daire.png" width="64" height="64" alt="" />
+                                    <img src="/count-up/daire.webp" width="64" height="64" alt="" />
                                     <div className="count-up-number">
                                         <CountUp className="count-up-number-value" start={0} delay={0.5} duration={5} end={200} />
-                                        <p className="count-up-number-title">DAİRE</p>
+                                        <p className="count-up-number-title">{t('counter.apartments')}</p>
                                     </div>                            </div>
                                 <div className="count-up-item">
-                                    <img src="/count-up/kullanici.png" width="64" height="64" alt="" />
+                                    <img src="/count-up/kullanici.webp" width="64" height="64" alt="" />
                                     <div className="count-up-number">
                                         <CountUp className="count-up-number-value" start={0} delay={0.5} duration={5} end={718} />
-                                        <p className="count-up-number-title">KULLANICI</p>
+                                        <p className="count-up-number-title">{t('counter.users')}</p>
                                     </div>
                                 </div>
                             </div>
@@ -41,33 +43,33 @@ export default function ProjectsCountUp() {
                         </div>
 
                     </> :
-                        <div className="w-100" style={{ backgroundColor: "#212529", margin: "50px 0px 0px 0px" }}>
+                        <div className="w-100">
                             <div className="container count-up">
                                 <div className="count-up-item">
-                                    <img src="/count-up/etap.png" width="64" height="64" alt="" />
+                                    <img src="/count-up/etap.webp" width="64" height="64" alt="" />
                                     <div className="count-up-number">
                                         <CountUp className="count-up-number-value" start={0} delay={0.5} duration={5} end={0} />
-                                        <p className="count-up-number-title">Proje</p>
+                                        <p className="count-up-number-title">{t('counter.projects')}</p>
                                     </div>
                                 </div>
                                 <div className="count-up-item">
-                                    <img src="/count-up/m2.png" width="64" height="64" alt="" />
+                                    <img src="/count-up/m2.webp" width="64" height="64" alt="" />
                                     <div className="count-up-number">
                                         <CountUp className="count-up-number-value" start={0} delay={0.5} duration={5} end={0} />
-                                        <p className="count-up-number-title">METREKARE</p>
+                                        <p className="count-up-number-title">{t('counter.sqm')}</p>
                                     </div>
                                 </div>
                                 <div className="count-up-item">
-                                    <img src="/count-up/daire.png" width="64" height="64" alt="" />
+                                    <img src="/count-up/daire.webp" width="64" height="64" alt="" />
                                     <div className="count-up-number">
                                         <CountUp className="count-up-number-value" start={0} delay={0.5} duration={5} end={0} />
-                                        <p className="count-up-number-title">DAİRE</p>
+                                        <p className="count-up-number-title">{t('counter.apartments')}</p>
                                     </div>                            </div>
                                 <div className="count-up-item">
-                                    <img src="/count-up/kullanici.png" width="64" height="64" alt="" />
+                                    <img src="/count-up/kullanici.webp" width="64" height="64" alt="" />
                                     <div className="count-up-number">
                                         <CountUp className="count-up-number-value" start={0} delay={0.5} duration={5} end={0} />
-                                        <p className="count-up-number-title">Kullanıcı</p>
+                                        <p className="count-up-number-title">{t('counter.users')}</p>
                                     </div>
                                 </div>
                             </div>

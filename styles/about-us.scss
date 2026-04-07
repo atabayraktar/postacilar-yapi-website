@@ -8,12 +8,12 @@
     &-description {
       font-size: 22px;
       font-family: 'Montserrat', sans-serif;
-      color: #bdbec2;
+      color: var(--text-primary);
       text-align: center;
       @media only screen and (max-width: 991px) {
         font-size: 15px;
         font-family: 'Montserrat', sans-serif;
-        color: #bdbec2;
+        color: var(--text-primary);
         text-align: center;
       }
     }

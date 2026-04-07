@@ -1,109 +1,106 @@
-import Head from 'next/head'
-import Header from '../components/detail-header'
-import ZoomModal from '../components/zoom-modal'
-import { useState, useRef, useEffect } from 'react';
+import Head from "next/head";
+import Header from "../components/detail-header";
+import ZoomModal from "../components/zoom-modal";
+import StickyButtons from "../components/sticky-buttons";
+import Footer from "../components/footer";
+import { useState } from "react";
+
+const images = [
+  "/nilufer/nilufer2.webp",
+  "/nilufer/nilufer1.webp",
+  "/nilufer/nilufer3.webp",
+];
 
 export default function PostacilarNilufer() {
-    const [modalSrc, setModalSrc] = useState("");
-    const [showModal, setShowModal] = useState(false);
-    const [showVModal, setShowVModal] = useState(false);
+  const [modalImages, setModalImages] = useState([]);
+  const [modalIndex, setModalIndex] = useState(0);
+  const [showModal, setShowModal] = useState(false);
 
-    const refx = useRef(null);
-    useOutsideAlerter(refx);
+  const openModal = (index) => {
+    setModalImages(images);
+    setModalIndex(index);
+    setShowModal(true);
+  };
 
-    const projectsSectionRef = useRef(null);
-    const contactSectionRef = useRef(null);
-    const aboutUsSectionRef = useRef(null)
+  return (
+    <>
+      {showModal && (
+        <ZoomModal
+          images={modalImages}
+          startIndex={modalIndex}
+          onClose={() => setShowModal(false)}
+        />
+      )}
+      <Head>
+        <title>POSTACILAR | NİLÜFER</title>
+        <meta name="description" content="Postacılar Yapı | Nilüfer Evleri" />
+        <link rel="icon" href="/meta-logo.webp" />
+      </Head>
+      <Header />
 
-    return (
-        <>
-            {showModal && <ZoomModal zoomRef={refx} imageSrc={modalSrc} />}
-            {showVModal && <ZoomModal zoomRef={refx} size="modal-35" imageSrc={modalSrc} />}
+      <div className="container-fluid detail-container">
 
-            <Head>
-                <title>POSTACILAR | NİLÜFER</title>
-                <meta name="description" content="Postacılar Yapı | Nilüfer Evleri" />
-                <link rel="icon" href="/meta-logo.png" />
-            </Head>
-            <Header refs={[projectsSectionRef, contactSectionRef, aboutUsSectionRef]} />
-            <div className="container-fluid detail-container">
-                <div className="row">
-                    <div className="col-12 col-md-5">
-                        <div className="row">
-                            <div className="detail-title">
-                                POSTACILAR <span className="detail-title-stick"><div>|</div></span> NİLÜFER
-                            </div>
-                            <div className="col-12 col-md-7 nilufer-right-col nilufer-img-component-mobile">
-                                <div className="row">
-                                    <div className="col-6 nilufer-left-image">
-                                        <img onClick={() => { setShowModal(true); setModalSrc("/nilufer/nilufer2.jpg") }} width="100%" height="auto" src="/nilufer/nilufer2.jpg" />
-                                    </div>
-                                    <div className="col-6">
-                                        <div className="nilufer-right-top-image">
-                                            <img onClick={() => { setShowModal(true); setModalSrc("/nilufer/nilufer1.jpg") }} width="100%" height="auto" src="/nilufer/nilufer1.jpg" />
-                                        </div>
-                                        <div>
-                                            <img onClick={() => { setShowModal(true); setModalSrc("/nilufer/nilufer3.jpg") }} width="80%" height="auto" src="/nilufer/nilufer3.jpg" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="detail-sub-title">
-                                NİLÜFER<span className="detail-sub-title-stick"><div>|</div></span>Hakkında
-                            </div>
-                            <div className="detail-paragraph">
-                                Esenler mahallesinde konumlanan ve ilk projemiz olan nilüfer evleri bulunduğu çevrede kendini farklılaştıran,
-                                firma prensiplerimiz doğrultusunda sizlere huzur, konfor ve rahatlığı sunan bir projedir. Açık otopark, çocuk
-                                oyun parkı ve yeşil alanlar bulunduran proje ferah daire çözümleriylede dikkat çekmektedir.
+        {/* ── BAŞLIK ── */}
+        <div className="life-logo-section">
+          <div className="detail-title">
+            POSTACILAR <span className="detail-title-stick">|</span> NİLÜFER
+          </div>
+        </div>
 
-                            </div>
-                            <div className="detail-sub-title">
-                                NİLÜFER <span className="detail-sub-title-stick"><div>|</div></span> Proje detayları
-                            </div>
-                            <div className="detail-paragraph">
-                                Nilüfer evleri iki blok ve toplam 36 daireden oluşmaktadır.<br/>
-                                24 adet 3+1<br/>
-                                12 adet 2+1<br/>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-12 col-md-7 nilufer-right-col nilufer-img-component-desktop">
-                        <div className="row">
-                            <div className="col-6 nilufer-left-image">
-                                <img onClick={() => { setShowModal(true); setModalSrc("/nilufer/nilufer2.jpg") }} width="80%" height="auto" src="/nilufer/nilufer2.jpg" />
-                            </div>
-                            <div className="col-6">
-                                <div className="nilufer-right-top-image">
-                                    <img onClick={() => { setShowModal(true); setModalSrc("/nilufer/nilufer1.jpg") }} width="90%" height="auto" src="/nilufer/nilufer1.jpg" />
-                                </div>
-                                <div className="nilufer-right-bottom-image">
-                                    <img onClick={() => { setShowVModal(true); setModalSrc("/nilufer/nilufer3.jpg") }} width="70%" height="auto" src="/nilufer/nilufer3.jpg" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        {/* ── ROW 1: HAKKINDA ── */}
+        <div className="row life-about-row">
+          <div className="col-12">
+            <div className="detail-sub-title">
+              NİLÜFER <span className="detail-sub-title-stick">|</span> Hakkında
             </div>
-        </>
-    )
-    function useOutsideAlerter(ref) {
-        useEffect(() => {
-            /**
-             * Alert if clicked on outside of element
-             */
-            function handleClickOutside(event) {
-                if (ref.current && !ref.current.contains(event.target)) {
-                    setShowModal(false);
-                    setShowVModal(false);
-                }
-            }
+            <div className="detail-paragraph">
+              Esenler mahallesinde konumlanan ve ilk projemiz olan Nilüfer Evleri
+              bulunduğu çevrede kendini farklılaştıran, firma prensiplerimiz
+              doğrultusunda sizlere huzur, konfor ve rahatlığı sunan bir projedir.
+              Açık otopark, çocuk oyun parkı ve yeşil alanlar bulunduran proje
+              ferah daire çözümleriyle de dikkat çekmektedir.
+            </div>
+          </div>
+        </div>
 
-            // Bind the event listener
-            document.addEventListener("mousedown", handleClickOutside);
-            return () => {
-                // Unbind the event listener on clean up
-                document.removeEventListener("mousedown", handleClickOutside);
-            };
-        }, [ref]);
-    }
+        {/* ── ROW 2: PROJE DETAYLARI ── */}
+        <div className="row life-about-row">
+          <div className="col-12">
+            <div className="detail-sub-title">
+              NİLÜFER <span className="detail-sub-title-stick">|</span> Proje Detayları
+            </div>
+            <div className="detail-paragraph">
+              Nilüfer Evleri iki blok ve toplam 36 daireden oluşmaktadır.<br />
+              24 adet 3+1<br />
+              12 adet 2+1
+            </div>
+          </div>
+        </div>
+
+        {/* ── GÖRSELLER ── */}
+        <div className="life-interior-section">
+          <div className="detail-sub-title">
+            NİLÜFER <span className="detail-sub-title-stick">|</span> Görseller
+          </div>
+          <div className="images zoomable-img">
+            <div className="row align-items-end g-1">
+              <div className="col-5">
+                <img onClick={() => openModal(1)} width="100%" height="auto" src="/nilufer/nilufer1.webp" style={{cursor:"zoom-in", display:"block"}} />
+              </div>
+              <div className="col-4">
+                <img onClick={() => openModal(0)} width="100%" height="auto" src="/nilufer/nilufer2.webp" style={{cursor:"zoom-in", display:"block"}} />
+              </div>
+              <div className="col-3">
+                <img onClick={() => openModal(2)} width="100%" height="auto" src="/nilufer/nilufer3.webp" style={{cursor:"zoom-in", display:"block"}} />
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <Footer />
+      <StickyButtons />
+    </>
+  );
 }

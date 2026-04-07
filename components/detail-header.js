@@ -1,11 +1,14 @@
 import { Navbar, Nav } from 'react-bootstrap';
+import InfoBar from './info-bar';
 
 export default function Header() {
     return (
         <>
-            <Navbar className='color-nav' sticky="top" variant="dark">
+            <div className="sticky-header">
+            <InfoBar />
+            <Navbar className='color-nav' variant="dark">
                 <div className="header-logo">
-                    <Navbar.Brand href="/"><img src="/logo.png" /></Navbar.Brand>
+                    <Navbar.Brand href="/"><img src="/logo.webp" /></Navbar.Brand>
                 </div>
                 <Nav className="ms-auto header">
                     <Nav.Link href="/#hakkimizda">Hakkımızda</Nav.Link>
@@ -13,6 +16,7 @@ export default function Header() {
                     <Nav.Link href="/#iletisim">İletişim</Nav.Link>
                 </Nav>
             </Navbar>
+            </div>
         </>
     )
 }

@@ -2,9 +2,9 @@ export default function BigLogo() {
     return (
         <>
             <div className="big-logo">
-                <img src="/big-logo.jpg" />
+                <img src="/big-logo.webp" />
                 <div className="logo">
-                    <img src="/logo.png" />
+                    <img src="/logo.webp" />
                 </div>
             </div>
         </>

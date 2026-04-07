@@ -1,111 +1,49 @@
-export default function Icons() {
+import { useApp } from '../context/AppContext';
 
-    return (
-        <>
-            <div className="container">
-                <div className="desktop-components">
-                    <div className="component-container">
-                        <div className="row icons">
-                            <div className="col-3 icons-centered">
-                                <div className="about-us-logo">
-                                    <img src="/logo-1.png" />
-                                </div>
-                            </div>
-                            <div className="col-3 icons-centered">
-                                <div className="about-us-logo">
-                                    <img src="/logo-2.png" />
-                                </div>
-                            </div>
-                            <div className="col-3 icons-centered">
-                                <div className="about-us-logo">
-                                    <img src="/logo-3.png" />
-                                </div>
-                            </div>
-                            <div className="col-3 icons-centered">
-                                <div className="about-us-logo">
-                                    <img src="/logo-4.png" />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="row icons-description">
-                            <div className="col-3 icons-centered">
-                                <div className="about-us-logo-description">
-                                    Postacılar <br />Güvencesiyle
-                                </div>
-                            </div>
-                            <div className="col-3 icons-centered">
-                                <div className="about-us-logo-description">
-                                    Güvenilir İş <br />Ortakları
-                                </div>
-                            </div>
-                            <div className="col-3 icons-centered">
-                                <div className="about-us-logo-description">
-                                    Birinci Sınıf<br /> Malzeme Ve İşcilik
-                                </div>
-                            </div>
-                            <div className="col-3 icons-centered">
-                                <div className="about-us-logo-description">
-                                    Fonksiyonel <br /> Mekanlar
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+export default function Icons() {
+  const { t } = useApp();
+  return (
+    <>
+      <div className="container">
+        <div className="desktop-components">
+          <div className="component-container">
+            <div className="row icons">
+              <div className="col-3 icons-centered"><div className="about-us-logo"><img src="/logo-1.webp" /></div></div>
+              <div className="col-3 icons-centered"><div className="about-us-logo"><img src="/logo-2.webp" /></div></div>
+              <div className="col-3 icons-centered"><div className="about-us-logo"><img src="/logo-3.webp" /></div></div>
+              <div className="col-3 icons-centered"><div className="about-us-logo"><img src="/logo-4.webp" /></div></div>
             </div>
-            <div className="container">
-                <div className="mobile-components">
-                    <div className="component-container">
-                        <div className="row icons">
-                            <div className="col-6 icons-centered">
-                                <div className="about-us-logo">
-                                    <img src="/logo-1.png" />
-                                </div>
-                            </div>
-                            <div className="col-6 icons-centered">
-                                <div className="about-us-logo">
-                                    <img src="/logo-2.png" />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="row icons-description">
-                            <div className="col-6 icons-centered">
-                                <div className="about-us-logo-description">
-                                    POSTACILAR <br />GÜVENCESİYLE
-                                </div>
-                            </div>
-                            <div className="col-6 icons-centered">
-                                <div className="about-us-logo-description">
-                                    GÜVENİLİR İŞ <br />ORTAKLARI
-                                </div>
-                            </div>
-                        </div>
-                        <div className="row icons">
-                            <div className="col-6 icons-centered">
-                                <div className="about-us-logo">
-                                    <img src="/logo-3.png" />
-                                </div>
-                            </div>
-                            <div className="col-6 icons-centered">
-                                <div className="about-us-logo">
-                                    <img src="/logo-4.png" />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="row icons-description">
-                            <div className="col-6 icons-centered">
-                                <div className="about-us-logo-description">
-                                    BİRİNCİ SINIF<br /> MALZEME VE İŞCİLİK
-                                </div>
-                            </div>
-                            <div className="col-6 icons-centered">
-                                <div className="about-us-logo-description">
-                                    FONKSİYONEL <br /> MEKANLAR
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div className="row icons-description">
+              <div className="col-3 icons-centered"><div className="about-us-logo-description">{t('icons.item1line1')}<br/>{t('icons.item1line2')}</div></div>
+              <div className="col-3 icons-centered"><div className="about-us-logo-description">{t('icons.item2line1')}<br/>{t('icons.item2line2')}</div></div>
+              <div className="col-3 icons-centered"><div className="about-us-logo-description">{t('icons.item3line1')}<br/>{t('icons.item3line2')}</div></div>
+              <div className="col-3 icons-centered"><div className="about-us-logo-description">{t('icons.item4line1')}<br/>{t('icons.item4line2')}</div></div>
             </div>
-        </>
-    )
+          </div>
+        </div>
+      </div>
+      <div className="container">
+        <div className="mobile-components">
+          <div className="component-container">
+            <div className="row icons">
+              <div className="col-6 icons-centered"><div className="about-us-logo"><img src="/logo-1.webp" /></div></div>
+              <div className="col-6 icons-centered"><div className="about-us-logo"><img src="/logo-2.webp" /></div></div>
+            </div>
+            <div className="row icons-description">
+              <div className="col-6 icons-centered"><div className="about-us-logo-description">{t('icons.item1line1')}<br/>{t('icons.item1line2')}</div></div>
+              <div className="col-6 icons-centered"><div className="about-us-logo-description">{t('icons.item2line1')}<br/>{t('icons.item2line2')}</div></div>
+            </div>
+            <div className="row icons">
+              <div className="col-6 icons-centered"><div className="about-us-logo"><img src="/logo-3.webp" /></div></div>
+              <div className="col-6 icons-centered"><div className="about-us-logo"><img src="/logo-4.webp" /></div></div>
+            </div>
+            <div className="row icons-description">
+              <div className="col-6 icons-centered"><div className="about-us-logo-description">{t('icons.item3line1')}<br/>{t('icons.item3line2')}</div></div>
+              <div className="col-6 icons-centered"><div className="about-us-logo-description">{t('icons.item4line1')}<br/>{t('icons.item4line2')}</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }

@@ -1,0 +1,27 @@
+{
+  "nav": { "about": "About Us", "projects": "Projects", "contact": "Contact" },
+  "icons": {
+    "item1line1": "Postacılar", "item1line2": "Assurance",
+    "item2line1": "Reliable", "item2line2": "Partners",
+    "item3line1": "First-Class", "item3line2": "Materials & Craftsmanship",
+    "item4line1": "Functional", "item4line2": "Spaces"
+  },
+  "about": {
+    "title": "About Us",
+    "p1": "Postacılar Yapı is the construction brand of Postacılar, a company with over 30 years of commercial history in Çanakkale. Having been active in construction since 2011, Postacılar Yapı continues to deliver large-scale projects in Çanakkale.",
+    "p2": "The company aims to create user-focused and eco-friendly buildings in all its projects. With construction quality, craftsmanship, project-specific opportunities, careful site selection, and attention to the design process, it consistently delivers reliable projects."
+  },
+  "projects": { "title": "Our Projects", "viewAll": "View All Projects", "badge": "Sales Ongoing" },
+  "counter": { "projects": "PROJECTS", "sqm": "SQ. METERS", "apartments": "APARTMENTS", "users": "RESIDENTS" },
+  "contact": { "mapTitle": "Project Areas", "title": "Contact", "formBtn": "Contact Form" },
+  "footer": { "copyright": "© 2026 Postacılar Yapı. All rights reserved." },
+  "modal": {
+    "title": "Contact Form",
+    "subtitle": "Leave your details and we'll get back to you.",
+    "namePlaceholder": "Your Full Name",
+    "phonePlaceholder": "Your Phone Number",
+    "msgPlaceholder": "Your Message",
+    "submit": "Send via WhatsApp"
+  },
+  "popup": { "greeting": "Hello! 👋", "text": "Would you like to learn more about our projects?", "cta": "Contact Us" }
+}

@@ -1,184 +1,183 @@
-import Head from 'next/head'
-import Header from '../components/detail-header'
-import ZoomModal from '../components/zoom-modal'
-import { useState, useRef, useEffect } from 'react';
-import { Swiper, SwiperSlide, } from 'swiper/react';
-import { Navigation } from 'swiper';
-import 'swiper/css';
+import Head from "next/head";
+import Header from "../components/detail-header";
+import ZoomModal from "../components/zoom-modal";
+import StickyButtons from "../components/sticky-buttons";
+import Footer from "../components/footer";
+import { useState, useCallback } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay } from "swiper";
+import "swiper/css";
+
+const exteriorImages = [
+  "/prestige/prestige_slide_1.webp","/prestige/prestige_slide_2.webp",
+  "/prestige/prestige_slide_3.webp","/prestige/prestige_slide_4.webp",
+  "/prestige/prestige_slide_5.webp",
+];
+
+const interiorImages = [
+  "/prestige/pres1.webp","/prestige/pres2.webp","/prestige/pres3.webp",
+  "/prestige/pres4.webp","/prestige/pres5.webp","/prestige/pres6.webp",
+];
 
 export default function PostacilarPrestige() {
-    const [modalSrc, setModalSrc] = useState("");
-    const [showModal, setShowModal] = useState(false);
-    const [showVModal, setShowVModal] = useState(false);
-    const [showMediumModal, setShowMediumModal] = useState(false);
+  const [modalImages, setModalImages] = useState([]);
+  const [modalIndex, setModalIndex] = useState(0);
+  const [showModal, setShowModal] = useState(false);
 
-    const refx = useRef(null);
-    useOutsideAlerter(refx);
+  const openModal = (images, index) => {
+    setModalImages(images);
+    setModalIndex(index);
+    setShowModal(true);
+  };
 
-    const projectsSectionRef = useRef(null);
-    const contactSectionRef = useRef(null);
-    const aboutUsSectionRef = useRef(null)
+  const handleNextStart = useCallback((swiper) => {
+    swiper.slides.forEach(s => s.classList.remove("slide-entering"));
+    const perView = typeof swiper.params.slidesPerView === "number" ? swiper.params.slidesPerView : 4;
+    const enterSlide = swiper.slides[swiper.activeIndex + perView];
+    if (enterSlide) enterSlide.classList.add("slide-entering");
+  }, []);
 
-    return (
-        <>
-            {showMediumModal && <ZoomModal size="modal-43" zoomRef={refx} imageSrc={modalSrc} />}
-            {showVModal && <ZoomModal size="modal-35" zoomRef={refx} imageSrc={modalSrc} />}
-            {showModal && <ZoomModal zoomRef={refx} imageSrc={modalSrc} />}
-            <Head>
-                <title>POSTACILAR | PRESTIGE</title>
-                <meta name="description" content="Postacılar Yapı | Prestige Evleri" />
-                <link rel="icon" href="/meta-logo.png" />
-            </Head>
-            <Header refs={[projectsSectionRef, contactSectionRef, aboutUsSectionRef]} />
-            <div className="container-fluid detail-container">
-                <div className="row">
-                    <div className="col-12 col-md-6">
-                        <div className="row">
-                            <div className="detail-title">
-                                POSTACILAR <span className="detail-title-stick"><div>|</div></span>
-                                <div className="prestige-logo-big">
-                                    <img src="/prestige.png" />
-                                </div>
-                            </div>
-                            <div className="col-12 col-md-7 nova-right-col nova-img-component-mobile">
-                                <div className="row">
-                                    <div className="col-12 nova-main-image">
-                                        <Swiper
-                                            modules={[Navigation]}
-                                            navigation
-                                            spaceBetween={50}
-                                            initialSlide={1}
-                                            slidesPerView={1}
-                                            centeredSlides={true}
-                                            onSlideChange={() => console.log('slide change')}
-                                            onSwiper={(swiper) => console.log(swiper)}
-                                        >
+  const handleTransitionEnd = useCallback((swiper) => {
+    swiper.slides.forEach(s => s.classList.remove("slide-entering"));
+  }, []);
 
-                                            <SwiperSlide><img onClick={() => { setShowModal(true); setModalSrc("/prestige/prestige_slide_1.JPG") }} width="100%" height="auto" src="/prestige/prestige_slide_1.JPG" />
-                                            </SwiperSlide>
-                                            <SwiperSlide><img onClick={() => { setShowModal(true); setModalSrc("/prestige/prestige_slide_2.JPG") }} width="100%" height="auto" src="/prestige/prestige_slide_2.JPG" />
-                                            </SwiperSlide>
-                                            <SwiperSlide><img onClick={() => { setShowModal(true); setModalSrc("/prestige/prestige_slide_3.JPG") }} width="100%" height="auto" src="/prestige/prestige_slide_3.JPG" />
-                                            </SwiperSlide>
-                                            <SwiperSlide><img onClick={() => { setShowModal(true); setModalSrc("/prestige/prestige_slide_4.JPG") }} width="100%" height="auto" src="/prestige/prestige_slide_4.JPG" />
-                                            </SwiperSlide>
-                                        </Swiper>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="detail-sub-title">
-                                <div className="detail-title">
-                                    <div className="prestige-logo">
-                                        <img src="/prestige.png" />
-                                    </div>
-                                </div> <span className="detail-sub-title-stick"><div>|</div></span>Hakkında
-                            </div>
-                            <div className="detail-paragraph">
-                                Prestige şehrin karmaşasından uzak, bir o kadar da şehrin tam kalbinde sıra dışı ayrıntıları konforlu ve güvenli yaşam alanlarıyla tasarlanmış bir proje. Muhteşem deniz manzarası, çocuk oyun alanları, dinlenme alanları, açık kapalı otopark, yeşil bahçe, önemli merkezlere yakınlık, yenilikçi teknoloji ve çevre dostu oluşuyla dikkat çeken bir proje.
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-12 col-md-6 nova-right-col prestige-img-component-desktop">
-                        <div className="row" style={{ justifyContent: "center" }}>
-                            <div className="col-12 nova-main-image" style={{ width: "450px"}}>
-                                <Swiper
-                                    modules={[Navigation]}
-                                    navigation
-                                    spaceBetween={50}
-                                    initialSlide={1}
-                                    slidesPerView={1}
-                                    centeredSlides={true}
-                                    onSlideChange={() => console.log('slide change')}
-                                    onSwiper={(swiper) => console.log(swiper)}
-                                >
-                                    <SwiperSlide><img onClick={() => { setShowMediumModal(true); setModalSrc("/prestige/prestige_slide_1.JPG") }} width="100%" height="auto" src="/prestige/prestige_slide_1.JPG" />
-                                    </SwiperSlide>
-                                    <SwiperSlide><img onClick={() => { setShowMediumModal(true); setModalSrc("/prestige/prestige_slide_2.JPG") }} width="100%" height="auto" src="/prestige/prestige_slide_2.JPG" />
-                                    </SwiperSlide>
-                                    <SwiperSlide><img onClick={() => { setShowMediumModal(true); setModalSrc("/prestige/prestige_slide_3.JPG") }} width="100%" height="auto" src="/prestige/prestige_slide_3.JPG" />
-                                    </SwiperSlide>
-                                    <SwiperSlide><img onClick={() => { setShowMediumModal(true); setModalSrc("/prestige/prestige_slide_4.JPG") }} width="100%" height="auto" src="/prestige/prestige_slide_4.JPG" />
-                                    </SwiperSlide>
-                                </Swiper>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-12 col-md-4">
-                        <div className="detail-sub-title">
-                            <div className="detail-title">
-                                <div className="prestige-logo">
-                                    <img src="/prestige.png" />
-                                </div>
-                            </div>  <span className="detail-sub-title-stick"><div>|</div></span> Proje detayları
-                        </div>
-                        <div className="detail-paragraph">
-                            Daire Sayısı: 28 <br />
-                            Daire Tipİ: 3+1 <br />
-                            İşyeri Sayısı: 3 <br />
-                            Manzara: Deniz Manzarası <br />
-                            Doğa Manzarası, Şehir Manzarası <br />
-                            Adres: Boğazkent Mah. Seyit Onbaşı <br />Cad. No:19 Kepez / Çanakkale
-                        </div>
-                    </div>
-                    <div className="col-12 col-md-8">
-                        <div className="detail-sub-title">
-                            <div className="detail-title">
-                                <div className="prestige-logo">
-                                    <img src="/prestige.png" />
-                                </div>
-                            </div>  <span className="detail-sub-title-stick"><div>|</div></span>İç tasarım
-                        </div>
-                        <div className="images zoomable-img">
-                            <div className="row align-items-end">
-                                <div className="col-12 col-md-5">
-                                    <img onClick={() => { setShowModal(true); setModalSrc("/prestige/pres1.jpg") }} width="100%" height="auto" src="/prestige/pres1.jpg" />
-                                </div>
-                                <div className="col-6 mt-3 mt-md-0 col-md-4">
-                                    <img onClick={() => { setShowModal(true); setModalSrc("/prestige/pres2.jpg") }} width="100%" height="auto" src="/prestige/pres2.jpg" />
-                                </div>
-                                <div className="col-6 mt-3 mt-md-0 col-md-3">
-                                    <img onClick={() => { setShowModal(true); setModalSrc("/prestige/pres3.jpg") }} width="100%" height="auto" src="/prestige/pres3.jpg" />
-                                </div>
-                            </div>
-                            <div className="row prestige-bottom-part-second-row mb-5" style={{ justifyContent: "flex-end" }}>
-                                <div className="col-6 mt-3 mt-md-0 col-md-3">
-                                    <img onClick={() => { setShowModal(true); setModalSrc("/prestige/pres4.jpg") }} width="100%" height="auto" src="/prestige/pres4.jpg" />
-                                </div>
-                                <div className="col-6 mt-3 mt-md-0 col-md-2">
-                                    <img onClick={() => { setShowModal(true); setModalSrc("/prestige/pres5.jpg") }} width="100%" height="auto" src="/prestige/pres5.jpg" />
-                                </div>
-                                <div className="col-6 mt-3 mt-md-0 col-md-5">
-                                    <img onClick={() => { setShowModal(true); setModalSrc("/prestige/pres6.jpg") }} width="100%" height="auto" src="/prestige/pres6.jpg" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  return (
+    <>
+      {showModal && (
+        <ZoomModal
+          images={modalImages}
+          startIndex={modalIndex}
+          onClose={() => setShowModal(false)}
+        />
+      )}
+      <Head>
+        <title>POSTACILAR | PRESTIGE</title>
+        <meta name="description" content="Postacılar Yapı | Prestige Evleri" />
+        <link rel="icon" href="/meta-logo.webp" />
+      </Head>
+      <Header />
 
+      <div className="container-fluid detail-container">
+
+        {/* ── LOGO ── */}
+        <div className="life-logo-section">
+          <div className="detail-title">
+            POSTACILAR <span className="detail-title-stick">|</span>
+            <div className="prestige-logo-big">
+              <img src="/prestige.webp" />
             </div>
-        </>
-    )
-    function useOutsideAlerter(ref) {
-        useEffect(() => {
-            /**
-             * Alert if clicked on outside of element
-             */
-            function handleClickOutside(event) {
-                if (ref.current && !ref.current.contains(event.target)) {
-                    setShowModal(false);
-                    setShowVModal(false);
-                    setShowMediumModal(false);
-                }
-            }
+          </div>
+        </div>
 
-            // Bind the event listener
-            document.addEventListener("mousedown", handleClickOutside);
-            return () => {
-                // Unbind the event listener on clean up
-                document.removeEventListener("mousedown", handleClickOutside);
-            };
-        }, [ref]);
-    }
+        {/* ── ROW 1: HAKKINDA ── */}
+        <div className="row life-about-row">
+          <div className="col-12">
+            <div className="detail-sub-title">
+              <div className="detail-title">
+                <div className="prestige-logo"><img src="/prestige.webp" /></div>
+              </div>
+              <span className="detail-sub-title-stick"><div>|</div></span>
+              Hakkında
+            </div>
+            <div className="detail-paragraph">
+              Prestige şehrin karmaşasından uzak, bir o kadar da şehrin tam kalbinde
+              sıra dışı ayrıntıları konforlu ve güvenli yaşam alanlarıyla tasarlanmış
+              bir proje. Muhteşem deniz manzarası, çocuk oyun alanları, dinlenme
+              alanları, açık kapalı otopark, yeşil bahçe, önemli merkezlere yakınlık,
+              yenilikçi teknoloji ve çevre dostu oluşuyla dikkat çeken bir proje.
+            </div>
+          </div>
+        </div>
+
+        {/* ── ROW 2: PROJE DETAYLARI ── */}
+        <div className="row life-about-row">
+          <div className="col-12">
+            <div className="detail-sub-title">
+              <div className="detail-title">
+                <div className="prestige-logo"><img src="/prestige.webp" /></div>
+              </div>
+              <span className="detail-sub-title-stick"><div>|</div></span>
+              Proje Detayları
+            </div>
+            <div className="detail-paragraph">
+              Daire Sayısı: 28 <br />
+              Daire Tipi: 3+1 <br />
+              İşyeri Sayısı: 3 <br />
+              Manzara: Deniz Manzarası, Doğa Manzarası, Şehir Manzarası <br />
+              Adres: Boğazkent Mah. Seyit Onbaşı Cad. No:19, Kepez / Çanakkale
+            </div>
+          </div>
+        </div>
+
+        {/* ── DIŞ GÖRÜNÜM SWİPER ── */}
+        <div className="life-exterior-section">
+          <Swiper
+            modules={[Navigation, Autoplay]}
+            navigation
+            loop={true}
+            autoplay={{ delay: 2800, disableOnInteraction: false }}
+            speed={800}
+            spaceBetween={6}
+            slidesPerView={4}
+            breakpoints={{
+              0:   { slidesPerView: 1 },
+              576: { slidesPerView: 2 },
+              992: { slidesPerView: 4 },
+            }}
+            onSlideNextTransitionStart={handleNextStart}
+            onTransitionEnd={handleTransitionEnd}
+          >
+            {exteriorImages.map((src, i) => (
+              <SwiperSlide key={i}>
+                <img
+                  onClick={() => openModal(exteriorImages, i)}
+                  src={src}
+                  className="swiper-exterior-img"
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+
+        {/* ── İÇ TASARIM ── */}
+        <div className="life-interior-section">
+          <div className="detail-sub-title">
+            <div className="detail-title">
+              <div className="prestige-logo"><img src="/prestige.webp" /></div>
+            </div>
+            <span className="detail-sub-title-stick"><div>|</div></span>
+            İç Tasarım
+          </div>
+          <div className="images zoomable-img">
+            <div className="row align-items-end g-1">
+              <div className="col-5">
+                <img onClick={() => openModal(interiorImages, 0)} width="100%" height="auto" src="/prestige/pres1.webp" style={{cursor:"zoom-in", display:"block"}} />
+              </div>
+              <div className="col-4">
+                <img onClick={() => openModal(interiorImages, 1)} width="100%" height="auto" src="/prestige/pres2.webp" style={{cursor:"zoom-in", display:"block"}} />
+              </div>
+              <div className="col-3">
+                <img onClick={() => openModal(interiorImages, 2)} width="100%" height="auto" src="/prestige/pres3.webp" style={{cursor:"zoom-in", display:"block"}} />
+              </div>
+            </div>
+            <div className="row g-1 mt-1">
+              <div className="col-4">
+                <img onClick={() => openModal(interiorImages, 3)} width="100%" height="auto" src="/prestige/pres4.webp" style={{cursor:"zoom-in", display:"block"}} />
+              </div>
+              <div className="col-3">
+                <img onClick={() => openModal(interiorImages, 4)} width="100%" height="auto" src="/prestige/pres5.webp" style={{cursor:"zoom-in", display:"block"}} />
+              </div>
+              <div className="col-5">
+                <img onClick={() => openModal(interiorImages, 5)} width="100%" height="auto" src="/prestige/pres6.webp" style={{cursor:"zoom-in", display:"block"}} />
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <Footer />
+      <StickyButtons />
+    </>
+  );
 }

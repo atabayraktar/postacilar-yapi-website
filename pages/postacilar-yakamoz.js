@@ -68,7 +68,7 @@ export default function PostacilarYakamoz() {
         <div className="row life-about-row">
           <div className="col-12">
             <div className="detail-sub-title">
-              YAKAMOZ <span className="detail-sub-title-stick">|</span> {t('details.sections.about')}
+              YAKAMOZ <span className="detail-sub-title-stick">|</span> <span className="detail-accent">{t('details.sections.about')}</span>
             </div>
             <div className="detail-paragraph">{t('details.yakamoz.about')}</div>
           </div>
@@ -78,7 +78,7 @@ export default function PostacilarYakamoz() {
         <div className="row life-about-row">
           <div className="col-12">
             <div className="detail-sub-title">
-              YAKAMOZ <span className="detail-sub-title-stick">|</span> {t('details.sections.projectDetails')}
+              YAKAMOZ <span className="detail-sub-title-stick">|</span> <span className="detail-accent">{t('details.sections.projectDetails')}</span>
             </div>
             <div className="detail-paragraph" dangerouslySetInnerHTML={{ __html: t('details.yakamoz.details').replace(/\n/g, '<br/>') }} />
           </div>
@@ -87,7 +87,7 @@ export default function PostacilarYakamoz() {
         {/* ── GÖRSELLER ── */}
         <div className="life-interior-section">
           <div className="detail-sub-title">
-            YAKAMOZ <span className="detail-sub-title-stick">|</span> {t('details.sections.visuals')}
+            YAKAMOZ <span className="detail-sub-title-stick">|</span> <span className="detail-accent">{t('details.sections.visuals')}</span>
           </div>
           <div className="detail-swiper-mobile">
             <Swiper modules={[Navigation, Autoplay]} navigation loop={true} autoplay={{ delay: 2800, disableOnInteraction: false }} speed={800} spaceBetween={8} slidesPerView={1} onSlideNextTransitionStart={handleNextStart} onTransitionEnd={handleTransitionEnd}>

@@ -4,16 +4,17 @@
       @extend .about-us-logo;
       width: 100%;
       height: auto;
+      filter: brightness(0) saturate(100%) invert(75%) sepia(30%) saturate(600%) hue-rotate(330deg) brightness(105%) contrast(85%);
     }
     &-description {
       font-size: 22px;
       font-family: 'Montserrat', sans-serif;
-      color: var(--text-primary);
+      color: #b8977e;
       text-align: center;
       @media only screen and (max-width: 991px) {
         font-size: 15px;
         font-family: 'Montserrat', sans-serif;
-        color: var(--text-primary);
+        color: #b8977e;
         text-align: center;
       }
     }

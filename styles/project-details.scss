@@ -23,6 +23,12 @@
     }
 }
 
+.detail-accent,
+.detail-title .detail-accent,
+.detail-sub-title .detail-accent {
+    color: #b8977e !important;
+}
+
 .detail-container {
     padding: 20px 100px;
     @media only screen and (max-width: 768px) {

@@ -73,7 +73,7 @@ export default function AllProjects() {
           <div className="component-container-last-item">
             <div className="about-us-title">Projelerimiz</div>
             <div className="row">
-            <div className="col-md-4 col-6 img-container-projects fadding-photo" style={{position:'relative'}}>
+              <div className="col-md-4 col-6 img-container-projects fadding-photo" style={{position:'relative'}}>
                 <span className="project-badge">Satışı Devam Ediyor</span>
                 <img
                   onClick={() => router.push("/postacilar-life2")}
@@ -107,6 +107,12 @@ export default function AllProjects() {
               </div>
               <div className="col-md-4 col-6 img-container-projects fadding-photo">
                 <img
+                  onClick={() => router.push("/postacilar-lotus")}
+                  src="/lotus/lotus2.webp"
+                />
+              </div>
+              <div className="col-md-4 col-6 img-container-projects fadding-photo">
+                <img
                   onClick={() => router.push("/postacilar-idil")}
                   src="/idil1.webp"
                 />
@@ -115,12 +121,6 @@ export default function AllProjects() {
                 <img
                   onClick={() => router.push("/postacilar-nilufer")}
                   src="/nilufer3.webp"
-                />
-              </div>
-              <div className="col-md-4 col-6 img-container-projects fadding-photo">
-                <img
-                  onClick={() => router.push("/postacilar-lotus")}
-                  src="/lotus/lotus2.webp"
                 />
               </div>
             </div>

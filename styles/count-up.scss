@@ -15,6 +15,9 @@
         display: flex;
         justify-content: space-between;
         gap:10px;
+        img {
+            filter: brightness(0) saturate(100%) invert(75%) sepia(30%) saturate(600%) hue-rotate(330deg) brightness(105%) contrast(85%);
+        }
         @media only screen and (max-width: 991px) {
             justify-content: center;
             gap: 16px;
@@ -32,11 +35,11 @@
         &-title{
             font-size: 12px;
             margin-bottom: 0px;
-            color:white
+            color: #b8977e;
         }
         &-value{
             font-size: 30px;
-            color:white
+            color: #b8977e;
         }
     }
 }

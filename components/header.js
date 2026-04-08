@@ -22,14 +22,16 @@ export default function Header() {
             <div className="sticky-header">
             <InfoBar />
             <Navbar className='color-nav' variant="dark">
-                <div className="header-logo">
-                    <Navbar.Brand href="/" onClick={handleLogo}><img src="/logo.webp" /></Navbar.Brand>
+                <div className="header-inner-wrapper">
+                    <div className="header-logo">
+                        <Navbar.Brand href="/" onClick={handleLogo}><img src="/logo.webp" /></Navbar.Brand>
+                    </div>
+                    <Nav className="ms-auto header">
+                        <Nav.Link href="/#hakkimizda">{t('nav.about')}</Nav.Link>
+                        <Nav.Link href="/#projeler">{t('nav.projects')}</Nav.Link>
+                        <Nav.Link href="/#iletisim">{t('nav.contact')}</Nav.Link>
+                    </Nav>
                 </div>
-                <Nav className="ms-auto header">
-                    <Nav.Link href="/#hakkimizda">{t('nav.about')}</Nav.Link>
-                    <Nav.Link href="/#projeler">{t('nav.projects')}</Nav.Link>
-                    <Nav.Link href="/#iletisim">{t('nav.contact')}</Nav.Link>
-                </Nav>
             </Navbar>
             </div>
         </>

@@ -61,16 +61,14 @@ export default function PostacilarLife2() {
       </Head>
       <Header />
 
-      <div className="container-fluid detail-container">
-
-        {/* ── LOGO ── */}
-        <div className="life-logo-section">
-          <div className="detail-title">
-            <div className="postacilar-life-logo">
-              <img src="/life2/postacilar-life2-logo.webp" />
-            </div>
-          </div>
+      <div className="detail-hero">
+        <img src="/life2/outside/1.webp" className="detail-hero-bg" />
+        <div className="detail-hero-logo">
+          <img src="/life2/postacilar-life2-logo.webp" />
         </div>
+      </div>
+
+      <div className="container-fluid detail-container">
 
         {/* ── ROW 1: HAKKINDA (full width) ── */}
         <div className="row life-about-row">
@@ -166,25 +164,25 @@ export default function PostacilarLife2() {
           <div className="detail-mosaic-desktop images zoomable-img">
             {/* Grup 1: resimler 1-6 */}
             <div className="interior-group">
-              <div className="row align-items-end g-1">
-                <div className="col-5">
+              <div className="row align-items-end g-4">
+                <div className="col-4">
                   <img onClick={() => openModal(interiorImages, 0)} src="/life2/inside/1.webp" className="interior-mosaic-img" />
                 </div>
-                <div className="col-4">
+                <div className="col-3">
                   <img onClick={() => openModal(interiorImages, 1)} src="/life2/inside/2.webp" className="interior-mosaic-img" />
                 </div>
-                <div className="col-3">
+                <div className="col-5">
                   <img onClick={() => openModal(interiorImages, 2)} src="/life2/inside/3.webp" className="interior-mosaic-img" />
                 </div>
               </div>
-              <div className="row g-1 mt-1">
-                <div className="col-4">
+              <div className="row g-4 mt-3">
+                <div className="col-3">
                   <img onClick={() => openModal(interiorImages, 3)} src="/life2/inside/4.webp" className="interior-mosaic-img" />
                 </div>
-                <div className="col-3">
+                <div className="col-5">
                   <img onClick={() => openModal(interiorImages, 4)} src="/life2/inside/5.webp" className="interior-mosaic-img" />
                 </div>
-                <div className="col-5">
+                <div className="col-4">
                   <img onClick={() => openModal(interiorImages, 5)} src="/life2/inside/6.webp" className="interior-mosaic-img" />
                 </div>
               </div>

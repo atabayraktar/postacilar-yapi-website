@@ -54,16 +54,14 @@ export default function PostacilarLife() {
       </Head>
       <Header />
 
-      <div className="container-fluid detail-container">
-
-        {/* ── LOGO ── */}
-        <div className="life-logo-section">
-          <div className="detail-title">
-            <div className="postacilar-life-logo">
-              <img src="/life/postacılar-life-logo.webp" />
-            </div>
-          </div>
+      <div className="detail-hero">
+        <img src="/1.webp" className="detail-hero-bg" />
+        <div className="detail-hero-logo">
+          <img src="/life/postacılar-life-logo.webp" />
         </div>
+      </div>
+
+      <div className="container-fluid detail-container">
 
         {/* ── ROW 1: HAKKINDA (full width) ── */}
         <div className="row life-about-row">
@@ -162,25 +160,25 @@ export default function PostacilarLife() {
             </Swiper>
           </div>
           <div className="detail-mosaic-desktop images zoomable-img">
-            <div className="row align-items-end g-1">
-              <div className="col-5">
+            <div className="row align-items-end g-4">
+              <div className="col-3">
                 <img onClick={() => openModal(interiorImages, 0)} width="100%" height="auto" src="/1-mutfak.webp" style={{cursor:"zoom-in", display:"block"}} />
               </div>
-              <div className="col-4">
+              <div className="col-5">
                 <img onClick={() => openModal(interiorImages, 1)} width="100%" height="auto" src="/2-yatak-odası.webp" style={{cursor:"zoom-in", display:"block"}} />
               </div>
-              <div className="col-3">
+              <div className="col-4">
                 <img onClick={() => openModal(interiorImages, 2)} width="100%" height="auto" src="/3-mutfak.webp" style={{cursor:"zoom-in", display:"block"}} />
               </div>
             </div>
-            <div className="row g-1 mt-1">
-              <div className="col-4">
+            <div className="row g-4 mt-3">
+              <div className="col-5">
                 <img onClick={() => openModal(interiorImages, 3)} width="100%" height="auto" src="/4-cocuk-odası.webp" style={{cursor:"zoom-in", display:"block"}} />
               </div>
               <div className="col-3">
                 <img onClick={() => openModal(interiorImages, 4)} width="100%" height="auto" src="/5-banyo.webp" style={{cursor:"zoom-in", display:"block"}} />
               </div>
-              <div className="col-5">
+              <div className="col-4">
                 <img onClick={() => openModal(interiorImages, 5)} width="100%" height="auto" src="/6-antre.webp" style={{cursor:"zoom-in", display:"block"}} />
               </div>
             </div>

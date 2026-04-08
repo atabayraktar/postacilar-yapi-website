@@ -37,7 +37,7 @@
 
   .count-up-number-value,
   .count-up-number-title {
-    color: #1e2025 !important;
+    color: #b8977e !important;
   }
 
   .contact-map-form-btn:hover {
@@ -63,6 +63,11 @@
   .detail-sub-title-stick,
   .detail-paragraph {
     color: #1e2025 !important;
+  }
+  .detail-accent,
+  .detail-title .detail-accent,
+  .detail-sub-title .detail-accent {
+    color: #b8977e !important;
   }
 
   .postacilar-life-logo img,
@@ -327,7 +332,7 @@
   &-copy {
     flex: 1;
     text-align: center;
-    color: var(--text-secondary);
+    color: #b8977e;
     font-size: 13px;
     letter-spacing: 0.04em;
   }
@@ -471,6 +476,14 @@ body {
     }
   }
 }
+.about-us-title {
+  color: #b8977e !important;
+  margin-bottom: 32px;
+  @media only screen and (max-width: 768px) {
+    margin-bottom: 20px;
+  }
+}
+
 .mobile-components {
   display: none;
   @media only screen and (max-width: 991px) {
@@ -487,7 +500,7 @@ body {
   font-family: "Montserrat", sans-serif;
   color: var(--text-primary);
   font-size: larger;
-  padding-right: 3vw;
+  padding-right: 0;
 
   .nav-link {
     position: relative;
@@ -522,15 +535,42 @@ body {
 
   @media only screen and (max-width: 991px) {
     font-size: 14px;
-    padding-right: 16px;
+    padding-right: 0;
     img {
       max-width: 120px;
       height: auto;
     }
   }
 }
+.header-inner-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 56px 0 32px;
+  @media only screen and (max-width: 768px) {
+    padding: 0 20px;
+  }
+}
+
+.header-inner-wrapper--detail {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 100px 0 80px;
+  @media only screen and (max-width: 768px) {
+    padding: 0 20px;
+  }
+}
+
+.navbar.color-nav {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
 .header-logo {
-  padding-left: 3vw;
+  padding-left: 0;
   img {
     max-width: 257px;
     height: auto;
@@ -588,16 +628,17 @@ body {
     @extend .about-us-logo;
     width: 100%;
     height: auto;
+    filter: brightness(0) saturate(100%) invert(75%) sepia(30%) saturate(600%) hue-rotate(330deg) brightness(105%) contrast(85%);
   }
   &-description {
     font-size: 22px;
     font-family: "Montserrat", sans-serif;
-    color: var(--text-primary);
+    color: #b8977e !important;
     text-align: center;
     @media only screen and (max-width: 991px) {
       font-size: 15px;
       font-family: "Montserrat", sans-serif;
-      color: var(--text-primary);
+      color: #b8977e !important;
       text-align: center;
     }
   }
@@ -1262,7 +1303,7 @@ body.modal-open {
   animation: modalSlideUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) both;
 
   h3 {
-    color: var(--text-title);
+    color: #b8977e;
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 8px;

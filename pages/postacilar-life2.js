@@ -80,26 +80,38 @@ export default function PostacilarLife2() {
                 <div className="prestige-logo"><img src="/life2/life2-logo.webp" /></div>
               </div>
               <span className="detail-sub-title-stick"><div>|</div></span>
-              {t('details.sections.about')}
+              <span className="detail-accent">{t('details.sections.about')}</span>
             </div>
             <div className="detail-paragraph">{t('details.life2.about')}</div>
           </div>
         </div>
 
-        {/* ── ROW 2: PROJE DETAYLARI (full width) ── */}
-        <div className="row life-about-row">
-          <div className="col-12">
+        {/* ── ROW 2: PROJE DETAYLARI + DAİRE TİPLERİ ── */}
+        <div className="row life-details-row">
+          <div className="col-12 col-md-6 life-details-col">
             <div className="detail-sub-title">
               <div className="detail-title">
                 <div className="prestige-logo"><img src="/life2/life2-logo.webp" /></div>
               </div>
               <span className="detail-sub-title-stick"><div>|</div></span>
-              {t('details.sections.projectDetails')}
+              <span className="detail-accent">{t('details.sections.projectDetails')}</span>
             </div>
             <div className="detail-paragraph" dangerouslySetInnerHTML={{ __html: t('details.life2.details').replace(/\n/g, '<br/>') }} />
             <a href="/catalogs/life2-katalog.pdf" target="_blank" rel="noopener noreferrer" className="catalog-btn">
               {t('details.sections.viewCatalog')}
             </a>
+          </div>
+          <div className="col-12 col-md-6 life-floor-col">
+            <div className="detail-sub-title">
+              <div className="detail-title">
+                <div className="prestige-logo"><img src="/life2/life2-logo.webp" /></div>
+              </div>
+              <span className="detail-sub-title-stick"><div>|</div></span>
+              <span className="detail-accent">{t('details.sections.flatTypes')}</span>
+            </div>
+            <div className="flat-types-inline">
+              {/* Görseller eklenecek */}
+            </div>
           </div>
         </div>
 
@@ -140,7 +152,7 @@ export default function PostacilarLife2() {
               <div className="prestige-logo"><img src="/life2/life2-logo.webp" /></div>
             </div>
             <span className="detail-sub-title-stick"><div>|</div></span>
-            {t('details.sections.interiorDesign')}
+            <span className="detail-accent">{t('details.sections.interiorDesign')}</span>
           </div>
           <div className="detail-swiper-mobile">
             <Swiper modules={[Navigation, Autoplay]} navigation loop={true} autoplay={{ delay: 2800, disableOnInteraction: false }} speed={800} spaceBetween={8} slidesPerView={1} onSlideNextTransitionStart={handleNextStart} onTransitionEnd={handleTransitionEnd}>

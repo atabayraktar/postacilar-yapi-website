@@ -66,7 +66,7 @@ export default function PostacilarLotus() {
         <div className="row life-about-row">
           <div className="col-12">
             <div className="detail-sub-title">
-              LOTUS <span className="detail-sub-title-stick">|</span> {t('details.sections.about')}
+              LOTUS <span className="detail-sub-title-stick">|</span> <span className="detail-accent">{t('details.sections.about')}</span>
             </div>
             <div className="detail-paragraph">{t('details.lotus.about')}</div>
           </div>
@@ -76,7 +76,7 @@ export default function PostacilarLotus() {
         <div className="row life-about-row">
           <div className="col-12">
             <div className="detail-sub-title">
-              LOTUS <span className="detail-sub-title-stick">|</span> {t('details.sections.projectDetails')}
+              LOTUS <span className="detail-sub-title-stick">|</span> <span className="detail-accent">{t('details.sections.projectDetails')}</span>
             </div>
             <div className="detail-paragraph" dangerouslySetInnerHTML={{ __html: t('details.lotus.details').replace(/\n/g, '<br/>') }} />
           </div>
@@ -85,7 +85,7 @@ export default function PostacilarLotus() {
         {/* ── GÖRSELLER ── */}
         <div className="life-interior-section">
           <div className="detail-sub-title">
-            LOTUS <span className="detail-sub-title-stick">|</span> {t('details.sections.visuals')}
+            LOTUS <span className="detail-sub-title-stick">|</span> <span className="detail-accent">{t('details.sections.visuals')}</span>
           </div>
           <div className="detail-swiper-mobile">
             <Swiper modules={[Navigation, Autoplay]} navigation loop={true} autoplay={{ delay: 2800, disableOnInteraction: false }} speed={800} spaceBetween={8} slidesPerView={1} onSlideNextTransitionStart={handleNextStart} onTransitionEnd={handleTransitionEnd}>

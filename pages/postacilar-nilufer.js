@@ -67,7 +67,7 @@ export default function PostacilarNilufer() {
         <div className="row life-about-row">
           <div className="col-12">
             <div className="detail-sub-title">
-              NİLÜFER <span className="detail-sub-title-stick">|</span> {t('details.sections.about')}
+              NİLÜFER <span className="detail-sub-title-stick">|</span> <span className="detail-accent">{t('details.sections.about')}</span>
             </div>
             <div className="detail-paragraph">{t('details.nilufer.about')}</div>
           </div>
@@ -77,7 +77,7 @@ export default function PostacilarNilufer() {
         <div className="row life-about-row">
           <div className="col-12">
             <div className="detail-sub-title">
-              NİLÜFER <span className="detail-sub-title-stick">|</span> {t('details.sections.projectDetails')}
+              NİLÜFER <span className="detail-sub-title-stick">|</span> <span className="detail-accent">{t('details.sections.projectDetails')}</span>
             </div>
             <div className="detail-paragraph" dangerouslySetInnerHTML={{ __html: t('details.nilufer.details').replace(/\n/g, '<br/>') }} />
           </div>
@@ -86,7 +86,7 @@ export default function PostacilarNilufer() {
         {/* ── GÖRSELLER ── */}
         <div className="life-interior-section">
           <div className="detail-sub-title">
-            NİLÜFER <span className="detail-sub-title-stick">|</span> {t('details.sections.visuals')}
+            NİLÜFER <span className="detail-sub-title-stick">|</span> <span className="detail-accent">{t('details.sections.visuals')}</span>
           </div>
           <div className="detail-swiper-mobile">
             <Swiper modules={[Navigation, Autoplay]} navigation loop={true} autoplay={{ delay: 2800, disableOnInteraction: false }} speed={800} spaceBetween={8} slidesPerView={1} onSlideNextTransitionStart={handleNextStart} onTransitionEnd={handleTransitionEnd}>

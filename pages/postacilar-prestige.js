@@ -79,7 +79,7 @@ export default function PostacilarPrestige() {
                 <div className="prestige-logo"><img src="/prestige.webp" /></div>
               </div>
               <span className="detail-sub-title-stick"><div>|</div></span>
-              {t('details.sections.about')}
+              <span className="detail-accent">{t('details.sections.about')}</span>
             </div>
             <div className="detail-paragraph">{t('details.prestige.about')}</div>
           </div>
@@ -93,7 +93,7 @@ export default function PostacilarPrestige() {
                 <div className="prestige-logo"><img src="/prestige.webp" /></div>
               </div>
               <span className="detail-sub-title-stick"><div>|</div></span>
-              {t('details.sections.projectDetails')}
+              <span className="detail-accent">{t('details.sections.projectDetails')}</span>
             </div>
             <div className="detail-paragraph" dangerouslySetInnerHTML={{ __html: t('details.prestige.details').replace(/\n/g, '<br/>') }} />
           </div>
@@ -136,7 +136,7 @@ export default function PostacilarPrestige() {
               <div className="prestige-logo"><img src="/prestige.webp" /></div>
             </div>
             <span className="detail-sub-title-stick"><div>|</div></span>
-            {t('details.sections.interiorDesign')}
+            <span className="detail-accent">{t('details.sections.interiorDesign')}</span>
           </div>
           <div className="detail-swiper-mobile">
             <Swiper modules={[Navigation, Autoplay]} navigation loop={true} autoplay={{ delay: 2800, disableOnInteraction: false }} speed={800} spaceBetween={8} slidesPerView={1} onSlideNextTransitionStart={handleNextStart} onTransitionEnd={handleTransitionEnd}>

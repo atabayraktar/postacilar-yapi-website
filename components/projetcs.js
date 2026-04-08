@@ -15,17 +15,17 @@ export default function Projects({ projectsRef }) {
             <div className="row">
               <div className="col-3 img-container-main-project fadding-photo" style={{position:'relative'}}>
                 <span className="project-badge">{t('projects.badge')}</span>
-                <Link href="/postacilar-life">
+                <Link href="/postacilar-life2">
                   <a>
-                    <img src="/homepage-rectangle-images/life-1.webp" />
+                    <img src="/homepage-rectangle-images/life-2.webp" />
                   </a>
                 </Link>
               </div>
               <div className="col-3 img-container-main-project fadding-photo" style={{position:'relative'}}>
                 <span className="project-badge">{t('projects.badge')}</span>
-                <Link href="/postacilar-life2">
+                <Link href="/postacilar-life">
                   <a>
-                    <img src="/homepage-rectangle-images/life-2.webp" />
+                    <img src="/homepage-rectangle-images/life-1.webp" />
                   </a>
                 </Link>
               </div>
@@ -77,9 +77,9 @@ export default function Projects({ projectsRef }) {
             <div className="row">
               <div className="col-3 img-container-main-project fadding-photo" style={{position:'relative'}}>
                 <span className="project-badge">{t('projects.badge')}</span>
-                <Link href="/postacilar-life">
+                <Link href="/postacilar-life2">
                   <a>
-                    <img src="/homepage-rectangle-images/life-1.webp" />
+                    <img src="/homepage-rectangle-images/life-2.webp" />
                   </a>
                 </Link>
               </div>
@@ -87,7 +87,7 @@ export default function Projects({ projectsRef }) {
                 <span className="project-badge">{t('projects.badge')}</span>
                 <Link href="/postacilar-life">
                   <a>
-                    <img src="/homepage-rectangle-images/life-2.webp" />
+                    <img src="/homepage-rectangle-images/life-1.webp" />
                   </a>
                 </Link>
               </div>

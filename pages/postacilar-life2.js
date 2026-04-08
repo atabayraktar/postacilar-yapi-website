@@ -189,31 +189,6 @@ export default function PostacilarLife2() {
                 </div>
               </div>
             </div>
-            {/* Grup 2: resimler 7-12 — lazy load */}
-            <div className="interior-group mt-1">
-              <div className="row align-items-end g-1">
-                <div className="col-3">
-                  <img onClick={() => openModal(interiorImages, 6)} src="/life2/inside/7.webp" className="interior-mosaic-img" />
-                </div>
-                <div className="col-5">
-                  <img onClick={() => openModal(interiorImages, 7)} src="/life2/inside/8.webp" className="interior-mosaic-img" />
-                </div>
-                <div className="col-4">
-                  <img onClick={() => openModal(interiorImages, 8)} src="/life2/inside/9.webp" className="interior-mosaic-img" />
-                </div>
-              </div>
-              <div className="row g-1 mt-1">
-                <div className="col-5">
-                  <img onClick={() => openModal(interiorImages, 9)} src="/life2/inside/10.webp" className="interior-mosaic-img" />
-                </div>
-                <div className="col-3">
-                  <img onClick={() => openModal(interiorImages, 10)} src="/life2/inside/11.webp" className="interior-mosaic-img" />
-                </div>
-                <div className="col-4">
-                  <img onClick={() => openModal(interiorImages, 11)} src="/life2/inside/12.webp" className="interior-mosaic-img" />
-                </div>
-              </div>
-            </div>
           </div>
         </div>
 

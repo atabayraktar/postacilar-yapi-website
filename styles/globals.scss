@@ -534,8 +534,14 @@ body {
   }
 
   @media only screen and (max-width: 991px) {
-    font-size: 14px;
+    font-size: 12px;
     padding-right: 0;
+    letter-spacing: 0;
+    .nav-link {
+      padding-left: 6px !important;
+      padding-right: 6px !important;
+      letter-spacing: 0;
+    }
     img {
       max-width: 120px;
       height: auto;
@@ -579,7 +585,7 @@ body {
   @media only screen and (max-width: 991px) {
     padding-left: 0;
     img {
-      max-width: 160px;
+      max-width: 120px;
       height: auto;
       padding: 10px 0;
     }

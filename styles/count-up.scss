@@ -6,9 +6,9 @@
     @media only screen and (max-width: 991px) {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding: 32px 0;
+        padding: 40px 24px;
         gap: 28px;
-        max-width: 320px;
+        max-width: 100%;
         margin: 0 auto;
     }
     &-item{
@@ -19,7 +19,7 @@
             filter: brightness(0) saturate(100%) invert(75%) sepia(30%) saturate(600%) hue-rotate(330deg) brightness(105%) contrast(85%);
         }
         @media only screen and (max-width: 991px) {
-            justify-content: center;
+            justify-content: flex-start;
             gap: 16px;
         }
     }

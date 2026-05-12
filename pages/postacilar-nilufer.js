@@ -10,9 +10,10 @@ import { Navigation, Autoplay } from "swiper";
 import "swiper/css";
 
 const images = [
-  "/nilufer/nilufer2.webp",
-  "/nilufer/nilufer1.webp",
-  "/nilufer/nilufer3.webp",
+  "/nilufer/outside/nilufer-outside-1.webp",
+  "/nilufer/outside/nilufer-outside-2.webp",
+  "/nilufer/outside/nilufer-outside-3.webp",
+  "/nilufer/outside/nilufer-outside-4.webp",
 ];
 
 export default function PostacilarNilufer() {
@@ -49,21 +50,36 @@ export default function PostacilarNilufer() {
       )}
       <Head>
         <title>POSTACILAR | NİLÜFER</title>
-        <meta name="description" content="Postacılar Yapı | Nilüfer Evleri" />
+        <meta name="description" content="Postacılar Nilüfer — Bursa Nilüfer'de yaşam kalitesini yükselten konut projesi. Proje detayları ve görseller için inceleyin." />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.postacilar.com/postacilar-nilufer" />
         <link rel="icon" href="/meta-logo.webp" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Postacılar Yapı" />
+        <meta property="og:title" content="POSTACILAR | NİLÜFER" />
+        <meta property="og:description" content="Postacılar Nilüfer — Bursa Nilüfer'de yaşam kalitesini yükselten konut projesi. Proje detayları ve görseller için inceleyin." />
+        <meta property="og:url" content="https://www.postacilar.com/postacilar-nilufer" />
+        <meta property="og:image" content="https://www.postacilar.com/nilufer/outside/nilufer-outside-1.webp" />
+        <meta property="og:locale" content="tr_TR" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="POSTACILAR | NİLÜFER" />
+        <meta name="twitter:description" content="Postacılar Nilüfer — Bursa Nilüfer'de yaşam kalitesini yükselten konut projesi. Proje detayları ve görseller için inceleyin." />
+        <meta name="twitter:image" content="https://www.postacilar.com/nilufer/outside/nilufer-outside-1.webp" />
       </Head>
       <Header />
 
-      <div className="container-fluid detail-container">
-
-        {/* ── BAŞLIK ── */}
-        <div className="life-logo-section">
+      <div className="detail-hero">
+        <img src="/nilufer/hero/nilüfer-hero.webp" className="detail-hero-bg" />
+        <div className="detail-hero-title">
           <div className="detail-title">
-            POSTACILAR <span className="detail-title-stick">|</span> NİLÜFER
+            <img src="/postacilar-logo.png" className="hero-postacilar-logo" /> <span className="detail-title-stick">|</span> <span className="detail-title-name">NİLÜFER</span>
           </div>
         </div>
+      </div>
 
-        {/* ── ROW 1: HAKKINDA ── */}
+      <div className="container-fluid detail-container">
+
+
         <div className="row life-about-row">
           <div className="col-12">
             <div className="detail-sub-title">
@@ -73,7 +89,7 @@ export default function PostacilarNilufer() {
           </div>
         </div>
 
-        {/* ── ROW 2: PROJE DETAYLARI ── */}
+
         <div className="row life-about-row">
           <div className="col-12">
             <div className="detail-sub-title">
@@ -83,7 +99,7 @@ export default function PostacilarNilufer() {
           </div>
         </div>
 
-        {/* ── GÖRSELLER ── */}
+
         <div className="life-interior-section">
           <div className="detail-sub-title">
             NİLÜFER <span className="detail-sub-title-stick">|</span> <span className="detail-accent">{t('details.sections.visuals')}</span>
@@ -98,15 +114,20 @@ export default function PostacilarNilufer() {
             </Swiper>
           </div>
           <div className="detail-mosaic-desktop images zoomable-img">
-            <div className="row align-items-end g-1">
+            <div className="row align-items-end g-4">
               <div className="col-5">
-                <img onClick={() => openModal(1)} width="100%" height="auto" src="/nilufer/nilufer1.webp" style={{cursor:"zoom-in", display:"block"}} />
+                <img onClick={() => openModal(0)} width="100%" height="auto" src="/nilufer/outside/nilufer-outside-1.webp" style={{cursor:"zoom-in", display:"block"}} loading="lazy" decoding="async" />
               </div>
-              <div className="col-4">
-                <img onClick={() => openModal(0)} width="100%" height="auto" src="/nilufer/nilufer2.webp" style={{cursor:"zoom-in", display:"block"}} />
+              <div className="col-7">
+                <img onClick={() => openModal(1)} width="100%" height="auto" src="/nilufer/outside/nilufer-outside-2.webp" style={{cursor:"zoom-in", display:"block"}} loading="lazy" decoding="async" />
               </div>
-              <div className="col-3">
-                <img onClick={() => openModal(2)} width="100%" height="auto" src="/nilufer/nilufer3.webp" style={{cursor:"zoom-in", display:"block"}} />
+            </div>
+            <div className="row g-4 mt-3">
+              <div className="col-7">
+                <img onClick={() => openModal(2)} width="100%" height="auto" src="/nilufer/outside/nilufer-outside-3.webp" style={{cursor:"zoom-in", display:"block"}} loading="lazy" decoding="async" />
+              </div>
+              <div className="col-5">
+                <img onClick={() => openModal(3)} width="100%" height="auto" src="/nilufer/outside/nilufer-outside-4.webp" style={{cursor:"zoom-in", display:"block"}} loading="lazy" decoding="async" />
               </div>
             </div>
           </div>

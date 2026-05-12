@@ -10,12 +10,8 @@ import { Navigation, Autoplay } from "swiper";
 import "swiper/css";
 
 const exteriorImages = [
-  "/nova/nova_slides_1.webp","/nova/nova_slides_2.webp","/nova/nova_slides_3.webp",
-  "/nova/nova1.webp","/nova/nova2.webp","/nova/nova3.webp",
-];
-
-const detailImages = [
-  "/nova/detay4.webp","/nova/detay3.webp","/nova/detay1.webp","/nova/detay2.webp",
+  "/nova/outside/nova-outside-1.webp",
+  "/nova/outside/nova-outside-2.webp",
 ];
 
 export default function PostacilarNova() {
@@ -52,21 +48,36 @@ export default function PostacilarNova() {
       )}
       <Head>
         <title>POSTACILAR | NOVA</title>
-        <meta name="description" content="Postacılar Yapı | Nova Evleri" />
+        <meta name="description" content="Postacılar Nova — Bursa'da şık ve işlevsel tasarımıyla öne çıkan konut projesi. Proje detayları ve görseller için inceleyin." />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.postacilar.com/postacilar-nova" />
         <link rel="icon" href="/meta-logo.webp" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Postacılar Yapı" />
+        <meta property="og:title" content="POSTACILAR | NOVA" />
+        <meta property="og:description" content="Postacılar Nova — Bursa'da şık ve işlevsel tasarımıyla öne çıkan konut projesi. Proje detayları ve görseller için inceleyin." />
+        <meta property="og:url" content="https://www.postacilar.com/postacilar-nova" />
+        <meta property="og:image" content="https://www.postacilar.com/nova/outside/nova-outside-1.webp" />
+        <meta property="og:locale" content="tr_TR" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="POSTACILAR | NOVA" />
+        <meta name="twitter:description" content="Postacılar Nova — Bursa'da şık ve işlevsel tasarımıyla öne çıkan konut projesi. Proje detayları ve görseller için inceleyin." />
+        <meta name="twitter:image" content="https://www.postacilar.com/nova/outside/nova-outside-1.webp" />
       </Head>
       <Header />
 
-      <div className="container-fluid detail-container">
-
-        {/* ── BAŞLIK ── */}
-        <div className="life-logo-section">
+      <div className="detail-hero">
+        <img src="/nova/hero/nova-hero.webp" className="detail-hero-bg" />
+        <div className="detail-hero-title">
           <div className="detail-title">
-            POSTACILAR <span className="detail-title-stick">|</span> NOVA
+            <img src="/postacilar-logo.png" className="hero-postacilar-logo" /> <span className="detail-title-stick">|</span> <span className="detail-title-name">NOVA</span>
           </div>
         </div>
+      </div>
 
-        {/* ── ROW 1: HAKKINDA ── */}
+      <div className="container-fluid detail-container">
+
+
         <div className="row life-about-row">
           <div className="col-12">
             <div className="detail-sub-title">
@@ -76,7 +87,7 @@ export default function PostacilarNova() {
           </div>
         </div>
 
-        {/* ── ROW 2: PROJE DETAYLARI ── */}
+
         <div className="row life-about-row">
           <div className="col-12">
             <div className="detail-sub-title">
@@ -86,69 +97,32 @@ export default function PostacilarNova() {
           </div>
         </div>
 
-        {/* ── DIŞ GÖRÜNÜM SWİPER ── */}
-        <div className="life-exterior-section">
-          <Swiper
-            modules={[Navigation, Autoplay]}
-            navigation
-            loop={true}
-            autoplay={{ delay: 2800, disableOnInteraction: false }}
-            speed={800}
-            spaceBetween={6}
-            slidesPerView={4}
-            breakpoints={{
-              0:   { slidesPerView: 1 },
-              576: { slidesPerView: 2 },
-              992: { slidesPerView: 4 },
-            }}
-            onSlideNextTransitionStart={handleNextStart}
-            onTransitionEnd={handleTransitionEnd}
-          >
-            {exteriorImages.map((src, i) => (
-              <SwiperSlide key={i}>
-                <img
-                  onClick={() => openModal(exteriorImages, i)}
-                  src={src}
-                  className="swiper-exterior-img"
-                />
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
 
-        {/* ── DETAY GÖRSELLERİ ── */}
         <div className="life-interior-section">
           <div className="detail-sub-title">
-            NOVA <span className="detail-sub-title-stick">|</span> <span className="detail-accent">{t('details.sections.interiorDesign')}</span>
+            NOVA <span className="detail-sub-title-stick">|</span> <span className="detail-accent">{t('details.sections.visuals')}</span>
           </div>
           <div className="detail-swiper-mobile">
             <Swiper modules={[Navigation, Autoplay]} navigation loop={true} autoplay={{ delay: 2800, disableOnInteraction: false }} speed={800} spaceBetween={8} slidesPerView={1} onSlideNextTransitionStart={handleNextStart} onTransitionEnd={handleTransitionEnd}>
-              {detailImages.map((src, i) => (
+              {exteriorImages.map((src, i) => (
                 <SwiperSlide key={i}>
-                  <img onClick={() => openModal(detailImages, i)} src={src} />
+                  <img onClick={() => openModal(exteriorImages, i)} src={src} />
                 </SwiperSlide>
               ))}
             </Swiper>
           </div>
           <div className="detail-mosaic-desktop images zoomable-img">
-            <div className="row align-items-end g-1">
+            <div className="row align-items-end g-4">
               <div className="col-7">
-                <img onClick={() => openModal(detailImages, 0)} width="100%" height="auto" src="/nova/detay4.webp" style={{cursor:"zoom-in", display:"block"}} />
+                <img onClick={() => openModal(exteriorImages, 0)} width="100%" height="auto" src="/nova/outside/nova-outside-1.webp" style={{cursor:"zoom-in", display:"block"}} loading="lazy" decoding="async" />
               </div>
               <div className="col-5">
-                <img onClick={() => openModal(detailImages, 1)} width="100%" height="auto" src="/nova/detay3.webp" style={{cursor:"zoom-in", display:"block"}} />
-              </div>
-            </div>
-            <div className="row g-1 mt-1">
-              <div className="col-5">
-                <img onClick={() => openModal(detailImages, 2)} width="100%" height="auto" src="/nova/detay1.webp" style={{cursor:"zoom-in", display:"block"}} />
-              </div>
-              <div className="col-7">
-                <img onClick={() => openModal(detailImages, 3)} width="100%" height="auto" src="/nova/detay2.webp" style={{cursor:"zoom-in", display:"block"}} />
+                <img onClick={() => openModal(exteriorImages, 1)} width="100%" height="auto" src="/nova/outside/nova-outside-2.webp" style={{cursor:"zoom-in", display:"block"}} loading="lazy" decoding="async" />
               </div>
             </div>
           </div>
         </div>
+
 
       </div>
 

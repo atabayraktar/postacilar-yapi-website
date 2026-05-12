@@ -10,10 +10,11 @@ import { Navigation, Autoplay } from "swiper";
 import "swiper/css";
 
 const images = [
-  "/yakamoz/yakamoz2.webp",
-  "/yakamoz/yakamoz1.webp",
-  "/yakamoz/yakamoz4.webp",
-  "/yakamoz/yakamoz3.webp",
+  "/yakamoz/outside/yakamoz-outside-1.webp",
+  "/yakamoz/outside/yakamoz-outside-2.webp",
+  "/yakamoz/outside/yakamoz-outside-3.webp",
+  "/yakamoz/outside/yakamoz-outside-4.webp",
+  "/yakamoz/outside/yakamoz-outside-5.webp",
 ];
 
 export default function PostacilarYakamoz() {
@@ -50,21 +51,36 @@ export default function PostacilarYakamoz() {
       )}
       <Head>
         <title>POSTACILAR | YAKAMOZ</title>
-        <meta name="description" content="Postacılar Yapı | Yakamoz Evleri" />
+        <meta name="description" content="Postacılar Yakamoz — Bursa'da doğayla iç içe, huzurlu bir yaşam sunan konut projesi. Proje detayları ve görseller için inceleyin." />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.postacilar.com/postacilar-yakamoz" />
         <link rel="icon" href="/meta-logo.webp" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Postacılar Yapı" />
+        <meta property="og:title" content="POSTACILAR | YAKAMOZ" />
+        <meta property="og:description" content="Postacılar Yakamoz — Bursa'da doğayla iç içe, huzurlu bir yaşam sunan konut projesi. Proje detayları ve görseller için inceleyin." />
+        <meta property="og:url" content="https://www.postacilar.com/postacilar-yakamoz" />
+        <meta property="og:image" content="https://www.postacilar.com/yakamoz/outside/yakamoz-outside-1.webp" />
+        <meta property="og:locale" content="tr_TR" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="POSTACILAR | YAKAMOZ" />
+        <meta name="twitter:description" content="Postacılar Yakamoz — Bursa'da doğayla iç içe, huzurlu bir yaşam sunan konut projesi. Proje detayları ve görseller için inceleyin." />
+        <meta name="twitter:image" content="https://www.postacilar.com/yakamoz/outside/yakamoz-outside-1.webp" />
       </Head>
       <Header />
 
-      <div className="container-fluid detail-container">
-
-        {/* ── BAŞLIK ── */}
-        <div className="life-logo-section">
+      <div className="detail-hero">
+        <img src="/yakamoz/hero/yakamoz-hero.webp" className="detail-hero-bg" />
+        <div className="detail-hero-title">
           <div className="detail-title">
-            POSTACILAR <span className="detail-title-stick">|</span> YAKAMOZ
+            <img src="/postacilar-logo.png" className="hero-postacilar-logo" /> <span className="detail-title-stick">|</span> <span className="detail-title-name">YAKAMOZ</span>
           </div>
         </div>
+      </div>
 
-        {/* ── ROW 1: HAKKINDA ── */}
+      <div className="container-fluid detail-container">
+
+
         <div className="row life-about-row">
           <div className="col-12">
             <div className="detail-sub-title">
@@ -74,7 +90,7 @@ export default function PostacilarYakamoz() {
           </div>
         </div>
 
-        {/* ── ROW 2: PROJE DETAYLARI ── */}
+
         <div className="row life-about-row">
           <div className="col-12">
             <div className="detail-sub-title">
@@ -84,7 +100,7 @@ export default function PostacilarYakamoz() {
           </div>
         </div>
 
-        {/* ── GÖRSELLER ── */}
+
         <div className="life-interior-section">
           <div className="detail-sub-title">
             YAKAMOZ <span className="detail-sub-title-stick">|</span> <span className="detail-accent">{t('details.sections.visuals')}</span>
@@ -99,20 +115,23 @@ export default function PostacilarYakamoz() {
             </Swiper>
           </div>
           <div className="detail-mosaic-desktop images zoomable-img">
-            <div className="row align-items-end g-1">
-              <div className="col-7">
-                <img onClick={() => openModal(0)} width="100%" height="auto" src="/yakamoz/yakamoz2.webp" style={{cursor:"zoom-in", display:"block"}} />
+            <div className="row align-items-end g-4">
+              <div className="col-3">
+                <img onClick={() => openModal(0)} width="100%" height="auto" src="/yakamoz/outside/yakamoz-outside-1.webp" style={{cursor:"zoom-in", display:"block"}} loading="lazy" decoding="async" />
               </div>
               <div className="col-5">
-                <img onClick={() => openModal(1)} width="100%" height="auto" src="/yakamoz/yakamoz1.webp" style={{cursor:"zoom-in", display:"block"}} />
+                <img onClick={() => openModal(1)} width="100%" height="auto" src="/yakamoz/outside/yakamoz-outside-2.webp" style={{cursor:"zoom-in", display:"block"}} loading="lazy" decoding="async" />
+              </div>
+              <div className="col-4">
+                <img onClick={() => openModal(2)} width="100%" height="auto" src="/yakamoz/outside/yakamoz-outside-3.webp" style={{cursor:"zoom-in", display:"block"}} loading="lazy" decoding="async" />
               </div>
             </div>
-            <div className="row g-1 mt-1">
-              <div className="col-5">
-                <img onClick={() => openModal(2)} width="100%" height="auto" src="/yakamoz/yakamoz4.webp" style={{cursor:"zoom-in", display:"block"}} />
-              </div>
+            <div className="row g-4 mt-3">
               <div className="col-7">
-                <img onClick={() => openModal(3)} width="100%" height="auto" src="/yakamoz/yakamoz3.webp" style={{cursor:"zoom-in", display:"block"}} />
+                <img onClick={() => openModal(3)} width="100%" height="auto" src="/yakamoz/outside/yakamoz-outside-4.webp" style={{cursor:"zoom-in", display:"block"}} loading="lazy" decoding="async" />
+              </div>
+              <div className="col-5">
+                <img onClick={() => openModal(4)} width="100%" height="auto" src="/yakamoz/outside/yakamoz-outside-5.webp" style={{cursor:"zoom-in", display:"block"}} loading="lazy" decoding="async" />
               </div>
             </div>
           </div>

@@ -10,16 +10,27 @@ import { Navigation, Autoplay } from "swiper";
 import "swiper/css";
 
 const exteriorImages = [
-  "/life2/outside/1.webp","/life2/outside/2.webp","/life2/outside/3.webp",
-  "/life2/outside/4.webp","/life2/outside/5.webp","/life2/outside/6.webp",
-  "/life2/outside/7.webp",
+  "/life2/outside/life2-outside-1.webp","/life2/outside/life2-outside-2.webp",
+  "/life2/outside/life2-outside-3.webp","/life2/outside/life2-outside-4.webp",
+  "/life2/outside/life2-outside-5.webp","/life2/outside/life2-outside-6.webp",
+  "/life2/outside/life2-outside-7.webp",
 ];
 
 const interiorImages = [
-  "/life2/inside/1.webp","/life2/inside/2.webp","/life2/inside/3.webp",
-  "/life2/inside/4.webp","/life2/inside/5.webp","/life2/inside/6.webp",
-  "/life2/inside/7.webp","/life2/inside/8.webp","/life2/inside/9.webp",
-  "/life2/inside/10.webp","/life2/inside/11.webp","/life2/inside/12.webp",
+  "/life2/inside/life2-inside-1.webp","/life2/inside/life2-inside-2.webp",
+  "/life2/inside/life2-inside-3.webp","/life2/inside/life2-inside-4.webp",
+  "/life2/inside/life2-inside-5.webp","/life2/inside/life2-inside-6.webp",
+  "/life2/inside/life2-inside-7.webp","/life2/inside/life2-inside-8.webp",
+  "/life2/inside/life2-inside-9.webp","/life2/inside/life2-inside-10.webp",
+  "/life2/inside/life2-inside-11.webp","/life2/inside/life2-inside-12.webp",
+  "/life2/inside/life2-inside-13.webp","/life2/inside/life2-inside-14.webp",
+  "/life2/inside/life2-inside-15.webp",
+];
+
+const floorImages = [
+  "/life2/flats/life2-flats-1.webp",
+  "/life2/flats/life2-flats-2.webp",
+  "/life2/flats/life2-flats-3.webp",
 ];
 
 export default function PostacilarLife2() {
@@ -56,13 +67,26 @@ export default function PostacilarLife2() {
       )}
       <Head>
         <title>POSTACILAR | LIFE 2</title>
-        <meta name="description" content="Postacılar Yapı | Life 2 Evleri" />
+        <meta name="description" content="Postacılar Life 2 — Bursa'da satışı devam eden modern konut projesi. Dış cephe görselleri, iç tasarım ve daire tipleri için inceleyin." />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.postacilar.com/postacilar-life2" />
         <link rel="icon" href="/meta-logo.webp" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Postacılar Yapı" />
+        <meta property="og:title" content="POSTACILAR | LIFE 2" />
+        <meta property="og:description" content="Postacılar Life 2 — Bursa'da satışı devam eden modern konut projesi. Dış cephe görselleri, iç tasarım ve daire tipleri için inceleyin." />
+        <meta property="og:url" content="https://www.postacilar.com/postacilar-life2" />
+        <meta property="og:image" content="https://www.postacilar.com/life2/outside/life2-outside-1.webp" />
+        <meta property="og:locale" content="tr_TR" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="POSTACILAR | LIFE 2" />
+        <meta name="twitter:description" content="Postacılar Life 2 — Bursa'da satışı devam eden modern konut projesi. Dış cephe görselleri, iç tasarım ve daire tipleri için inceleyin." />
+        <meta name="twitter:image" content="https://www.postacilar.com/life2/outside/life2-outside-1.webp" />
       </Head>
       <Header />
 
       <div className="detail-hero">
-        <img src="/life2/outside/1.webp" className="detail-hero-bg" />
+        <img src="/life2/hero/life2-hero.webp" className="detail-hero-bg" />
         <div className="detail-hero-logo">
           <img src="/life2/postacilar-life2-logo.webp" />
         </div>
@@ -70,7 +94,7 @@ export default function PostacilarLife2() {
 
       <div className="container-fluid detail-container">
 
-        {/* ── ROW 1: HAKKINDA (full width) ── */}
+
         <div className="row life-about-row">
           <div className="col-12">
             <div className="detail-sub-title">
@@ -84,7 +108,7 @@ export default function PostacilarLife2() {
           </div>
         </div>
 
-        {/* ── ROW 2: PROJE DETAYLARI + DAİRE TİPLERİ ── */}
+
         <div className="row life-details-row">
           <div className="col-12 col-md-6 life-details-col">
             <div className="detail-sub-title">
@@ -107,14 +131,38 @@ export default function PostacilarLife2() {
               <span className="detail-sub-title-stick"><div>|</div></span>
               <span className="detail-accent">{t('details.sections.flatTypes')}</span>
             </div>
-            <div className="flat-types-inline">
-              {/* Görseller eklenecek */}
+            <div className="detail-swiper-mobile flat-types-swiper">
+              <Swiper modules={[Navigation, Autoplay]} navigation loop={true} autoplay={{ delay: 2800, disableOnInteraction: false }} speed={800} spaceBetween={8} slidesPerView={1}>
+                {floorImages.map((src, i) => (
+                  <SwiperSlide key={i}>
+                    <img onClick={() => openModal(floorImages, i)} src={src} style={{cursor:"zoom-in"}} />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+            <div className="flat-types-inline flat-types-desktop">
+              <div className="flat-inline-item">
+                <img onClick={() => openModal(floorImages, 0)} src="/life2/flats/life2-flats-1.webp" style={{cursor:"zoom-in"}} />
+              </div>
+              <div className="flat-inline-item">
+                <img onClick={() => openModal(floorImages, 1)} src="/life2/flats/life2-flats-2.webp" style={{cursor:"zoom-in"}} />
+              </div>
+              <div className="flat-inline-item">
+                <img onClick={() => openModal(floorImages, 2)} src="/life2/flats/life2-flats-3.webp" style={{cursor:"zoom-in"}} />
+              </div>
             </div>
           </div>
         </div>
 
-        {/* ── DIŞ GÖRÜNÜM SWİPER ── */}
+
         <div className="life-exterior-section">
+          <div className="detail-sub-title">
+            <div className="detail-title">
+              <div className="prestige-logo"><img src="/life2/life2-logo.webp" /></div>
+            </div>
+            <span className="detail-sub-title-stick"><div>|</div></span>
+            <span className="detail-accent">{t('details.sections.visuals')}</span>
+          </div>
           <Swiper
             modules={[Navigation, Autoplay]}
             navigation
@@ -143,7 +191,7 @@ export default function PostacilarLife2() {
           </Swiper>
         </div>
 
-        {/* ── İÇ TASARIM ── */}
+
         <div className="life-interior-section">
           <div className="detail-sub-title">
             <div className="detail-title">
@@ -162,28 +210,28 @@ export default function PostacilarLife2() {
             </Swiper>
           </div>
           <div className="detail-mosaic-desktop images zoomable-img">
-            {/* Grup 1: resimler 1-6 */}
+
             <div className="interior-group">
               <div className="row align-items-end g-4">
                 <div className="col-4">
-                  <img onClick={() => openModal(interiorImages, 0)} src="/life2/inside/1.webp" className="interior-mosaic-img" />
+                  <img onClick={() => openModal(interiorImages, 0)} src="/life2/inside/life2-inside-1.webp" className="interior-mosaic-img" loading="lazy" decoding="async" />
                 </div>
                 <div className="col-3">
-                  <img onClick={() => openModal(interiorImages, 1)} src="/life2/inside/2.webp" className="interior-mosaic-img" />
+                  <img onClick={() => openModal(interiorImages, 1)} src="/life2/inside/life2-inside-2.webp" className="interior-mosaic-img" loading="lazy" decoding="async" />
                 </div>
                 <div className="col-5">
-                  <img onClick={() => openModal(interiorImages, 2)} src="/life2/inside/3.webp" className="interior-mosaic-img" />
+                  <img onClick={() => openModal(interiorImages, 2)} src="/life2/inside/life2-inside-3.webp" className="interior-mosaic-img" loading="lazy" decoding="async" />
                 </div>
               </div>
               <div className="row g-4 mt-3">
                 <div className="col-3">
-                  <img onClick={() => openModal(interiorImages, 3)} src="/life2/inside/4.webp" className="interior-mosaic-img" />
+                  <img onClick={() => openModal(interiorImages, 3)} src="/life2/inside/life2-inside-4.webp" className="interior-mosaic-img" loading="lazy" decoding="async" />
                 </div>
                 <div className="col-5">
-                  <img onClick={() => openModal(interiorImages, 4)} src="/life2/inside/5.webp" className="interior-mosaic-img" />
+                  <img onClick={() => openModal(interiorImages, 4)} src="/life2/inside/life2-inside-5.webp" className="interior-mosaic-img" loading="lazy" decoding="async" />
                 </div>
                 <div className="col-4">
-                  <img onClick={() => openModal(interiorImages, 5)} src="/life2/inside/6.webp" className="interior-mosaic-img" />
+                  <img onClick={() => openModal(interiorImages, 5)} src="/life2/inside/life2-inside-6.webp" className="interior-mosaic-img" loading="lazy" decoding="async" />
                 </div>
               </div>
             </div>

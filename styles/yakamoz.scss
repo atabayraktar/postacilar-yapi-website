@@ -1,3 +1,11 @@
+@media (max-width: 768px) {
+  .detail-hero-title .detail-title {
+    font-size: clamp(20px, 6.5vw, 30px);
+    .detail-title-stick { font-size: clamp(20px, 6.5vw, 30px) !important; }
+  }
+  .hero-postacilar-logo { height: clamp(20px, 6.5vw, 30px) !important; }
+}
+
 .yakamoz-right-col {
     margin-top: 50px;
     @media only screen and (max-width: 768px) {

@@ -19,8 +19,21 @@ export default function Home() {
     <div>
       <Head>
         <title>POSTACILAR | YAPI</title>
-        <meta name="description" content="Postacılar Yapı web sitesi" />
+        <meta name="description" content="Postacılar Yapı — Bursa'nın güvenilir konut geliştiricisi. Life, Life 2, Prestige, Nova, Yakamoz ve daha fazla projeyi keşfedin." />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.postacilar.com" />
         <link rel="icon" href="/meta-logo.webp" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Postacılar Yapı" />
+        <meta property="og:title" content="POSTACILAR | YAPI" />
+        <meta property="og:description" content="Postacılar Yapı — Bursa'nın güvenilir konut geliştiricisi. Life, Life 2, Prestige, Nova, Yakamoz ve daha fazla projeyi keşfedin." />
+        <meta property="og:url" content="https://www.postacilar.com" />
+        <meta property="og:image" content="https://www.postacilar.com/logo.webp" />
+        <meta property="og:locale" content="tr_TR" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="POSTACILAR | YAPI" />
+        <meta name="twitter:description" content="Postacılar Yapı — Bursa'nın güvenilir konut geliştiricisi. Life, Life 2, Prestige, Nova, Yakamoz ve daha fazla projeyi keşfedin." />
+        <meta name="twitter:image" content="https://www.postacilar.com/logo.webp" />
       </Head>
       <Header refs={[projectsSectionRef, contactSectionRef, aboutUsSectionRef]} />
       <BigLogo />

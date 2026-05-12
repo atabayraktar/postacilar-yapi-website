@@ -1,4 +1,6 @@
 module.exports = {
   reactStrictMode: true,
-  trailingSlash: true
+  trailingSlash: true,
+  swcMinify: true,
+  compress: true,
 }

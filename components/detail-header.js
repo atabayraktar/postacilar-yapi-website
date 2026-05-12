@@ -13,7 +13,7 @@ export default function Header() {
                     </div>
                     <Nav className="ms-auto header">
                         <Nav.Link href="/#hakkimizda">Hakkımızda</Nav.Link>
-                        <Nav.Link href="/#projeler">Projeler</Nav.Link>
+                        <Nav.Link href="/projelerimiz">Projeler</Nav.Link>
                         <Nav.Link href="/#iletisim">İletişim</Nav.Link>
                     </Nav>
                 </div>

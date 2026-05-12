@@ -17,7 +17,7 @@ export default function Projects({ projectsRef }) {
                 <span className="project-badge">{t('projects.badge')}</span>
                 <Link href="/postacilar-life2">
                   <a>
-                    <img src="/homepage-rectangle-images/life-2.webp" />
+                    <img src="/homepage-projects/life-2.webp" loading="lazy" decoding="async" />
                   </a>
                 </Link>
               </div>
@@ -25,40 +25,24 @@ export default function Projects({ projectsRef }) {
                 <span className="project-badge">{t('projects.badge')}</span>
                 <Link href="/postacilar-life">
                   <a>
-                    <img src="/homepage-rectangle-images/life-1.webp" />
+                    <img src="/homepage-projects/life-1.webp" loading="lazy" decoding="async" />
                   </a>
                 </Link>
               </div>
               <div className="col-3 img-container-main-project fadding-photo">
                 <Link href="/postacilar-nova">
                   <a>
-                    <img src="/homepage-rectangle-images/nova.webp" />
+                    <img src="/homepage-projects/nova.webp" loading="lazy" decoding="async" />
                   </a>
                 </Link>
               </div>
               <div className="col-3 img-container-main-project fadding-photo">
                 <Link href="/postacilar-prestige">
                   <a>
-                    <img src="/homepage-rectangle-images/prestige.webp" />
+                    <img src="/homepage-projects/prestige.webp" loading="lazy" decoding="async" />
                   </a>
                 </Link>
               </div>
-              {/* <div className="col-3 img-container-projects">
-                                <div className="fadding-photo">
-                                    <Link href="/postacilar-nova">
-                                        <a>
-                                            <img src="/nova/nova_slides_1.webp" />
-                                        </a>
-                                    </Link>
-                                </div>
-                                <div className="img-container-projects-bottom fadding-photo">
-                                    <Link href="/postacilar-prestige">
-                                        <a>
-                                            <img src="/prestige/prestige_slide_2.webp" />
-                                        </a>
-                                    </Link>
-                                </div> */}
-              {/* </div> */}
             </div>
             <div className="view-more-button">
               <Link href="/projelerimiz">
@@ -79,7 +63,7 @@ export default function Projects({ projectsRef }) {
                 <span className="project-badge">{t('projects.badge')}</span>
                 <Link href="/postacilar-life2">
                   <a>
-                    <img src="/homepage-rectangle-images/life-2.webp" />
+                    <img src="/homepage-projects/life-2.webp" loading="lazy" decoding="async" />
                   </a>
                 </Link>
               </div>
@@ -87,21 +71,21 @@ export default function Projects({ projectsRef }) {
                 <span className="project-badge">{t('projects.badge')}</span>
                 <Link href="/postacilar-life">
                   <a>
-                    <img src="/homepage-rectangle-images/life-1.webp" />
+                    <img src="/homepage-projects/life-1.webp" loading="lazy" decoding="async" />
                   </a>
                 </Link>
               </div>
               <div className="col-3 img-container-main-project fadding-photo">
                 <Link href="/postacilar-nova">
                   <a>
-                    <img src="/homepage-rectangle-images/nova.webp" />
+                    <img src="/homepage-projects/nova.webp" loading="lazy" decoding="async" />
                   </a>
                 </Link>
               </div>
               <div className="col-3 img-container-main-project fadding-photo">
                 <Link href="/postacilar-prestige">
                   <a>
-                    <img src="/homepage-rectangle-images/prestige.webp" />
+                    <img src="/homepage-projects/prestige.webp" loading="lazy" decoding="async" />
                   </a>
                 </Link>
               </div>

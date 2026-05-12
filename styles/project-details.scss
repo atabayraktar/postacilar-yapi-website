@@ -72,6 +72,9 @@
             font-size: 70px!important;
         }
     }
+    &-name {
+        font-weight: 400;
+    }
     @media only screen and (max-width: 768px) {
         font-size: 28px;
         justify-content: center;

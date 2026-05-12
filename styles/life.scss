@@ -1,5 +1,7 @@
 .flat-types-desktop {
-  @media (max-width: 768px) { display: none; }
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .flat-types-swiper {
@@ -55,7 +57,7 @@
 
     .detail-title {
       justify-content: center;
-      font-size: 121px;
+      font-size: 80px;
       letter-spacing: 10px;
       font-weight: 400;
       gap: 20px;
@@ -121,14 +123,14 @@ $row-gap: 112px;
 
 .life-floor-col {
   padding-left: 40px;
-  border-left: 1px solid rgba(184,151,126,0.2);
+  border-left: 1px solid rgba(184, 151, 126, 0.2);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   @media only screen and (max-width: 768px) {
     padding-left: 12px;
     border-left: none;
-    border-top: 1px solid rgba(184,151,126,0.2);
+    border-top: 1px solid rgba(184, 151, 126, 0.2);
     padding-top: 40px;
     align-items: flex-start;
   }
@@ -138,7 +140,9 @@ $row-gap: 112px;
   display: flex;
   gap: 8px;
   align-items: stretch;
-  @media (max-width: 768px) { display: none; }
+  @media (max-width: 768px) {
+    display: none;
+  }
 
   .flat-inline-item {
     flex: 1 1 0;
@@ -177,7 +181,9 @@ $row-gap: 112px;
 
   @media (max-width: 576px) {
     flex-wrap: wrap;
-    .flat-inline-item { flex: 1 1 45%; }
+    .flat-inline-item {
+      flex: 1 1 45%;
+    }
   }
 }
 
@@ -194,8 +200,9 @@ $row-gap: 112px;
       cursor: zoom-in;
       transform: scale(1);
       opacity: 1;
-      transition: transform 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-                  opacity  0.75s ease;
+      transition:
+        transform 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        opacity 0.75s ease;
     }
     // Sağa çekerken: soldaki giren slide (swiper-slide-prev → active geçişi)
     &.swiper-slide-prev .swiper-exterior-img {
@@ -211,7 +218,9 @@ $row-gap: 112px;
   .swiper-button-next,
   .swiper-button-prev {
     color: #1a1a1a !important;
-    &::after { font-size: 20px; }
+    &::after {
+      font-size: 20px;
+    }
   }
 }
 
@@ -220,14 +229,33 @@ $row-gap: 112px;
   width: 100%;
   object-fit: cover;
   cursor: zoom-in;
-  &--h1 { height: 275px; }
-  &--h2 { height: 195px; }
-  &--h3 { height: 245px; }
-  &--h4 { height: 180px; }
-  &--h5 { height: 250px; }
-  &--h6 { height: 215px; }
+  &--h1 {
+    height: 275px;
+  }
+  &--h2 {
+    height: 195px;
+  }
+  &--h3 {
+    height: 245px;
+  }
+  &--h4 {
+    height: 180px;
+  }
+  &--h5 {
+    height: 250px;
+  }
+  &--h6 {
+    height: 215px;
+  }
   @media only screen and (max-width: 768px) {
-    &--h1, &--h2, &--h3, &--h4, &--h5, &--h6 { height: 150px; }
+    &--h1,
+    &--h2,
+    &--h3,
+    &--h4,
+    &--h5,
+    &--h6 {
+      height: 150px;
+    }
   }
 }
 
@@ -248,65 +276,75 @@ $row-gap: 112px;
 }
 
 .flat-types {
-    cursor: zoom-in;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap-reverse;
-    .corner {
-        @media only screen and (max-width: 768px) {
-            display: none;
-        }
-        img {
-            width: 150px;
-        }
+  cursor: zoom-in;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+  .corner {
+    @media only screen and (max-width: 768px) {
+      display: none;
     }
-    .middle {
-        img {
-            width: 345px;
-        }
+    img {
+      width: 150px;
     }
-    .responsive {
-        display: none;
-        @media only screen and (max-width: 768px) {
-            display: block;
-        }
+  }
+  .middle {
+    img {
+      width: 345px;
     }
+  }
+  .responsive {
+    display: none;
+    @media only screen and (max-width: 768px) {
+      display: block;
+    }
+  }
 }
 @media only screen and (max-width: 768px) {
-    .prestige-bottom-part-second-row {
-        padding: 0;
-    }
+  .prestige-bottom-part-second-row {
+    padding: 0;
+  }
 }
 .life2-container-mobile {
-    display: flex;
-    @media only screen and (max-width: 820px) {
-        display: none;
-    }
+  display: flex;
+  @media only screen and (max-width: 820px) {
+    display: none;
+  }
 }
 .life2-container-desktop {
-    display: none;
-    @media only screen and (max-width: 820px) {
-        display: block;
-    }
+  display: none;
+  @media only screen and (max-width: 820px) {
+    display: block;
+  }
 }
 
 .life2-swiper-desktop {
-    margin-left: 50px;
-    width: 345px;
-    cursor: zoom-in;
-    @media only screen and (max-width: 820px) {
-        margin-left: 0;
-        width: 325px;
-    }
+  margin-left: 50px;
+  width: 345px;
+  cursor: zoom-in;
+  @media only screen and (max-width: 820px) {
+    margin-left: 0;
+    width: 325px;
+  }
 }
 
 // Mobile padding overrides for detail pages
 @media only screen and (max-width: 768px) {
-  .life-logo-section { padding: 28px 0 20px; }
-  .life-about-row { padding-bottom: 44px; }
-  .life-details-row { padding-bottom: 44px; }
-  .life-exterior-section { padding: 12px 0 44px; }
-  .life-interior-section { padding: 0 0 44px; }
+  .life-logo-section {
+    padding: 28px 0 20px;
+  }
+  .life-about-row {
+    padding-bottom: 44px;
+  }
+  .life-details-row {
+    padding-bottom: 44px;
+  }
+  .life-exterior-section {
+    padding: 12px 0 44px;
+  }
+  .life-interior-section {
+    padding: 0 0 44px;
+  }
 }
 
 .images-inline-grid {
@@ -338,15 +376,21 @@ $row-gap: 112px;
       pointer-events: none;
     }
 
-    &:hover::after { opacity: 1; }
-    &:hover img { transform: scale(1.03); }
+    &:hover::after {
+      opacity: 1;
+    }
+    &:hover img {
+      transform: scale(1.03);
+    }
   }
 }
 
 // Show/hide helpers for mobile swiper vs desktop mosaic
 .detail-mosaic-desktop {
   margin-top: 24px;
-  @media only screen and (max-width: 768px) { display: none; }
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 
   .mt-2 {
     margin-top: 0.1rem !important;
@@ -379,8 +423,12 @@ $row-gap: 112px;
       pointer-events: none;
     }
 
-    &:hover::after { opacity: 1; }
-    &:hover img { transform: scale(1.03); }
+    &:hover::after {
+      opacity: 1;
+    }
+    &:hover img {
+      transform: scale(1.03);
+    }
   }
 }
 .detail-swiper-mobile {
@@ -393,7 +441,9 @@ $row-gap: 112px;
   .swiper-button-next,
   .swiper-button-prev {
     color: #1a1a1a !important;
-    &::after { font-size: 18px; }
+    &::after {
+      font-size: 18px;
+    }
   }
   .swiper-slide {
     overflow: hidden;
@@ -405,8 +455,9 @@ $row-gap: 112px;
       cursor: zoom-in;
       transform: scale(1);
       opacity: 1;
-      transition: transform 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-                  opacity  0.75s ease;
+      transition:
+        transform 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        opacity 0.75s ease;
     }
     &.swiper-slide-prev img {
       transform: scale(0.9);

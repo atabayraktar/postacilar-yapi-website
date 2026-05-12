@@ -69,7 +69,7 @@ export default function PostacilarNilufer() {
       <Header />
 
       <div className="detail-hero">
-        <img src="/nilufer/hero/nilüfer-hero.webp" className="detail-hero-bg" />
+        <img src="/nilufer/hero/nilufer-hero.webp" className="detail-hero-bg" />
         <div className="detail-hero-title">
           <div className="detail-title">
             <img src="/postacilar-logo.png" className="hero-postacilar-logo" /> <span className="detail-title-stick">|</span> <span className="detail-title-name">NİLÜFER</span>

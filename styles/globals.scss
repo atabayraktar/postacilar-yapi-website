@@ -93,6 +93,19 @@
 @import "./about-us.scss";
 @import "./life.scss";
 
+.detail-hero-title .detail-title-name {
+  display: inline-block !important;
+  height: 121px !important;
+  line-height: 121px !important;
+  font-size: 80px !important;
+  @media only screen and (max-width: 768px) {
+    display: inline !important;
+    height: auto !important;
+    line-height: 1.2 !important;
+    font-size: 22px !important;
+  }
+}
+
 // Contact map rows
 .contact-map-row {
   display: flex;

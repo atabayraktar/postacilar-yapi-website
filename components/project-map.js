@@ -25,17 +25,17 @@ export default function ProjectMap({ contactRef }) {
                 </div>
                 <div className="about-us-description contact-map-row">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" style={{flexShrink:0}}><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                  <a href="mailto:info@postacilar.com" className="contact-map-tel">info@postacilar.com</a>
+                  <a href="mailto:postacilaryapi@gmail.com" className="contact-map-tel">postacilaryapi@gmail.com</a>
                 </div>
                 <div className="about-us-description contact-map-row">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" style={{flexShrink:0}}><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                   <a href="https://maps.app.goo.gl/ugeuPEsAEyDYze8h6" target="_blank" rel="noopener noreferrer" className="contact-map-tel">Namık Kemal Mah. Sakızlı Çeşme Sokak No: 68 Çanakkale / Merkez</a>
                 </div>
                 <div className="contact-map-socials">
-                  <a href="#" aria-label="Instagram" className="contact-map-social-link">
+                  <a href="https://www.instagram.com/postacilaryapi/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="contact-map-social-link">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
                   </a>
-                  <a href="#" aria-label="Facebook" className="contact-map-social-link">
+                  <a href="https://www.facebook.com/postacilar/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="contact-map-social-link">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
                   </a>
                   <a href="https://wa.me/905316562909" aria-label="WhatsApp" className="contact-map-social-link">
@@ -65,7 +65,7 @@ export default function ProjectMap({ contactRef }) {
             </div>
             <div className="about-us-description contact-map-row">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" style={{flexShrink:0,color:"#b8977e"}}><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              <a href="mailto:info@postacilar.com" className="contact-map-tel">info@postacilar.com</a>
+              <a href="mailto:postacilaryapi@gmail.com" className="contact-map-tel">postacilaryapi@gmail.com</a>
             </div>
             <div className="about-us-description contact-map-row">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" style={{flexShrink:0,color:"#b8977e"}}><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>

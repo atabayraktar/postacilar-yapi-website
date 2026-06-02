@@ -1,6 +1,13 @@
 import Head from "next/head";
+import { useEffect } from "react";
 
 export default function NipKatalog() {
+  useEffect(() => {
+    if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+      window.location.replace("/nip-katalog.pdf");
+    }
+  }, []);
+
   return (
     <>
       <Head>

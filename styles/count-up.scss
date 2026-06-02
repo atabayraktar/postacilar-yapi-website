@@ -16,7 +16,7 @@
         justify-content: space-between;
         gap:10px;
         img {
-            filter: brightness(0) saturate(100%) invert(75%) sepia(30%) saturate(600%) hue-rotate(330deg) brightness(105%) contrast(85%);
+            filter: brightness(0) saturate(100%) invert(48%) sepia(28%) saturate(500%) hue-rotate(345deg) brightness(90%) contrast(90%);
         }
         @media only screen and (max-width: 991px) {
             justify-content: flex-start;
@@ -35,11 +35,11 @@
         &-title{
             font-size: 12px;
             margin-bottom: 0px;
-            color: #b8977e;
+            color: #8c6d54;
         }
         &-value{
             font-size: 30px;
-            color: #b8977e;
+            color: #8c6d54;
         }
     }
 }

@@ -10,6 +10,7 @@ import { Navigation, Autoplay } from "swiper";
 import "swiper/css";
 
 const exteriorImages = [
+  "/nova/hero/nova-hero.webp",
   "/nova/outside/nova-outside-1.webp",
   "/nova/outside/nova-outside-2.webp",
 ];
@@ -70,7 +71,7 @@ export default function PostacilarNova() {
         <img src="/nova/hero/nova-hero.webp" className="detail-hero-bg" />
         <div className="detail-hero-title">
           <div className="detail-title">
-            <img src="/postacilar-logo.png" className="hero-postacilar-logo" /> <span className="detail-title-stick">|</span> <span className="detail-title-name">NOVA</span>
+            <img src="/postacilar-logo.png" className="hero-postacilar-logo" /> <span className="detail-title-stick">|</span> <span className="detail-title-name" style={{marginRight: '-5px'}}>NOVA</span>
           </div>
         </div>
       </div>

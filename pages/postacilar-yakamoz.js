@@ -10,6 +10,7 @@ import { Navigation, Autoplay } from "swiper";
 import "swiper/css";
 
 const images = [
+  "/yakamoz/hero/yakamoz-hero.webp",
   "/yakamoz/outside/yakamoz-outside-1.webp",
   "/yakamoz/outside/yakamoz-outside-2.webp",
   "/yakamoz/outside/yakamoz-outside-3.webp",
@@ -73,7 +74,7 @@ export default function PostacilarYakamoz() {
         <img src="/yakamoz/hero/yakamoz-hero.webp" className="detail-hero-bg" />
         <div className="detail-hero-title">
           <div className="detail-title">
-            <img src="/postacilar-logo.png" className="hero-postacilar-logo" /> <span className="detail-title-stick">|</span> <span className="detail-title-name">YAKAMOZ</span>
+            <img src="/postacilar-logo.png" className="hero-postacilar-logo" /> <span className="detail-title-stick">|</span> <span className="detail-title-name" style={{marginRight: '-5px'}}>YAKAMOZ</span>
           </div>
         </div>
       </div>

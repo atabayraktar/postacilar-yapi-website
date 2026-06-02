@@ -6,17 +6,19 @@ export default function AllProjects() {
 
   return (
     <>
-      <div className="container">
+      <div className="container" id="projelerimiz-page">
         <div className="">
           <div className="component-container-last-item">
             <div className="about-us-title">Projelerimiz</div>
             <div className="row">
               <div className="col-md-4 col-6 img-container-projects fadding-photo" style={{position:'relative'}}>
-                <span className="project-badge">Satışı Devam Ediyor</span>
+                <span className="project-badge badge-desktop">SATIŞI DEVAM EDİYOR</span>
+                <span className="project-badge badge-mobile">SATIŞTA</span>
                 <img onClick={() => router.push("/postacilar-life2")} src="/life2/outside/life2-outside-1.webp" loading="lazy" decoding="async" />
               </div>
               <div className="col-md-4 col-6 img-container-projects fadding-photo" style={{position:'relative'}}>
-                <span className="project-badge">Satışı Devam Ediyor</span>
+                <span className="project-badge badge-desktop">SATIŞI DEVAM EDİYOR</span>
+                <span className="project-badge badge-mobile">SATIŞTA</span>
                 <img onClick={() => router.push("/postacilar-life")} src="/life/outside/life-outside-1.webp" loading="lazy" decoding="async" />
               </div>
               <div className="col-md-4 col-6 img-container-projects fadding-photo">

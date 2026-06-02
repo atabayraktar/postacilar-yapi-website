@@ -10,6 +10,7 @@ import { Navigation, Autoplay } from "swiper";
 import "swiper/css";
 
 const exteriorImages = [
+  "/life2/hero/life2-hero.webp",
   "/life2/outside/life2-outside-1.webp","/life2/outside/life2-outside-2.webp",
   "/life2/outside/life2-outside-3.webp","/life2/outside/life2-outside-4.webp",
   "/life2/outside/life2-outside-5.webp","/life2/outside/life2-outside-6.webp",

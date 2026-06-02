@@ -10,6 +10,7 @@ import { Navigation, Autoplay } from "swiper";
 import "swiper/css";
 
 const images = [
+  "/nilufer/hero/nilufer-hero.webp",
   "/nilufer/outside/nilufer-outside-1.webp",
   "/nilufer/outside/nilufer-outside-2.webp",
   "/nilufer/outside/nilufer-outside-3.webp",
@@ -72,7 +73,7 @@ export default function PostacilarNilufer() {
         <img src="/nilufer/hero/nilufer-hero.webp" className="detail-hero-bg" />
         <div className="detail-hero-title">
           <div className="detail-title">
-            <img src="/postacilar-logo.png" className="hero-postacilar-logo" /> <span className="detail-title-stick">|</span> <span className="detail-title-name">NİLÜFER</span>
+            <img src="/postacilar-logo.png" className="hero-postacilar-logo" /> <span className="detail-title-stick">|</span> <span className="detail-title-name" style={{marginRight: '-5px'}}>NİLÜFER</span>
           </div>
         </div>
       </div>

@@ -14,7 +14,7 @@ export default function Projects({ projectsRef }) {
             <div className="about-us-title">{t('projects.title')}</div>
             <div className="row">
               <div className="col-3 img-container-main-project fadding-photo" style={{position:'relative'}}>
-                <span className="project-badge">{t('projects.badge')}</span>
+                <span className="project-badge">SATIŞI DEVAM EDİYOR</span>
                 <Link href="/postacilar-life2">
                   <a>
                     <img src="/homepage-projects/life-2.webp" loading="lazy" decoding="async" />
@@ -22,7 +22,7 @@ export default function Projects({ projectsRef }) {
                 </Link>
               </div>
               <div className="col-3 img-container-main-project fadding-photo" style={{position:'relative'}}>
-                <span className="project-badge">{t('projects.badge')}</span>
+                <span className="project-badge">SATIŞI DEVAM EDİYOR</span>
                 <Link href="/postacilar-life">
                   <a>
                     <img src="/homepage-projects/life-1.webp" loading="lazy" decoding="async" />
@@ -60,7 +60,7 @@ export default function Projects({ projectsRef }) {
             <div className="about-us-title">{t('projects.title')}</div>
             <div className="row">
               <div className="col-3 img-container-main-project fadding-photo" style={{position:'relative'}}>
-                <span className="project-badge">{t('projects.badge')}</span>
+                <span className="project-badge">SATIŞTA</span>
                 <Link href="/postacilar-life2">
                   <a>
                     <img src="/homepage-projects/life-2.webp" loading="lazy" decoding="async" />
@@ -68,7 +68,7 @@ export default function Projects({ projectsRef }) {
                 </Link>
               </div>
               <div className="col-3 img-container-main-project fadding-photo" style={{position:'relative'}}>
-                <span className="project-badge">{t('projects.badge')}</span>
+                <span className="project-badge">SATIŞTA</span>
                 <Link href="/postacilar-life">
                   <a>
                     <img src="/homepage-projects/life-1.webp" loading="lazy" decoding="async" />

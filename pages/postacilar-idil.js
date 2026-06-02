@@ -10,6 +10,7 @@ import { Navigation, Autoplay } from "swiper";
 import "swiper/css";
 
 const images = [
+  "/idil/hero/idil-hero.webp",
   "/idil/outside/idil-outside-1.webp",
   "/idil/outside/idil-outside-2.webp",
   "/idil/outside/idil-outside-3.webp",
@@ -72,7 +73,7 @@ export default function PostacilarIdil() {
         <img src="/idil/hero/idil-hero.webp" className="detail-hero-bg" />
         <div className="detail-hero-title">
           <div className="detail-title">
-            <img src="/postacilar-logo.png" className="hero-postacilar-logo" /> <span className="detail-title-stick">|</span> <span className="detail-title-name">İDİL</span>
+            <img src="/postacilar-logo.png" className="hero-postacilar-logo" /> <span className="detail-title-stick">|</span> <span className="detail-title-name" style={{marginRight: '-5px'}}>İDİL</span>
           </div>
         </div>
       </div>

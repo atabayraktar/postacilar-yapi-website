@@ -15,7 +15,7 @@ const Mapx = () => {
     const mapFilter = isLight
         ? "sepia(0.5) hue-rotate(320deg) saturate(0.7) brightness(0.97)"
         : "sepia(0.55) hue-rotate(320deg) saturate(1.1) brightness(1.1)";
-    const pinFill = isLight ? '#b8977e' : '#1a1a1a';
+    const pinFill = isLight ? '#8c6d54' : '#1a1a1a';
     const pinStroke = isLight ? '#8a6a58' : '#555';
     const pinCenter = isLight ? '#fff' : '#888';
     const icon = L.divIcon({

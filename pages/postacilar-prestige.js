@@ -10,6 +10,7 @@ import { Navigation, Autoplay } from "swiper";
 import "swiper/css";
 
 const exteriorImages = [
+  "/prestige/hero/prestige-hero.webp",
   "/prestige/outside/prestige-outside-1.webp",
   "/prestige/outside/prestige-outside-2.webp",
   "/prestige/outside/prestige-outside-3.webp",

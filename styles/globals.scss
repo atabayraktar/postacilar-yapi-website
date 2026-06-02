@@ -1,4 +1,4 @@
-
+﻿
 // ─── CSS Variables: theme tokens ───────────────────────────────────────
 :root {
   --bg-main: #1f1e1e;
@@ -15,11 +15,11 @@
 }
 
 [data-theme="light"] {
-  --bg-main: #f2f4f7;
-  --bg-alt: #e8ebf0;
-  --bg-counter: #dde1e8;
-  --bg-nav: #f2f4f7;
-  --bg-footer: #f2f4f7;
+  --bg-main: #e6e9ef;
+  --bg-alt: #dce0e8;
+  --bg-counter: #dde0e8;
+  --bg-nav: #e6e9ef;
+  --bg-footer: #e6e9ef;
   --text-primary: #2a2d34;
   --text-secondary: #666;
   --text-title: #1e2025;
@@ -36,23 +36,37 @@
 
   .count-up-number-value,
   .count-up-number-title {
-    color: #b8977e !important;
+    color: #8c6d54 !important;
+  }
+
+  .catalog-btn,
+  .contact-map-form-btn,
+  .view-more-button .btn,
+  .sticky-contact,
+  .scroll-to-top,
+  .contact-modal button[type="submit"] {
+    color: #fff !important;
   }
 
   .contact-map-form-btn:hover {
     background-color: var(--bg-main) !important;
+    color: #8c6d54 !important;
   }
   .view-more-button .btn:hover {
     background-color: var(--bg-main) !important;
+    color: #8c6d54 !important;
   }
   .scroll-to-top:hover {
     background-color: var(--bg-main) !important;
+    color: #8c6d54 !important;
   }
   .sticky-contact:hover {
     background-color: var(--bg-main) !important;
+    color: #8c6d54 !important;
   }
   .contact-modal button[type="submit"]:hover {
     background-color: var(--bg-main) !important;
+    color: #8c6d54 !important;
   }
 
   // Detail pages
@@ -73,7 +87,12 @@
   .detail-accent,
   .detail-title .detail-accent,
   .detail-sub-title .detail-accent {
-    color: #b8977e !important;
+    color: #8c6d54 !important;
+    font-weight: 450;
+  }
+
+  .project-badge {
+    color: #fff;
   }
 
   .postacilar-life-logo img,
@@ -128,7 +147,7 @@
   text-decoration: none;
   transition: color 0.2s;
   &:hover {
-    color: #b8977e;
+    color: #8c6d54;
   }
 }
 
@@ -141,9 +160,9 @@
 .catalog-btn {
   display: inline-block;
   margin-top: 24px;
-  background: #b8977e;
+  background: #8c6d54;
   color: #1a1a1a;
-  border: 2px solid #b8977e;
+  border: 2px solid #8c6d54;
   border-radius: 0;
   padding: 12px 32px;
   font-size: 14px;
@@ -158,19 +177,20 @@
 
   &:hover {
     background-color: transparent;
-    color: #b8977e;
+    color: #8c6d54;
   }
 }
 
 [data-theme="light"] .catalog-btn:hover {
   background-color: var(--bg-main) !important;
+  color: #8c6d54 !important;
 }
 
 .contact-map-form-btn {
   margin-top: 28px;
-  background: #b8977e;
+  background: #8c6d54;
   color: #1a1a1a;
-  border: 2px solid #b8977e;
+  border: 2px solid #8c6d54;
   border-radius: 0;
   padding: 14px 36px;
   font-size: 15px;
@@ -184,8 +204,8 @@
 
   &:hover {
     background: transparent;
-    color: #b8977e;
-    border-color: #b8977e;
+    color: #8c6d54;
+    border-color: #8c6d54;
   }
   &:active {
     opacity: 0.85;
@@ -203,7 +223,7 @@
     height: 22px;
   }
   &:hover {
-    color: #b8977e;
+    color: #8c6d54;
   }
 }
 
@@ -227,7 +247,7 @@
   svg {
     flex-shrink: 0;
     margin-top: 2px;
-    color: #b8977e;
+    color: #8c6d54;
   }
 }
 
@@ -287,11 +307,11 @@
       transition: color 0.2s;
 
       &.active {
-        color: #b8977e;
+        color: #8c6d54;
         font-weight: 600;
       }
       &:hover {
-        color: #b8977e;
+        color: #8c6d54;
       }
     }
 
@@ -311,7 +331,7 @@
     align-items: center;
     transition: color 0.2s;
     &:hover {
-      color: #b8977e;
+      color: #8c6d54;
     }
   }
 
@@ -322,7 +342,7 @@
     text-decoration: none;
     transition: color 0.2s;
     &:hover {
-      color: #b8977e;
+      color: #8c6d54;
     }
   }
 }
@@ -351,7 +371,7 @@
   &-copy {
     flex: 1;
     text-align: center;
-    color: #b8977e;
+    color: #8c6d54;
     font-size: 13px;
     letter-spacing: 0.04em;
   }
@@ -388,7 +408,7 @@
   text-decoration: none;
   transition: color 0.2s;
   &:hover {
-    color: #b8977e;
+    color: #8c6d54;
   }
 }
 
@@ -476,27 +496,28 @@ body {
   .contact-map-tel {
     color: var(--text-primary);
     &:hover {
-      color: #b8977e;
+      color: #8c6d54;
     }
   }
   .contact-map-social-link {
     color: var(--text-secondary);
     &:hover {
-      color: #b8977e;
+      color: #8c6d54;
     }
   }
   .contact-map-form-btn {
-    background: #b8977e;
+    background: #8c6d54;
     color: #1a1a1a;
-    border: 2px solid #b8977e;
+    border: 2px solid #8c6d54;
     &:hover {
       background: transparent;
-      color: #b8977e;
+      color: #8c6d54;
     }
   }
 }
 .about-us-title {
-  color: #b8977e !important;
+  color: #8c6d54 !important;
+  font-weight: 450;
   margin-bottom: 32px;
   @media only screen and (max-width: 768px) {
     margin-bottom: 20px;
@@ -534,7 +555,7 @@ body {
       left: 50%;
       right: 50%;
       height: 1px;
-      background: #b8977e;
+      background: #8c6d54;
       transition:
         left 0.25s ease,
         right 0.25s ease,
@@ -543,7 +564,7 @@ body {
     }
 
     &:hover {
-      color: #b8977e !important;
+      color: #8c6d54 !important;
       &::after {
         left: 8px;
         right: 8px;
@@ -653,17 +674,17 @@ body {
     @extend .about-us-logo;
     width: 100%;
     height: auto;
-    filter: brightness(0) saturate(100%) invert(75%) sepia(30%) saturate(600%) hue-rotate(330deg) brightness(105%) contrast(85%);
+    filter: brightness(0) saturate(100%) invert(48%) sepia(28%) saturate(500%) hue-rotate(345deg) brightness(90%) contrast(90%);
   }
   &-description {
     font-size: 22px;
     font-family: "Montserrat", sans-serif;
-    color: #b8977e !important;
+    color: #8c6d54 !important;
     text-align: center;
     @media only screen and (max-width: 991px) {
       font-size: 15px;
       font-family: "Montserrat", sans-serif;
-      color: #b8977e !important;
+      color: #8c6d54 !important;
       text-align: center;
     }
   }
@@ -1011,9 +1032,9 @@ body {
   margin-top: 32px;
 
   .btn {
-    background-color: #b8977e !important;
+    background-color: #8c6d54 !important;
     color: #1a1a1a !important;
-    border: 2px solid #b8977e !important;
+    border: 2px solid #8c6d54 !important;
     border-radius: 0;
     font-size: 15px;
     font-weight: 700;
@@ -1026,12 +1047,12 @@ body {
 
     &:hover {
       background-color: transparent !important;
-      color: #b8977e !important;
+      color: #8c6d54 !important;
     }
     &:active,
     &:focus {
       background-color: transparent !important;
-      color: #b8977e !important;
+      color: #8c6d54 !important;
       box-shadow: none !important;
     }
   }
@@ -1052,7 +1073,7 @@ body {
   top: 18px;
   left: 0;
   z-index: 10;
-  background: linear-gradient(135deg, #b8977e, #b8977e);
+  background: linear-gradient(135deg, #8c6d54, #8c6d54);
   color: #2a2218;
   font-family: "Montserrat", sans-serif;
   font-size: 9px;
@@ -1078,7 +1099,6 @@ body {
     padding: 8px 24px 8px 16px;
     top: 14px;
   }
-
   &::before {
     content: "";
     position: absolute;
@@ -1088,6 +1108,37 @@ body {
     height: 5px;
     background: #7a5f50;
     clip-path: polygon(0 0, 100% 0, 100% 100%);
+  }
+}
+
+#projeler .mobile-components .project-badge {
+  @media only screen and (max-width: 768px) {
+    font-size: 12px;
+    padding: 4px 12px 4px 8px;
+    top: 170px;
+  }
+}
+
+#projelerimiz-page .project-badge {
+  @media only screen and (max-width: 768px) {
+    font-size: 12px;
+    padding: 4px 12px 4px 8px;
+    top: auto;
+    bottom: 20px;
+    left: 0px;
+  }
+}
+
+.badge-desktop {
+  @media only screen and (max-width: 768px) {
+    display: none !important;
+  }
+}
+
+.badge-mobile {
+  display: none !important;
+  @media only screen and (max-width: 768px) {
+    display: inline-block !important;
   }
 }
 
@@ -1129,7 +1180,7 @@ body {
   z-index: 1001;
   width: 260px;
   background: #1f1e1e;
-  border: 2px solid #b8977e;
+  border: 2px solid #8c6d54;
   border-radius: 0;
   padding: 18px 20px 16px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
@@ -1163,7 +1214,7 @@ body {
   }
 
   &-title {
-    color: #b8977e;
+    color: #8c6d54;
     font-size: 14px;
     font-weight: 700;
     margin: 0 0 6px;
@@ -1178,7 +1229,7 @@ body {
 
   &-btn {
     width: 100%;
-    background: #b8977e;
+    background: #8c6d54;
     color: #1f1e1e;
     border: none;
     border-radius: 0;
@@ -1236,16 +1287,16 @@ body {
 }
 
 .sticky-contact {
-  background-color: #b8977e;
+  background-color: #8c6d54;
   color: #1a1a1a;
-  border: 2px solid #b8977e;
+  border: 2px solid #8c6d54;
   transition:
     background-color 0.3s ease,
     color 0.3s ease;
 
   &:hover {
     background-color: transparent;
-    color: #b8977e;
+    color: #8c6d54;
   }
 }
 
@@ -1255,7 +1306,7 @@ body {
   top: 50%;
   transform: translateY(-50%) translateX(8px);
   background: #1f1e1e;
-  border: 1px solid #b8977e;
+  border: 1px solid #8c6d54;
   color: #fff;
   white-space: nowrap;
   padding: 8px 14px;
@@ -1274,7 +1325,7 @@ body {
     top: 50%;
     transform: translateY(-50%);
     border: 6px solid transparent;
-    border-left-color: #b8977e;
+    border-left-color: #8c6d54;
     border-right: none;
   }
 
@@ -1318,7 +1369,7 @@ body.modal-open {
 
 .contact-modal {
   background: var(--bg-main);
-  border: 2px solid #b8977e;
+  border: 2px solid #8c6d54;
   border-radius: 0;
   padding: 48px 44px;
   width: 100%;
@@ -1328,7 +1379,7 @@ body.modal-open {
   animation: modalSlideUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) both;
 
   h3 {
-    color: #b8977e;
+    color: #8c6d54;
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 8px;
@@ -1365,7 +1416,7 @@ body.modal-open {
       opacity: 0.6;
     }
     &:focus {
-      border-color: #b8977e;
+      border-color: #8c6d54;
     }
     &.error {
       border-color: #8b1a1a;
@@ -1373,9 +1424,9 @@ body.modal-open {
   }
 
   button[type="submit"] {
-    background: #b8977e;
+    background: #8c6d54;
     color: #1a1a1a;
-    border: 2px solid #b8977e;
+    border: 2px solid #8c6d54;
     border-radius: 0;
     padding: 14px;
     font-size: 15px;
@@ -1389,7 +1440,7 @@ body.modal-open {
 
     &:hover {
       background-color: transparent;
-      color: #b8977e;
+      color: #8c6d54;
     }
     &:active {
       opacity: 0.85;
@@ -1409,7 +1460,7 @@ body.modal-open {
   transition: color 0.2s;
 
   &:hover {
-    color: #b8977e;
+    color: #8c6d54;
   }
 }
 
@@ -1424,9 +1475,9 @@ body.modal-open {
   z-index: 999;
   width: 46px;
   height: 46px;
-  background-color: #b8977e;
+  background-color: #8c6d54;
   color: #1a1a1a;
-  border: 2px solid #b8977e;
+  border: 2px solid #8c6d54;
   border-radius: 50%;
   font-size: 20px;
   font-weight: bold;
@@ -1452,7 +1503,7 @@ body.modal-open {
 
   &:hover {
     background-color: transparent;
-    color: #b8977e;
+    color: #8c6d54;
   }
 
   &.visible:hover {
@@ -1518,7 +1569,6 @@ body,
   from { opacity: 0; }
   to   { opacity: 1; }
 }
-
 .big-logo {
   .big-logo-bg {
     animation: heroFadeUp 1.1s cubic-bezier(0.22, 1, 0.36, 1) both;
@@ -1527,3 +1577,11 @@ body,
     animation: heroLogoFade 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.35s both;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  #iletisim.container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+

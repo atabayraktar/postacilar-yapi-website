@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import dynamic from "next/dynamic";
 import { useApp } from '../context/AppContext';
 
@@ -54,21 +54,22 @@ export default function ProjectMap({ contactRef }) {
         </div>
         <div className="mobile-components">
           <div className="component-container-last-item">
-            <div className="about-us-title">{t('contact.mapTitle')}</div>
+            <div className="about-us-title" style={{paddingLeft:"12px"}}>{t('contact.mapTitle')}</div>
             <div id="map" style={{ height: "320px", marginBottom: "32px" }}>
               <Map />
             </div>
+            <div style={{paddingLeft:"12px", paddingRight:"12px"}}>
             <div className="about-us-title">{t('contact.title')}</div>
             <div className="about-us-description contact-map-row" style={{marginTop:"16px"}}>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" style={{flexShrink:0,color:"#b8977e"}}><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.28h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.86a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7a2 2 0 0 1 1.72 2.03z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" style={{flexShrink:0,color:"#8c6d54"}}><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.28h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.86a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7a2 2 0 0 1 1.72 2.03z"/></svg>
               <span><a href="tel:+905316562909" className="contact-map-tel">+90 (531) 656 29 09</a> / <a href="tel:+902862135055" className="contact-map-tel">0286 213 50 55</a></span>
             </div>
             <div className="about-us-description contact-map-row">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" style={{flexShrink:0,color:"#b8977e"}}><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" style={{flexShrink:0,color:"#8c6d54"}}><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
               <a href="mailto:postacilaryapi@gmail.com" className="contact-map-tel">postacilaryapi@gmail.com</a>
             </div>
             <div className="about-us-description contact-map-row">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" style={{flexShrink:0,color:"#b8977e"}}><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" style={{flexShrink:0,color:"#8c6d54"}}><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
               <a href="https://maps.app.goo.gl/ugeuPEsAEyDYze8h6" target="_blank" rel="noopener noreferrer" className="contact-map-tel">Namık Kemal Mah. Sakızlı Çeşme Sokak No: 68 Çanakkale / Merkez</a>
             </div>
             <div className="contact-map-socials">
@@ -89,6 +90,7 @@ export default function ProjectMap({ contactRef }) {
             >
               {t('contact.formBtn')}
             </button>
+            </div>
           </div>
         </div>
       </div>

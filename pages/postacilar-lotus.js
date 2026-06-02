@@ -10,6 +10,7 @@ import { Navigation, Autoplay } from "swiper";
 import "swiper/css";
 
 const images = [
+  "/lotus/hero/lotus-hero.webp",
   "/lotus/outside/lotus-outside-1.webp",
   "/lotus/outside/lotus-outside-2.webp",
   "/lotus/outside/lotus-outside-3.webp",
@@ -71,7 +72,7 @@ export default function PostacilarLotus() {
         <img src="/lotus/hero/lotus-hero.webp" className="detail-hero-bg" />
         <div className="detail-hero-title">
           <div className="detail-title">
-            <img src="/postacilar-logo.png" className="hero-postacilar-logo" /> <span className="detail-title-stick">|</span> <span className="detail-title-name">LOTUS</span>
+            <img src="/postacilar-logo.png" className="hero-postacilar-logo" /> <span className="detail-title-stick">|</span> <span className="detail-title-name" style={{marginRight: '-5px'}}>LOTUS</span>
           </div>
         </div>
       </div>

@@ -28,8 +28,8 @@ export default function StickyButtons() {
   useEffect(() => {
     const seen = localStorage.getItem('contact_popup_seen');
     if (!seen) {
-      const t = setTimeout(() => setShowPopup(true), 2500);
-      return () => clearTimeout(t);
+      const timerId = setTimeout(() => setShowPopup(true), 2500);
+      return () => clearTimeout(timerId);
     }
   }, []);
 

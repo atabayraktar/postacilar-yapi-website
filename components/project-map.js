@@ -1,10 +1,20 @@
-﻿import React from "react";
+﻿import React, { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 import { useApp } from '../context/AppContext';
 
+const Map = dynamic(() => import("./map"), { ssr: false });
+
 export default function ProjectMap({ contactRef }) {
-  const Map = dynamic(() => import("./map"), { ssr: false });
+  const [isMobile, setIsMobile] = useState(false);
   const { t } = useApp();
+
+  useEffect(() => {
+    const mq = window.matchMedia('(max-width: 991px)');
+    setIsMobile(mq.matches);
+    const handler = (e) => setIsMobile(e.matches);
+    mq.addEventListener('change', handler);
+    return () => mq.removeEventListener('change', handler);
+  }, []);
   return (
     <>
       <div id="iletisim" ref={contactRef} className="container">
@@ -14,7 +24,7 @@ export default function ProjectMap({ contactRef }) {
               <div className="col-6">
                 <div className="about-us-title">{t('contact.mapTitle')}</div>
                 <div id="map" style={{ height: "400px" }}>
-                  <Map />
+                  {!isMobile && <Map />}
                 </div>
               </div>
               <div className="col-6">
@@ -56,7 +66,7 @@ export default function ProjectMap({ contactRef }) {
           <div className="component-container-last-item">
             <div className="about-us-title" style={{paddingLeft:"24px"}}>{t('contact.mapTitle')}</div>
             <div id="map" style={{ height: "320px", marginBottom: "32px" }}>
-              <Map />
+              {isMobile && <Map />}
             </div>
             <div style={{paddingLeft:"24px", paddingRight:"24px"}}>
             <div className="about-us-title">{t('contact.title')}</div>

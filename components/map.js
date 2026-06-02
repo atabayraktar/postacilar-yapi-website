@@ -24,9 +24,9 @@ const Mapx = () => {
             <path d="M12.5 0C5.596 0 0 5.596 0 12.5c0 9.375 12.5 28.5 12.5 28.5S25 21.875 25 12.5C25 5.596 19.404 0 12.5 0z" fill="${pinFill}" stroke="${pinStroke}" stroke-width="1"/>
             <circle cx="12.5" cy="12.5" r="4.5" fill="${pinCenter}"/>
         </svg>`,
-        iconSize: [10, 16],
-        iconAnchor: [5, 16],
-        popupAnchor: [0, -16],
+        iconSize: [25, 41],
+        iconAnchor: [12, 41],
+        popupAnchor: [0, -41],
     });
 
     return (

@@ -439,6 +439,9 @@ body {
   * {
     max-width: 100%;
   }
+  .leaflet-container * {
+    max-width: none;
+  }
 }
 .navbar-brand {
   cursor: pointer;

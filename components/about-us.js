@@ -18,7 +18,7 @@ export default function AboutUs({ aboutUsRef }) {
           </div>
         </div>
         <div className="mobile-components">
-          <div className="component-container">
+          <div className="component-container" style={{paddingLeft:"24px", paddingRight:"24px"}}>
             <div className="about-us-title">{t('about.title')}</div>
             <div className="about-us-description">
               {t('about.p1')}<br /><br />{t('about.p2')}

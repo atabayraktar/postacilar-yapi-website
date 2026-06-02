@@ -56,7 +56,7 @@ export default function Projects({ projectsRef }) {
           </div>
         </div>
         <div className="mobile-components">
-          <div className="component-container">
+          <div className="component-container" style={{paddingLeft:"24px", paddingRight:"24px"}}>
             <div className="about-us-title">{t('projects.title')}</div>
             <div className="row">
               <div className="col-3 img-container-main-project fadding-photo" style={{position:'relative'}}>

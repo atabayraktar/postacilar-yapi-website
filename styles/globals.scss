@@ -734,10 +734,7 @@ body {
   &::after {
     content: "";
     position: absolute;
-    top: 0;
-    left: 12px;
-    right: 12px;
-    bottom: var(--bs-gutter-x, 24px);
+    inset: 0;
     background: rgba(0, 0, 0, 0.35);
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -1579,7 +1576,9 @@ body,
 }
 
 @media only screen and (max-width: 768px) {
-  #iletisim.container {
+  #iletisim.container,
+  #hakkimizda.container,
+  #projeler.container {
     padding-left: 0;
     padding-right: 0;
   }

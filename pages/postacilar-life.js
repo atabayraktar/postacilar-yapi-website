@@ -34,6 +34,7 @@ const floorImages = [
 ];
 
 export default function PostacilarLife() {
+  const catalogUrl = null;
   const [modalImages, setModalImages] = useState([]);
   const [modalIndex, setModalIndex] = useState(0);
   const [showModal, setShowModal] = useState(false);
@@ -120,9 +121,11 @@ export default function PostacilarLife() {
               <span className="detail-accent">{t('details.sections.projectDetails')}</span>
             </div>
             <div className="detail-paragraph" dangerouslySetInnerHTML={{ __html: t('details.life.details').replace(/\n/g, '<br/>') }} />
-            <a href="/catalogs/life-katalog.pdf" target="_blank" rel="noopener noreferrer" className="catalog-btn">
-              {t('details.sections.viewCatalog')}
-            </a>
+            {catalogUrl && (
+              <a href={catalogUrl} target="_blank" rel="noopener noreferrer" className="catalog-btn">
+                {t('details.sections.viewCatalog')}
+              </a>
+            )}
           </div>
           <div className="col-12 col-md-6 life-floor-col">
             <div className="detail-sub-title">

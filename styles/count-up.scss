@@ -35,11 +35,11 @@
         &-title{
             font-size: 12px;
             margin-bottom: 0px;
-            color: #8c6d54;
+            color: var(--brand-text);
         }
         &-value{
             font-size: 30px;
-            color: #8c6d54;
+            color: var(--brand-text);
         }
     }
 }

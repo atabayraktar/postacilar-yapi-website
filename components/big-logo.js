@@ -4,7 +4,7 @@ export default function BigLogo() {
             <div className="big-logo">
                 <video src="/postacilar-hero-video.mp4" className="big-logo-bg" autoPlay muted loop playsInline />
                 <div className="logo">
-                    <img src="/logo.webp" />
+                    <img src="/logo.webp" alt="Postacılar Yapı logosu" fetchPriority="high" />
                 </div>
             </div>
         </>

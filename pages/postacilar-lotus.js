@@ -49,30 +49,54 @@ export default function PostacilarLotus() {
         />
       )}
       <Head>
-        <title>POSTACILAR | LOTUS</title>
-        <meta name="description" content="Postacılar Lotus — Bursa'da huzurlu ve yeşil bir yaşam sunan konut projesi. Proje detayları ve görseller için inceleyin." />
+        <title>Postacılar Lotus | Çanakkale Yeşil Yaşam Konut Projesi</title>
+        <meta name="description" content="Postacılar Lotus — Çanakkale'de huzurlu ve yeşil bir yaşam sunan konut projesi. Doğayla uyumlu tasarım, ferah yaşam alanları, kaliteli yapı. Proje detayları için inceleyin." />
+        <meta name="keywords" content="Postacılar Lotus, Çanakkale Lotus konut projesi, yeşil yaşam Çanakkale, Lotus daire, huzurlu konut Çanakkale, Postacılar Yapı Lotus, Çanakkale satılık daire" />
+        <meta name="author" content="Postacılar Yapı" />
         <meta name="robots" content="index, follow" />
+        <meta name="geo.region" content="TR-17" />
+        <meta name="geo.placename" content="Çanakkale" />
         <link rel="canonical" href="https://www.postacilar.com/postacilar-lotus" />
         <link rel="icon" href="/meta-logo.webp" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Postacılar Yapı" />
-        <meta property="og:title" content="POSTACILAR | LOTUS" />
-        <meta property="og:description" content="Postacılar Lotus — Bursa'da huzurlu ve yeşil bir yaşam sunan konut projesi. Proje detayları ve görseller için inceleyin." />
+        <meta property="og:title" content="Postacılar Lotus | Çanakkale Yeşil Yaşam Konut Projesi" />
+        <meta property="og:description" content="Postacılar Lotus — Çanakkale'de huzurlu ve yeşil bir yaşam sunan konut projesi. Doğayla uyumlu tasarım, ferah yaşam alanları, kaliteli yapı." />
         <meta property="og:url" content="https://www.postacilar.com/postacilar-lotus" />
         <meta property="og:image" content="https://www.postacilar.com/lotus/outside/lotus-outside-1.webp" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Postacılar Lotus — Çanakkale yeşil yaşam konut projesi" />
         <meta property="og:locale" content="tr_TR" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="POSTACILAR | LOTUS" />
-        <meta name="twitter:description" content="Postacılar Lotus — Bursa'da huzurlu ve yeşil bir yaşam sunan konut projesi. Proje detayları ve görseller için inceleyin." />
+        <meta name="twitter:title" content="Postacılar Lotus | Çanakkale Yeşil Yaşam Konut Projesi" />
+        <meta name="twitter:description" content="Postacılar Lotus — Çanakkale'de huzurlu ve yeşil bir yaşam sunan konut projesi. Proje detayları ve görseller için inceleyin." />
         <meta name="twitter:image" content="https://www.postacilar.com/lotus/outside/lotus-outside-1.webp" />
+        <meta name="twitter:image:alt" content="Postacılar Lotus Çanakkale yeşil yaşam konut projesi" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ApartmentComplex",
+            "name": "Postacılar Lotus",
+            "url": "https://www.postacilar.com/postacilar-lotus",
+            "image": "https://www.postacilar.com/lotus/outside/lotus-outside-1.webp",
+            "description": "Postacılar Lotus — Çanakkale'de huzurlu ve yeşil bir yaşam sunan konut projesi.",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Çanakkale",
+              "addressCountry": "TR"
+            }
+          }) }}
+        />
       </Head>
       <Header />
-
+      <main>
       <div className="detail-hero">
-        <img src="/lotus/hero/lotus-hero.webp" className="detail-hero-bg" />
+        <img src="/lotus/hero/lotus-hero.webp" className="detail-hero-bg" alt="Postacılar Lotus projesi dış cephe görünümü" />
         <div className="detail-hero-title">
           <div className="detail-title">
-            <img src="/postacilar-logo.png" className="hero-postacilar-logo" /> <span className="detail-title-stick">|</span> <span className="detail-title-name" style={{marginRight: '-5px'}}>LOTUS</span>
+            <img src="/postacilar-logo.png" className="hero-postacilar-logo" alt="Postacılar Yapı logosu" /> <span className="detail-title-stick">|</span> <span className="detail-title-name" style={{marginRight: '-5px'}}>LOTUS</span>
           </div>
         </div>
       </div>
@@ -108,7 +132,7 @@ export default function PostacilarLotus() {
             <Swiper modules={[Navigation, Autoplay]} navigation loop={true} autoplay={{ delay: 2800, disableOnInteraction: false }} speed={800} spaceBetween={8} slidesPerView={1} onSlideNextTransitionStart={handleNextStart} onTransitionEnd={handleTransitionEnd}>
               {images.map((src, i) => (
                 <SwiperSlide key={i}>
-                  <img onClick={() => openModal(i)} src={src} />
+                  <img onClick={() => openModal(i)} src={src} alt={`Postacılar Lotus görsel ${i + 1}`} />
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -116,20 +140,20 @@ export default function PostacilarLotus() {
           <div className="detail-mosaic-desktop images zoomable-img">
             <div className="row align-items-end g-4">
               <div className="col-3">
-                <img onClick={() => openModal(0)} width="100%" height="auto" src="/lotus/outside/lotus-outside-1.webp" style={{cursor:"zoom-in", display:"block"}} loading="lazy" decoding="async" />
+                <img onClick={() => openModal(0)} width="100%" height="auto" src="/lotus/outside/lotus-outside-1.webp" style={{cursor:"zoom-in", display:"block"}} loading="lazy" decoding="async" alt="Postacılar Lotus dış cephe 1" />
               </div>
               <div className="col-5">
-                <img onClick={() => openModal(1)} width="100%" height="auto" src="/lotus/outside/lotus-outside-2.webp" style={{cursor:"zoom-in", display:"block"}} loading="lazy" decoding="async" />
+                <img onClick={() => openModal(1)} width="100%" height="auto" src="/lotus/outside/lotus-outside-2.webp" style={{cursor:"zoom-in", display:"block"}} loading="lazy" decoding="async" alt="Postacılar Lotus dış cephe 2" />
               </div>
               <div className="col-4">
-                <img onClick={() => openModal(2)} width="100%" height="auto" src="/lotus/outside/lotus-outside-3.webp" style={{cursor:"zoom-in", display:"block"}} loading="lazy" decoding="async" />
+                <img onClick={() => openModal(2)} width="100%" height="auto" src="/lotus/outside/lotus-outside-3.webp" style={{cursor:"zoom-in", display:"block"}} loading="lazy" decoding="async" alt="Postacılar Lotus dış cephe 3" />
               </div>
             </div>
           </div>
         </div>
 
       </div>
-
+      </main>
       <Footer />
       <StickyButtons />
     </>

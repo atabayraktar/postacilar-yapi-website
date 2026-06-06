@@ -68,29 +68,53 @@ export default function PostacilarLife() {
         />
       )}
       <Head>
-        <title>POSTACILAR | LIFE</title>
-        <meta name="description" content="Postacılar Life — Bursa'da konforlu ve modern yaşam alanları. Dış cephe görselleri, iç tasarım ve daire tipleri için inceleyin." />
+        <title>Postacılar Life | Çanakkale Modern Konut Projesi</title>
+        <meta name="description" content="Postacılar Life — Çanakkale'de konforlu ve modern yaşam alanları. Dış cephe görselleri, iç mekan tasarımı ve daire tipleri için inceleyin. Kaliteli yaşamın adresi." />
+        <meta name="keywords" content="Postacılar Life, Çanakkale Life konut projesi, modern daire Çanakkale, Life daire tipleri, Çanakkale satılık daire, Postacılar Yapı Life, konforlu konut Çanakkale" />
+        <meta name="author" content="Postacılar Yapı" />
         <meta name="robots" content="index, follow" />
+        <meta name="geo.region" content="TR-17" />
+        <meta name="geo.placename" content="Çanakkale" />
         <link rel="canonical" href="https://www.postacilar.com/postacilar-life" />
         <link rel="icon" href="/meta-logo.webp" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Postacılar Yapı" />
-        <meta property="og:title" content="POSTACILAR | LIFE" />
-        <meta property="og:description" content="Postacılar Life — Bursa'da konforlu ve modern yaşam alanları. Dış cephe görselleri, iç tasarım ve daire tipleri için inceleyin." />
+        <meta property="og:title" content="Postacılar Life | Çanakkale Modern Konut Projesi" />
+        <meta property="og:description" content="Postacılar Life — Çanakkale'de konforlu ve modern yaşam alanları. Dış cephe görselleri, iç mekan tasarımı ve daire tipleri için inceleyin." />
         <meta property="og:url" content="https://www.postacilar.com/postacilar-life" />
         <meta property="og:image" content="https://www.postacilar.com/life/outside/life-outside-1.webp" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Postacılar Life — Çanakkale modern konut projesi dış cephe" />
         <meta property="og:locale" content="tr_TR" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="POSTACILAR | LIFE" />
-        <meta name="twitter:description" content="Postacılar Life — Bursa'da konforlu ve modern yaşam alanları. Dış cephe görselleri, iç tasarım ve daire tipleri için inceleyin." />
+        <meta name="twitter:title" content="Postacılar Life | Çanakkale Modern Konut Projesi" />
+        <meta name="twitter:description" content="Postacılar Life — Çanakkale'de konforlu ve modern yaşam alanları. Dış cephe görselleri, iç mekan tasarımı ve daire tipleri için inceleyin." />
         <meta name="twitter:image" content="https://www.postacilar.com/life/outside/life-outside-1.webp" />
+        <meta name="twitter:image:alt" content="Postacılar Life Çanakkale konut projesi" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ApartmentComplex",
+            "name": "Postacılar Life",
+            "url": "https://www.postacilar.com/postacilar-life",
+            "image": "https://www.postacilar.com/life/outside/life-outside-1.webp",
+            "description": "Postacılar Life — Çanakkale'de konforlu ve modern yaşam alanları.",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Çanakkale",
+              "addressCountry": "TR"
+            }
+          }) }}
+        />
       </Head>
       <Header />
-
+      <main>
       <div className="detail-hero">
-        <img src="/life/hero/life-hero.webp" className="detail-hero-bg" />
+        <img src="/life/hero/life-hero.webp" className="detail-hero-bg" alt="Postacılar Life projesi dış cephe görünümü" />
         <div className="detail-hero-logo">
-          <img src="/life/postacılar-life-logo.webp" />
+          <img src="/life/postacılar-life-logo.webp" alt="Postacılar Life logosu" />
         </div>
       </div>
 
@@ -101,7 +125,7 @@ export default function PostacilarLife() {
           <div className="col-12">
             <div className="detail-sub-title">
               <div className="detail-title">
-                <div className="prestige-logo"><img src="/life/life-logo.webp" /></div>
+                <div className="prestige-logo"><img src="/life/life-logo.webp" alt="Life logosu" /></div>
               </div>
               <span className="detail-sub-title-stick"><div>|</div></span>
               <span className="detail-accent">{t('details.sections.about')}</span>
@@ -115,7 +139,7 @@ export default function PostacilarLife() {
           <div className="col-12 col-md-6 life-details-col">
             <div className="detail-sub-title">
               <div className="detail-title">
-                <div className="prestige-logo"><img src="/life/life-logo.webp" /></div>
+                <div className="prestige-logo"><img src="/life/life-logo.webp" alt="Life logosu" /></div>
               </div>
               <span className="detail-sub-title-stick"><div>|</div></span>
               <span className="detail-accent">{t('details.sections.projectDetails')}</span>
@@ -130,7 +154,7 @@ export default function PostacilarLife() {
           <div className="col-12 col-md-6 life-floor-col">
             <div className="detail-sub-title">
               <div className="detail-title">
-                <div className="prestige-logo"><img src="/life/life-logo.webp" /></div>
+                <div className="prestige-logo"><img src="/life/life-logo.webp" alt="Life logosu" /></div>
               </div>
               <span className="detail-sub-title-stick"><div>|</div></span>
               <span className="detail-accent">{t('details.sections.flatTypes')}</span>
@@ -139,20 +163,20 @@ export default function PostacilarLife() {
               <Swiper modules={[Navigation, Autoplay]} navigation loop={true} autoplay={{ delay: 2800, disableOnInteraction: false }} speed={800} spaceBetween={8} slidesPerView={1}>
                 {floorImages.map((src, i) => (
                   <SwiperSlide key={i}>
-                    <img onClick={() => openModal(floorImages, i)} src={src} style={{cursor:"zoom-in"}} />
+                    <img onClick={() => openModal(floorImages, i)} src={src} style={{cursor:"zoom-in"}} alt={`Life daire tipi ${i + 1}`} />
                   </SwiperSlide>
                 ))}
               </Swiper>
             </div>
             <div className="flat-types-inline flat-types-desktop">
               <div className="flat-inline-item">
-                <img onClick={() => openModal(floorImages, 0)} src="/life/flats/life-flats-1.webp" style={{cursor:"zoom-in"}} />
+                <img onClick={() => openModal(floorImages, 0)} src="/life/flats/life-flats-1.webp" style={{cursor:"zoom-in"}} alt="Life daire tipi 1" />
               </div>
               <div className="flat-inline-item">
-                <img onClick={() => openModal(floorImages, 1)} src="/life/flats/life-flats-2.webp" style={{cursor:"zoom-in"}} />
+                <img onClick={() => openModal(floorImages, 1)} src="/life/flats/life-flats-2.webp" style={{cursor:"zoom-in"}} alt="Life daire tipi 2" />
               </div>
               <div className="flat-inline-item">
-                <img onClick={() => openModal(floorImages, 2)} src="/life/flats/life-flats-3.webp" style={{cursor:"zoom-in"}} />
+                <img onClick={() => openModal(floorImages, 2)} src="/life/flats/life-flats-3.webp" style={{cursor:"zoom-in"}} alt="Life daire tipi 3" />
               </div>
             </div>
           </div>
@@ -162,7 +186,7 @@ export default function PostacilarLife() {
         <div className="life-exterior-section">
           <div className="detail-sub-title">
             <div className="detail-title">
-              <div className="prestige-logo"><img src="/life/life-logo.webp" /></div>
+              <div className="prestige-logo"><img src="/life/life-logo.webp" alt="Life logosu" /></div>
             </div>
             <span className="detail-sub-title-stick"><div>|</div></span>
             <span className="detail-accent">{t('details.sections.visuals')}</span>
@@ -189,6 +213,7 @@ export default function PostacilarLife() {
                   onClick={() => openModal(exteriorImages, i)}
                   src={src}
                   className="swiper-exterior-img"
+                  alt={`Postacılar Life dış cephe ${i + 1}`}
                 />
               </SwiperSlide>
             ))}
@@ -199,7 +224,7 @@ export default function PostacilarLife() {
         <div className="life-interior-section">
           <div className="detail-sub-title">
             <div className="detail-title">
-              <div className="prestige-logo"><img src="/life/life-logo.webp" /></div>
+              <div className="prestige-logo"><img src="/life/life-logo.webp" alt="Life logosu" /></div>
             </div>
             <span className="detail-sub-title-stick"><div>|</div></span>
             <span className="detail-accent">{t('details.sections.interiorDesign')}</span>
@@ -208,7 +233,7 @@ export default function PostacilarLife() {
             <Swiper modules={[Navigation, Autoplay]} navigation loop={true} autoplay={{ delay: 2800, disableOnInteraction: false }} speed={800} spaceBetween={8} slidesPerView={1} onSlideNextTransitionStart={handleNextStart} onTransitionEnd={handleTransitionEnd}>
               {interiorImages.map((src, i) => (
                 <SwiperSlide key={i}>
-                  <img onClick={() => openModal(interiorImages, i)} src={src} />
+                  <img onClick={() => openModal(interiorImages, i)} src={src} alt={`Postacılar Life iç mekan ${i + 1}`} />
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -216,31 +241,31 @@ export default function PostacilarLife() {
           <div className="detail-mosaic-desktop images zoomable-img">
             <div className="row align-items-end g-4">
               <div className="col-3">
-                <img onClick={() => openModal(interiorImages, 0)} width="100%" height="auto" src="/life/inside/life-inside-1.webp" style={{cursor:"zoom-in", display:"block"}} loading="lazy" decoding="async" />
+                <img onClick={() => openModal(interiorImages, 0)} width="100%" height="auto" src="/life/inside/life-inside-1.webp" style={{cursor:"zoom-in", display:"block"}} loading="lazy" decoding="async" alt="Postacılar Life iç mekan 1" />
               </div>
               <div className="col-5">
-                <img onClick={() => openModal(interiorImages, 1)} width="100%" height="auto" src="/life/inside/life-inside-2.webp" style={{cursor:"zoom-in", display:"block"}} loading="lazy" decoding="async" />
+                <img onClick={() => openModal(interiorImages, 1)} width="100%" height="auto" src="/life/inside/life-inside-2.webp" style={{cursor:"zoom-in", display:"block"}} loading="lazy" decoding="async" alt="Postacılar Life iç mekan 2" />
               </div>
               <div className="col-4">
-                <img onClick={() => openModal(interiorImages, 2)} width="100%" height="auto" src="/life/inside/life-inside-3.webp" style={{cursor:"zoom-in", display:"block"}} loading="lazy" decoding="async" />
+                <img onClick={() => openModal(interiorImages, 2)} width="100%" height="auto" src="/life/inside/life-inside-3.webp" style={{cursor:"zoom-in", display:"block"}} loading="lazy" decoding="async" alt="Postacılar Life iç mekan 3" />
               </div>
             </div>
             <div className="row g-4 mt-3">
               <div className="col-5">
-                <img onClick={() => openModal(interiorImages, 3)} width="100%" height="auto" src="/life/inside/life-inside-4.webp" style={{cursor:"zoom-in", display:"block"}} loading="lazy" decoding="async" />
+                <img onClick={() => openModal(interiorImages, 3)} width="100%" height="auto" src="/life/inside/life-inside-4.webp" style={{cursor:"zoom-in", display:"block"}} loading="lazy" decoding="async" alt="Postacılar Life iç mekan 4" />
               </div>
               <div className="col-3">
-                <img onClick={() => openModal(interiorImages, 4)} width="100%" height="auto" src="/life/inside/life-inside-5.webp" style={{cursor:"zoom-in", display:"block"}} loading="lazy" decoding="async" />
+                <img onClick={() => openModal(interiorImages, 4)} width="100%" height="auto" src="/life/inside/life-inside-5.webp" style={{cursor:"zoom-in", display:"block"}} loading="lazy" decoding="async" alt="Postacılar Life iç mekan 5" />
               </div>
               <div className="col-4">
-                <img onClick={() => openModal(interiorImages, 5)} width="100%" height="auto" src="/life/inside/life-inside-6.webp" style={{cursor:"zoom-in", display:"block"}} loading="lazy" decoding="async" />
+                <img onClick={() => openModal(interiorImages, 5)} width="100%" height="auto" src="/life/inside/life-inside-6.webp" style={{cursor:"zoom-in", display:"block"}} loading="lazy" decoding="async" alt="Postacılar Life iç mekan 6" />
               </div>
             </div>
           </div>
         </div>
 
       </div>
-
+      </main>
       <Footer />
       <StickyButtons />
     </>

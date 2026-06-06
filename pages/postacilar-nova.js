@@ -48,30 +48,54 @@ export default function PostacilarNova() {
         />
       )}
       <Head>
-        <title>POSTACILAR | NOVA</title>
-        <meta name="description" content="Postacılar Nova — Bursa'da şık ve işlevsel tasarımıyla öne çıkan konut projesi. Proje detayları ve görseller için inceleyin." />
+        <title>Postacılar Nova | Çanakkale Konut Projesi</title>
+        <meta name="description" content="Postacılar Nova — Çanakkale'de şık ve işlevsel tasarımıyla öne çıkan konut projesi. Modern mimari anlayışı ve yaşam konforu bir arada. Proje detayları için inceleyin." />
+        <meta name="keywords" content="Postacılar Nova, Çanakkale Nova konut projesi, Nova daire, Çanakkale şık konut, Postacılar Yapı Nova, modern konut Çanakkale" />
+        <meta name="author" content="Postacılar Yapı" />
         <meta name="robots" content="index, follow" />
+        <meta name="geo.region" content="TR-17" />
+        <meta name="geo.placename" content="Çanakkale" />
         <link rel="canonical" href="https://www.postacilar.com/postacilar-nova" />
         <link rel="icon" href="/meta-logo.webp" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Postacılar Yapı" />
-        <meta property="og:title" content="POSTACILAR | NOVA" />
-        <meta property="og:description" content="Postacılar Nova — Bursa'da şık ve işlevsel tasarımıyla öne çıkan konut projesi. Proje detayları ve görseller için inceleyin." />
+        <meta property="og:title" content="Postacılar Nova | Çanakkale Konut Projesi" />
+        <meta property="og:description" content="Postacılar Nova — Çanakkale'de şık ve işlevsel tasarımıyla öne çıkan konut projesi. Modern mimari anlayışı ve yaşam konforu bir arada." />
         <meta property="og:url" content="https://www.postacilar.com/postacilar-nova" />
         <meta property="og:image" content="https://www.postacilar.com/nova/outside/nova-outside-1.webp" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Postacılar Nova — Çanakkale konut projesi dış cephe" />
         <meta property="og:locale" content="tr_TR" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="POSTACILAR | NOVA" />
-        <meta name="twitter:description" content="Postacılar Nova — Bursa'da şık ve işlevsel tasarımıyla öne çıkan konut projesi. Proje detayları ve görseller için inceleyin." />
+        <meta name="twitter:title" content="Postacılar Nova | Çanakkale Konut Projesi" />
+        <meta name="twitter:description" content="Postacılar Nova — Çanakkale'de şık ve işlevsel tasarımıyla öne çıkan konut projesi. Proje detayları ve görseller için inceleyin." />
         <meta name="twitter:image" content="https://www.postacilar.com/nova/outside/nova-outside-1.webp" />
+        <meta name="twitter:image:alt" content="Postacılar Nova Çanakkale konut projesi" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ApartmentComplex",
+            "name": "Postacılar Nova",
+            "url": "https://www.postacilar.com/postacilar-nova",
+            "image": "https://www.postacilar.com/nova/outside/nova-outside-1.webp",
+            "description": "Postacılar Nova — Çanakkale'de şık ve işlevsel tasarımıyla öne çıkan konut projesi.",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Çanakkale",
+              "addressCountry": "TR"
+            }
+          }) }}
+        />
       </Head>
       <Header />
-
+      <main>
       <div className="detail-hero">
-        <img src="/nova/hero/nova-hero.webp" className="detail-hero-bg" />
+        <img src="/nova/hero/nova-hero.webp" className="detail-hero-bg" alt="Postacılar Nova projesi dış cephe görünümü" />
         <div className="detail-hero-title">
           <div className="detail-title">
-            <img src="/postacilar-logo.png" className="hero-postacilar-logo" /> <span className="detail-title-stick">|</span> <span className="detail-title-name" style={{marginRight: '-5px'}}>NOVA</span>
+            <img src="/postacilar-logo.png" className="hero-postacilar-logo" alt="Postacılar Yapı logosu" /> <span className="detail-title-stick">|</span> <span className="detail-title-name" style={{marginRight: '-5px'}}>NOVA</span>
           </div>
         </div>
       </div>
@@ -107,7 +131,7 @@ export default function PostacilarNova() {
             <Swiper modules={[Navigation, Autoplay]} navigation loop={true} autoplay={{ delay: 2800, disableOnInteraction: false }} speed={800} spaceBetween={8} slidesPerView={1} onSlideNextTransitionStart={handleNextStart} onTransitionEnd={handleTransitionEnd}>
               {exteriorImages.map((src, i) => (
                 <SwiperSlide key={i}>
-                  <img onClick={() => openModal(exteriorImages, i)} src={src} />
+                  <img onClick={() => openModal(exteriorImages, i)} src={src} alt={`Postacılar Nova görsel ${i + 1}`} />
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -115,10 +139,10 @@ export default function PostacilarNova() {
           <div className="detail-mosaic-desktop images zoomable-img">
             <div className="row align-items-end g-4">
               <div className="col-7">
-                <img onClick={() => openModal(exteriorImages, 0)} width="100%" height="auto" src="/nova/outside/nova-outside-1.webp" style={{cursor:"zoom-in", display:"block"}} loading="lazy" decoding="async" />
+                <img onClick={() => openModal(exteriorImages, 0)} width="100%" height="auto" src="/nova/outside/nova-outside-1.webp" style={{cursor:"zoom-in", display:"block"}} loading="lazy" decoding="async" alt="Postacılar Nova dış cephe 1" />
               </div>
               <div className="col-5">
-                <img onClick={() => openModal(exteriorImages, 1)} width="100%" height="auto" src="/nova/outside/nova-outside-2.webp" style={{cursor:"zoom-in", display:"block"}} loading="lazy" decoding="async" />
+                <img onClick={() => openModal(exteriorImages, 1)} width="100%" height="auto" src="/nova/outside/nova-outside-2.webp" style={{cursor:"zoom-in", display:"block"}} loading="lazy" decoding="async" alt="Postacılar Nova dış cephe 2" />
               </div>
             </div>
           </div>
@@ -126,7 +150,7 @@ export default function PostacilarNova() {
 
 
       </div>
-
+      </main>
       <Footer />
       <StickyButtons />
     </>

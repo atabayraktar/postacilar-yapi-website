@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fontsource/montserrat": "^5.2.8",
     "bootstrap": "^5.1.0",
     "leaflet": "^1.7.1",
     "leaflet-defaulticon-compatibility": "^0.1.1",

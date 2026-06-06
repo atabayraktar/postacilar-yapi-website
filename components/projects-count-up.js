@@ -1,85 +1,68 @@
-import VisibilitySensor from 'react-visibility-sensor';
+import { useState, useEffect, useRef } from 'react';
 import CountUp from 'react-countup';
 import { useApp } from '../context/AppContext';
 
+const ITEMS = [
+    { src: '/homepage-count-up/etap.webp', alt: 'Proje etap ikonu', key: 'projects' },
+    { src: '/homepage-count-up/m2.webp', alt: 'Metrekare ikonu', key: 'sqm' },
+    { src: '/homepage-count-up/daire.webp', alt: 'Daire ikonu', key: 'apartments' },
+    { src: '/homepage-count-up/kullanici.webp', alt: 'Kullanıcı ikonu', key: 'users' },
+];
+
+const ENDS = { projects: 8, sqm: 75256, apartments: 200, users: 718 };
+
 export default function ProjectsCountUp() {
     const { t } = useApp();
+    const [isVisible, setIsVisible] = useState(false);
+    const ref = useRef(null);
+
+    useEffect(() => {
+        const el = ref.current;
+        if (!el) return;
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setIsVisible(true);
+                    observer.disconnect();
+                }
+            },
+            { threshold: 0.1, rootMargin: '-100px 0px 0px 0px' }
+        );
+        observer.observe(el);
+        return () => observer.disconnect();
+    }, []);
+
     return (
-        <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
-            {({ isVisible }) => (
-                <div style={{ minHeight: 100 }}>
-                    {isVisible ? <>
-                        <div className="w-100">
-                            <div className="container count-up">
-                                <div className="count-up-item">
-                                    <img src="/homepage-count-up/etap.webp" width="64" height="64" alt="" />
-                                    <div className="count-up-number">
-                                        <CountUp className="count-up-number-value" start={0} delay={0.5} duration={5} end={8} />
-                                        <p className="count-up-number-title">{t('counter.projects')}</p>
-                                    </div>
-                                </div>
-                                <div className="count-up-item">
-                                    <img src="/homepage-count-up/m2.webp" width="64" height="64" alt="" />
-                                    <div className="count-up-number">
-                                        <CountUp className="count-up-number-value" start={0} delay={0.5} duration={5} end={75256} />
-                                        <p className="count-up-number-title">{t('counter.sqm')}</p>
-                                    </div>
-                                </div>
-                                <div className="count-up-item">
-                                    <img src="/homepage-count-up/daire.webp" width="64" height="64" alt="" />
-                                    <div className="count-up-number">
-                                        <CountUp className="count-up-number-value" start={0} delay={0.5} duration={5} end={200} />
-                                        <p className="count-up-number-title">{t('counter.apartments')}</p>
-                                    </div>                            </div>
-                                <div className="count-up-item">
-                                    <img src="/homepage-count-up/kullanici.webp" width="64" height="64" alt="" />
-                                    <div className="count-up-number">
-                                        <CountUp className="count-up-number-value" start={0} delay={0.5} duration={5} end={718} />
-                                        <p className="count-up-number-title">{t('counter.users')}</p>
-                                    </div>
-                                </div>
+        <div ref={ref} style={{ minHeight: 100 }}>
+            <div className="w-100">
+                <div className="container count-up">
+                    {ITEMS.map(({ src, alt, key }) => (
+                        <div key={key} className="count-up-item">
+                            <img
+                                src={src}
+                                width="64"
+                                height="64"
+                                alt={alt}
+                                style={{ objectFit: 'contain' }}
+                            />
+                            <div className="count-up-number">
+                                {isVisible ? (
+                                    <CountUp
+                                        className="count-up-number-value"
+                                        start={0}
+                                        delay={0.5}
+                                        duration={5}
+                                        end={ENDS[key]}
+                                    />
+                                ) : (
+                                    <span className="count-up-number-value">0</span>
+                                )}
+                                <p className="count-up-number-title">{t(`counter.${key}`)}</p>
                             </div>
-
                         </div>
-
-                    </> :
-                        <div className="w-100">
-                            <div className="container count-up">
-                                <div className="count-up-item">
-                                    <img src="/homepage-count-up/etap.webp" width="64" height="64" alt="" />
-                                    <div className="count-up-number">
-                                        <CountUp className="count-up-number-value" start={0} delay={0.5} duration={5} end={0} />
-                                        <p className="count-up-number-title">{t('counter.projects')}</p>
-                                    </div>
-                                </div>
-                                <div className="count-up-item">
-                                    <img src="/homepage-count-up/m2.webp" width="64" height="64" alt="" />
-                                    <div className="count-up-number">
-                                        <CountUp className="count-up-number-value" start={0} delay={0.5} duration={5} end={0} />
-                                        <p className="count-up-number-title">{t('counter.sqm')}</p>
-                                    </div>
-                                </div>
-                                <div className="count-up-item">
-                                    <img src="/homepage-count-up/daire.webp" width="64" height="64" alt="" />
-                                    <div className="count-up-number">
-                                        <CountUp className="count-up-number-value" start={0} delay={0.5} duration={5} end={0} />
-                                        <p className="count-up-number-title">{t('counter.apartments')}</p>
-                                    </div>                            </div>
-                                <div className="count-up-item">
-                                    <img src="/homepage-count-up/kullanici.webp" width="64" height="64" alt="" />
-                                    <div className="count-up-number">
-                                        <CountUp className="count-up-number-value" start={0} delay={0.5} duration={5} end={0} />
-                                        <p className="count-up-number-title">{t('counter.users')}</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    }
+                    ))}
                 </div>
-            )
-            }
-        </VisibilitySensor >
-    )
+            </div>
+        </div>
+    );
 }

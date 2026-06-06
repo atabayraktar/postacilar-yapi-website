@@ -16,30 +16,30 @@ export default function Projects({ projectsRef }) {
               <div className="col-3 img-container-main-project fadding-photo" style={{position:'relative'}}>
                 <span className="project-badge">SATIŞI DEVAM EDİYOR</span>
                 <Link href="/postacilar-life2">
-                  <a>
-                    <img src="/homepage-projects/life-2.webp" loading="lazy" decoding="async" />
+                  <a aria-label="Postacılar Life 2 projesini incele">
+                    <img src="/homepage-projects/life-2.webp" loading="lazy" decoding="async" alt="Postacılar Life 2 konut projesi dış cephe görünümü" />
                   </a>
                 </Link>
               </div>
               <div className="col-3 img-container-main-project fadding-photo" style={{position:'relative'}}>
                 <span className="project-badge">SATIŞI DEVAM EDİYOR</span>
                 <Link href="/postacilar-life">
-                  <a>
-                    <img src="/homepage-projects/life-1.webp" loading="lazy" decoding="async" />
+                  <a aria-label="Postacılar Life projesini incele">
+                    <img src="/homepage-projects/life-1.webp" loading="lazy" decoding="async" alt="Postacılar Life konut projesi dış cephe görünümü" />
                   </a>
                 </Link>
               </div>
               <div className="col-3 img-container-main-project fadding-photo">
                 <Link href="/postacilar-nova">
-                  <a>
-                    <img src="/homepage-projects/nova.webp" loading="lazy" decoding="async" />
+                  <a aria-label="Postacılar Nova projesini incele">
+                    <img src="/homepage-projects/nova.webp" loading="lazy" decoding="async" alt="Postacılar Nova konut projesi dış cephe görünümü" />
                   </a>
                 </Link>
               </div>
               <div className="col-3 img-container-main-project fadding-photo">
                 <Link href="/postacilar-prestige">
-                  <a>
-                    <img src="/homepage-projects/prestige.webp" loading="lazy" decoding="async" />
+                  <a aria-label="Postacılar Prestige projesini incele">
+                    <img src="/homepage-projects/prestige.webp" loading="lazy" decoding="async" alt="Postacılar Prestige konut projesi dış cephe görünümü" />
                   </a>
                 </Link>
               </div>
@@ -62,30 +62,30 @@ export default function Projects({ projectsRef }) {
               <div className="col-3 img-container-main-project fadding-photo" style={{position:'relative'}}>
                 <span className="project-badge">SATIŞTA</span>
                 <Link href="/postacilar-life2">
-                  <a>
-                    <img src="/homepage-projects/life-2.webp" loading="lazy" decoding="async" />
+                  <a aria-label="Postacılar Life 2 projesini incele">
+                    <img src="/homepage-projects/life-2.webp" loading="lazy" decoding="async" alt="Postacılar Life 2 konut projesi dış cephe görünümü" />
                   </a>
                 </Link>
               </div>
               <div className="col-3 img-container-main-project fadding-photo" style={{position:'relative'}}>
                 <span className="project-badge">SATIŞTA</span>
                 <Link href="/postacilar-life">
-                  <a>
-                    <img src="/homepage-projects/life-1.webp" loading="lazy" decoding="async" />
+                  <a aria-label="Postacılar Life projesini incele">
+                    <img src="/homepage-projects/life-1.webp" loading="lazy" decoding="async" alt="Postacılar Life konut projesi dış cephe görünümü" />
                   </a>
                 </Link>
               </div>
               <div className="col-3 img-container-main-project fadding-photo">
                 <Link href="/postacilar-nova">
-                  <a>
-                    <img src="/homepage-projects/nova.webp" loading="lazy" decoding="async" />
+                  <a aria-label="Postacılar Nova projesini incele">
+                    <img src="/homepage-projects/nova.webp" loading="lazy" decoding="async" alt="Postacılar Nova konut projesi dış cephe görünümü" />
                   </a>
                 </Link>
               </div>
               <div className="col-3 img-container-main-project fadding-photo">
                 <Link href="/postacilar-prestige">
-                  <a>
-                    <img src="/homepage-projects/prestige.webp" loading="lazy" decoding="async" />
+                  <a aria-label="Postacılar Prestige projesini incele">
+                    <img src="/homepage-projects/prestige.webp" loading="lazy" decoding="async" alt="Postacılar Prestige konut projesi dış cephe görünümü" />
                   </a>
                 </Link>
               </div>

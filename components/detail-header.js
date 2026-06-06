@@ -9,7 +9,7 @@ export default function Header() {
             <Navbar className='color-nav' variant="dark">
                 <div className="header-inner-wrapper--detail">
                     <div className="header-logo">
-                        <Navbar.Brand href="/"><img src="/logo.webp" /></Navbar.Brand>
+                        <Navbar.Brand href="/" aria-label="Postacılar Yapı — Ana Sayfa"><img src="/logo.webp" alt="Postacılar Yapı logosu" /></Navbar.Brand>
                     </div>
                     <Nav className="ms-auto header">
                         <Nav.Link href="/#hakkimizda">Hakkımızda</Nav.Link>

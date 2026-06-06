@@ -51,30 +51,54 @@ export default function PostacilarYakamoz() {
         />
       )}
       <Head>
-        <title>POSTACILAR | YAKAMOZ</title>
-        <meta name="description" content="Postacılar Yakamoz — Bursa'da doğayla iç içe, huzurlu bir yaşam sunan konut projesi. Proje detayları ve görseller için inceleyin." />
+        <title>Postacılar Yakamoz | Çanakkale Doğa İçinde Yaşam Projesi</title>
+        <meta name="description" content="Postacılar Yakamoz — Çanakkale'de doğayla iç içe, huzurlu bir yaşam sunan konut projesi. Yeşil çevre, ferah yaşam alanları ve kaliteli mimari. Proje detayları için inceleyin." />
+        <meta name="keywords" content="Postacılar Yakamoz, Çanakkale Yakamoz konut projesi, doğa içinde yaşam Çanakkale, Yakamoz daire, huzurlu konut Çanakkale, Postacılar Yapı Yakamoz" />
+        <meta name="author" content="Postacılar Yapı" />
         <meta name="robots" content="index, follow" />
+        <meta name="geo.region" content="TR-17" />
+        <meta name="geo.placename" content="Çanakkale" />
         <link rel="canonical" href="https://www.postacilar.com/postacilar-yakamoz" />
         <link rel="icon" href="/meta-logo.webp" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Postacılar Yapı" />
-        <meta property="og:title" content="POSTACILAR | YAKAMOZ" />
-        <meta property="og:description" content="Postacılar Yakamoz — Bursa'da doğayla iç içe, huzurlu bir yaşam sunan konut projesi. Proje detayları ve görseller için inceleyin." />
+        <meta property="og:title" content="Postacılar Yakamoz | Çanakkale Doğa İçinde Yaşam Projesi" />
+        <meta property="og:description" content="Postacılar Yakamoz — Çanakkale'de doğayla iç içe, huzurlu bir yaşam sunan konut projesi. Yeşil çevre, ferah yaşam alanları ve kaliteli mimari." />
         <meta property="og:url" content="https://www.postacilar.com/postacilar-yakamoz" />
         <meta property="og:image" content="https://www.postacilar.com/yakamoz/outside/yakamoz-outside-1.webp" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Postacılar Yakamoz — Çanakkale doğa içinde konut projesi" />
         <meta property="og:locale" content="tr_TR" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="POSTACILAR | YAKAMOZ" />
-        <meta name="twitter:description" content="Postacılar Yakamoz — Bursa'da doğayla iç içe, huzurlu bir yaşam sunan konut projesi. Proje detayları ve görseller için inceleyin." />
+        <meta name="twitter:title" content="Postacılar Yakamoz | Çanakkale Doğa İçinde Yaşam Projesi" />
+        <meta name="twitter:description" content="Postacılar Yakamoz — Çanakkale'de doğayla iç içe, huzurlu bir yaşam sunan konut projesi. Proje detayları ve görseller için inceleyin." />
         <meta name="twitter:image" content="https://www.postacilar.com/yakamoz/outside/yakamoz-outside-1.webp" />
+        <meta name="twitter:image:alt" content="Postacılar Yakamoz Çanakkale doğa içinde konut" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ApartmentComplex",
+            "name": "Postacılar Yakamoz",
+            "url": "https://www.postacilar.com/postacilar-yakamoz",
+            "image": "https://www.postacilar.com/yakamoz/outside/yakamoz-outside-1.webp",
+            "description": "Postacılar Yakamoz — Çanakkale'de doğayla iç içe, huzurlu bir yaşam sunan konut projesi.",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Çanakkale",
+              "addressCountry": "TR"
+            }
+          }) }}
+        />
       </Head>
       <Header />
-
+      <main>
       <div className="detail-hero">
-        <img src="/yakamoz/hero/yakamoz-hero.webp" className="detail-hero-bg" />
+        <img src="/yakamoz/hero/yakamoz-hero.webp" className="detail-hero-bg" alt="Postacılar Yakamoz projesi dış cephe görünümü" />
         <div className="detail-hero-title">
           <div className="detail-title">
-            <img src="/postacilar-logo.png" className="hero-postacilar-logo" /> <span className="detail-title-stick">|</span> <span className="detail-title-name" style={{marginRight: '-5px'}}>YAKAMOZ</span>
+            <img src="/postacilar-logo.png" className="hero-postacilar-logo" alt="Postacılar Yapı logosu" /> <span className="detail-title-stick">|</span> <span className="detail-title-name" style={{marginRight: '-5px'}}>YAKAMOZ</span>
           </div>
         </div>
       </div>
@@ -110,7 +134,7 @@ export default function PostacilarYakamoz() {
             <Swiper modules={[Navigation, Autoplay]} navigation loop={true} autoplay={{ delay: 2800, disableOnInteraction: false }} speed={800} spaceBetween={8} slidesPerView={1} onSlideNextTransitionStart={handleNextStart} onTransitionEnd={handleTransitionEnd}>
               {images.map((src, i) => (
                 <SwiperSlide key={i}>
-                  <img onClick={() => openModal(i)} src={src} />
+                  <img onClick={() => openModal(i)} src={src} alt={`Postacılar Yakamoz görsel ${i + 1}`} />
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -118,28 +142,28 @@ export default function PostacilarYakamoz() {
           <div className="detail-mosaic-desktop images zoomable-img">
             <div className="row align-items-end g-4">
               <div className="col-3">
-                <img onClick={() => openModal(0)} width="100%" height="auto" src="/yakamoz/outside/yakamoz-outside-1.webp" style={{cursor:"zoom-in", display:"block"}} loading="lazy" decoding="async" />
+                <img onClick={() => openModal(0)} width="100%" height="auto" src="/yakamoz/outside/yakamoz-outside-1.webp" style={{cursor:"zoom-in", display:"block"}} loading="lazy" decoding="async" alt="Postacılar Yakamoz dış cephe 1" />
               </div>
               <div className="col-5">
-                <img onClick={() => openModal(1)} width="100%" height="auto" src="/yakamoz/outside/yakamoz-outside-2.webp" style={{cursor:"zoom-in", display:"block"}} loading="lazy" decoding="async" />
+                <img onClick={() => openModal(1)} width="100%" height="auto" src="/yakamoz/outside/yakamoz-outside-2.webp" style={{cursor:"zoom-in", display:"block"}} loading="lazy" decoding="async" alt="Postacılar Yakamoz dış cephe 2" />
               </div>
               <div className="col-4">
-                <img onClick={() => openModal(2)} width="100%" height="auto" src="/yakamoz/outside/yakamoz-outside-3.webp" style={{cursor:"zoom-in", display:"block"}} loading="lazy" decoding="async" />
+                <img onClick={() => openModal(2)} width="100%" height="auto" src="/yakamoz/outside/yakamoz-outside-3.webp" style={{cursor:"zoom-in", display:"block"}} loading="lazy" decoding="async" alt="Postacılar Yakamoz dış cephe 3" />
               </div>
             </div>
             <div className="row g-4 mt-3">
               <div className="col-7">
-                <img onClick={() => openModal(3)} width="100%" height="auto" src="/yakamoz/outside/yakamoz-outside-4.webp" style={{cursor:"zoom-in", display:"block"}} loading="lazy" decoding="async" />
+                <img onClick={() => openModal(3)} width="100%" height="auto" src="/yakamoz/outside/yakamoz-outside-4.webp" style={{cursor:"zoom-in", display:"block"}} loading="lazy" decoding="async" alt="Postacılar Yakamoz dış cephe 4" />
               </div>
               <div className="col-5">
-                <img onClick={() => openModal(4)} width="100%" height="auto" src="/yakamoz/outside/yakamoz-outside-5.webp" style={{cursor:"zoom-in", display:"block"}} loading="lazy" decoding="async" />
+                <img onClick={() => openModal(4)} width="100%" height="auto" src="/yakamoz/outside/yakamoz-outside-5.webp" style={{cursor:"zoom-in", display:"block"}} loading="lazy" decoding="async" alt="Postacılar Yakamoz dış cephe 5" />
               </div>
             </div>
           </div>
         </div>
 
       </div>
-
+      </main>
       <Footer />
       <StickyButtons />
     </>

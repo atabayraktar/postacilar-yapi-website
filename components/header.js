@@ -24,7 +24,7 @@ export default function Header() {
             <Navbar className='color-nav' variant="dark">
                 <div className="header-inner-wrapper">
                     <div className="header-logo">
-                        <Navbar.Brand href="/" onClick={handleLogo} aria-label="Postacılar Yapı — Ana Sayfa"><img src="/logo.webp" alt="Postacılar Yapı logosu" /></Navbar.Brand>
+                        <Navbar.Brand href="/" onClick={handleLogo} aria-label="Postacılar Yapı — Ana Sayfa"><img src="/logo.webp" alt="Postacılar Yapı logosu" width="257" height="46" /></Navbar.Brand>
                     </div>
                     <Nav className="ms-auto header">
                         <Nav.Link href="/#hakkimizda">{t('nav.about')}</Nav.Link>

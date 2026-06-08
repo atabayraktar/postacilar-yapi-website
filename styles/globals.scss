@@ -495,9 +495,9 @@ body {
     padding: 100px 0;
   }
   @media only screen and (max-width: 768px) {
-    padding: 40px 0;
+    padding: 56px 0;
     &-last-item {
-      padding: 40px 0;
+      padding: 56px 0;
     }
   }
 }
@@ -680,6 +680,10 @@ body {
   justify-content: center;
   position: relative;
   min-height: 100svh;
+  @media only screen and (max-width: 768px) {
+    min-height: unset;
+    aspect-ratio: 16/9;
+  }
   img {
     @extend .big-logo;
     width: 100%;
@@ -746,6 +750,9 @@ body {
     @extend .about-us;
     font-size: 40px;
     padding-bottom: 15px;
+    @media only screen and (max-width: 768px) {
+      font-size: 24px;
+    }
   }
   &-description {
     @extend .about-us;
@@ -1076,6 +1083,10 @@ body {
       background-color 0.3s ease,
       color 0.3s ease !important;
     box-shadow: none !important;
+    @media only screen and (max-width: 768px) {
+      font-size: 12px;
+      padding: 9px 24px;
+    }
 
     &:hover {
       background-color: transparent !important;
@@ -1127,8 +1138,8 @@ body {
     transform 0.2s ease;
   cursor: default;
   @media only screen and (max-width: 768px) {
-    font-size: 11px;
-    padding: 8px 24px 8px 16px;
+    font-size: 9px;
+    padding: 7px 20px 7px 14px;
     top: 14px;
   }
   &::before {
@@ -1145,18 +1156,19 @@ body {
 
 #projeler .mobile-components .project-badge {
   @media only screen and (max-width: 768px) {
-    font-size: 12px;
-    padding: 4px 12px 4px 8px;
-    top: 170px;
+    font-size: 9px;
+    padding: 5px 14px 5px 10px;
+    top: auto;
+    bottom: 20px;
   }
 }
 
 #projelerimiz-page .project-badge {
   @media only screen and (max-width: 768px) {
-    font-size: 12px;
-    padding: 4px 12px 4px 8px;
+    font-size: 9px;
+    padding: 5px 14px 5px 10px;
     top: auto;
-    bottom: 20px;
+    bottom: 16px;
     left: 0px;
   }
 }
@@ -1413,6 +1425,10 @@ body.modal-open {
   padding: 48px 44px;
   width: 100%;
   max-width: 480px;
+  @media only screen and (max-width: 768px) {
+    margin: 0 16px;
+    padding: 40px 28px;
+  }
   position: relative;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
   animation: modalSlideUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) both;
@@ -1609,9 +1625,14 @@ body,
   to   { opacity: 1; }
 }
 .big-logo {
+  overflow: hidden;
   .big-logo-bg {
     animation: heroFadeUp 1.1s cubic-bezier(0.22, 1, 0.36, 1) both;
+    position: absolute;
+    inset: 0;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     display: block;
   }
   .logo {
@@ -1625,6 +1646,107 @@ body,
   #projeler.container {
     padding-left: 0;
     padding-right: 0;
+  }
+}
+
+/* ==========================================================
+   TABLET — Portrait orientation: hero aspect ratio fix
+   Covers iPad Mini (768px+), Air (820px+), Pro portrait
+   ========================================================== */
+@media only screen and (orientation: portrait) and (min-width: 768px) {
+  .big-logo {
+    min-height: unset !important;
+    aspect-ratio: 16/9;
+  }
+}
+
+/* ==========================================================
+   TABLET — 769px to 1023px (portrait tablets)
+   iPad Mini portrait, iPad Air portrait
+   ========================================================== */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  // Show desktop layout (enough width for 4-col grids)
+  .mobile-components {
+    display: none !important;
+  }
+  .desktop-components {
+    display: block !important;
+  }
+
+  // Section spacing
+  .component-container {
+    padding: 72px 0;
+    &-last-item {
+      padding: 72px 0;
+    }
+  }
+
+  // Typography
+  .about-us-title {
+    font-size: 30px !important;
+  }
+  .about-us-description {
+    font-size: 16px !important;
+  }
+
+  // Badge
+  .project-badge {
+    font-size: 9px;
+    top: 18px;
+  }
+
+  // Container padding
+  #iletisim.container,
+  #hakkimizda.container,
+  #projeler.container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  // Button
+  .view-more-button .btn {
+    font-size: 13px;
+    padding: 10px 28px;
+  }
+
+  // Header logo
+  .header img {
+    max-width: 160px;
+    height: auto;
+  }
+
+  // Count-up — override mobile 2×2 grid back to horizontal flex row
+  .count-up {
+    display: flex !important;
+    grid-template-columns: unset;
+    padding: 40px 32px;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: nowrap;
+  }
+
+  // Icons section — restore desktop-size icons/text (overrides the ≤991px shrink)
+  .about-us-logo {
+    max-width: 80px;
+    img {
+      max-width: 80px !important;
+    }
+  }
+  .about-us-logo-description {
+    font-size: 18px !important;
+  }
+}
+
+/* ==========================================================
+   TABLET — 1024px portrait (iPad Pro 11/12.9" portrait)
+   At 1024px desktop layout is used but svh = 1366px (too tall)
+   ========================================================== */
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  .component-container {
+    padding: 80px 0;
+    &-last-item {
+      padding: 80px 0;
+    }
   }
 }
 

@@ -55,6 +55,12 @@ export default function StickyButtons() {
 
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
+  const closeModal = () => {
+    setShowContactModal(false);
+    setForm({ name: '', phone: '', message: '' });
+    setFormTouched({ name: false, phone: false, message: false });
+  };
+
   const handleFormChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
     setFormTouched({ ...formTouched, [e.target.name]: true });
@@ -121,9 +127,9 @@ export default function StickyButtons() {
 
       {/* İletişim Modal */}
       {showContactModal && (
-        <div className="contact-modal-overlay" onClick={() => setShowContactModal(false)}>
+        <div className="contact-modal-overlay" onClick={closeModal}>
           <div className="contact-modal" onClick={(e) => e.stopPropagation()}>
-            <button className="contact-modal-close" onClick={() => setShowContactModal(false)}>✕</button>
+            <button className="contact-modal-close" onClick={closeModal}>✕</button>
             <h3>{t('modal.title')}</h3>
             <p>{t('modal.subtitle')}</p>
             <form onSubmit={handleFormSubmit} noValidate>

@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import Image from 'next/image';
 import CountUp from 'react-countup';
 import { useApp } from '../context/AppContext';
 
@@ -38,12 +39,12 @@ export default function ProjectsCountUp() {
                 <div className="container count-up">
                     {ITEMS.map(({ src, alt, key }) => (
                         <div key={key} className="count-up-item">
-                            <img
+                            <Image
                                 src={src}
-                                width="64"
-                                height="64"
+                                width={64}
+                                height={64}
                                 alt={alt}
-                                style={{ objectFit: 'contain' }}
+                                objectFit="contain"
                             />
                             <div className="count-up-number">
                                 {isVisible ? (

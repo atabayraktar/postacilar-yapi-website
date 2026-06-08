@@ -10,9 +10,11 @@ class MyDocument extends Document {
     return (
       <Html lang="tr">
         <Head>
+          <link rel="preload" href="/logo.webp" as="image" type="image/webp" />
+          <link rel="preload" href="/fonts/montserrat-latin-ext-500-normal.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+          <link rel="preload" href="/fonts/montserrat-latin-ext-700-normal.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
           <meta charSet="utf-8" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <meta name="theme-color" content="#1c1c1c" />
+<meta name="theme-color" content="#1c1c1c" />
           <meta name="format-detection" content="telephone=no" />
           <link rel="apple-touch-icon" href="/meta-logo.webp" />
           <script

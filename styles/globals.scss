@@ -54,6 +54,10 @@
 }
 
 [data-theme="light"] {
+  .contact-popup-btn {
+    color: #fff;
+  }
+
   --bg-main: #e6e9ef;
   --bg-alt: #dce0e8;
   --bg-counter: #dde0e8;
@@ -1265,7 +1269,7 @@ body {
   }
 
   &-title {
-    color: var(--brand-text);
+    color: #b8906e;
     font-size: 14px;
     font-weight: 700;
     margin: 0 0 6px;
@@ -1281,7 +1285,7 @@ body {
   &-btn {
     width: 100%;
     background: #8c6d54;
-    color: #fff;
+    color: #1a1a1a;
     border: none;
     border-radius: 0;
     padding: 9px 0;

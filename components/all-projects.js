@@ -1,24 +1,26 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
+import { useApp } from '../context/AppContext';
 
 export default function AllProjects() {
   const router = useRouter();
+  const { t } = useApp();
 
   return (
     <>
       <div className="container" id="projelerimiz-page">
         <div className="">
           <div className="component-container-last-item">
-            <div className="about-us-title">Projelerimiz</div>
+            <div className="about-us-title">{t('projects.title')}</div>
             <div className="row">
               <div className="col-md-4 col-6 img-container-projects fadding-photo" style={{position:'relative'}}>
-                <span className="project-badge badge-desktop">SATIŞI DEVAM EDİYOR</span>
-                <span className="project-badge badge-mobile">SATIŞTA</span>
+                <span className="project-badge badge-desktop">{t('projects.badge')}</span>
+                <span className="project-badge badge-mobile">{t('projects.badgeMobile')}</span>
                 <img onClick={() => router.push("/postacilar-life2")} src="/life2/outside/life2-outside-1.webp" loading="lazy" decoding="async" />
               </div>
               <div className="col-md-4 col-6 img-container-projects fadding-photo" style={{position:'relative'}}>
-                <span className="project-badge badge-desktop">SATIŞI DEVAM EDİYOR</span>
-                <span className="project-badge badge-mobile">SATIŞTA</span>
+                <span className="project-badge badge-desktop">{t('projects.badge')}</span>
+                <span className="project-badge badge-mobile">{t('projects.badgeMobile')}</span>
                 <img onClick={() => router.push("/postacilar-life")} src="/life/outside/life-outside-1.webp" loading="lazy" decoding="async" />
               </div>
               <div className="col-md-4 col-6 img-container-projects fadding-photo">

@@ -11,7 +11,7 @@
     "p1": "Postacılar Yapı is the construction brand of Postacılar, a company with over 30 years of commercial history in Çanakkale. Having been active in construction since 2011, Postacılar Yapı continues to deliver large-scale projects in Çanakkale.",
     "p2": "The company aims to create user-focused and eco-friendly buildings in all its projects. With construction quality, craftsmanship, project-specific opportunities, careful site selection, and attention to the design process, it consistently delivers reliable projects."
   },
-  "projects": { "title": "Our Projects", "viewAll": "View All Projects", "badge": "Sales Ongoing" },
+  "projects": { "title": "Our Projects", "viewAll": "View All Projects", "badge": "SALES ONGOING", "badgeMobile": "ON SALE" },
   "counter": { "projects": "PROJECTS", "sqm": "SQ. METERS", "apartments": "APARTMENTS", "users": "RESIDENTS" },
   "contact": { "mapTitle": "Project Areas", "title": "Contact", "formBtn": "Contact Form" },
   "footer": { "copyright": "© 2026 Postacılar Yapı. All rights reserved." },

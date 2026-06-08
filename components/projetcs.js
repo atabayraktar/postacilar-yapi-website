@@ -14,7 +14,7 @@ export default function Projects({ projectsRef }) {
             <div className="about-us-title">{t('projects.title')}</div>
             <div className="row">
               <div className="col-3 img-container-main-project fadding-photo" style={{position:'relative'}}>
-                <span className="project-badge">SATIŞI DEVAM EDİYOR</span>
+                <span className="project-badge">{t('projects.badge')}</span>
                 <Link href="/postacilar-life2">
                   <a aria-label="Postacılar Life 2 projesini incele">
                     <img src="/homepage-projects/life-2.webp" loading="lazy" decoding="async" alt="Postacılar Life 2 konut projesi dış cephe görünümü" />
@@ -22,7 +22,7 @@ export default function Projects({ projectsRef }) {
                 </Link>
               </div>
               <div className="col-3 img-container-main-project fadding-photo" style={{position:'relative'}}>
-                <span className="project-badge">SATIŞI DEVAM EDİYOR</span>
+                <span className="project-badge">{t('projects.badge')}</span>
                 <Link href="/postacilar-life">
                   <a aria-label="Postacılar Life projesini incele">
                     <img src="/homepage-projects/life-1.webp" loading="lazy" decoding="async" alt="Postacılar Life konut projesi dış cephe görünümü" />
@@ -60,7 +60,7 @@ export default function Projects({ projectsRef }) {
             <div className="about-us-title">{t('projects.title')}</div>
             <div className="row">
               <div className="col-3 img-container-main-project fadding-photo" style={{position:'relative'}}>
-                <span className="project-badge">SATIŞTA</span>
+                <span className="project-badge">{t('projects.badgeMobile')}</span>
                 <Link href="/postacilar-life2">
                   <a aria-label="Postacılar Life 2 projesini incele">
                     <img src="/homepage-projects/life-2.webp" loading="lazy" decoding="async" alt="Postacılar Life 2 konut projesi dış cephe görünümü" />
@@ -68,7 +68,7 @@ export default function Projects({ projectsRef }) {
                 </Link>
               </div>
               <div className="col-3 img-container-main-project fadding-photo" style={{position:'relative'}}>
-                <span className="project-badge">SATIŞTA</span>
+                <span className="project-badge">{t('projects.badgeMobile')}</span>
                 <Link href="/postacilar-life">
                   <a aria-label="Postacılar Life projesini incele">
                     <img src="/homepage-projects/life-1.webp" loading="lazy" decoding="async" alt="Postacılar Life konut projesi dış cephe görünümü" />

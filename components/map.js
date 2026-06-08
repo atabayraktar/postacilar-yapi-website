@@ -30,7 +30,7 @@ const Mapx = () => {
     });
 
     return (
-        <MapContainer center={[40.13490802902217, 26.405510194048688]} zoom={12} scrollWheelZoom={false} style={{ height: "100%", width: "100%", filter: mapFilter }}>
+        <MapContainer key={theme} center={[40.13490802902217, 26.405510194048688]} zoom={12} scrollWheelZoom={false} style={{ height: "100%", width: "100%", filter: mapFilter }}>
             <TileLayer
                 url={tileUrl}
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'

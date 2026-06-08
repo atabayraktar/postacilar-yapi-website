@@ -1,4 +1,4 @@
-﻿.project-page-title {
+.project-page-title {
     font-family: 'Montserrat', sans-serif;
     font-size: 38px;
     font-weight: 300;
@@ -31,12 +31,21 @@
 }
 
 .hero-postacilar-logo {
-    height: 121px;
+    height: 97px;
     width: auto;
     display: block;
     margin-right: 0;
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 1024px) {
+        height: 75px;
+    }
+    @media only screen and (max-width: 900px) {
+        height: 60px;
+    }
+    @media only screen and (max-width: 767px) {
         height: 30px;
+    }
+    @media only screen and (orientation: landscape) and (max-height: 500px) {
+        height: 35px;
     }
 }
 
@@ -79,16 +88,34 @@
         @extend .detail-title;
         font-size: 100px;
         margin-bottom: 10px;
+        @media only screen and (max-width: 1024px) {
+            font-size: 65px!important;
+        }
+        @media only screen and (max-width: 900px) {
+            font-size: 58px!important;
+        }
         @media only screen and (max-width: 768px) {
             font-size: 70px!important;
+        }
+        @media only screen and (orientation: landscape) and (max-height: 500px) {
+            font-size: 35px!important;
         }
     }
     &-name {
         font-weight: 400;
     }
+    @media only screen and (max-width: 1024px) {
+        font-size: 30px;
+    }
+    @media only screen and (max-width: 900px) {
+        font-size: 24px;
+    }
     @media only screen and (max-width: 768px) {
         font-size: 28px;
         justify-content: center;
+    }
+    @media only screen and (orientation: landscape) and (max-height: 500px) {
+        font-size: 20px;
     }
 }
 .detail-sub-title {
@@ -103,16 +130,23 @@
         @extend .detail-title;
         font-size: 80px;
         margin-bottom: 10px;
+        @media only screen and (max-width: 1024px) {
+            font-size: 55px!important;
+        }
+        @media only screen and (max-width: 768px) {
+            font-size: 52px!important;
+        }
     }
     &.flat{
         margin-top: 15px;
     }
+    @media only screen and (max-width: 1024px) {
+        font-size: 22px;
+        letter-spacing: 3px;
+    }
     @media only screen and (max-width: 768px) {
         font-size: 20px;
         letter-spacing: 2px;
-        &-stick {
-            font-size: 52px !important;
-        }
     }
 }
 .detail-title-name {
@@ -122,11 +156,34 @@
     font-size: 80px;
     margin-right: -5px;
     margin-left: -17px;
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 1024px) {
+        height: 75px;
+        line-height: 75px;
+        font-size: 52px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    @media only screen and (max-width: 900px) {
+        height: 60px;
+        line-height: 60px;
+        font-size: 50px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    @media only screen and (max-width: 767px) {
         display: inline;
         height: auto;
         line-height: 1.2;
         font-size: 22px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    @media only screen and (orientation: landscape) and (max-height: 500px) {
+        height: 35px;
+        line-height: 35px;
+        font-size: 28px;
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 

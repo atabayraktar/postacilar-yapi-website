@@ -61,27 +61,60 @@
       letter-spacing: 10px;
       font-weight: 400;
       gap: 20px;
-      @media (max-width: 768px) {
+      @media (max-width: 1024px) {
+        font-size: 55px;
+        letter-spacing: 6px;
+        gap: 14px;
+      }
+      @media (max-width: 900px) {
+        font-size: 28px;
+        letter-spacing: 4px;
+        gap: 12px;
+      }
+      @media (max-width: 767px) {
         font-size: clamp(26px, 8vw, 38px);
         letter-spacing: clamp(1px, 0.8vw, 4px);
         gap: clamp(6px, 2vw, 10px);
       }
+      @media (orientation: landscape) and (max-height: 500px) {
+        font-size: 20px;
+        letter-spacing: 3px;
+        gap: 10px;
+      }
       .detail-title-stick {
-        font-size: 121px;
+        font-size: 97px;
         margin-bottom: 8px;
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
+          font-size: 80px !important;
+        }
+        @media (max-width: 900px) {
+          font-size: 60px !important;
+        }
+        @media (max-width: 767px) {
           font-size: clamp(26px, 8vw, 48px) !important;
+        }
+        @media (orientation: landscape) and (max-height: 500px) {
+          font-size: 35px !important;
         }
       }
     }
   }
 
   .hero-postacilar-logo {
-    height: 121px;
+    height: 97px;
     width: auto;
     display: block;
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
+      height: 75px;
+    }
+    @media (max-width: 900px) {
+      height: 60px;
+    }
+    @media (max-width: 767px) {
       height: clamp(26px, 8vw, 38px);
+    }
+    @media (orientation: landscape) and (max-height: 500px) {
+      height: 35px;
     }
   }
 

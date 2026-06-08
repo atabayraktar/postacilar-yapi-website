@@ -158,14 +158,37 @@
 
 .detail-hero-title .detail-title-name {
   display: inline-block !important;
-  height: 121px !important;
-  line-height: 121px !important;
+  height: 97px !important;
+  line-height: 97px !important;
   font-size: 80px !important;
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1024px) {
+    height: 75px !important;
+    line-height: 75px !important;
+    font-size: 52px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  @media only screen and (max-width: 900px) {
+    height: 60px !important;
+    line-height: 60px !important;
+    font-size: 50px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  @media only screen and (max-width: 767px) {
     display: inline !important;
     height: auto !important;
     line-height: 1.2 !important;
     font-size: 22px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  @media only screen and (orientation: landscape) and (max-height: 500px) {
+    height: 35px !important;
+    line-height: 35px !important;
+    font-size: 28px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 }
 
@@ -273,6 +296,7 @@
 
 // Sticky header wrapper
 .sticky-header {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 1030;

@@ -2,6 +2,15 @@
   @media (max-width: 768px) {
     display: none;
   }
+  @media only screen and (orientation: portrait) and (min-width: 769px) and (max-width: 1023px) {
+    display: none !important;
+  }
+}
+
+.flat-types-inline {
+  @media only screen and (orientation: portrait) and (min-width: 769px) and (max-width: 1023px) {
+    display: none !important;
+  }
 }
 
 .flat-types-swiper {
@@ -424,6 +433,9 @@ $row-gap: 112px;
   @media only screen and (max-width: 768px) {
     display: none;
   }
+  @media only screen and (orientation: portrait) and (min-width: 769px) and (max-width: 1023px) {
+    display: none;
+  }
 
   .mt-2 {
     margin-top: 0.1rem !important;
@@ -471,6 +483,13 @@ $row-gap: 112px;
     display: block;
     margin-bottom: 8px;
   }
+  @media only screen and (orientation: portrait) and (min-width: 769px) and (max-width: 1023px) {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    margin-bottom: 8px;
+  }
   .swiper-button-next,
   .swiper-button-prev {
     color: #1a1a1a !important;
@@ -500,5 +519,40 @@ $row-gap: 112px;
       transform: scale(0.9);
       opacity: 0.55;
     }
+  }
+}
+
+@media only screen and (orientation: portrait) and (min-width: 769px) and (max-width: 1023px) {
+  .detail-sub-title .prestige-logo img {
+    width: 68px !important;
+    height: auto !important;
+  }
+
+  .detail-sub-title {
+    font-size: 15px !important;
+    letter-spacing: 1px !important;
+  }
+
+  .detail-sub-title-stick {
+    font-size: 34px !important;
+  }
+
+  .life-details-col {
+    padding-right: 14px;
+  }
+
+  .life-floor-col {
+    padding-left: 14px;
+  }
+
+  .flat-types-swiper .swiper-slide img {
+    aspect-ratio: 4/3 !important;
+    object-fit: contain !important;
+    height: auto !important;
+    max-height: 320px;
+  }
+
+  .detail-swiper-mobile.flat-types-swiper {
+    max-height: 340px;
   }
 }

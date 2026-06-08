@@ -175,6 +175,14 @@
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
+  @media only screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1023px) {
+    height: auto !important;
+    line-height: 1.15 !important;
+    font-size: clamp(22px, 3.2vw, 36px) !important;
+    letter-spacing: 1px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
   @media only screen and (max-width: 767px) {
     display: inline !important;
     height: auto !important;
@@ -1741,6 +1749,11 @@ body,
   .header img {
     max-width: 160px;
     height: auto;
+  }
+
+  // Detail hero title — portrait tablet: reduce letter-spacing so long names fit
+  .detail-hero-title .detail-title {
+    letter-spacing: 1px;
   }
 
   // Count-up — override mobile 2×2 grid back to horizontal flex row

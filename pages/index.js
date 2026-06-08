@@ -1,14 +1,16 @@
 import Head from 'next/head'
+import dynamic from 'next/dynamic'
 import Header from '../components/header'
 import BigLogo from '../components/big-logo'
 import AboutUs from '../components/about-us'
 import Icons from '../components/icons'
 import Projects from '../components/projetcs'
-import ProjectMap from '../components/project-map'
 import ProjectsCountUp from '../components/projects-count-up'
 import StickyButtons from '../components/sticky-buttons'
 import Footer from '../components/footer'
 import { useRef } from 'react'
+
+const ProjectMap = dynamic(() => import('../components/project-map'), { ssr: false })
 
 export default function Home() {
   const projectsSectionRef = useRef(null);

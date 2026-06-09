@@ -87,6 +87,26 @@ const Mapx = () => {
             </Marker>
             <Marker
                 icon={icon}
+                position={[40.1649072, 26.4278969]}
+                draggable={true}
+                animate={true}
+            >
+                <Popup>
+                    Postacılar Life
+        </Popup>
+            </Marker>
+            <Marker
+                icon={icon}
+                position={[40.165633, 26.430673]}
+                draggable={true}
+                animate={true}
+            >
+                <Popup>
+                    Postacılar Life 2
+        </Popup>
+            </Marker>
+            <Marker
+                icon={icon}
                 position={[40.13490802902217, 26.405510194048688]}
                 draggable={true}
                 animate={true}

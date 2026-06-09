@@ -78,6 +78,10 @@
     filter: invert(1);
   }
 
+  .about-us-logo img {
+    filter: brightness(0) invert(1) brightness(0.12);
+  }
+
   .count-up-number-value,
   .count-up-number-title {
     color: var(--brand-text) !important;
@@ -758,7 +762,7 @@ body {
     @extend .about-us-logo;
     width: 100%;
     height: auto;
-    filter: brightness(0) saturate(100%) invert(48%) sepia(28%) saturate(500%) hue-rotate(345deg) brightness(90%) contrast(90%);
+    filter: brightness(0) invert(1) brightness(0.902);
   }
   &-description {
     font-size: 22px;

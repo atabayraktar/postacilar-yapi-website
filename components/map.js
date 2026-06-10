@@ -13,11 +13,11 @@ const Mapx = () => {
         ? "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.webp"
         : "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.webp";
     const mapFilter = isLight
-        ? "sepia(0.5) hue-rotate(320deg) saturate(0.7) brightness(0.97)"
-        : "sepia(0.55) hue-rotate(320deg) saturate(1.1) brightness(1.1)";
-    const pinFill = isLight ? '#8c6d54' : '#1a1a1a';
-    const pinStroke = isLight ? '#8a6a58' : '#555';
-    const pinCenter = isLight ? '#fff' : '#888';
+        ? "saturate(0.55) brightness(1.01) contrast(0.92)"
+        : "brightness(0.88) saturate(0.8) contrast(1.05)";
+    const pinFill = '#b8906e';
+    const pinStroke = '#a07858';
+    const pinCenter = isLight ? '#fff' : '#1f1e1e';
     const icon = L.divIcon({
         className: '',
         html: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 41" width="25" height="41">

@@ -54,10 +54,6 @@
 }
 
 [data-theme="light"] {
-  .contact-popup-btn {
-    color: #fff;
-  }
-
   --bg-main: #e6e9ef;
   --bg-alt: #dce0e8;
   --bg-counter: #dde0e8;
@@ -1321,7 +1317,7 @@ body {
   &-btn {
     width: 100%;
     background: #8c6d54;
-    color: #1a1a1a;
+    color: #fff;
     border: none;
     border-radius: 0;
     padding: 9px 0;
@@ -1331,6 +1327,7 @@ body {
     transition: background 0.2s;
     &:hover {
       background: #cba992;
+      color: #1a1a1a;
     }
   }
 }

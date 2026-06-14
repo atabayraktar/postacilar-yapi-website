@@ -51,9 +51,9 @@ export default function PostacilarYakamoz() {
         />
       )}
       <Head>
-        <title>Postacılar Yakamoz | Çanakkale Doğa İçinde Yaşam Projesi</title>
-        <meta name="description" content="Postacılar Yakamoz — Çanakkale'de doğayla iç içe, huzurlu bir yaşam sunan konut projesi. Yeşil çevre, ferah yaşam alanları ve kaliteli mimari. Proje detayları için inceleyin." />
-        <meta name="keywords" content="Postacılar Yakamoz, Çanakkale Yakamoz konut projesi, doğa içinde yaşam Çanakkale, Yakamoz daire, huzurlu konut Çanakkale, Postacılar Yapı Yakamoz" />
+        <title>Postacılar Yakamoz | Barbaros Mahallesi Çanakkale Boğaz Manzaralı Satılık Daire</title>
+        <meta name="description" content="Postacılar Yakamoz — Çanakkale Barbaros Mahallesi, 100. Yıl Caddesi'nde yeni kordon cepheli, Boğaz manzaralı konut projesi. 3+1 ve 4+1 dubleks satılık daire seçenekleri. Postacılar Yapı." />
+        <meta name="keywords" content="Postacılar Yakamoz, barbaros mahallesi satılık daire, çanakkale boğaz manzaralı daire, çanakkale deniz manzaralı daire, çanakkale yeni kordon daire, 100 yıl caddesi daire, çanakkale 3+1 satılık, çanakkale 4+1 dubleks, Postacılar Yapı Yakamoz, çanakkale satılık daire" />
         <meta name="author" content="Postacılar Yapı" />
         <meta name="robots" content="index, follow" />
         <meta name="geo.region" content="TR-17" />
@@ -83,9 +83,10 @@ export default function PostacilarYakamoz() {
             "name": "Postacılar Yakamoz",
             "url": "https://www.postacilar.com/postacilar-yakamoz",
             "image": "https://www.postacilar.com/yakamoz/outside/yakamoz-outside-1.webp",
-            "description": "Postacılar Yakamoz — Çanakkale'de doğayla iç içe, huzurlu bir yaşam sunan konut projesi.",
+            "description": "Çanakkale Barbaros Mahallesi, 100. Yıl Caddesi'nde yeni kordon cepheli, Boğaz manzaralı konut projesi. 3+1 ve 4+1 dubleks daire seçenekleri.",
             "address": {
               "@type": "PostalAddress",
+              "streetAddress": "Barbaros Mahallesi, 100. Yıl Caddesi",
               "addressLocality": "Çanakkale",
               "addressCountry": "TR"
             }

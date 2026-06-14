@@ -50,9 +50,9 @@ export default function PostacilarIdil() {
         />
       )}
       <Head>
-        <title>Postacılar İdil | Çanakkale Modern Mimari Konut Projesi</title>
-        <meta name="description" content="Postacılar İdil — Çanakkale'de modern mimari anlayışıyla tasarlanmış konut projesi. Estetik tasarım, fonksiyonel yaşam alanları. Fotoğraflar ve proje detayları için inceleyin." />
-        <meta name="keywords" content="Postacılar İdil, Çanakkale İdil konut projesi, İdil daire, modern mimari Çanakkale, Postacılar Yapı İdil, Çanakkale satılık daire" />
+        <title>Postacılar İdil | Esenler Mahallesi Çanakkale Satılık Daire</title>
+        <meta name="description" content="Postacılar İdil — Çanakkale Esenler Mahallesi'nde 10 daireli konut projesi. Okul, park ve hastanelere yakın, şehir merkezinde satılık daire. Postacılar Yapı." />
+        <meta name="keywords" content="Postacılar İdil, esenler mahallesi satılık daire, çanakkale merkez satılık daire, çanakkale sıfır daire, çanakkale okul yakını konut, Postacılar Yapı İdil, Çanakkale satılık daire, çanakkale hastane yakını daire" />
         <meta name="author" content="Postacılar Yapı" />
         <meta name="robots" content="index, follow" />
         <meta name="geo.region" content="TR-17" />
@@ -82,10 +82,12 @@ export default function PostacilarIdil() {
             "name": "Postacılar İdil",
             "url": "https://www.postacilar.com/postacilar-idil",
             "image": "https://www.postacilar.com/idil/outside/idil-outside-1.webp",
-            "description": "Postacılar İdil — Çanakkale'de modern mimari anlayışıyla tasarlanmış konut projesi.",
+            "description": "Çanakkale Esenler Mahallesi'nde 10 daireli konut projesi. Okul, park ve hastanelere yakın konumda satılık daire.",
             "address": {
               "@type": "PostalAddress",
+              "streetAddress": "Esenler Mahallesi",
               "addressLocality": "Çanakkale",
+              "addressRegion": "Merkez",
               "addressCountry": "TR"
             }
           }) }}

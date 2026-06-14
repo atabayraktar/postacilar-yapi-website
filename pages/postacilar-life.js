@@ -68,9 +68,9 @@ export default function PostacilarLife() {
         />
       )}
       <Head>
-        <title>Postacılar Life | Çanakkale Modern Konut Projesi</title>
-        <meta name="description" content="Postacılar Life — Çanakkale'de konforlu ve modern yaşam alanları. Dış cephe görselleri, iç mekan tasarımı ve daire tipleri için inceleyin. Kaliteli yaşamın adresi." />
-        <meta name="keywords" content="Postacılar Life, Çanakkale Life konut projesi, modern daire Çanakkale, Life daire tipleri, Çanakkale satılık daire, Postacılar Yapı Life, konforlu konut Çanakkale" />
+        <title>Postacılar Life | Esenler Mahallesi Çanakkale Satılık 3+1 Daire</title>
+        <meta name="description" content="Postacılar Life — Çanakkale Esenler Mahallesi, Şehit Ömer Halis Demir Caddesi'nde 42 daireli sıfır konut projesi. 3+1 satılık daire, kapalı otopark, modern mimari. Postacılar Yapı." />
+        <meta name="keywords" content="Postacılar Life, esenler mahallesi satılık daire, çanakkale esenler daire, çanakkale 3+1 satılık daire, çanakkale sıfır daire, şehit ömer halis demir caddesi daire, Çanakkale satılık daire, modern konut Çanakkale, Postacılar Yapı Life, çanakkale merkez satılık" />
         <meta name="author" content="Postacılar Yapı" />
         <meta name="robots" content="index, follow" />
         <meta name="geo.region" content="TR-17" />
@@ -100,10 +100,12 @@ export default function PostacilarLife() {
             "name": "Postacılar Life",
             "url": "https://www.postacilar.com/postacilar-life",
             "image": "https://www.postacilar.com/life/outside/life-outside-1.webp",
-            "description": "Postacılar Life — Çanakkale'de konforlu ve modern yaşam alanları.",
+            "description": "Çanakkale Esenler Mahallesi'nde 42 daireli, 3+1 sıfır konut projesi. Şehit Ömer Halis Demir Caddesi, kapalı otopark, modern mimari.",
             "address": {
               "@type": "PostalAddress",
+              "streetAddress": "Esenler Mahallesi, Şehit Ömer Halis Demir Caddesi No: 18/2",
               "addressLocality": "Çanakkale",
+              "addressRegion": "Merkez",
               "addressCountry": "TR"
             }
           }) }}

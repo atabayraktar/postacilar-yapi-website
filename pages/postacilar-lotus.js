@@ -49,9 +49,9 @@ export default function PostacilarLotus() {
         />
       )}
       <Head>
-        <title>Postacılar Lotus | Çanakkale Yeşil Yaşam Konut Projesi</title>
-        <meta name="description" content="Postacılar Lotus — Çanakkale'de huzurlu ve yeşil bir yaşam sunan konut projesi. Doğayla uyumlu tasarım, ferah yaşam alanları, kaliteli yapı. Proje detayları için inceleyin." />
-        <meta name="keywords" content="Postacılar Lotus, Çanakkale Lotus konut projesi, yeşil yaşam Çanakkale, Lotus daire, huzurlu konut Çanakkale, Postacılar Yapı Lotus, Çanakkale satılık daire" />
+        <title>Postacılar Lotus | Kepez Çanakkale Boğaz Manzaralı Satılık Daire</title>
+        <meta name="description" content="Postacılar Lotus — Çanakkale Kepez'de sahile yürüme mesafesinde, 16 daireli konut projesi. Çanakkale Boğazı manzarası. Kepez satılık sıfır daire. Postacılar Yapı." />
+        <meta name="keywords" content="Postacılar Lotus, kepez satılık daire, çanakkale kepez konut, çanakkale boğaz manzaralı daire, kepez sahil yakını daire, çanakkale deniz manzaralı daire, Postacılar Yapı Lotus, Çanakkale satılık daire, kepez sıfır daire" />
         <meta name="author" content="Postacılar Yapı" />
         <meta name="robots" content="index, follow" />
         <meta name="geo.region" content="TR-17" />
@@ -81,10 +81,12 @@ export default function PostacilarLotus() {
             "name": "Postacılar Lotus",
             "url": "https://www.postacilar.com/postacilar-lotus",
             "image": "https://www.postacilar.com/lotus/outside/lotus-outside-1.webp",
-            "description": "Postacılar Lotus — Çanakkale'de huzurlu ve yeşil bir yaşam sunan konut projesi.",
+            "description": "Çanakkale Kepez'de sahile yürüme mesafesinde, 16 daireli konut projesi. Çanakkale Boğazı manzarası.",
             "address": {
               "@type": "PostalAddress",
+              "streetAddress": "Kepez",
               "addressLocality": "Çanakkale",
+              "addressRegion": "Kepez",
               "addressCountry": "TR"
             }
           }) }}

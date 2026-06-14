@@ -50,9 +50,9 @@ export default function PostacilarPrestige() {
         />
       )}
       <Head>
-        <title>Postacılar Prestige | Çanakkale Lüks Konut Projesi</title>
-        <meta name="description" content="Postacılar Prestige — Çanakkale'de prestijli ve lüks yaşam anlayışıyla tasarlanmış konut projesi. Şık mimari, kaliteli malzeme ve üstün konfor. Proje detayları için inceleyin." />
-        <meta name="keywords" content="Postacılar Prestige, Çanakkale lüks konut, Çanakkale prestijli daire, Prestige konut projesi, Çanakkale üst segment konut, Postacılar Yapı Prestige" />
+        <title>Postacılar Prestige | Kepez Çanakkale Lüks Satılık Daire — Deniz Manzaralı</title>
+        <meta name="description" content="Postacılar Prestige — Çanakkale Kepez, Boğazkent Mahallesi'nde 28 daireli lüks konut projesi. Deniz, doğa ve şehir manzarası. Satılık 3+1 daire, kapalı otopark, yeşil bahçe. Postacılar Yapı." />
+        <meta name="keywords" content="Postacılar Prestige, kepez satılık daire, çanakkale kepez konut, boğazkent mahallesi daire, çanakkale deniz manzaralı daire, çanakkale lüks konut, çanakkale 3+1 satılık, çanakkale prestijli daire, kepez sıfır daire, Postacılar Yapı Prestige, çanakkale üst segment konut" />
         <meta name="author" content="Postacılar Yapı" />
         <meta name="robots" content="index, follow" />
         <meta name="geo.region" content="TR-17" />
@@ -82,10 +82,12 @@ export default function PostacilarPrestige() {
             "name": "Postacılar Prestige",
             "url": "https://www.postacilar.com/postacilar-prestige",
             "image": "https://www.postacilar.com/prestige/outside/prestige-outside-1.webp",
-            "description": "Postacılar Prestige — Çanakkale'de prestijli ve lüks yaşam anlayışıyla tasarlanmış konut projesi.",
+            "description": "Çanakkale Kepez, Boğazkent Mahallesi'nde 28 daireli lüks konut projesi. Deniz, doğa ve şehir manzarası, kapalı otopark, yeşil bahçe.",
             "address": {
               "@type": "PostalAddress",
+              "streetAddress": "Boğazkent Mahallesi, Seyit Onbaşı Caddesi No: 19",
               "addressLocality": "Çanakkale",
+              "addressRegion": "Kepez",
               "addressCountry": "TR"
             }
           }) }}

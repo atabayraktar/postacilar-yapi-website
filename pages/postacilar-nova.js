@@ -48,9 +48,9 @@ export default function PostacilarNova() {
         />
       )}
       <Head>
-        <title>Postacılar Nova | Çanakkale Konut Projesi</title>
-        <meta name="description" content="Postacılar Nova — Çanakkale'de şık ve işlevsel tasarımıyla öne çıkan konut projesi. Modern mimari anlayışı ve yaşam konforu bir arada. Proje detayları için inceleyin." />
-        <meta name="keywords" content="Postacılar Nova, Çanakkale Nova konut projesi, Nova daire, Çanakkale şık konut, Postacılar Yapı Nova, modern konut Çanakkale" />
+        <title>Postacılar Nova | Çanakkale Deniz Manzaralı Satılık 1+1 2+1 3+1 Daire</title>
+        <meta name="description" content="Postacılar Nova — Çanakkale'de deniz manzaralı, modern konut projesi. 1+1, 2+1, 3+1 ve dubleks satılık daire seçenekleri. Park yakını, konforlu ve güvenli yaşam alanı. Postacılar Yapı." />
+        <meta name="keywords" content="Postacılar Nova, çanakkale deniz manzaralı daire, çanakkale 1+1 satılık daire, çanakkale 2+1 satılık daire, çanakkale 3+1 satılık daire, çanakkale dubleks daire, çanakkale sıfır daire, Postacılar Yapı Nova, modern konut Çanakkale, çanakkale satılık daire" />
         <meta name="author" content="Postacılar Yapı" />
         <meta name="robots" content="index, follow" />
         <meta name="geo.region" content="TR-17" />
@@ -80,7 +80,7 @@ export default function PostacilarNova() {
             "name": "Postacılar Nova",
             "url": "https://www.postacilar.com/postacilar-nova",
             "image": "https://www.postacilar.com/nova/outside/nova-outside-1.webp",
-            "description": "Postacılar Nova — Çanakkale'de şık ve işlevsel tasarımıyla öne çıkan konut projesi.",
+            "description": "Çanakkale'de deniz manzaralı, park yakını modern konut projesi. 1+1, 2+1, 3+1 ve dubleks daire seçenekleri.",
             "address": {
               "@type": "PostalAddress",
               "addressLocality": "Çanakkale",

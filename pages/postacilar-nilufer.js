@@ -50,9 +50,9 @@ export default function PostacilarNilufer() {
         />
       )}
       <Head>
-        <title>Postacılar Nilüfer | Çanakkale Nilüfer Konut Projesi</title>
-        <meta name="description" content="Postacılar Nilüfer — Çanakkale'de yaşam kalitesini yükselten modern konut projesi. Merkezi konum, kaliteli yapı malzemeleri. Proje detayları için inceleyin." />
-        <meta name="keywords" content="Postacılar Nilüfer, Çanakkale Nilüfer konut projesi, Nilüfer daire, Çanakkale Nilüfer satılık daire, Postacılar Yapı Nilüfer, Nilüfer modern konut" />
+        <title>Postacılar Nilüfer | Esenler Mahallesi Çanakkale Satılık 2+1 3+1 Daire</title>
+        <meta name="description" content="Postacılar Nilüfer — Çanakkale Esenler Mahallesi'nde 36 daireli konut projesi. Açık otopark, çocuk oyun parkı, yeşil alan. 2+1 ve 3+1 satılık daire seçenekleri. Postacılar Yapı'nın ilk projesi." />
+        <meta name="keywords" content="Postacılar Nilüfer, esenler mahallesi satılık daire, çanakkale 2+1 satılık daire, çanakkale 3+1 satılık daire, çanakkale sıfır daire, çanakkale merkez konut, Postacılar Yapı Nilüfer, Çanakkale satılık daire, çanakkale çocuk parkı yakını konut" />
         <meta name="author" content="Postacılar Yapı" />
         <meta name="robots" content="index, follow" />
         <meta name="geo.region" content="TR-17" />
@@ -82,10 +82,12 @@ export default function PostacilarNilufer() {
             "name": "Postacılar Nilüfer",
             "url": "https://www.postacilar.com/postacilar-nilufer",
             "image": "https://www.postacilar.com/nilufer/outside/nilufer-outside-1.webp",
-            "description": "Postacılar Nilüfer — Çanakkale Nilüfer'de yaşam kalitesini yükselten modern konut projesi.",
+            "description": "Çanakkale Esenler Mahallesi'nde 36 daireli konut projesi. 2 blok, 24 adet 3+1 ve 12 adet 2+1 daire. Açık otopark, çocuk oyun parkı, yeşil alan.",
             "address": {
               "@type": "PostalAddress",
+              "streetAddress": "Esenler Mahallesi",
               "addressLocality": "Çanakkale",
+              "addressRegion": "Merkez",
               "addressCountry": "TR"
             }
           }) }}

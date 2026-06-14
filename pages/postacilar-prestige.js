@@ -50,7 +50,7 @@ export default function PostacilarPrestige() {
         />
       )}
       <Head>
-        <title>Postacılar Prestige | Kepez Çanakkale Lüks Satılık Daire — Deniz Manzaralı</title>
+        <title>Postacılar Yapı | Prestige</title>
         <meta name="description" content="Postacılar Prestige — Çanakkale Kepez, Boğazkent Mahallesi'nde 28 daireli lüks konut projesi. Deniz, doğa ve şehir manzarası. Satılık 3+1 daire, kapalı otopark, yeşil bahçe. Postacılar Yapı." />
         <meta name="keywords" content="Postacılar Prestige, kepez satılık daire, çanakkale kepez konut, boğazkent mahallesi daire, çanakkale deniz manzaralı daire, çanakkale lüks konut, çanakkale 3+1 satılık, çanakkale prestijli daire, kepez sıfır daire, Postacılar Yapı Prestige, çanakkale üst segment konut" />
         <meta name="author" content="Postacılar Yapı" />

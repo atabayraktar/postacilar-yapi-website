@@ -49,7 +49,7 @@ export default function PostacilarLotus() {
         />
       )}
       <Head>
-        <title>Postacılar Lotus | Kepez Çanakkale Boğaz Manzaralı Satılık Daire</title>
+        <title>Postacılar Yapı | Lotus</title>
         <meta name="description" content="Postacılar Lotus — Çanakkale Kepez'de sahile yürüme mesafesinde, 16 daireli konut projesi. Çanakkale Boğazı manzarası. Kepez satılık sıfır daire. Postacılar Yapı." />
         <meta name="keywords" content="Postacılar Lotus, kepez satılık daire, çanakkale kepez konut, çanakkale boğaz manzaralı daire, kepez sahil yakını daire, çanakkale deniz manzaralı daire, Postacılar Yapı Lotus, Çanakkale satılık daire, kepez sıfır daire" />
         <meta name="author" content="Postacılar Yapı" />

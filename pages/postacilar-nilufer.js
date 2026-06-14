@@ -50,7 +50,7 @@ export default function PostacilarNilufer() {
         />
       )}
       <Head>
-        <title>Postacılar Nilüfer | Esenler Mahallesi Çanakkale Satılık 2+1 3+1 Daire</title>
+        <title>Postacılar Yapı | Nilüfer</title>
         <meta name="description" content="Postacılar Nilüfer — Çanakkale Esenler Mahallesi'nde 36 daireli konut projesi. Açık otopark, çocuk oyun parkı, yeşil alan. 2+1 ve 3+1 satılık daire seçenekleri. Postacılar Yapı'nın ilk projesi." />
         <meta name="keywords" content="Postacılar Nilüfer, esenler mahallesi satılık daire, çanakkale 2+1 satılık daire, çanakkale 3+1 satılık daire, çanakkale sıfır daire, çanakkale merkez konut, Postacılar Yapı Nilüfer, Çanakkale satılık daire, çanakkale çocuk parkı yakını konut" />
         <meta name="author" content="Postacılar Yapı" />

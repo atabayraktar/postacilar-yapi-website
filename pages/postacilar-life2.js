@@ -68,7 +68,7 @@ export default function PostacilarLife2() {
         />
       )}
       <Head>
-        <title>Postacılar Life 2 | Esenler Mahallesi Çanakkale Satılık 2+1 3+1 Daire</title>
+        <title>Postacılar Yapı | Life 2</title>
         <meta name="description" content="Postacılar Life 2 — Çanakkale Esenler Mahallesi, Gazi Meclis Caddesi'nde 42 daireli sıfır konut projesi. 2+1 ve 3+1 satılık daire seçenekleri, park manzarası, kapalı otopark. Postacılar Yapı." />
         <meta name="keywords" content="Postacılar Life 2, esenler mahallesi satılık daire, çanakkale 2+1 satılık daire, çanakkale 3+1 satılık daire, gazi meclis caddesi daire, çanakkale sıfır daire, Çanakkale satılık daire, modern konut Çanakkale, Postacılar Yapı Life 2, çanakkale merkez konut" />
         <meta name="author" content="Postacılar Yapı" />

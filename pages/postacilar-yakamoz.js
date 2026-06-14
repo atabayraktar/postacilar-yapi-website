@@ -51,7 +51,7 @@ export default function PostacilarYakamoz() {
         />
       )}
       <Head>
-        <title>Postacılar Yakamoz | Barbaros Mahallesi Çanakkale Boğaz Manzaralı Satılık Daire</title>
+        <title>Postacılar Yapı | Yakamoz</title>
         <meta name="description" content="Postacılar Yakamoz — Çanakkale Barbaros Mahallesi, 100. Yıl Caddesi'nde yeni kordon cepheli, Boğaz manzaralı konut projesi. 3+1 ve 4+1 dubleks satılık daire seçenekleri. Postacılar Yapı." />
         <meta name="keywords" content="Postacılar Yakamoz, barbaros mahallesi satılık daire, çanakkale boğaz manzaralı daire, çanakkale deniz manzaralı daire, çanakkale yeni kordon daire, 100 yıl caddesi daire, çanakkale 3+1 satılık, çanakkale 4+1 dubleks, Postacılar Yapı Yakamoz, çanakkale satılık daire" />
         <meta name="author" content="Postacılar Yapı" />

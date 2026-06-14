@@ -48,7 +48,7 @@ export default function PostacilarNova() {
         />
       )}
       <Head>
-        <title>Postacılar Nova | Çanakkale Deniz Manzaralı Satılık 1+1 2+1 3+1 Daire</title>
+        <title>Postacılar Yapı | Nova</title>
         <meta name="description" content="Postacılar Nova — Çanakkale'de deniz manzaralı, modern konut projesi. 1+1, 2+1, 3+1 ve dubleks satılık daire seçenekleri. Park yakını, konforlu ve güvenli yaşam alanı. Postacılar Yapı." />
         <meta name="keywords" content="Postacılar Nova, çanakkale deniz manzaralı daire, çanakkale 1+1 satılık daire, çanakkale 2+1 satılık daire, çanakkale 3+1 satılık daire, çanakkale dubleks daire, çanakkale sıfır daire, Postacılar Yapı Nova, modern konut Çanakkale, çanakkale satılık daire" />
         <meta name="author" content="Postacılar Yapı" />

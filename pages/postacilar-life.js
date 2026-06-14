@@ -68,7 +68,7 @@ export default function PostacilarLife() {
         />
       )}
       <Head>
-        <title>Postacılar Life | Esenler Mahallesi Çanakkale Satılık 3+1 Daire</title>
+        <title>Postacılar Yapı | Life</title>
         <meta name="description" content="Postacılar Life — Çanakkale Esenler Mahallesi, Şehit Ömer Halis Demir Caddesi'nde 42 daireli sıfır konut projesi. 3+1 satılık daire, kapalı otopark, modern mimari. Postacılar Yapı." />
         <meta name="keywords" content="Postacılar Life, esenler mahallesi satılık daire, çanakkale esenler daire, çanakkale 3+1 satılık daire, çanakkale sıfır daire, şehit ömer halis demir caddesi daire, Çanakkale satılık daire, modern konut Çanakkale, Postacılar Yapı Life, çanakkale merkez satılık" />
         <meta name="author" content="Postacılar Yapı" />
